@@ -35,7 +35,9 @@
 <div id="maincontent">
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<h2>Section title</h2>
+<!--  	<h2>Section title</h2> -->
+	  	<h2>Under Construction</h2> -->
+
 		<p>Intro text.<br /> <a href="#">more about something &raquo;</a> </p>
 		<div class="homeitem">
 			<h3>Narrow column</h3>
