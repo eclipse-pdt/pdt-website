@@ -15,9 +15,9 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "PHP IDE Project";
-	$pageKeywords	= "Type, page, keywords, here";
-	$pageAuthor		= "Type your name here";
-	
+	$pageKeywords	= "PHP, tool, web";
+	$pageAuthor		= "PHP IDE Committers";
+
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# $Nav->addNavSeparator("My Page Links", 	"downloads.php");
@@ -29,16 +29,53 @@
 		
 	# Paste your HTML content here!
 	ob_start();
-		
+
 ?>
 
 <div id="maincontent">
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
-<!--  	<h2>Section title</h2> -->
-	  	<h2>Under Construction</h2> -->
 
-		<p>Intro text.<br /> <a href="#">more about something &raquo;</a> </p>
+		<table style="width: 100%;" border="0" cellpadding="2">
+			<tbody>
+				<tr>
+					<td align="left" width="60%"><h1>$pageTitle
+						<br>
+						<font size="1" color="#8080FF">PHP Integrated Development Environment</font>
+						</h1>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>About The PHP IDE</h2>
+		<p> The PHP IDE project is working towers providing a fully functional PHP Integrated Development 
+		Environment framework for the Eclipse platform. This project will encompass al the development 
+		components necessary to develop PHP-based Web Applications and will facilitate extensibility. 
+		It will leverage the existing Web Tools Project in providing developers with PHP capabilities.
+		</p>
+		
+		<p>Project Principles:</p>
+		<ul>
+			<li> Intuitive and easy to learn </li>
+			<li> Seamless integration with the Web Tools project </li>
+			<li> Adherence to Eclipse standards </li>
+			<li> Extensibility </li>
+			<li> Continuous support of PHP developments </li>
+		</ul>
+
+		<p> The PHP IDE is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
+		Public License</a>
+		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
+		platform. </p>
+
+
+<!-- 		<a href="#">more about something &raquo;</a>  
+	
+		
+		</p> -->
+		
+		
+		
 		<div class="homeitem">
 			<h3>Narrow column</h3>
 			<ul>
