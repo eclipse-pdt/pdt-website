@@ -73,7 +73,7 @@
 		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
 		platform. </p>
 
-		<div class="homeitem3col">
+		<div class="homeitem">
 			<h3>Quick Navigation</h3>
 			<ul>
 
@@ -116,28 +116,6 @@
 		
 	</div>
 
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Related links</h6>
-			<ul>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Related links</h6>
-			<ul>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-				<li><a href="#">Link</a> - descriptive text</li>
-			</ul>
-		</div>
-	</div>
 </div>
 
 
