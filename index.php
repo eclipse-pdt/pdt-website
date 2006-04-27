@@ -30,6 +30,9 @@
 	# Paste your HTML content here!
 	ob_start();
 
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+	$projectInfo = new ProjectInfo("tools.php");
+	
 ?>
 
 <div id="maincontent">
@@ -95,11 +98,22 @@
 			</ul>
 		</div>
 		<div class="homeitem3col">
-			<h3>This is a wide column</h3>
+			<h3>Quick Navigation</h3>
 			<ul>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
+				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
+				  	Place to search and open bugs or suggest new enhancements for the PHP IDE
+				</li>
+					
+				<li><a href="news://news.eclipse.org/eclipse.tools.php">Newsgroup</a>. 
+					Place to ask questions on the PHP IDE project ( simple 
+					<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
+					web interface </a> also available)
+				</li>
+								
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS Repository</a>. 
+				  	Web interface for the CVS repository
+				</li>
+				
 			</ul>
 		</div>
 		<hr class="clearer" />
