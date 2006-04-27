@@ -14,8 +14,8 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE Project";
-	$pageKeywords	= "PHP, tool, web";
+	$pageTitle 		= "PHP IDE Documents";
+	$pageKeywords	= "PHP, tool, doc, docs, documentation, Documents";
 	$pageAuthor		= "PHP IDE Committers";
 
 	# Add page-specific Nav bars here
@@ -38,11 +38,31 @@
 <div id="maincontent">
 	<div id="midcolumn">
 
+		<table style="width: 100%;" border="0" cellpadding="2">
+			<tbody>
+				<tr>
+					<td align="left" width="60%"><h1><?=$pageTitle?>
+						<br>
+						<font size="1" color="#8080FF">Technical articles and references for PHP IDE users and developers</font>
+						</h1>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
 		<div class="homeitem3col">
-			<h3>Quick Navigation</h3>
+			<h3>Documents</h3>
 			<ul>
 
 				<li><a href="documents/PHP IDE - Debug Protocol.pdf">Debug Protocol Specifications</a>. 
+					...
+				</li>
+
+				<li><a href="documents/PHP IDE - EclipseCon.pdf">EclipseCon slides</a>. 
+					...
+				</li>
+
+				<li><a href="documents/PHP IDE - creation review.pdf">Creation Review Slides</a>. 
 					...
 				</li>
 
