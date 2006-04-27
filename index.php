@@ -4,10 +4,10 @@
 	#
 	# index.php
 	#
-	# Author: 		Your Name
-	# Date:			2005-06-16
+	# Author: 		Guy Harpaz
+	# Date:			2006-04-27
 	#
-	# Description: Type your page comments here - these are not sent to the browser
+	# Description: main project page
 	#
 	#
 	#****************************************************************************
@@ -52,9 +52,9 @@
 			</tbody>
 		</table>
 
-		<h2>About The PHP IDE</h2>
-		<p> The PHP IDE project is working towers providing a fully functional PHP Integrated Development 
-		Environment framework for the Eclipse platform. This project will encompass al the development 
+		<h2>About PHP IDE</h2>
+		<p> The PHP IDE project is working towards providing a fully functional PHP Integrated Development 
+		Environment framework for the Eclipse platform. This project will encompass all development 
 		components necessary to develop PHP-based Web Applications and will facilitate extensibility. 
 		It will leverage the existing Web Tools Project in providing developers with PHP capabilities.
 		</p>
@@ -73,30 +73,6 @@
 		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
 		platform. </p>
 
-
-<!-- 		<a href="#">more about something &raquo;</a>  
-	
-		
-		</p> -->
-		
-		
-		
-		<div class="homeitem">
-			<h3>Narrow column</h3>
-			<ul>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<div class="homeitem">
-			<h3>Narrow column</h3>
-			<ul>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
 		<div class="homeitem3col">
 			<h3>Quick Navigation</h3>
 			<ul>
@@ -108,13 +84,17 @@
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
 				  	Place to search and open bugs or suggest new enhancements for the PHP IDE
 				</li>
-					
+
+				<li><a href="docs.php">Documents</a>. 
+				  	...
+				</li>
+
 				<li><a href="news://news.eclipse.org/eclipse.tools.php">Newsgroup</a>. 
-					Place to ask questions on the PHP IDE project ( simple 
+					Place to ask questions on the PHP IDE project (simple 
 					<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
 					web interface </a> also available)
 				</li>
-								
+
 				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS Repository</a>. 
 				  	Web interface for the CVS repository
 				</li>
@@ -123,22 +103,19 @@
 				  	Get involved in the development of the PHP IDE project. 
 				  	If you have questions about usage of the PHP IDE please use the PHP IDE Newsgroup
 				</li>
-					
+
 			</ul>
 		</div>
-		<hr class="clearer" />
-		<p>Some free text</p>
-		<ul class="midlist">
-			<li>list of items in free text</li>
-			<li>list of items in free text</li>
-			<li>list of items in free text</li>
-		</ul>
-		<ol>
-			<li>Ordered list</li>
-			<li>Ordered list</li>
-			<li>Ordered list</li>
-		</ol>
+		
+		<div class="homeitem">
+			<h3>What's New</h3>
+			<ul>
+
+			</ul>
+		</div>
+		
 	</div>
+
 	<div id="rightcolumn">
 		<div class="sideitem">
 			<h6>Related links</h6>
