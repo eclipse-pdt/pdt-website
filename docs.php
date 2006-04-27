@@ -66,6 +66,10 @@
 					...
 				</li>
 
+				<li><a href="http://www.eclipse.org/proposals/php-ide/">Project Proposal</a>. 
+					...
+				</li>
+
 			</ul>
 		</div>
 	</div>
