@@ -99,7 +99,7 @@
 				  	Web interface for the CVS repository
 				</li>
 				
-				<li><a href="http://dev.eclipse.org/mailman/listinfo/ve-dev">Mailing List</a>. 
+				<li><a href="http://dev.eclipse.org/mailman/listinfo/php-dev">Mailing List</a>. 
 				  	Get involved in the development of the PHP IDE project. 
 				  	If you have questions about usage of the PHP IDE please use the PHP IDE Newsgroup
 				</li>
