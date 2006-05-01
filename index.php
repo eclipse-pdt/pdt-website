@@ -78,25 +78,28 @@
 			<ul>
 
 				<li><a href="downloads.php">Downloads</a>. 
-					Get the latest PHP IDE builds
+					Get available PHP IDE builds
 				</li>
 
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
-				  	Place to search and open bugs or suggest new enhancements for the PHP IDE
+				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PHP IDE
 				</li>
 
 				<li><a href="docs.php">Documents</a>. 
-				  	...
+				  	Technical articles and references for PHP IDE users and developers
 				</li>
 
 				<li><a href="news://news.eclipse.org/eclipse.tools.php">Newsgroup</a>. 
-					Place to ask questions on the PHP IDE project (simple 
-					<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
+					Your way of communicating with the community of people developing and using the Eclipse 
+					PHP IDE eclipse based tool. 
+					Ask questions about usage of the PHP IDE, share ideas, issues, and insights
+					(simple <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
 					web interface </a> also available)
 				</li>
 
 				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS Repository</a>. 
-				  	Web interface for the CVS repository
+				  	The WWW interface for the CVS Repositories. 
+				  	All PHP IDE development is carried out in this repository
 				</li>
 				
 				<li><a href="http://dev.eclipse.org/mailman/listinfo/php-dev">Mailing List</a>. 
