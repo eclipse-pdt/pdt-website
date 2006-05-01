@@ -55,19 +55,22 @@
 			<ul>
 
 				<li><a href="documents/PHP IDE - Debug Protocol.pdf">Debug Protocol Specifications</a>. 
-					...
+				 	Describes the debug communication protocol used in the PHP IDE project
 				</li>
 
 				<li><a href="documents/PHP IDE - EclipseCon.pdf">EclipseCon slides</a>. 
-					...
+					Slides from 
+					<a target="_top" href="http://www.eclipsecon.org/2006/Home.do">EclipseCon PHP conference</a> 
+					: Goals, Principles and scope, Architecture, Products and Schedule
 				</li>
 
 				<li><a href="documents/PHP IDE - creation review.pdf">Creation Review Slides</a>. 
-					...
+					A short review of the PHP IDE project's background, goals and partners
 				</li>
 
 				<li><a href="http://www.eclipse.org/proposals/php-ide/">Project Proposal</a>. 
-					...
+					The official project proposal. A more detailed paper about the PHP IDE open-source project, 
+					background, goals, scope, extention points, UI, requirements, partners, etc
 				</li>
 
 			</ul>
