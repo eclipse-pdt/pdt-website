@@ -44,7 +44,7 @@
 						<br>
 						<font size="1" color="#8080FF">Latest PHP IDE downloads</font>
 						</h1>
-					</td>
+					</td> 
 				</tr>
 			</tbody>
 		</table>
