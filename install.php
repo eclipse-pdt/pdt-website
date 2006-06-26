@@ -87,7 +87,8 @@
 
 				<li><b>Nightly Builds</b> - Nightly builds are produced every night from whatever 
 					has been released into the HEAD stream of the CVS repository.<br>
-			</ul>
+		</p>
+		<p>
 			<br>
 			Read more about Build Types <a href="http://www.eclipse.org/php/build_types.php">here</a>
 		</p><br>
@@ -103,18 +104,19 @@
 				<li><b>Runtime</b> - only includes the PHP IDE project builds. There are the 
 				prerequisites to install PHP IDE. The following must be downloaded and installed before 
 				the PHP IDE can be installed.
-				
+				<br>
 				<ul>
-					<li><b>Eclipse Platform</b>
-					<li><b>GEF</b>
-					<li><b>EMF</b>
-					<li><b>JEM</b>
-					<li><b>WTP</b>
+					<li>Eclipse Platform
+					<li>GEF
+					<li>EMF
+					<li>JEM
+					<li>WTP
 				</ul>
 			</ul>
-
+		</p>
+		<p>
 			<b>Note:</b> The version you choose will depend on the version of Eclipse you are running.
-		</p><br>
+		</p>
 			
 		<h2><a name="debugger"></a>Debugger</h2>
 		<p>
@@ -133,7 +135,7 @@
  -->
 			<b>PHP Web Server Debugger</b>
 			<ul>
-				<li><a href="http://www.zend.com/phpide#ws_debugger">PHP Web Server Debugger</a> – 
+				<li><a href="http://www.zend.com/phpide">Zend Web Server Debugger</a> – 
 					a free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
 			</ul>
 		</p><br>
@@ -148,13 +150,11 @@
 				<li>The PHP IDE perspective does not appear in Eclipse
 				<li>You receive "An error occurred" dialogs when opening PHP Views or the PHP Editor
 			</ul>
-
-			The solution is to clean up the cached information. The recommended practice is to start Eclipse with the -clean option:
-
-			<br>
-
-			<i>eclipse -clean</i>
-		</p><br>
+		</p>
+		<p>
+			The solution is to clean up the cached information. The recommended practice is to 
+			start Eclipse with the <i>eclipse -clean</i>
+		</p>
 
 	</div>
 
