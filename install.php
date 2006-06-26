@@ -68,7 +68,7 @@
 			abbreviated requirements and instructions on the 
 			<a href="http://download.eclipse.org/tools/php/downloads/index.php">download page</a>.
 			Otherwise, follow along below for detailed steps for installing the PHP IDE.
-		</p><br>
+		</p>
 				
 		<h2><a name="build_types"></a>Build Types</h2>
 		<p>
@@ -77,16 +77,17 @@
 			
 			<ul>
 				<li><b>Released Builds</b> - the right builds for people who want to be on a stable, 
-					tested release, and don't need the latest greatest features and improvements.<br>
+					tested release, and don't need the latest greatest features and improvements
 					
 				<li><b>Stable Builds</b> - Integration builds that have been found to be stable 
-					enough for most people to use.<br>
+					enough for most people to use
 					
 				<li><b>Integration Builds</b> - Integration builds are produced every few day from 
-					latest development tags.<br>
+					latest development tags
 
 				<li><b>Nightly Builds</b> - Nightly builds are produced every night from whatever 
-					has been released into the HEAD stream of the CVS repository.<br>
+					has been released into the HEAD stream of the CVS repository
+			</ul>
 		</p>
 		<p>
 			Read more about Build Types <a href="http://www.eclipse.org/php/build_types.php">here</a>
@@ -98,12 +99,11 @@
 			<ul>
 				<li><b>All in one</b> - includes the complete set of software to start using PHP IDE 
 				immediately. This package already has PHP IDE combined with the complete set of 
-				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else<br>
+				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else
 
 				<li><b>Runtime</b> - only includes the PHP IDE project builds. There are the 
 				prerequisites to install PHP IDE. The following must be downloaded and installed before 
 				the PHP IDE can be installed.
-				<br>
 				<ul>
 					<li>Eclipse Platform
 					<li>GEF
