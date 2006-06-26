@@ -52,6 +52,10 @@
 		<blockquote>
 			<ul>
 				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#build_types">Build Types</a></li>
+				<li><a href="#package_types">Package Types</a></li>
+				<li><a href="#debugger">Debugger</a></li>
+				<li><a href="#common_problems">Common Problems</a></li>
 			</ul>
 		</blockquote>
 
@@ -61,10 +65,11 @@
 		<p>
 			Below are complete instructions for installing the PHP IDE. 
 			If you are already familiar with Eclipse plugins, you might want to follow the 
-			abbreviated requirements and instructions on the download page (link). Otherwise, 
-			follow along below for detailed steps for installing the PHP IDE.
-		</p>
-		
+			abbreviated requirements and instructions on the 
+			<a href="http://download.eclipse.org/tools/php/downloads/index.php">download page</a>.
+			Otherwise, follow along below for detailed steps for installing the PHP IDE.
+		</p><br>
+				
 		<h2><a name="build_types"></a>Build Types</h2>
 		<p>
 			There are several types of builds used in the PHP IDE project. 
@@ -72,20 +77,20 @@
 			
 			<ul>
 				<li><b>Released Builds</b> - the right builds for people who want to be on a stable, 
-					tested release, and don't need the latest greatest features and improvements.
+					tested release, and don't need the latest greatest features and improvements.<br>
 					
 				<li><b>Stable Builds</b> - Integration builds that have been found to be stable 
-					enough for most people to use.
+					enough for most people to use.<br>
 					
 				<li><b>Integration Builds</b> - Integration builds are produced every few day from 
-					latest development tags.
+					latest development tags.<br>
 
 				<li><b>Nightly Builds</b> - Nightly builds are produced every night from whatever 
-					has been released into the HEAD stream of the CVS repository.
+					has been released into the HEAD stream of the CVS repository.<br>
 			</ul>
-			
+			<br>
 			Read more about Build Types <a href="http://www.eclipse.org/php/build_types.php">here</a>
-		</p>
+		</p><br>
 		
 		<h2><a name="package_types"></a>Package Types</h2>
 		<p>
@@ -93,7 +98,7 @@
 			<ul>
 				<li><b>All in one</b> - includes the complete set of software to start using PHP IDE 
 				immediately. This package already has PHP IDE combined with the complete set of 
-				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else
+				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else<br>
 
 				<li><b>Runtime</b> - only includes the PHP IDE project builds. There are the 
 				prerequisites to install PHP IDE. The following must be downloaded and installed before 
@@ -109,13 +114,16 @@
 			</ul>
 
 			<b>Note:</b> The version you choose will depend on the version of Eclipse you are running.
-		</p>
+		</p><br>
 			
 		<h2><a name="debugger"></a>Debugger</h2>
 		<p>
 			The PHP IDE project does not contain server side implementation for PHP debugging and will 
 			welcome any open source or commercial implementation of the debug protocol 
 			(The debug protocol implemented can be found at http://www.eclipse.org/php/docs.php)
+		</p>
+		<p>
+			
 <!-- 
 			<b>PHP Executable Debugger</b>
 			<ul>
@@ -125,10 +133,10 @@
  -->
 			<b>PHP Web Server Debugger</b>
 			<ul>
-				<li><b><a href="http://www.zend.com/phpide#ws_debugger">PHP Web Server Debugger</a></b> – 
+				<li><a href="http://www.zend.com/phpide#ws_debugger">PHP Web Server Debugger</a> – 
 					a free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
 			</ul>
-		</p>
+		</p><br>
 			
 		<h2><a name="common_problems"></a>Common Problems</h2>
 		<p>
@@ -143,7 +151,10 @@
 
 			The solution is to clean up the cached information. The recommended practice is to start Eclipse with the -clean option:
 
+			<br>
+
 			<i>eclipse -clean</i>
+		</p><br>
 
 	</div>
 
