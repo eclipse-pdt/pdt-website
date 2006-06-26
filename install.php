@@ -5,7 +5,7 @@
 	# index.php
 	#
 	# Author: 		Guy Harpaz
-	# Date:			2006-05-01
+	# Date:			2006-06-26
 	#
 	# Description: downloads
 	#
@@ -49,7 +49,101 @@
 			</tbody>
 		</table>
 
-		<h2>Under Construction</h2>
+		<blockquote>
+			<ul>
+				<li><a href="#introduction">Introduction</a></li>
+			</ul>
+		</blockquote>
+
+
+
+		<h2><a name="introduction"></a>Introduction</h2>
+		<p>
+			Below are complete instructions for installing the PHP IDE. 
+			If you are already familiar with Eclipse plugins, you might want to follow the 
+			abbreviated requirements and instructions on the download page (link). Otherwise, 
+			follow along below for detailed steps for installing the PHP IDE.
+		</p>
+		
+		<h2><a name="build_types"></a>Build Types</h2>
+		<p>
+			There are several types of builds used in the PHP IDE project. 
+			The builds are differentiated on the degree of their stability
+			
+			<ul>
+				<li><b>Released Builds</b> - the right builds for people who want to be on a stable, 
+					tested release, and don't need the latest greatest features and improvements.
+					
+				<li><b>Stable Builds</b> - Integration builds that have been found to be stable 
+					enough for most people to use.
+					
+				<li><b>Integration Builds</b> - Integration builds are produced every few day from 
+					latest development tags.
+
+				<li><b>Nightly Builds</b> - Nightly builds are produced every night from whatever 
+					has been released into the HEAD stream of the CVS repository.
+			</ul>
+			
+			Read more about Build Types <a href="http://www.eclipse.org/php/build_types.php">here</a>
+		</p>
+		
+		<h2><a name="package_types"></a>Package Types</h2>
+		<p>
+			There are two types of packages used in the PHP IDE project:
+			<ul>
+				<li><b>All in one</b> - includes the complete set of software to start using PHP IDE 
+				immediately. This package already has PHP IDE combined with the complete set of 
+				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else
+
+				<li><b>Runtime</b> - only includes the PHP IDE project builds. There are the 
+				prerequisites to install PHP IDE. The following must be downloaded and installed before 
+				the PHP IDE can be installed.
+				
+				<ul>
+					<li><b>Eclipse Platform</b>
+					<li><b>GEF</b>
+					<li><b>EMF</b>
+					<li><b>JEM</b>
+					<li><b>WTP</b>
+				</ul>
+			</ul>
+
+			<b>Note:</b> The version you choose will depend on the version of Eclipse you are running.
+		</p>
+			
+		<h2><a name="debugger"></a>Debugger</h2>
+		<p>
+			The PHP IDE project does not contain server side implementation for PHP debugging and will 
+			welcome any open source or commercial implementation of the debug protocol 
+			(The debug protocol implemented can be found at http://www.eclipse.org/php/docs.php)
+<!-- 
+			<b>PHP Executable Debugger</b>
+			<ul>
+				<li><b><a href="http://www.zend.com/phpide#ws_debugger">Zend Executable Debugger</a></b> – 
+					a free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
+			</ul>
+ -->
+			<b>PHP Web Server Debugger</b>
+			<ul>
+				<li><b><a href="http://www.zend.com/phpide#ws_debugger">PHP Web Server Debugger</a></b> – 
+					a free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
+			</ul>
+		</p>
+			
+		<h2><a name="common_problems"></a>Common Problems</h2>
+		<p>
+			Some problems are due to cached information within Eclipse. Eclipse caches information 
+			about plugins for faster startup. Adding PHP IDE runtime package may result in stale 
+			cached information. Symptoms of this problem include:
+
+			<ul>
+				<li>The PHP IDE perspective does not appear in Eclipse
+				<li>You receive "An error occurred" dialogs when opening PHP Views or the PHP Editor
+			</ul>
+
+			The solution is to clean up the cached information. The recommended practice is to start Eclipse with the -clean option:
+
+			<i>eclipse -clean</i>
 
 	</div>
 
