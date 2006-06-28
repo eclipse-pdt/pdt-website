@@ -38,8 +38,6 @@
 <div id="maincontent">
 	<div id="midcolumn">
 
-		<h1>Under Construction</h1>
-
 		<table style="width: 100%;" border="0" cellpadding="2">
 			<tbody>
 				<tr>
