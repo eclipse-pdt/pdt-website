@@ -128,7 +128,7 @@
 
 			<b>PHP Executable Debugger</b>
 			<ul>
-				<li><a href="http://www.zend.com/phpide">Zend Executable Debugger</a> – a free Eclipse 
+				<li><a href="http://www.zend.com/phpide">Zend Executable Debugger</a> : a free Eclipse 
 					plugin that adds PHP executable debug capabilities to the Eclipse environment.
 			</ul>
 			<br>
