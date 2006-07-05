@@ -125,17 +125,16 @@
 		</p>
 		<p>
 			
-<!-- 
+
 			<b>PHP Executable Debugger</b>
 			<ul>
-				<li><b><a href="http://www.zend.com/phpide#ws_debugger">Zend Executable Debugger</a></b> – 
-					a free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
+				<li><a href="http://www.zend.com/phpide">Zend Executable Debugger</a> – a free Eclipse 
+					plugin that adds PHP executable debug capabilities to the Eclipse environment.
 			</ul>
- -->
+
 			<b>PHP Web Server Debugger</b>
 			<ul>
-				<li><a href="http://www.zend.com/phpide">Zend Web Server Debugger</a> - a 
-				free Eclipse plugin that adds PHP executable debug capabilities to the Eclipse environment.
+				<li><a href="http://www.zend.com/phpide">Zend Web Server Debugger</a> -
 			</ul>
 		</p><br>
 			
