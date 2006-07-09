@@ -74,7 +74,6 @@
 		<div class="homeitem">
 			<h3>Quick Navigation</h3>
 			<ul>
-
 				<li><a href="downloads.php">Downloads</a>. 
 					Get available PHP IDE builds
 				</li>
@@ -111,6 +110,18 @@
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
+
+				</li>
+					<span class="normal"><b>July&nbsp;6<sup>th</sup></b></span> -
+					<a href="http://download3.eclipse.org/tools/php/downloads/index.php?release=S0.7M2">Milestone 2</a>. 
+					is ready!
+				</li>
+
+				<li>
+					<span class="normal"><b>July&nbsp;5<sup>th</sup></b></span> -
+					Debuggers are available from the 
+					<a href="http://www.eclipse.org/php/install.php">installation</a> page.
+				</li>
 
 			</ul>
 		</div>
