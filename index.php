@@ -71,7 +71,7 @@
 		<table>
 			<tr>
 				<td><li>June, 2007</td>
-				<td> - PHP IDE 1.5 release</td>
+				<td> - <b>PHP IDE 1.5 release</b></td>
 			</tr>
 			<tr>
 				<td><li>February, 2007</td>
@@ -83,7 +83,7 @@
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>
-				<td> - PHP IDE 1.0 release</td>
+				<td> - <b>PHP IDE 1.0 release</b></td>
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>
