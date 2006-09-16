@@ -112,9 +112,8 @@
 			<ul>
 				<li>
 					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
-					Come and see in the 
-					<a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
-					, Yossi Leon, PHP IDE Project Leader, presenting the PHP IDE
+					PHP IDE presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
+					by Yossi Leon, PHP IDE Project Leader
 				</li>
 				<li>
 					<span class="normal"><b>July&nbsp;6<sup>th</sup></b></span> -
