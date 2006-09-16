@@ -110,7 +110,12 @@
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
-
+				<li>
+					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
+					Come and see in the 
+					<a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
+					, Yossi Leon, PHP IDE Project Leader, presenting the PHP IDE
+				</li>
 				<li>
 					<span class="normal"><b>July&nbsp;6<sup>th</sup></b></span> -
 					<a href="http://download3.eclipse.org/tools/php/downloads/index.php?release=S0.7M2">Milestone 2</a>. 
