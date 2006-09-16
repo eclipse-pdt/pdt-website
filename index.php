@@ -65,6 +65,56 @@
 			<li> Extensibility </li>
 			<li> Continuous support of PHP developments </li>
 		</ul>
+		
+		<p>Scehdule:</p>
+		<ul>
+		<table>
+			<tr>
+				<td><li>June, 2007</td>
+				<td>PHP IDE 1.5 release</td>
+			</tr>
+			<tr>
+				<td><li>February, 2007</td>
+				<td>Parser and syntax highlighter changes</td>
+			</tr>
+			<tr>
+				<td><li>January, 2007</td>
+				<td>Code Formatter development</td>
+			</tr>
+			<tr>
+				<td><li>December, 2006</td>
+				<td>PHP IDE 1.0 release</td>
+			</tr>
+			<tr>
+				<td><li>December, 2006</td>
+				<td>Debugger infrastructure improvements and changes</td>
+			</tr>
+			<tr>
+				<td><li>November, 2006</td>
+				<td>Include Path Explorer ui and core changes</td>
+			</tr>
+			<tr>
+				<td><li>October 12, 2006</td>
+				<td>Eclipse Summit: Presenting PHP IDE</td>
+			</tr>
+			<tr>
+				<td><li>July, 2006</td>
+				<td>Upgrade to Eclipse 3.2 and WTP 1.5</td>
+			</tr>
+			<tr>
+				<td><li>April, 2006</td>
+				<td>Finish 3rd development stage</td>
+			</tr>
+			<tr>
+				<td><li>March 20-23, 2006</td>
+				<td>EclipseCon: Presenting PHP IDE</td>
+			</tr>
+			<tr>
+				<td><li>March 8, 2006</td>
+				<td>Creation review</td>
+			</tr>
+		</table>
+		</ul>
 
 		<p> The PHP IDE is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
 		Public License</a>
