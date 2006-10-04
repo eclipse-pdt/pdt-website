@@ -91,7 +91,7 @@
 			</tr>
 			<tr>
 				<td><li>November, 2006</td>
-				<td> - Include Path Explorer ui and core changes</td>
+				<td> - Bug fixes and Include Path Explorer ui and core changes</td>
 			</tr>
 			<tr>
 				<td><li>October 12, 2006</td>
