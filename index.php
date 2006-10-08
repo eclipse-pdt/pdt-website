@@ -26,6 +26,19 @@
 
 	# End: page-specific settings
 	#
+	
+	# Enable polls on this page: Polls are good for 3 months!
+	
+	$App->usePolls();
+	
+	$Poll = new Poll(1, "Which feature requires the most serious future development?");
+	$Poll->addOption(1, "Debugger");
+	$Poll->addOption(2, "Editor");
+	$Poll->addOption(3, "PHP Explorer");
+	$Poll->addOption(4, "Outline Views");
+	# $Poll->noGraph();  # uncomment to disable bar graph
+	$pollHTML = $Poll->getHTML();
+	
 		
 	# Paste your HTML content here!
 	ob_start();
@@ -180,6 +193,12 @@
 			</ul>
 		</div>
 		
+	</div>
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Poll</h6>
+			<?php echo $pollHTML; ?>
+		</div>
 	</div>
 
 </div>
