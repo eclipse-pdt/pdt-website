@@ -3,15 +3,26 @@
 	<name>php</name>
 	<comment></comment>
 	<projects>
+		<project>phoenix</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.php.core.PhpIncrementalProjectBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<name>com.zend.php.wsdl.core.WSDLIncrementalProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.zend.php.codeanalyzer.CAIncrementalProjectBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
