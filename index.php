@@ -31,7 +31,7 @@
 	
 	$App->usePolls();
 	
-	$Poll = new Poll(1, "Which feature requires the most serious future development?");
+	$Poll = new Poll(1, "Which feature requires the most serious future enhancements?");
 	$Poll->addOption(1, "Debugger");
 	$Poll->addOption(2, "Editor");
 	$Poll->addOption(3, "PHP Explorer");
