@@ -84,7 +84,7 @@
 		<table>
 			<tr>
 				<td><li>June, 2007</td>
-				<td> - <b>PHP IDE 1.5 release</b></td>
+				<td> - <b>PHP IDE 1.1 release</b></td>
 			</tr>
 			<tr>
 				<td><li>February, 2007</td>
