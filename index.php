@@ -1,10 +1,19 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  		
+
+
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+$App 	= new App();	
+$Nav	= new Nav();	
+$Menu 	= new Menu();		
+include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
 	# index.php
 	#
-	# Author: 		Guy Harpaz
+	# Author: 		Yossi Leon
 	# Date:			2006-04-27
 	#
 	# Description: main project page
@@ -84,7 +93,7 @@
 		<table>
 			<tr>
 				<td><li>June, 2007</td>
-				<td> - <b>PHP IDE 1.1 release</b></td>
+				<td> - <b>PHP IDE 1.0 release</b></td>
 			</tr>
 			<tr>
 				<td><li>February, 2007</td>
@@ -96,7 +105,7 @@
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>
-				<td> - <b>PHP IDE 1.0 release</b></td>
+				<td> - <b>PHP IDE 0.7 release</b></td>
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>

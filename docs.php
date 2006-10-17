@@ -4,7 +4,7 @@
 	#
 	# index.php
 	#
-	# Author: 		Guy Harpaz
+	# Author: 		Yossi Leon
 	# Date:			2006-04-27
 	#
 	# Description: Documents page
@@ -53,7 +53,9 @@
 		<div class="homeitem3col">
 			<h3>Documents</h3>
 			<ul>
-
+				<li><a href="documents/Eclipse Summit PHP IDE.ppt">PHP IDE Presentation in Eclipse Summit 2006</a>. 
+				 	Presentation from the Eclipse Summit 2006 presented by Yossi Leon
+				</li>
 				<li><a href="documents/PHP IDE - Debug Protocol.pdf">Debug Protocol Specifications</a>. 
 				 	Describes the debug communication protocol used in the PHP IDE project
 				</li>
