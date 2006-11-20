@@ -149,6 +149,9 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<li><a href="downloads.php">Downloads</a>. 
 					Get available PHP IDE builds
 				</li>
+				<li><a href="http://wiki.eclipse.org/index.php/PHP">PHP Wiki</a>. 
+					Find more information and discussions in the PHP Wiki page
+				</li>
 
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
 				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PHP IDE
@@ -182,6 +185,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
+				<li>
+					<span class="normal"><b>October&nbsp;26<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/php/downloads/index.php?release=S20061026-M3">Milestone 3</a>. 
+					is ready!
+				</li>
 				<li>
 					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
 					PHP IDE presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
