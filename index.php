@@ -109,6 +109,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>
+				<td> - Unit testing and debugger</td>
+			</tr>
+			<tr>
+				<td><li>December, 2006</td>
 				<td> - Debugger infrastructure improvements and changes</td>
 			</tr>
 			<tr>
