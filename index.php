@@ -92,8 +92,12 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<ul>
 		<table>
 			<tr>
-				<td><li>June, 2007</td>
+				<td><li>September, 2007</td>
 				<td> - <b>PHP IDE 1.0 release</b></td>
+			</tr>
+			<tr>
+				<td><li>February, 2007</td>
+				<td> - <b>PHP IDE 0.7 release</b></td>
 			</tr>
 			<tr>
 				<td><li>February, 2007</td>
@@ -102,10 +106,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<tr>
 				<td><li>January, 2007</td>
 				<td> - Code Formatter development</td>
-			</tr>
-			<tr>
-				<td><li>December, 2006</td>
-				<td> - <b>PHP IDE 0.7 release</b></td>
 			</tr>
 			<tr>
 				<td><li>December, 2006</td>
