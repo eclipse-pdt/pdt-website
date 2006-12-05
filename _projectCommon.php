@@ -12,6 +12,8 @@
 	$Nav->addNavSeparator("Project Home", 	"index.php");
 	$Nav->addCustomNav("Downloads", 		"downloads.php", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"install.php", 		"_self", 2);
+	$Nav->addCustomNav("Project Plan", 		"plans/php_plan_0_7.php", 		"_self", 2);
+	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"faq.php", 			"_self", 2);
 
 ?>
