@@ -83,12 +83,12 @@ Eclipse Project 3.2</a> for a list of reference platforms.</p>
 <h2><a name="OutstandingIssues"> </a> Outstanding Issues</h2>
 <p>The outstanding issues that should require further investigation are:</p>
 <ul type="disc">
-<li>API - complete the API design so other projects can be based on with minimal changes. Provide 
+<li>API - Complete the API design so other projects can be based on with minimal changes. Provide 
 extensibility mainly for model, debugger and parser</a>.</li>
-<li>Debugging - provide the best solution for the PHP developer in terms of usability, simplicity and 
+<li>Debugging - Provide the best solution for the PHP developer in terms of usability, simplicity and 
 PHP behavior. This part was improved many times and will continue to be changed for the best PHP solution.
-<li>Integration with WTP - a discussion about it is available on the <a href="http://wiki.eclipse.org/index.php/PHP_WTP_Integration">Wiki</a>.</li>
-
+<li>Integration with WTP - Discussion about it is available on the <a href="http://wiki.eclipse.org/index.php/PHP_WTP_Integration">Wiki</a>.</li>
+<br>
 </div>
 
 EOHTML;
