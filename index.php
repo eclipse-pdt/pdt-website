@@ -108,7 +108,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - Code Formatter development</td>
 			</tr>
 			<tr>
-				<td><li>December, 2006</td>
+				<td><li>21 of December, 2006</td>
 				<td> - 0.7 Milestone 4</td>
 			</tr>
 			<tr>
