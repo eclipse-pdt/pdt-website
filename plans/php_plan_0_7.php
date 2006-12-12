@@ -72,6 +72,11 @@ Milestone Releases are approximately every six weeks of integration builds.</p>
 release candidates before the actual release. Scheduled release candidates should end 
 one week before the release.
 
+<li> 0.7M3 - 26th of October 2006 </li>
+<li> 0.7M4 - 21st of December 2006 </li>
+<li> 0.7RC1 - 1st of January 2007 </li>
+<li> 0.7RC2 - 29th of January 2007 </li>
+
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
 
