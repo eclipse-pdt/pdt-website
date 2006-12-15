@@ -60,7 +60,7 @@
 				 	Describes the debug communication protocol used in the PHP IDE project
 				</li>
 				
-				<li><a href="documents/SRS_1.0_for_Site.doc">PHP IDE SRS Document</a>. 
+				<li><a href="documents/PHP IDE 0.7 SRS.pdf">PHP IDE SRS Document</a>. 
 				 	Project Plan (as SRS document) describing the specification of PHP IDE as for august 2006
 				</li>
 				
