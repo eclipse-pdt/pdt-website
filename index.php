@@ -100,15 +100,15 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PHP IDE 0.7 release</b></td>
 			</tr>
 			<tr>
-				<td><li>February, 2007</td>
-				<td> - Parser and syntax highlighter changes</td>
+				<td><li>25th of January, 2007</td>
+				<td> - 0.7 RC2</td>
 			</tr>
 			<tr>
-				<td><li>January, 2007</td>
-				<td> - Code Formatter development</td>
+				<td><li>1st of January, 2007</td>
+				<td> - 0.7 RC1</td>
 			</tr>
 			<tr>
-				<td><li>21 of December, 2006</td>
+				<td><li>21th of December, 2006</td>
 				<td> - 0.7 Milestone 4</td>
 			</tr>
 			<tr>
