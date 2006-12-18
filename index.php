@@ -100,7 +100,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PHP IDE 0.7 release</b></td>
 			</tr>
 			<tr>
-				<td><li>25th of January, 2007</td>
+				<td><li>29th of January, 2007</td>
 				<td> - 0.7 RC2</td>
 			</tr>
 			<tr>
