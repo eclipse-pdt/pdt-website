@@ -28,7 +28,7 @@ $html = <<<EOHTML
 href="33905827_files/filelist.xml" rel=File-List><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Subject>PHP Development Tool (PDT)</o:Subject>
-  <o:Author>Guy Harpaz</o:Author>
+  <o:Author>Yossi Leon</o:Author>
   <o:Template>Rational Template.dot</o:Template>
   <o:LastAuthor>Users</o:LastAuthor>
   <o:Revision>11</o:Revision>
@@ -607,17 +607,7 @@ UL {
  </o:shapelayout></xml><![endif]--></HEAD>
 <BODY lang=EN-US style="tab-interval: 36.0pt" vLink=purple link=blue>
 <DIV class=Section1>
-<P class=Title1 style="MARGIN: 42pt 21.3pt 12pt -14.2pt"><o:p>&nbsp;</o:p></P>
-<P class=Title1 
-style="MARGIN: 42pt 21.3pt 12pt -14.2pt; TEXT-INDENT: 50.2pt"><SPAN 
-style="mso-field-code: ' SUBJECT  \* MERGEFORMAT '"><SPAN 
-style="mso-bidi-font-size: 24.0pt; mso-bidi-font-family: 'Trebuchet MS'; mso-bidi-font-weight: bold">PHP 
-Development Tool (PHP IDE)</SPAN></SPAN></P>
-<P class=Title1 
-style="MARGIN: 42pt 21.3pt 12pt -14.2pt; TEXT-INDENT: 50.2pt"><SPAN 
-style="mso-field-code: ' TITLE  \* MERGEFORMAT '">Software Requirements 
-Document</SPAN><SPAN 
-style="mso-bidi-font-size: 24.0pt; mso-bidi-font-family: 'Trebuchet MS'; mso-bidi-font-weight: bold"><o:p></o:p></SPAN></P><B><SPAN 
+<B><SPAN 
 style="FONT-SIZE: 18pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><BR 
 style="PAGE-BREAK-BEFORE: always" clear=all></SPAN></B>
 <P class=MsoTitle style="MARGIN-LEFT: 0cm; TEXT-ALIGN: left" align=left><SPAN 
