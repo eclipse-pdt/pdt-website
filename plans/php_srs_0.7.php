@@ -28,7 +28,7 @@ $html = <<<EOHTML
 href="33905827_files/filelist.xml" rel=File-List><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Subject>PHP Development Tool (PDT)</o:Subject>
-  <o:Author>Yossi Leon</o:Author>
+  <o:Author>Guy Harpaz</o:Author>
   <o:Template>Rational Template.dot</o:Template>
   <o:LastAuthor>Users</o:LastAuthor>
   <o:Revision>11</o:Revision>
@@ -607,9 +607,6 @@ UL {
  </o:shapelayout></xml><![endif]--></HEAD>
 <BODY lang=EN-US style="tab-interval: 36.0pt" vLink=purple link=blue>
 <DIV class=Section1>
-<B><SPAN 
-style="FONT-SIZE: 18pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><BR 
-style="PAGE-BREAK-BEFORE: always" clear=all></SPAN></B>
 <P class=MsoTitle style="MARGIN-LEFT: 0cm; TEXT-ALIGN: left" align=left><SPAN 
 style="mso-field-code: ' TITLE  \* MERGEFORMAT '"><SPAN 
 style="mso-bidi-font-size: 18.0pt; mso-bidi-font-weight: bold">Software 
