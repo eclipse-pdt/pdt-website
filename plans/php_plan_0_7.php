@@ -40,7 +40,7 @@ release of the PHP IDE project, release 0.7.</p>
 </ul>
 
 <p>The plan of the 0.7 version is based on the initial SRS which is 
-available <a href="./php_srs_0.7.php">here</a>.
+available <a href="../document/PHP IDE 0.7 SRS.pdf">here</a>.
 On top of that SRS many bugs were submitted together with enhancement requests that 
 were/will be included in the 0.7 release. You can find all PHP IDE open bugs 
 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=PHP&content=">here</a>.</p>
