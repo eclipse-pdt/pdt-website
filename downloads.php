@@ -16,9 +16,9 @@ die;
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE Downloads";
+	$pageTitle 		= "PDT Downloads";
 	$pageKeywords	= "PHP, downloads";
-	$pageAuthor		= "PHP IDE Committers";
+	$pageAuthor		= "PDT Committers";
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -44,7 +44,7 @@ die;
 				<tr>
 					<td align="left" width="60%"><h1><?=$pageTitle?>
 						<br>
-						<font size="1" color="#8080FF">Latest PHP IDE downloads</font>
+						<font size="1" color="#8080FF">Latest PDT downloads</font>
 						</h1>
 					</td> 
 				</tr>

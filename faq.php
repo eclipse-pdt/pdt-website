@@ -14,9 +14,9 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE FAQ";
+	$pageTitle 		= "PDT FAQ";
 	$pageKeywords	= "PHP, faq, questions";
-	$pageAuthor		= "PHP IDE Committers";
+	$pageAuthor		= "PDT Committers";
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -61,8 +61,8 @@
 		<!-- General subheader -->
 			<li><b><a href="#general">General:</a></b>
 				<ol>
-					<li><a href="#general_about">What is PHP IDE?</a></li>
-					<li><a href="#general_license">How is PHP IDE licensed?</a></li>
+					<li><a href="#general_about">What is PDT?</a></li>
+					<li><a href="#general_license">How is PDT licensed?</a></li>
 					<li><a href="#general_question">How do I ask questions?</a></li>
 					<li><a href="#general_bugs">How do I report a bug or request a feature?</a></li>
 					<li><a href="#general_faq">How do I make a suggestion for this FAQ?</a></li>
@@ -84,8 +84,8 @@
 			<tr>
 				<td colspan="2">
 				<ol>
-					<li><b><a name="general_about">What is PHP IDE?</a></b>
-					<p>The <a target="_top" href="http://www.eclipse.org/php">PHP IDE</a> is 
+					<li><b><a name="general_about">What is PDT?</a></b>
+					<p>The <a target="_top" href="http://www.eclipse.org/php">PDT</a> is 
 					is working towards providing a fully functional PHP Integrated Development Environment 
 					framework for the Eclipse platform. This project will encompass all development components 
 					necessary to develop PHP-based Web Applications and will facilitate extensibility. 
@@ -95,23 +95,23 @@
 					<br>
 					</p><hr></li>
 					
-					<li><b><a name="general_license">How is PHP IDE licensed?</a></b>
-					<p>PHP IDE is licensed in accordance with the 
+					<li><b><a name="general_license">How is PDT licensed?</a></b>
+					<p>PDT is licensed in accordance with the 
 					<a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License</a>. 
-					Third party components built using PHP IDE are made available under their own licenses
+					Third party components built using PDT are made available under their own licenses
 					<br>
 					</p><hr></li>
 
 					<li><b><a name="general_question">How do I ask questions?</a></b>
-					<p>Questions about the use of PHP IDE in user projects that are not addressed in this FAQ should 
-					be posted to the <a href="news://news.eclipse.org/eclipse.tools.php">PHP IDE newsgroup</a>.
-					Questions and comments regarding the implementation of PHP IDE itself should be posted 
-					to the <a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PHP IDE mailing list</a>.
+					<p>Questions about the use of PDT in user projects that are not addressed in this FAQ should 
+					be posted to the <a href="news://news.eclipse.org/eclipse.tools.php">PDT newsgroup</a>.
+					Questions and comments regarding the implementation of PDT itself should be posted 
+					to the <a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PDT mailing list</a>.
 					<br>
 					</p><hr></li>
 
 					<li><b><a name="general_bugs">How do I report a bug or request a feature?</a></b>
-					<p>PHP IDE like all Eclipse projects, uses
+					<p>PDT like all Eclipse projects, uses
 					<a target="_top" href="http://www.bugzilla.org/">Bugzilla</a> as its bug and feature tracking 
 					system. Entering a bug or a feature report is as simple as filling in a web form on 
 					the <a href="http://dev.eclipse.org/bugs/">eclipse bugzilla page</a>. The first 
@@ -119,16 +119,16 @@
 					<a href="http://dev.eclipse.org/bugs/createaccount.cgi">create a new bugzilla 
 					account</a> for yourself by providing an email address and choosing a password. 
 					Before submitting a bug, please be sure to check the list of
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&product=php&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&order=Reuse+same+sort+as+last+time">open PHP IDE bugs</a> and
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=php&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&changedin=7&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">recentely closed PHP IDE bugs</a>.<br>
+					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&product=php&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&order=Reuse+same+sort+as+last+time">open PDT bugs</a> and
+					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=php&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&changedin=7&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">recentely closed PDT bugs</a>.<br>
 					<br>
 					</p><hr></li>
 
 					<li><b><a name="general_faq">How do I make a suggestion for this FAQ?</a></b>
 					<p>The best ways to contribute to this FAQ is to send it to the 
-					<a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PHP IDE mailing list</a>
+					<a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PDT mailing list</a>
 					or to post your suggestion to the 
-					<a href="news://news.eclipse.org/eclipse.tools.php">PHP IDE newsgroup</a>
+					<a href="news://news.eclipse.org/eclipse.tools.php">PDT newsgroup</a>
 					with the subject prefixed by "[FAQ]". 
 					You may post just a question or both a question and answer.
 					<br>

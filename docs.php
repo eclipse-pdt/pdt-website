@@ -14,9 +14,9 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE Documents";
+	$pageTitle 		= "PDT Documents";
 	$pageKeywords	= "PHP, tool, doc, docs, documentation, Documents";
-	$pageAuthor		= "PHP IDE Committers";
+	$pageAuthor		= "PDT Committers";
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -43,7 +43,7 @@
 				<tr>
 					<td align="left" width="60%"><h1><?=$pageTitle?>
 						<br>
-						<font size="1" color="#8080FF">Technical articles and references for PHP IDE users and developers</font>
+						<font size="1" color="#8080FF">Technical articles and references for PDT users and developers</font>
 						</h1>
 					</td>
 				</tr>
@@ -53,29 +53,29 @@
 		<div class="homeitem3col">
 			<h3>Documents</h3>
 			<ul>
-				<li><a href="documents/Eclipse Summit PHP IDE.ppt">PHP IDE Presentation in Eclipse Summit 2006</a>. 
+				<li><a href="documents/Eclipse Summit PDT.ppt">PDT Presentation in Eclipse Summit 2006</a>. 
 				 	Presentation from the Eclipse Summit 2006 presented by Yossi Leon
 				</li>
-				<li><a href="documents/PHP IDE - Debug Protocol.pdf">Debug Protocol Specifications</a>. 
-				 	Describes the debug communication protocol used in the PHP IDE project
+				<li><a href="documents/PDT - Debug Protocol.pdf">Debug Protocol Specifications</a>. 
+				 	Describes the debug communication protocol used in the PDT project
 				</li>
 				
-				<li><a href="documents/PHP IDE 0.7 SRS.pdf">PHP IDE SRS Document</a>. 
-				 	Project Plan (as SRS document) describing the specification of PHP IDE as for august 2006
+				<li><a href="documents/PDT 0.7 SRS.pdf">PDT SRS Document</a>. 
+				 	Project Plan (as SRS document) describing the specification of PDT as for august 2006
 				</li>
 				
-				<li><a href="documents/PHP IDE - EclipseCon.pdf">EclipseCon slides</a>. 
+				<li><a href="documents/PDT - EclipseCon.pdf">EclipseCon slides</a>. 
 					Slides from 
 					<a target="_top" href="http://www.eclipsecon.org/2006/Home.do">EclipseCon PHP conference</a> 
 					: Goals, Principles and scope, Architecture, Products and Schedule
 				</li>
 	
-				<li><a href="documents/PHP IDE - creation review.pdf">Creation Review Slides</a>. 
-					A short review of the PHP IDE project's background, goals and partners
+				<li><a href="documents/PDT - creation review.pdf">Creation Review Slides</a>. 
+					A short review of the PDT project's background, goals and partners
 				</li>
 
 				<li><a href="http://www.eclipse.org/proposals/php-ide/">Project Proposal</a>. 
-					The official project proposal. A more detailed paper about the PHP IDE open-source project, 
+					The official project proposal. A more detailed paper about the PDT open-source project, 
 					background, goals, scope, extention points, UI, requirements, partners, etc
 				</li>
 

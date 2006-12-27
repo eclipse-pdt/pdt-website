@@ -23,9 +23,9 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE Project";
+	$pageTitle 		= "PDT Project";
 	$pageKeywords	= "PHP, tool, web";
-	$pageAuthor		= "PHP IDE Committers";
+	$pageAuthor		= "PDT Committers";
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -72,8 +72,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			</tbody>
 		</table>
 
-		<h2>About PHP IDE</h2>
-		<p> The PHP IDE project is working towards providing a fully functional PHP Integrated Development 
+		<h2>About PDT</h2>
+		<p> The PDT project is working towards providing a fully functional PHP Integrated Development 
 		Environment framework for the Eclipse platform. This project will encompass all development 
 		components necessary to develop PHP-based Web Applications and will facilitate extensibility. 
 		It will leverage the existing Web Tools Project in providing developers with PHP capabilities.
@@ -93,11 +93,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<table>
 			<tr>
 				<td><li>September, 2007</td>
-				<td> - <b>PHP IDE 1.0 release</b></td>
+				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
 				<td><li>February, 2007</td>
-				<td> - <b>PHP IDE 0.7 release</b></td>
+				<td> - <b>PDT 0.7 release</b></td>
 			</tr>
 			<tr>
 				<td><li>29th of January, 2007</td>
@@ -125,7 +125,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			</tr>
 			<tr>
 				<td><li>October 12, 2006</td>
-				<td> - Eclipse Summit: Presenting PHP IDE</td>
+				<td> - Eclipse Summit: Presenting PDT</td>
 			</tr>
 			<tr>
 				<td><li>July, 2006</td>
@@ -137,7 +137,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			</tr>
 			<tr>
 				<td><li>March 20-23, 2006</td>
-				<td> - EclipseCon: Presenting PHP IDE</td>
+				<td> - EclipseCon: Presenting PDT</td>
 			</tr>
 			<tr>
 				<td><li>March 8, 2006</td>
@@ -146,7 +146,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		</table>
 		</ul>
 
-		<p> The PHP IDE is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
+		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
 		Public License</a>
 		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
 		platform. </p>
@@ -155,36 +155,36 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>Quick Navigation</h3>
 			<ul>
 				<li><a href="downloads.php">Downloads</a>. 
-					Get available PHP IDE builds
+					Get available PDT builds
 				</li>
 				<li><a href="http://wiki.eclipse.org/index.php/PHP">PHP Wiki</a>. 
 					Find more information and discussions in the PHP Wiki page
 				</li>
 
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
-				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PHP IDE
+				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PDT
 				</li>
 
 				<li><a href="docs.php">Documents</a>. 
-				  	Technical articles and references for PHP IDE users and developers
+				  	Technical articles and references for PDT users and developers
 				</li>
 
 				<li><a href="news://news.eclipse.org/eclipse.tools.php">Newsgroup</a>. 
 					Your way of communicating with the community of people developing and using the Eclipse 
-					PHP IDE eclipse based tool. 
-					Ask questions about usage of the PHP IDE, share ideas, issues, and insights
+					PDT eclipse based tool. 
+					Ask questions about usage of the PDT, share ideas, issues, and insights
 					(simple <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
 					web interface </a> also available)
 				</li>
 
 				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS Repository</a>. 
 				  	The WWW interface for the CVS Repositories. 
-				  	All PHP IDE development is carried out in this repository
+				  	All PDT development is carried out in this repository
 				</li>
 				
 				<li><a href="http://dev.eclipse.org/mailman/listinfo/php-dev">Mailing List</a>. 
-				  	Get involved in the development of the PHP IDE project. 
-				  	If you have questions about usage of the PHP IDE please use the PHP IDE Newsgroup
+				  	Get involved in the development of the PDT project. 
+				  	If you have questions about usage of the PDT please use the PDT Newsgroup
 				</li>
 
 			</ul>
@@ -200,8 +200,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				</li>
 				<li>
 					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
-					PHP IDE presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
-					by Yossi Leon, PHP IDE Project Leader
+					PDT presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
+					by Yossi Leon, PDT Project Leader
 				</li>
 				<li>
 					<span class="normal"><b>July&nbsp;6<sup>th</sup></b></span> -

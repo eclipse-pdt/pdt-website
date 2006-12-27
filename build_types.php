@@ -4,7 +4,7 @@
 	#
 	# index.php
 	#
-	# Author: 		Guy Harpaz
+	# Author: 		Yossi Leon
 	# Date:			2006-05-01
 	#
 	# Description: downloads
@@ -14,9 +14,9 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PHP IDE Build Types";
+	$pageTitle 		= "PDT Build Types";
 	$pageKeywords	= "PHP, build types";
-	$pageAuthor		= "PHP IDE Committers";
+	$pageAuthor		= "PDT Committers";
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -50,7 +50,7 @@
 			</tbody>
 		</table>
 
-		There are a couple of "dimensions" of the PHP IDE Build Types. 
+		There are a couple of "dimensions" of the PDT Build Types. 
 
 		<h2>Released Builds</h2>
 		<p> 
