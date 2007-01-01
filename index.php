@@ -194,6 +194,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
+					<span class="normal"><b>December&nbsp;18<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/php/downloads/index.php?release=S20061218-M4">Milestone 4</a>. 
+					is ready!
+				</li>
+				<li>
 					<span class="normal"><b>October&nbsp;26<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/php/downloads/index.php?release=S20061026-M3">Milestone 3</a>. 
 					is ready!
