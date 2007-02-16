@@ -65,7 +65,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<tr>
 					<td align="left" width="60%"><h1><?=$pageTitle?>
 						<br>
-						<font size="1" color="#8080FF">PHP Development Tool</font>
+						<font size="1" color="#8080FF">PHP Development Tools</font>
 						</h1>
 					</td>
 				</tr>
@@ -74,7 +74,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 		<h2>About PDT</h2>
 		<p> The PDT project is working towards providing a PHP Development 
-		Tool framework for the Eclipse platform. This project will encompass all development 
+		Tools framework for the Eclipse platform. This project will encompass all development 
 		components necessary to develop PHP and will facilitate extensibility. 
 		It will leverage the existing Web Tools Project in providing developers with PHP capabilities.
 		</p>
