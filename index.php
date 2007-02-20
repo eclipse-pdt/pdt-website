@@ -195,8 +195,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<ul>
 				<li>
 					<span class="normal"><b>February&nbsp;20<sup>th</sup></b></span> -
-					PDT Powered by icon is now <a href="./images/PoweredBy_PDT.gif">available
-					</a>. Use it in your site! <img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />
+					PDT Powered by icon is now <a href="./images/PoweredBy_PDT.gif">available</a>, 
+					<img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />use it in your site! 
 				</li>
 				<li>
 					<span class="normal"><b>February&nbsp;2<sup>nd</sup></b></span> -
