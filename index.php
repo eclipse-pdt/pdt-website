@@ -194,6 +194,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
+					<span class="normal"><b>February&nbsp;20<sup>th</sup></b></span> -
+					PDT Powered by icon is now <a href="./images/PoweredBy_PDT.gif">available
+					</a>. Use it in your site! <img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />
+				</li>
+				<li>
 					<span class="normal"><b>February&nbsp;2<sup>nd</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/php/downloads/index.php?release=S20070130-RC2">0.7 RC2</a>. 
 					is ready!
