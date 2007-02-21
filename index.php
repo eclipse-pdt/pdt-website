@@ -96,7 +96,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
-				<td><li>26th of February, 2007</td>
+				<td><li>March, 2007</td>
 				<td> - <b>PDT 0.7 release</b></td>
 			</tr>
 			<tr>
@@ -195,8 +195,9 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<ul>
 				<li>
 					<span class="normal"><b>February&nbsp;20<sup>th</sup></b></span> -
-					PDT Powered by icon is now <a href="./images/PoweredBy_PDT.gif">available</a>, 
-					<img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />use it in your site! 
+					PDT Powered by icon is now <a href="./images/PoweredBy_PDT.gif">available</a> - 
+					<img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />. 
+					Use it in your site! 
 				</li>
 				<li>
 					<span class="normal"><b>February&nbsp;2<sup>nd</sup></b></span> -
