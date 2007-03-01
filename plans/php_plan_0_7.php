@@ -58,7 +58,7 @@ href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS
 repositories for PHP</a>.</li>
 
 <li>PDT runtime binaries and SDK distributions are available in the download 
-<a href="http://download.eclipse.org/tools/php/downloads/index.php">page</a>.</li>
+<a href="http://download.eclipse.org/tools/pdt/downloads/index.php">page</a>.</li>
 <li>PDT runtime binaries and SDK features are available on eclipse.org update site
 (install via Eclipse update manager).</li>
 </ul>

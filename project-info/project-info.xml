@@ -86,7 +86,7 @@
      -       url would be something like "/tptp/project-info/description.html".
     -->
   <description 
-     paragraph-url="/php/project-info/project-page-paragraph.html"/>
+     paragraph-url="/pdt/project-info/project-page-paragraph.html"/>
   
   <!--
      - In addition to the description, each Eclipse project is also required to
@@ -98,7 +98,7 @@
      - This file is often stored in the /project-info/ directory, thus the
      - url would be something like "/technology/project-info/executive-summary.html".
     -->
-  <summary paragraph-url="/php/project-info/executive-summary.html"/>
+  <summary paragraph-url="/pdt/project-info/executive-summary.html"/>
 
   <!--
      - It is important to help new users get started with an Eclipse project

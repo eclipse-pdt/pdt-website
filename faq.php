@@ -85,7 +85,7 @@
 				<td colspan="2">
 				<ol>
 					<li><b><a name="general_about">What is PDT?</a></b>
-					<p>The <a target="_top" href="http://www.eclipse.org/php">PDT</a> is 
+					<p>The <a target="_top" href="http://www.eclipse.org/pdt">PDT</a> is 
 					is working towards providing a fully functional PHP Integrated Development Environment 
 					framework for the Eclipse platform. This project will encompass all development components 
 					necessary to develop PHP-based Web Applications and will facilitate extensibility. 

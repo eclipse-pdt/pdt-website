@@ -66,7 +66,7 @@
 			Below are complete instructions for installing the PDT. 
 			If you are already familiar with Eclipse plugins, you might want to follow the 
 			abbreviated requirements and instructions on the 
-			<a href="http://download.eclipse.org/tools/php/downloads/index.php">download page</a>.
+			<a href="http://download.eclipse.org/tools/pdt/downloads/index.php">download page</a>.
 			Otherwise, follow along below for detailed steps for installing the PDT.
 		</p>
 				
@@ -90,7 +90,7 @@
 			</ul>
 		</p>
 		<p>
-			Read more about Build Types <a href="http://www.eclipse.org/php/build_types.php">here</a>
+			Read more about Build Types <a href="http://www.eclipse.org/pdt/build_types.php">here</a>
 		</p>
 		
 		<h2><a name="package_types"></a>Package Types</h2>
@@ -121,7 +121,7 @@
 		<p>
 			The PDT project does not contain server side implementation for PHP debugging and will 
 			welcome any open source or commercial implementation of the debug protocol 
-			(The debug protocol implemented can be found at http://www.eclipse.org/php/docs.php)
+			(The debug protocol implemented can be found at http://www.eclipse.org/pdt/docs.php)
 		</p>
 		<p>
 			
