@@ -16,4 +16,4 @@
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"faq.php", 			"_self", 2);
 
-?>
+?> 
