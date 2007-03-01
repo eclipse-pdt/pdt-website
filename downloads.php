@@ -6,7 +6,7 @@ die;
 	#
 	# index.php
 	#
-	# Author: 		Guy Harpaz
+	# Author: 		Yossi Leon
 	# Date:			2006-05-01
 	#
 	# Description: downloads
