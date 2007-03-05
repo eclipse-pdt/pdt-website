@@ -7,7 +7,7 @@ $Nav	= new Nav();
 $Menu 	= new Menu();		
 include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
-header('location: http://download.eclipse.org/tools/pdt/downloads/index.php');
+header('location: http://download.eclipse.org/tools/pdt/downloads/');
 die;
 	#*****************************************************************************
 	#
