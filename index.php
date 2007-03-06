@@ -88,7 +88,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		
-		<p>Scehdule:</p>
+		<p>Schedule:</p>
 		<ul>
 		<table>
 			<tr>
