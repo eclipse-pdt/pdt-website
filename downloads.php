@@ -1,4 +1,7 @@
 <?php  																														
+header('location: http://download.eclipse.org/tools/pdt/downloads/');
+die;
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
@@ -7,8 +10,6 @@ $Nav	= new Nav();
 $Menu 	= new Menu();		
 include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
-header('location: http://download.eclipse.org/tools/pdt/downloads/');
-die;
 	#*****************************************************************************
 	#
 	# index.php
