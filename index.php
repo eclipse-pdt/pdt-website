@@ -96,10 +96,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
-				<td><li>March, 2007</td>
-				<td> - <b>PDT 0.7 release</b></td>
-			</tr>
-			<tr>
 				<td><li>2nd of February, 2007</td>
 				<td> - 0.7 RC2</td>
 			</tr>
@@ -173,7 +169,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 					Your way of communicating with the community of people developing and using the Eclipse 
 					PDT eclipse based tool. 
 					Ask questions about usage of the PDT, share ideas, issues, and insights
-					(simple <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.php"> 
+					(simple <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.pdt"> 
 					web interface </a> also available)
 				</li>
 
