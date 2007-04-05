@@ -96,6 +96,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
+				<td><li>6th of April, 2007</td>
+				<td> - 0.7 RC3 (and final)</td>
+			</tr>
+			<tr>
 				<td><li>2nd of February, 2007</td>
 				<td> - 0.7 RC2</td>
 			</tr>
