@@ -40,7 +40,7 @@ release of the PDT project, release 0.7.</p>
 </ul>
 
 <p>The plan of the 0.7 version is based on the initial SRS which is 
-available <a href="../document/PDT 0.7 SRS.pdf">here</a>.
+available <a href="../documents/PDT 0.7 SRS.pdf">here</a>.
 On top of that SRS many bugs were submitted together with enhancement requests that 
 were/will be included in the 0.7 release. You can find all PDT open bugs 
 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a>.</p>
