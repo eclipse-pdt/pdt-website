@@ -85,13 +85,16 @@
 				<td colspan="2">
 				<ol>
 					<li><b><a name="general_about">What is PDT?</a></b>
-					<p>The <a target="_top" href="http://www.eclipse.org/pdt">PDT</a> is 
+					<p>The <a target="_top" href="http://www.eclipse.org/pdt">PDT</a>  
 					is working towards providing a fully functional PHP Integrated Development Environment 
 					framework for the Eclipse platform. This project will encompass all development components 
 					necessary to develop PHP-based Web Applications and will facilitate extensibility. 
 					It will leverage the existing 
 					<a target="_top" href="http://www.eclipse.org/webtools">Eclipse WTP Project</a> 
-					in providing developers with PHP capabilities
+					in providing developers with PHP capabilities.
+					<br>
+					The main components in this project are: Editor (syntax highlighting, code assist and code folding), 
+					Inspection (file / project outline and PHP explorer view) and Debug (PHP script and web page methods).
 					<br>
 					</p><hr></li>
 					
