@@ -25,7 +25,7 @@ $html = <<<EOHTML
 </table>
 <p>Last revised: <tt>12/04/2006</tt>
 <p><em>&nbsp;&nbsp;&nbsp; Please send comments about this plan to
-the</em> <a href="news://news.eclipse.org/eclipse.tools.php">eclipse.tools.php</a> <em>newsgroup.</em></p>
+the</em> <a href="news://news.eclipse.org/eclipse.tools.pdt">eclipse.tools.pdt</a> <em>newsgroup.</em></p>
 
 <p>This document lays out the feature and API set for the next 
 release of the PDT project, release 0.7.</p>
@@ -43,7 +43,7 @@ release of the PDT project, release 0.7.</p>
 available <a href="../document/PDT 0.7 SRS.pdf">here</a>.
 On top of that SRS many bugs were submitted together with enhancement requests that 
 were/will be included in the 0.7 release. You can find all PDT open bugs 
-<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=PHP&content=">here</a>.</p>
+<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a>.</p>
 
 <p>The first part of the plan deals with the important matters of release
 deliverables, release milestones, target operating environments, and

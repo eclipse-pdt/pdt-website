@@ -4,7 +4,7 @@
 	#
 	# index.php
 	#
-	# Author: 		Guy Harpaz
+	# Author: 		Yossi Leon
 	# Date:			2006-04-28
 	#
 	# Description: FAQ
@@ -106,7 +106,7 @@
 					<p>Questions about the use of PDT in user projects that are not addressed in this FAQ should 
 					be posted to the <a href="news://news.eclipse.org/eclipse.tools.php">PDT newsgroup</a>.
 					Questions and comments regarding the implementation of PDT itself should be posted 
-					to the <a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PDT mailing list</a>.
+					to the <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">PDT mailing list</a>.
 					<br>
 					</p><hr></li>
 
@@ -119,16 +119,16 @@
 					<a href="http://dev.eclipse.org/bugs/createaccount.cgi">create a new bugzilla 
 					account</a> for yourself by providing an email address and choosing a password. 
 					Before submitting a bug, please be sure to check the list of
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&product=php&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&order=Reuse+same+sort+as+last+time">open PDT bugs</a> and
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=php&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&changedin=7&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">recentely closed PDT bugs</a>.<br>
+					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&product=pdt&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&order=Reuse+same+sort+as+last+time">open PDT bugs</a> and
+					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=pdt&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&changedin=7&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">recentely closed PDT bugs</a>.<br>
 					<br>
 					</p><hr></li>
 
 					<li><b><a name="general_faq">How do I make a suggestion for this FAQ?</a></b>
 					<p>The best ways to contribute to this FAQ is to send it to the 
-					<a href="https://dev.eclipse.org/mailman/listinfo/php-dev">PDT mailing list</a>
+					<a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">PDT mailing list</a>
 					or to post your suggestion to the 
-					<a href="news://news.eclipse.org/eclipse.tools.php">PDT newsgroup</a>
+					<a href="news://news.eclipse.org/eclipse.tools.pdt">PDT newsgroup</a>
 					with the subject prefixed by "[FAQ]". 
 					You may post just a question or both a question and answer.
 					<br>
