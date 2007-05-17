@@ -3,8 +3,23 @@
 
 Committers:
 -----------
- - yleon
- - 
+ - Shachar Ben-Zeev
+ - Philip Berkland
+ - Brian Burns
+ - Roy Ganor
+ - Shalom Gibly
+ - Gadi Goldbarg
+ - Robert Goodman
+ - Guy Gurfinkel
+ - Eden Klein
+ - Seva Lapsha
+ - Yossi Leon
+ - Igor Leznik
+ - Yaron Mazor
+ - Alon Peled
+ - Jackie Sedi
+ - Moshe Shukrun
+ - Michael Spector
  
 Third Party Software:
 --------------------- 
