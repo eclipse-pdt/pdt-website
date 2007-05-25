@@ -31,7 +31,7 @@
 	ob_start();
 
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-	$projectInfo = new ProjectInfo("tools.php");
+	$projectInfo = new ProjectInfo("tools.pdt");
 	
 ?>
 <div id="maincontent">
@@ -107,7 +107,7 @@
 
 					<li><b><a name="general_question">How do I ask questions?</a></b>
 					<p>Questions about the use of PDT in user projects that are not addressed in this FAQ should 
-					be posted to the <a href="news://news.eclipse.org/eclipse.tools.php">PDT newsgroup</a>.
+					be posted to the <a href="news://news.eclipse.org/eclipse.tools.pdt">PDT newsgroup</a>.
 					Questions and comments regarding the implementation of PDT itself should be posted 
 					to the <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">PDT mailing list</a>.
 					<br>
