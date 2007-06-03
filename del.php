@@ -1,23 +1,18 @@
-hello world
-	              <?
-	              include("rss_reader.php"); 
-	              $reader = new lastRSS();
-	              $messages = $reader->Parse("http://rss.cnn.com/rss/cnn_topstories.rss");
-	              $index = 0;
-				
-					var_dump($messages);
 
-                  while ($index < sizeof($messages["items"]) && $index < 4) {
-	                    $message = $messages["items"][$index];
-	                    ?>
-						<li>
-							<span class="normal"><b><?=$message["title"] ?></b></span> -
-							<a href="<?=html_entity_decode($message["link"]) ?>">Report</a>
-							<a href="javascript:toggle('bugs_<?=$index ?>')">Complete description</a>
-							<ul id="bugs_<?=$index ?>" style="display: none">
-								<li><?=html_entity_decode($message["description"])?></li>
-							</ul>
-						</li>
-	                    <? $index += 1;
-	              }
-	              ?>
+<?
+
+require_once 'rss_fetch.inc';
+
+$url = 'http://download.eclipse.org/tools/pdt/downloads/rss/center.xml';
+$rss = fetch_rss($url);
+
+echo "Site: ", $rss->channel['title'], "<br>
+";
+foreach ($rss->items as $item ) {
+	$title = $item[title];
+	$url   = $item[link];
+	echo "<a href=$url>$title</a></li><br>
+";
+}
+
+?>
