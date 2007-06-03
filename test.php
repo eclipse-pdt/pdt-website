@@ -284,6 +284,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	              ?>
 	              </ul>
 	        </div>
+	        
+	        <p> </p>
 
 	</div>
 	<div id="rightcolumn">
