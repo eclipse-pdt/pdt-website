@@ -259,7 +259,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		
 	      <div class="homeitem3col">
 	
-				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./imgaes/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
+				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
 	              <ul>
 	              <?
 	              include("lastRSS.php"); 
