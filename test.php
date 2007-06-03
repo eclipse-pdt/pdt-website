@@ -259,20 +259,19 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		
 	      <div class="homeitem3col">
 	
-				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="imgaes/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
+				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="/imgaes/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
 	              <ul>
 	              <?
-	              define ("RSS_MESSAGES_TO_SHOW", 2); 
 	              include("lastRSS.php"); 
 	              $reader = new lastRSS();
 	              $messages = $reader->Parse('http://download.eclipse.org/tools/pdt/downloads/rss/center.xml');
 	              $index = 0;
-	              while ($index < sizeof($messages["items"]) && $index < RSS_MESSAGES_TO_SHOW) {
+	              while ($index < sizeof($messages["items"]) && $index < 4) {
 	                    $message = $messages["items"][$index];
 	                    ?>
 						<li>
 							<span class="normal"><b><?=$message["title"] ?></b></span> -
-							<a href="<?=html_entity_decode($message["link"]) ?>">Reports</a>
+							<a href="<?=html_entity_decode($message["link"]) ?>">Report</a>
 							<a href="javascript:toggle('bugs_<?=$index ?>')">Complete description</a>
 							<ul id="bugs_<?=$index ?>" style="display: none">
 								<li><?=html_entity_decode($message["description"])?></li>
