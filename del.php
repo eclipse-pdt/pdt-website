@@ -4,6 +4,8 @@ hello world
 	              $reader = new lastRSS();
 	              $messages = $reader->Parse("http://rss.cnn.com/rss/cnn_topstories.rss");
 	              $index = 0;
+				
+					var_dump($messages);
 
                   while ($index < sizeof($messages["items"]) && $index < 4) {
 	                    $message = $messages["items"][$index];
