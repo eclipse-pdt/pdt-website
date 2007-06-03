@@ -248,7 +248,45 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 			</ul>
 		</div>
+
+		<script type="text/javascript">
+				function toggle(id)
+				{
+				        e = document.getElementById(id);
+				        e.style.display = (e.style.display == "" ? "none" : "");
+				}
+		</script>
 		
+	      <div class="homeitem3col">
+	
+				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
+	              <ul>
+	              <?
+				  require_once 'rss_fetch.inc';
+				  $url = 'http://download.eclipse.org/tools/pdt/downloads/rss/center.xml';
+				  $rss = fetch_rss($url);
+	              $index = 0;
+
+                  while ($index < sizeof($rss->items) && $index < 4) {
+                  		
+	                    $message = $rss->items[$index];
+	                    ?>
+						<li>
+							<span class="normal"><b><?=$message["title"] ?></b></span> -
+							<a href="javascript:toggle('bugs_<?=$index ?>')"> Description <img src="./images/plus.gif" alt="expand" /></a>
+							<ul id="bugs_<?=$index ?>" style="display: none">
+								<li><?=html_entity_decode($message["description"])?></li>
+							</ul>
+							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
+						</li>
+	                    <? $index += 1;
+	              }
+	              ?>
+	              </ul>
+	        </div>
+	        
+	        <p> </p>
+
 	</div>
 	<div id="rightcolumn">
 		<!--div class="sideitem">

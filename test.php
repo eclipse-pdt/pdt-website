@@ -273,7 +273,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	                    ?>
 						<li>
 							<span class="normal"><b><?=$message["title"] ?></b></span> -
-							<a href="javascript:toggle('bugs_<?=$index ?>')"> Description</a>
+							<a href="javascript:toggle('bugs_<?=$index ?>')"> Description <img src="./images/plus.gif" alt="expand" /></a>
 							<ul id="bugs_<?=$index ?>" style="display: none">
 								<li><?=html_entity_decode($message["description"])?></li>
 							</ul>
