@@ -1,7 +1,7 @@
 	              <?
 	              include("rss_reader.php"); 
 	              $reader = new lastRSS();
-	              $messages = $reader->Parse('http://download.eclipse.org/tools/pdt/downloads/rss/center.xml');
+	              $messages = $reader->Parse('http://rss.cnn.com/rss/cnn_topstories.rss');
 	              $index = 0;
 
                   while ($index < sizeof($messages["items"]) && $index < 4) {
