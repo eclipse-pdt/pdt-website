@@ -262,12 +262,12 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
 	              <ul>
 	              <?
-	              include("lastRSS.php"); 
+	              include("rss_reader.php"); 
 	              $reader = new lastRSS();
 	              $messages = $reader->Parse('http://download.eclipse.org/tools/pdt/downloads/rss/center.xml');
 	              $index = 0;
-	              echo ("<li>" . sizeof($messages) . "</li>");
-	              while ($index < sizeof($messages["items"]) && $index < 4) {
+
+                  while ($index < sizeof($messages["items"]) && $index < 4) {
 	                    $message = $messages["items"][$index];
 	                    ?>
 						<li>

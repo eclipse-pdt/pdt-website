@@ -212,6 +212,7 @@ class lastRSS {
 		}
 		else // Error in opening return False
 		{
+			echo "<h1> error </h1>";
 			return False;
 		}
 	}
