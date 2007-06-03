@@ -266,7 +266,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	              $reader = new lastRSS();
 	              $messages = $reader->Parse('http://download.eclipse.org/tools/pdt/downloads/rss/center.xml');
 	              $index = 0;
-	              echo ("<li>" . sizeof($messages["items"]) . "</li>");
+	              echo ("<li>" . sizeof($messages) . "</li>");
 	              while ($index < sizeof($messages["items"]) && $index < 4) {
 	                    $message = $messages["items"][$index];
 	                    ?>
