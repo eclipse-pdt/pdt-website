@@ -1,7 +1,8 @@
+hello world
 	              <?
 	              include("rss_reader.php"); 
 	              $reader = new lastRSS();
-	              $messages = $reader->Parse('http://rss.cnn.com/rss/cnn_topstories.rss');
+	              $messages = $reader->Parse("http://rss.cnn.com/rss/cnn_topstories.rss");
 	              $index = 0;
 
                   while ($index < sizeof($messages["items"]) && $index < 4) {
