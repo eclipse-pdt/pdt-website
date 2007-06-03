@@ -273,11 +273,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	                    ?>
 						<li>
 							<span class="normal"><b><?=$message["title"] ?></b></span> -
-							<a href="<?=html_entity_decode($message["link"]) ?>">Report</a>
-							<a href="javascript:toggle('bugs_<?=$index ?>')">Complete description</a>
+							<a href="javascript:toggle('bugs_<?=$index ?>')"> Description</a>
 							<ul id="bugs_<?=$index ?>" style="display: none">
 								<li><?=html_entity_decode($message["description"])?></li>
 							</ul>
+							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
 						</li>
 	                    <? $index += 1;
 	              }
