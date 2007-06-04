@@ -254,6 +254,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				{
 				        e = document.getElementById(id);
 				        e.style.display = (e.style.display == "" ? "none" : "");
+				        alert("img_".concat(id));
 				        document["img_".concat(id)].src= e.style.display == "" ? "./images/minus.gif" : "./images/plus.gif";
 				}
 		</script>
