@@ -254,6 +254,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				{
 				        e = document.getElementById(id);
 				        e.style.display = (e.style.display == "" ? "none" : "");
+				        document["img_" + id].src= e.style.display == "" ? "./images/minus.gif" : "./images/plus.gif";
 				}
 		</script>
 		
@@ -272,7 +273,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	                    $message = $rss->items[$index];
 	                    ?>
 						<li>
-							<a href="javascript:toggle('bugs_<?=$index ?>')"> <img src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
+							<a href="javascript:toggle('bugs_<?=$index ?>')"> <img id="img_bugs_<?=$index ?>"  src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
 							<ul id="bugs_<?=$index ?>" style="display: none">
 								<li><?=html_entity_decode($message["description"])?></li>
 							</ul>
