@@ -91,6 +91,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		
+		<a href="summer_camp.php" >Summer Camp - Help us make PDT better!</a>
+		
 		<p>Schedule:</p>
 		<ul>
 		<table>
