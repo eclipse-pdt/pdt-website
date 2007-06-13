@@ -44,10 +44,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	
 	$Poll = new Poll(2, "Which enhancement would you like to see implemented in PDT Summer Camp?");
 	$Poll->addOption(1, "Smarty templates support");
-	$Poll->addOption(2, "Auto generation of getters and setters");
-	$Poll->addOption(3, "Mylar integration");
-	$Poll->addOption(4, "Smart code assist - recently used elements");
-	$Poll->addOption(5, "Outline view additional filters");
+	$Poll->addOption(2, "Mylar integration");
+	$Poll->addOption(3, "Smart code assist - recently used elements");
+	$Poll->addOption(4, "Outline view additional filters");
+//	$Poll->addOption(5, "Auto generation of getters and setters");
 	# $Poll->noGraph();  # uncomment to disable bar graph
 	$pollHTML = $Poll->getHTML();
 	
