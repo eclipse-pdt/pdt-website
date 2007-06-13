@@ -1,3 +1,5 @@
+
+
 <?php  		
 
 
@@ -40,11 +42,12 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	
 	$App->usePolls();
 	
-	$Poll = new Poll(1, "Which feature requires the most serious future enhancements?");
-	$Poll->addOption(1, "Debugging");
-	$Poll->addOption(2, "Editor");
-	$Poll->addOption(3, "PHP Explorer");
-	$Poll->addOption(4, "Outline Views");
+	$Poll = new Poll(1, "Which enhancement would you like to see implemented in PDT Summer Camp?");
+	$Poll->addOption(1, "Smarty templates support - #182860");
+	$Poll->addOption(2, "Auto genration of getters and setters - #180116");
+	$Poll->addOption(3, "Mylar integration - #178350");
+	$Poll->addOption(4, "Smart code assist - recently used elements");
+	$Poll->addOption(5, "Outline view additional filters - #171513");
 	# $Poll->noGraph();  # uncomment to disable bar graph
 	$pollHTML = $Poll->getHTML();
 	
