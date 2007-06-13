@@ -58,13 +58,13 @@
 		The current enhancement candidates are:
 		<ul>
 			<li> Smarty templates support - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=182860">#182860</a> </li>
-			<li> Auto genration of getters and setters - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180116">#180116</a> </li>
+			<li> Auto generation of getters and setters - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180116">#180116</a> </li>
 			<li> Mylar integration - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=178350">#178350</a> </li>
 			<li> Smarter code assist - Recently used elements would appear after certain keystroke is pressed </li>
 			<li> Outline view additional filters - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=171513">#171513</a> </li>
 		</ul>
 		
-		<p>If you are ineterested taking part in the development of one of these enhancements please contact
+		<p>If you are interested taking part in the development of one of these enhancements please contact
 		the project leader.
 		</p>
 		
