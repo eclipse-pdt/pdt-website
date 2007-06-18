@@ -103,6 +103,14 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
+				<td><li>30th of July, 2007</td>
+				<td> - <b>PDT 1.0 M2</b></td>
+			</tr>
+			<tr>
+				<td><li>11th of June, 2007</td>
+				<td> - <b>PDT 1.0 M1</b></td>
+			</tr>
+			<tr>
 				<td><li>6th of April, 2007</td>
 				<td> - 0.7 RC3 (and final)</td>
 			</tr>
@@ -200,6 +208,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
+				<li>
+					<span class="normal"><b>June&nbsp;11<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070611-M1">1.0 M1</a> 
+					(compatible with Eclipse 3.3 only) is ready!
+				</li>
 				<li>
 					<span class="normal"><b>April&nbsp;6<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070401-RC3">0.7 RC3</a> 
