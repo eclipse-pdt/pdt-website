@@ -95,13 +95,20 @@
 					<br>
 					The main components in this project are: Editor (syntax highlighting, code assist and code folding), 
 					Inspection (file / project outline and PHP explorer view) and Debug (PHP script and web page methods).
-					<br>
+					<br>b
 					</p><hr></li>
 					
 					<li><b><a name="general_license">How is PDT licensed?</a></b>
 					<p>PDT is licensed in accordance with the 
 					<a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License</a>. 
 					Third party components built using PDT are made available under their own licenses
+					<br>
+					</p><hr></li>
+					
+					<li><b><a name="general_debugger">Does PDT include a debugger? Where can i find one?</a></b>
+					<p>PDT doesn't come with any bundled debugger but you can download 
+					<a href="http://www.zend.com/pdt/">Zend Debugger from Zend.com</a>
+					or <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=169408">XDebug from bugzilla</a>. 
 					<br>
 					</p><hr></li>
 
