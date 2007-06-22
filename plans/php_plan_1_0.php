@@ -19,7 +19,7 @@ $html = <<<EOHTML
 
 <table>
 	<tr>
-		<td valign="top"><b><font face="Arial,Helvetica" style="font-size: 20pt;">PDT Project Plan for Release 0.7</font></td>
+		<td valign="top"><b><font face="Arial,Helvetica" style="font-size: 20pt;">PDT Project Plan for Release 1.0</font></td>
 		<td>&nbsp;</td>
 	</tr>
 </table>
