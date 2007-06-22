@@ -12,7 +12,7 @@
 	$Nav->addNavSeparator("Project Home", 	"/pdt/index.php");
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
-	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_0_7.php", 		"_self", 2);
+	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"faq.php", 			"_self", 2);
 
