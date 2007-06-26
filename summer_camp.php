@@ -65,7 +65,7 @@
 		</ul>
 		
 		<p>If you are interested taking part in the development of one of these enhancements please contact
-		the project leader.
+		the project leader - yossi at zend.com.
 		</p>
 		
 
