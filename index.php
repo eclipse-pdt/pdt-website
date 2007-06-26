@@ -309,11 +309,13 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 	</div>
 	<div id="rightcolumn">
-		<!--div class="sideitem">
-			<h6>Incubation</h6>
-			<div align="center"><a href="/projects/gazoo.php"><img
-				align="center" src="images/gazoo-incubation.jpg" border="0" /></a></div>
-		</div-->
+		<div class="sideitem">
+		   <h6>Incubation</h6>
+		   <div align="center"><a href="/projects/what-is-incubation.php"><img 
+		        align="center" src="./images/egg-incubation.png" 
+		        border="0" alt="Incubation" /></a>
+		   </div>
+		 </div>
 		<div class="sideitem">
 			<h6>Poll</h6>
 			<?php echo $pollHTML; ?>
