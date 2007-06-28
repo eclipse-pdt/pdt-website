@@ -59,10 +59,15 @@
 		<ul>
 			<li> Smarty templates support - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=182860">#182860</a> </li>
 		<!-- 	<li> Auto generation of getters and setters - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180116">#180116</a> </li> -->
-			<li> Mylar integration - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=178350">#178350</a> </li>
-			<li> Smarter code assist - Recently used elements would appear after certain keystroke is pressed </li>
+			<li> Mylyn integration - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=178350">#178350</a> </li>
+			<li> Smarter code assist - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148938">#148938</a>, 
+			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=171009">#171009</a></li>
 			<li> Outline view additional filters - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=171513">#171513</a> </li>
 		</ul>
+		
+		<p>
+		Further information can be found in the Wiki page: <a href="http://wiki.eclipse.org/PDT_Summer_Camp">http://wiki.eclipse.org/PDT_Summer_Camp</a>
+		</p>
 		
 		<p>If you are interested taking part in the development of one of these enhancements please contact
 		the project leader - yossi at zend.com.
