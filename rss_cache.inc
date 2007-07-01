@@ -181,8 +181,10 @@ class RSSCache {
             $errormsg .= " ($php_errormsg)";
         }
         $this->ERROR = $errormsg;
+        mail ("roy@zend.com", "error $php_errormsg", $errormsg);
         if ( MAGPIE_DEBUG ) {
             trigger_error( $errormsg, $lvl);
+
         }
         else {
             error_log( $errormsg, 0);
