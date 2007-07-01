@@ -40,6 +40,7 @@ class RSSCache {
                 );
             }
         }
+		mail ("roy@zend.com", "success creating $this->BASE_CACHE", $this->BASE_CACHE);        
     }
     
 /*=======================================================================*\
