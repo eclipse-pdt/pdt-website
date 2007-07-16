@@ -209,6 +209,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
+					<span class="normal"><b>July&nbsp;16<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">RSS Latest Releases</a> - alerts on new stable builds. 
+				</li>
+				<li>
 					<span class="normal"><b>June&nbsp;11<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070611-M1">1.0 M1</a> 
 					(compatible with Eclipse 3.3 only) is ready!
