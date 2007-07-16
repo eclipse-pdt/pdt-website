@@ -210,7 +210,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<ul>
 				<li>
 					<span class="normal"><b>July&nbsp;16<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">RSS Latest Releases</a> - alerts on new stable builds. 
+					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">RSS Latest Releases</a> alerts on new stable builds! 
 				</li>
 				<li>
 					<span class="normal"><b>June&nbsp;11<sup>th</sup></b></span> -
