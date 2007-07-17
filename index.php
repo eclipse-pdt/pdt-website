@@ -177,7 +177,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				</li>
 
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
-				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PDT
+				  	Bug reports / searches, feature requests, suggestions (e.g., enhancements, new uses, etc.) for the PDT <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDT">here</a> 
 				</li>
 
 				<li><a href="docs.php">Documents</a>. 
