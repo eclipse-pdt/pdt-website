@@ -25,15 +25,12 @@
         <table>
             <tr>
                 <td width="60%">
-                    <h1>eclipse wtp contributors index</h1>
+                    <h1>eclipse pdt contributors index</h1>
                     <div class="wtpsubtitle">
-                        <xsl:text>Eclipse Web Tools Platform Project</xsl:text>
+                        <xsl:text>Eclipse PDT Project</xsl:text>
                         <br />
                         <xsl:text>Contributors Index</xsl:text>
                     </div>
-                </td>
-                <td>
-                    <img src="/webtools/images/wtplogosmall.jpg" align="middle" height="129" hspace="50" width="207" />
                 </td>
             </tr>
         </table>

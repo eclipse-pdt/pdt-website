@@ -11,7 +11,7 @@
 -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:person="http://eclipse.org/pdt/person" exclude-result-prefixes="person">
+    xmlns:person="http://eclipse.org/webtools/person" exclude-result-prefixes="person">
 
     <xsl:import href="commonnoentities.xsl" />
 
