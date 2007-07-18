@@ -43,7 +43,7 @@
     </xsl:template>
 
     <xsl:template name="title">
-        <xsl:text>Eclipse Web Tools Platform Project Team</xsl:text>
+        <xsl:text>Eclipse PDT Project Team</xsl:text>
         <br />
         <xsl:call-template name="role-description">
             <xsl:with-param name="role" select="/person:person/person:contribution/@role" />
@@ -71,9 +71,6 @@
                     <div class="wtpsubtitle">
                         <xsl:call-template name="title" />
                     </div>
-                </td>
-                <td>
-                    <img src="/webtools/images/wtplogosmall.jpg" align="middle" height="129" hspace="50" width="207" />
                 </td>
             </tr>
         </table>
@@ -120,7 +117,7 @@
                 <xsl:text>";</xsl:text>
                 <xsl:text>
                     <![CDATA[
-var bugzilla = "https://bugs.eclipse.org/bugs/buglist.cgi?classification=WebTools";
+var bugzilla = "https://bugs.eclipse.org/bugs/buglist.cgi?product=PDT";
 
 function bugsIReported() { 
 	var query_string = "&emailreporter1=1&emailtype1=substring&email1=";

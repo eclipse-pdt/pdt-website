@@ -68,7 +68,7 @@
 		<div class="homeitem3col">
 			<h3>People</h3>
 			<ul>
-				<li>
+				<li><a href="http://www.eclipse.org/pdt/people/contributors.php">PDT contributors</a>. 
 				</li>
 			</ul>
 		</div>
