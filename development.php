@@ -22,7 +22,8 @@
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	$Nav->addCustomNav("Find Bugs", "http://download.eclipse.org/tools/pdt/downloads/drops/results/FINDBUGS-php.html", "_self", 3);
 	$Nav->addCustomNav("Best Practices", "http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html", "_self", 3);
-	$Nav->addCustomNav("Unit Tests", "http://download.eclipse.org/tools/pdt/downloads/drops/N20070717/results/TEST-php.html", "_self", 3);
+	$Nav->addCustomNav("Unit Tests", "http://download.eclipse.org/tools/pdt/downloads/drops/N<?=date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y")))?>/results/TEST-php.html", "_self", 3);
+	$Nav->addCustomNav("Contributors", "http://www.eclipse.org/pdt/people/contributors.php", "_self", 3);	
 
 	# End: page-specific settings
 	#
