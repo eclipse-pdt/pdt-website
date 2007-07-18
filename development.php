@@ -69,7 +69,6 @@
 			<h3>People</h3>
 			<ul>
 				<li>
-					TBD
 				</li>
 			</ul>
 		</div>
