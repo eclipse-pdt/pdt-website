@@ -59,7 +59,7 @@
 				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html">Static Analysis Report (J2SE best practices)</a>. 
 				 	read more on <a href="http://www.eclipse.org/tptp/platform/index.php">http://www.eclipse.org/tptp/platform/index.php</a>
 				</li>
-				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/N<?=mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))?>/results/TEST-php.html">Unit Test Results (<?=mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))?>)</a>. 
+				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/N<?=date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))?>/results/TEST-php.html">Unit Test Results (<?=date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))?>)</a>. 
 				 	read more on <a href="http://www.junit.org">http://www.junit.org</a>
 				</li>
 			</ul>
