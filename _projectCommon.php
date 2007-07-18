@@ -14,7 +14,7 @@
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
-	$Nav->addCustomNav("FAQ", 				"faq.php", 			"_self", 2);
-	$Nav->addCustomNav("Development", 		"development.php", 			"_self", 2);	
+	$Nav->addCustomNav("FAQ", 				"/pdt/faq.php", 			"_self", 2);
+	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
 ?>  
   
