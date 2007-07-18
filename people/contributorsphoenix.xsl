@@ -30,9 +30,6 @@
                         <xsl:text>Contributors Activity</xsl:text>
                     </div>
                 </td>
-                <td>
-                    <img src="/webtools/images/wtplogosmall.jpg" align="middle" height="129" hspace="50" width="207" />
-                </td>
             </tr>
         </table>
         <ul class="indent">

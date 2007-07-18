@@ -14,7 +14,7 @@
 
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:person="http://eclipse.org/webtools/person"
+	xmlns:person="http://eclipse.org/pdt/person"
 	exclude-result-prefixes="person">
 
 	<xsl:import href="common.xsl" />
@@ -31,11 +31,11 @@
 		</xsl:processing-instruction>
 		<html>
 			<head>
-				<title>Eclipse Web Tool Platform Project - Contributors - Index</title>
+				<title>Eclipse PDT Project - Contributors - Index</title>
 				<meta name="root" content="../../" />
 			</head>
 			<body>
-				<h1>eclipse wtp contributors index</h1>
+				<h1>eclipse pdt contributors index</h1>
 				<h3><a href="contributors.html">Contributor Activity</a></h3>
 				<br />
 				<h2>Alphabetical Index</h2>

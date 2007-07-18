@@ -10,7 +10,7 @@ require_once ($root . '/pdt/_projectCommon.php');
 $xml = DOMDocument::load('people.xml');
 
 //Set the page title
-$pageTitle = "Eclipse Web Tools Platform Project - Contributors Index";
+$pageTitle = "Eclipse PDT Project - Contributors Index";
 
 // Load the XSL source
 $xsl = DOMDocument::load($root . '/pdt/people/indexphoenix.xsl');
