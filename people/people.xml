@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="people.xsl"?>
+<person:people xmlns:person="http://eclipse.org/webtools/person"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
+
+	<!--  activity-level="active" | "extremely-active" | "inactive" -->
+
+	<person:contributor href="roy.xml" activity-level="active" />
+
+</person:people>

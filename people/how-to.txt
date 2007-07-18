@@ -1,0 +1,14 @@
+How to Add a Person to the WTP People Pages
+
+Arthur Ryman
+2007-02-26
+
+1. Check out the webtools Web site from CVS.
+2. Open the people directory.
+3. Find someone who is similar to the person you are adding and make a copy of their XML file, e.g. copy wagner.xml, and rename it to the person you are adding, e.g. fraser.xml.
+4. Open the new file in the XML editor and modify it to describe the new person.
+5. Create a large and a small image for the person and store these in the people/photos/large and people/photos/small directories. The large photo should be around 200x240 and the small photo should be half that, i.e. around 100x120. Reference these photos from the XML file.
+6. Add an entry for the person in people.xml.
+7. Run the Ant build script in the people directory to generate the HTML files. This step could be eliminated if we update the pages to use PHP and apply the XSLT at runtime.
+8. Test the pages locally.
+9. If all is well, commit the changes.
