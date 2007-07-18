@@ -5,15 +5,15 @@
 	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
 	
 	<person:name>
-		<person:given-name>Shalom</person:given-name>
-		<person:family-name>Gibly</person:family-name>
+		<person:given-name>Michael</person:given-name>
+		<person:family-name>Spektor</person:family-name>
 	</person:name>
 	
 	<person:affiliation href="http://www.zend.com">
 		Zend Technologies
 	</person:affiliation>
 	
-	<person:e-mail>shalom@zend.com</person:e-mail>
+	<person:e-mail>michael@zend.com</person:e-mail>
 	
 	<person:biography>
 		<p>
