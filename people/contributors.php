@@ -9,10 +9,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 $xml = DOMDocument::load('people.xml');
 
 //Set the page title
-$pageTitle = "Eclipse Web Tools Platform Project - Contributors Activity";
+$pageTitle = "Eclipse PDT Project - Contributors Activity";
 
 // Load the XSL source
-$xsl = DOMDocument::load($root . '/webtools/people/contributorsphoenix.xsl');
+$xsl = DOMDocument::load($root . '/pdt/people/contributorsphoenix.xsl');
 
 // Configure the transformer
 $proc = new XSLTProcessor;
