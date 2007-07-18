@@ -9,7 +9,7 @@
 		<person:family-name>Ganor-Shwaartz</person:family-name>
 	</person:name>
 
-	<person:affiliation href="http://www.ibm.com">
+	<person:affiliation href="http://www.zend.com">
 		Zend Technologies
 	</person:affiliation>
 
@@ -26,7 +26,7 @@
 		</p> 
 	</person:biography>
 
-	<person:contribution role="pmc-member">
+	<person:contribution role="committer">
 		<p>
 		Roy contributes to the PDT project as Eclipse Foundation committer
 		</p>

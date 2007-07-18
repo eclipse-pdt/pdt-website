@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="person.xsl"?>
+<person:person xmlns:person="http://eclipse.org/webtools/person"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
+	
+	<person:name>
+		<person:given-name>Evgeni</person:given-name>
+		<person:family-name>Teplitski</person:family-name>
+	</person:name>
+	
+	<person:affiliation href="http://www.zend.com">
+		Zend Technologies
+	</person:affiliation>
+	
+	<person:e-mail>evgeni@zend.com</person:e-mail>
+	
+	<person:biography>
+		<p>
+		</p>
+		<p>
+		</p>
+	</person:biography>
+
+	<person:contribution role="contributor">
+		<p>
+		</p>
+	</person:contribution>
+
+	<person:large-photo width="200" height="273" href="photos/large/kihup-boo.png" />
+	<person:small-photo width="100" height="137" href="photos/small/kihup-boo.png" />
+	
+</person:person>

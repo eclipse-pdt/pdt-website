@@ -7,5 +7,19 @@
 	<!--  activity-level="active" | "extremely-active" | "inactive" -->
 
 	<person:contributor href="roy.xml" activity-level="active" />
-
+	<person:contributor href="shalom.xml" activity-level="active" />
+	<person:contributor href="moshe.xml" activity-level="active" />
+	<person:contributor href="guy.xml" activity-level="active" />
+	<person:contributor href="alon.xml" activity-level="active" />
+	<person:contributor href="yaron.xml" activity-level="active" />
+	<person:contributor href="seva.xml" activity-level="active" />
+	<person:contributor href="eden.xml" activity-level="active" />
+	<person:contributor href="shachar.xml" activity-level="active" />
+	<person:contributor href="michael.xml" activity-level="active" />	
+	<person:contributor href="assaf.xml" activity-level="active" />
+	<person:contributor href="yossi.xml" activity-level="active" />	
+	<person:contributor href="yossi-l.xml" activity-level="active" />	
+	<person:contributor href="gadi.xml" activity-level="active" />	
+	<person:contributor href="evgeny.xml" activity-level="active" />	
+	<person:contributor href="jeckie.xml" activity-level="inactive" />	
 </person:people>
