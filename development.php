@@ -20,7 +20,6 @@
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	$Nav->addNavSeparator("Development", "development.php");
 	$Nav->addCustomNav("Find Bugs", "http://download.eclipse.org/tools/pdt/downloads/drops/results/FINDBUGS-php.html", "_self", 1);
 	$Nav->addCustomNav("Best Practices", "http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html", "_self", 1);
 	$Nav->addCustomNav("Unit Tests", "http://download.eclipse.org/tools/pdt/downloads/drops/N20070717/results/TEST-php.html", "_self", 1);
@@ -54,10 +53,15 @@
 		<div class="homeitem3col">
 			<h3>Documents</h3>
 			<ul>
-				<li><a href="documents/Eclipse Summit PDT.ppt">PDT Presentation in Eclipse Summit 2006</a>. 
-				 	Presentation from the Eclipse Summit 2006 presented by Yossi Leon
+				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/results/FINDBUGS-php.html">FindBugs Report</a>. 
+				 	read more on <a href="http://findbugs.sourceforge.net/">http://findbugs.sourceforge.net</a>
 				</li>
-
+				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html">Static Analysis Report (J2SE best practices)</a>. 
+				 	read more on <a href="http://www.eclipse.org/tptp/platform/index.php">http://www.eclipse.org/tptp/platform/index.php</a>
+				</li>
+				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/N<?=date("Ymd")?>/results/TEST-php.html">Unit Test Results</a>. 
+				 	read more on <a href="http://www.junit.org">http://www.junit.org</a>
+				</li>
 			</ul>
 		</div>
 	</div>
