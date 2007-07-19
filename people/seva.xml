@@ -3,31 +3,50 @@
 <person:person xmlns:person="http://eclipse.org/webtools/person"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
-	
+
 	<person:name>
-		<person:given-name>Seva</person:given-name>
+		<person:given-name>Seva (Wsevolod)</person:given-name>
 		<person:family-name>Lapsha</person:family-name>
 	</person:name>
-	
-	<person:affiliation href="http://www.zend.com">
+
+	<person:affiliation href="http://www.zend.com/">
 		Zend Technologies
 	</person:affiliation>
-	
-	<person:e-mail>seva@zend.com</person:e-mail>
-	
+
+	<person:e-mail>seva-eclipse@zend.com</person:e-mail>
+
 	<person:biography>
 		<p>
+			Seva is a software engineer at
+			<a href="http://www.zend.com/" target="_top">
+				Zend Technologies
+			</a>
+			since 2001.
 		</p>
 		<p>
+			First 5 years Seva worked as a web developer, gaining
+			experience with various web technologies and techniques,
+			e.g. PHP 4/5, LAMP integration, XHTML, CSS, JavaScript, SOA,
+			AJAX etc.
+		</p>
+		<p>
+			In 2006 Seva joined Development Tools group to contribute
+			his knowledge and experience in PHP and Web in developing
+			new generation of IDE for PHP oriented Web development.
 		</p>
 	</person:biography>
 
 	<person:contribution role="committer">
 		<p>
+			Seva is an Eclipse Foundation committer, involved mostly in
+			the PDT project.
 		</p>
 	</person:contribution>
 
-	<person:large-photo width="200" height="273" href="photos/large/kihup-boo.png" />
-	<person:small-photo width="100" height="137" href="photos/small/kihup-boo.png" />
-	
+	<person:home-page href="http://www.eclipse.org/pdt" />
+
+	<!-- person:large-photo width="400" height="300"
+		href="photos/large/seva-large.jpg" />
+		<person:small-photo width="177" height="193"
+		href="photos/small/seva-small.jpg" / -->
 </person:person>
