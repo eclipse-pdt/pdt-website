@@ -39,7 +39,7 @@
         </ul>
         <h2 class="bar">Introduction</h2>
         <p>
-            The following people are leaders, committers, and contributors to the Eclipse Web Tools Platform project.
+            The following people are leaders, committers, and contributors to the Eclipse PDT project.
             The list is sorted into four groups: extremely active, very active, active, and inactive. The groupings are
             strictly merit-based: the more you contribute, the more recognition you earn. Within each group, the people
             are listed alphabetically.
