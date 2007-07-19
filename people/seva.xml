@@ -39,9 +39,11 @@
 	<person:contribution role="committer">
 		<p>
 			Main contributions to the PDT project are:
-			<li>Major Outline Views enhancements,</li>
-			<li>Minor PHP model enhancements,</li>
-			<li>Bug fixes</li>
+			<ul>
+				<li>Major Outline Views enhancements,</li>
+				<li>Minor PHP model enhancements,</li>
+				<li>Bug fixes</li>
+			</ul>
 		</p>
 	</person:contribution>
 
