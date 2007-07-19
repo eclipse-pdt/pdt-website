@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-	This XML Schema defines the content for WTP People pages.
+	This XML Schema defines the content for PDT People pages.
 	
 	Change Log:
 	
@@ -22,7 +22,7 @@
 		<annotation>
 			<documentation>
 				person is the root element for documents that describe
-				individual people for contribute to WTP. The people
+				individual people for contribute to PDT. The people
 				folder should contain one document for each contributor,
 				e.g. if Alan Turing was a contributor, then there should
 				be a turing.xml document to describe him and his
@@ -112,7 +112,7 @@
 		<annotation>
 			<documentation>
 				RoleType is an enumeration used to describe the types of
-				role a person can play in WTP.
+				role a person can play in PDT.
 			</documentation>
 		</annotation>
 		<restriction base="string">
@@ -170,7 +170,7 @@
 								<documentation>
 									activity-level is an indicator of
 									the effort this individual is making
-									on WTP as determined by the PMC and
+									on PDT as determined by the PMC and
 									component leads.
 								</documentation>
 							</annotation>
