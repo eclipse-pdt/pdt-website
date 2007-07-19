@@ -6,7 +6,7 @@
 	
 	<person:name>
 		<person:given-name>Michael</person:given-name>
-		<person:family-name>Spektor</person:family-name>
+		<person:family-name>Spector</person:family-name>
 	</person:name>
 	
 	<person:affiliation href="http://www.zend.com">
