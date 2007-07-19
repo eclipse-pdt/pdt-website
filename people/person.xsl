@@ -60,7 +60,7 @@
 
 	<xsl:template name="title">
 		<xsl:text>
-			Eclipse Web Tool Platform Project Team -&#160;
+			Eclipse PDT Project Team -&#160;
 		</xsl:text>
 		<xsl:call-template name="role-description">
 			<xsl:with-param name="role"
@@ -80,7 +80,7 @@
 					<xsl:with-param name="name"
 						select="/person:person/person:name" />
 				</xsl:call-template>
-				<xsl:text>&#160;@ eclipse wtp</xsl:text>
+				<xsl:text>&#160;@ eclipse pdt</xsl:text>
 			</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
@@ -128,7 +128,7 @@
 				<xsl:text>";</xsl:text>
 				<xsl:text>
 					<![CDATA[
-var bugzilla = "https://bugs.eclipse.org/bugs/buglist.cgi?classification=WebTools";
+var bugzilla = "https://bugs.eclipse.org/bugs/buglist.cgi?product=PDT";
 
 function bugsIReported() { 
 	var query_string = "&emailreporter1=1&emailtype1=substring&email1=";
