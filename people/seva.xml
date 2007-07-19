@@ -38,12 +38,14 @@
 
 	<person:contribution role="committer">
 		<p>
-			Seva is an Eclipse Foundation committer, involved mostly in
-			the PDT project.
+			Main contributions to the PDT project are:
+			<li>Major Outline Views enhancements,</li>
+			<li>Minor PHP model enhancements,</li>
+			<li>Bug fixes</li>
 		</p>
 	</person:contribution>
 
-	<person:home-page href="http://www.eclipse.org/pdt" />
+	<person:home-page href="http://www.zend.com/" />
 
 	<!-- person:large-photo width="400" height="300"
 		href="photos/large/seva-large.jpg" />
