@@ -62,7 +62,7 @@
  * @author     Heino H. Gehlsen <heino@gehlsen.dk>
  * @copyright  2002-2005 Heino H. Gehlsen <heino@gehlsen.dk>. All Rights Reserved.
  * @license    http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231 W3C® SOFTWARE NOTICE AND LICENSE
- * @version    CVS: $Id: Header.php,v 1.1 2007/07/21 16:38:36 rganor Exp $
+ * @version    CVS: $Id: Header.php,v 1.1 2007/07/21 20:00:11 rganor Exp $
  * @link       http://pear.php.net/package/Net_NNTP
  * @see        
  * @since      File available (in experimental alpha releases) since release 0.10.0
