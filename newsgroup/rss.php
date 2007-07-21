@@ -141,9 +141,12 @@ $cacheTimeout = 1800;
 /**************************************************/ 
 /*                    Functions                   */                   
 /**************************************************/ 
+echo "script 20:43\n";
 
 include("feedcreator.class.php"); 
 include("Net/NNTP/Client.php"); 
+
+echo "script 20:44\n";
 
 define("googleGroupLink","http://groups.google.com/groups?group="); 
 define("googleArticleLinkThreaded","http://groups.google.com/groups?threadm="); 
@@ -210,6 +213,7 @@ function groupLink($group) {
 /**************************************************/ 
 /*                    real code                   */                   
 /**************************************************/ 
+echo "script 20:44\n"; 
 
 @set_time_limit(20); 
 
@@ -236,6 +240,8 @@ if (PEAR::isError($result)) {
     die($result->getMessage()); 
 } 
 
+echo "script 20:45\n";
+
 // get newsgroup description 
 $result = $conn->cmdListNewsgroups($group); 
 if (PEAR::isError($result)) { 
@@ -254,6 +260,7 @@ if (PEAR::isError($articles)) {
     die($articles->getMessage()); 
 }
 
+echo "script 20:46\n";
 
 // build the rss 
 $rss->title = $group; 
@@ -294,5 +301,4 @@ foreach($articles as $key => $article) {
 $conn->quit(); 
 $rss->saveFeed($version, $filename);
 
-echo "script ended\n"; 
 ?> 
