@@ -226,7 +226,12 @@ if ($version!="MBOX") {
 $rss = new UniversalFeedCreator(); 
 $rss->useCached($filename, $cacheTimeout); 
 
+echo "hello 23:09<br>";
+
 $conn = new Net_NNTP_Client();
+
+echo "hello 23:09<br>";
+
 $conn->connect($server);
 $result = $conn->authenticate($serverLogin,$serverPassword); 
 if (PEAR::isError($result)) {
