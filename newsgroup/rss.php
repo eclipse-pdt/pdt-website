@@ -91,12 +91,22 @@ extract($usedVars);
 /**************************************************/ 
 /*                   Configuration                */
 /**************************************************/
+/** 
+ * Project Specific variables
+ */
+$fetchArticles = 200;
+$server = "news.eclipse.org"; 
+$serverLogin = "exquisitus"; 
+$serverPassword = "flinder1f7"; 
+$group = "eclipse.tools.pdt";
+$articles = 15;
+$version = "RSS0.91";
+
 /**
  * Determines if the full text of articles is fetched and included in the feed.
  * Also determines max article size fetched (larger articles appear as headlines
  * with a notice that they've been too large).
  */
-$fetchArticles = 200;
 if ($fetchArticles)
 	$maxArticleSize = 5000;
 
@@ -135,29 +145,12 @@ include("Net/NNTP/Client.php");
 define("newsreaderGroupLink","news:"); 
 define("newsreaderArticleLink","news:"); 
 
-/** 
- * Decodes a quoted printable string from ISO-8859-1 or ISO-8859-15 
- * to ASCII. 
- * 
- * @param string    string    A quoted printable string 
- * @return string    an ASCII string 
- */ 
-function qp_decode($string) { 
-    if (preg_match("~(.*)=\\?ISO-?8859-?15?\\?Q\\?([^?]*)\\?=(.*)~i",$string,$matches)) { 
-        $temp = preg_replace("/=([0-9A-F]{2})/e", "chr(hexdec('\\1'))", $matches[2]); 
-        $temp = strtr($temp,"_"," "); 
-        return $temp.$matches[3]; 
-    } else { 
-        return $string; 
-    } 
-} 
-
 /**************************************************/ 
 /*                    real code                   */                   
 /**************************************************/ 
 @set_time_limit(20); 
 
-$version = strtoupper($_GET["version"]); 
+$version = strtoupper($version); 
 if ($version=="") { 
     $version = "RSS0.91"; 
 } 
@@ -171,12 +164,7 @@ if ($version!="MBOX") {
 $rss = new UniversalFeedCreator(); 
 $rss->useCached($filename, $cacheTimeout); 
 
-echo "hello 23:09<br>";
-
 $conn = new Net_NNTP_Client();
-
-echo "hello 23:09<br>";
-
 $conn->connect($server);
 $result = $conn->authenticate($serverLogin,$serverPassword); 
 if (PEAR::isError($result)) {
@@ -210,11 +198,11 @@ if (PEAR::isError($articles)) {
 $rss->title = $group; 
 $rss->description = $groupDescription; 
 $rss->link = "http://www.eclipse.org/newsportal/thread.php?group=$group"; 
-$rss->feedURL = "http://".$_SERVER["SERVER_NAME"].htmlspecialchars($_SERVER["REQUEST_URI"]); 
+$rss->feedURL = "http://www.eclipse.org/newsportal/thread.php?group=$group"; 
 
 foreach($articles as $key => $article) {
-    $subject = qp_decode($article['Subject']); 
-    $from = qp_decode($article['From']); 
+    $subject = $article['Subject']; 
+    $from = $article['From']; 
     
     $subject = htmlspecialchars($subject); 
     $from = htmlspecialchars($from); 
