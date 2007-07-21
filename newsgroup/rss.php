@@ -1,5 +1,4 @@
 <? 
-echo "hello world";
 
 /*************************************************************************** 
 
@@ -126,7 +125,6 @@ if (!$server) {
     $serverPassword = "flinder1f7"; 
 } 
 
-echo "hello world";
 
 // default group 
 if (!$group) 
@@ -143,9 +141,12 @@ $cacheTimeout = 1800;
 /**************************************************/ 
 /*                    Functions                   */                   
 /**************************************************/ 
+echo "hello world";
 
 include("feedcreator.class.php"); 
 include("Net/NNTP/Client.php"); 
+
+echo "hello world";
 
 define("googleGroupLink","http://groups.google.com/groups?group="); 
 define("googleArticleLinkThreaded","http://groups.google.com/groups?threadm="); 
