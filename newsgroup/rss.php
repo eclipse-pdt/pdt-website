@@ -1,4 +1,6 @@
 <? 
+echo "hello world";
+
 /*************************************************************************** 
 
 nntp2rss v1.5
@@ -123,6 +125,8 @@ if (!$server) {
     $serverLogin = "exquisitus"; 
     $serverPassword = "flinder1f7"; 
 } 
+
+echo "hello world";
 
 // default group 
 if (!$group) 
