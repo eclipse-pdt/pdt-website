@@ -141,7 +141,7 @@ $cacheTimeout = 1800;
 /**************************************************/
 /*                    Functions                   */
 /**************************************************/
-echo "hello world";
+echo "hello world  20:38";
 
 include("feedcreator.class.php"); 
 include("Net/NNTP/Client.php"); 
