@@ -236,13 +236,17 @@ $rss = new UniversalFeedCreator();
 $rss->useCached($filename, $cacheTimeout); 
 
 echo "script 20:444\n";
-$conn = new Net_NNTP_Client(); 
+echo "script 20:4440\n";
+$conn = new Net_NNTP_Client();
+echo "script 20:4441\n"; 
 $conn->connect($server);
+echo "script 20:4442\n";
 $result = $conn->authenticate($serverLogin,$serverPassword); 
-if (PEAR::isError($result)) { 
+echo "script 20:4443\n";
+if (PEAR::isError($result)) {
+	echo "script 20:4444\n"; 
     die($result->getMessage()); 
 } 
-
 echo "script 20:445\n";
 
 $result = $conn->selectGroup($group); 
