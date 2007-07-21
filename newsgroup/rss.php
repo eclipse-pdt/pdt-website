@@ -215,7 +215,7 @@ function groupLink($group) {
 /**************************************************/ 
 echo "script 20:441\n"; 
 
-@set_time_limit(20); 
+// @set_time_limit(20); 
 
 $version = strtoupper($_GET["version"]); 
 if ($version=="") { 
