@@ -207,3 +207,91 @@ function groupLink($group) {
     return $groupLink.urlencode($group); 
 } 
 
+/**************************************************/ 
+/*                    real code                   */                   
+/**************************************************/ 
+
+@set_time_limit(20); 
+
+$version = strtoupper($_GET["version"]); 
+if ($version=="") { 
+    $version = "RSS0.91"; 
+} 
+if ($version!="MBOX") { 
+    $filename = "cache/".str_replace(".","_",$group.".".$version).".xml"; 
+} else { 
+    $filename = "cache/".str_replace(".","_",$group.".".$version).".mbox"; 
+} 
+$rss = new UniversalFeedCreator(); 
+$rss->useCached($filename, $cacheTimeout); 
+
+$conn = new Net_NNTP_Client(); 
+$conn->connect($server);
+$result = $conn->authenticate($serverLogin,$serverPassword); 
+if (PEAR::isError($result)) { 
+    die($result->getMessage()); 
+} 
+$result = $conn->selectGroup($group); 
+if (PEAR::isError($result)) { 
+    die($result->getMessage()); 
+} 
+
+// get newsgroup description 
+$result = $conn->cmdListNewsgroups($group); 
+if (PEAR::isError($result)) { 
+} else { 
+    $groupDescription = $result[$group]; 
+}
+
+// determine which articles to load 
+$last = $conn->last(); 
+$first = $last-$articles+1; 
+$first = max($first,$conn->first()); 
+
+// load the latest articles
+$articles = $conn->getOverview("$first-$last"); 
+if (PEAR::isError($articles)) { 
+    die($articles->getMessage()); 
+}
+
+
+// build the rss 
+$rss->title = $group; 
+$rss->description = $groupDescription; 
+$rss->link = groupLink($group); 
+$rss->feedURL = "http://".$_SERVER["SERVER_NAME"].htmlspecialchars($_SERVER["REQUEST_URI"]); 
+
+foreach($articles as $key => $article) {
+    $subject = qp_decode($article[Subject]); 
+    $from = qp_decode($article[From]); 
+    
+    $subject = htmlspecialchars($subject); 
+    $from = htmlspecialchars($from); 
+    
+    $item = new FeedItem(); 
+    $item->title = $subject; 
+    $item->link = "http://www.eclipse.org/newsportal/article.php?id={$article[Number]}&group=$group#{$article[Number]}"; 
+     
+    if ($fetchArticles) {
+    	$body = $conn->getBody($article[Number], true);
+		if (PEAR::isError($body)) {
+			$item->description = "An error occured while retrieving this message from the server.";
+			$item->description.= "You might try getting the article from <a href=\"".articleLink(substr($key,1,-1),"GOOGLE")."\">Google Groups</a>.";
+		} else {
+			$item->description = nl2br(htmlspecialchars(substr($body, 0, $fetchArticles)));
+		}
+    } else {
+    	$item->description = $subject; 
+    }
+    $item->date = $article[Date]; 
+    $item->source = $group; 
+    $item->author = $from; 
+     
+    $rss->addItem($item); 
+} 
+
+// close the connection, it isn't needed any more 
+$conn->quit(); 
+$rss->saveFeed($version, $filename); 
+?> 
+
