@@ -213,7 +213,7 @@ function groupLink($group) {
 /**************************************************/ 
 /*                    real code                   */                   
 /**************************************************/ 
-echo "script 20:44\n"; 
+echo "script 20:441\n"; 
 
 @set_time_limit(20); 
 
@@ -221,20 +221,30 @@ $version = strtoupper($_GET["version"]);
 if ($version=="") { 
     $version = "RSS0.91"; 
 } 
+
+echo "script 20:442\n";
+
 if ($version!="MBOX") { 
     $filename = "cache/".str_replace(".","_",$group.".".$version).".xml"; 
 } else { 
     $filename = "cache/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
+
+echo "script 20:443\n";
+
 $rss = new UniversalFeedCreator(); 
 $rss->useCached($filename, $cacheTimeout); 
 
+echo "script 20:444\n";
 $conn = new Net_NNTP_Client(); 
 $conn->connect($server);
 $result = $conn->authenticate($serverLogin,$serverPassword); 
 if (PEAR::isError($result)) { 
     die($result->getMessage()); 
 } 
+
+echo "script 20:445\n";
+
 $result = $conn->selectGroup($group); 
 if (PEAR::isError($result)) { 
     die($result->getMessage()); 
