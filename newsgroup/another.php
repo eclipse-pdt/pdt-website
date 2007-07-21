@@ -143,3 +143,67 @@ $cacheTimeout = 1800;
 /*                    Functions                   */                   
 /**************************************************/ 
 
+include("feedcreator.class.php"); 
+include("Net/NNTP/Client.php"); 
+
+define("googleGroupLink","http://groups.google.com/groups?group="); 
+define("googleArticleLinkThreaded","http://groups.google.com/groups?threadm="); 
+define("googleArticleLinkSingle","http://groups.google.com/groups?selm="); 
+define("newsreaderGroupLink","news:"); 
+define("newsreaderArticleLink","news:"); 
+
+
+/** 
+ * Decodes a quoted printable string from ISO-8859-1 or ISO-8859-15 
+ * to ASCII. 
+ * 
+ * @param string    string    A quoted printable string 
+ * @return string    an ASCII string 
+ */ 
+function qp_decode($string) { 
+    if (preg_match("~(.*)=\\?ISO-?8859-?15?\\?Q\\?([^?]*)\\?=(.*)~i",$string,$matches)) { 
+        $temp = preg_replace("/=([0-9A-F]{2})/e", "chr(hexdec('\\1'))", $matches[2]); 
+        $temp = strtr($temp,"_"," "); 
+        return $temp.$matches[3]; 
+    } else { 
+        return $string; 
+    } 
+} 
+
+
+/** 
+ * Create a link pointing to an article in Google Groups or in the newsreader. 
+ * 
+ * @param string    msgid the message ID of the article to get a link to 
+ * @param boolean    target how to choose the target of the link. auto: use the settings in $googleLinks; 
+ *                GOOGLE: create a Google Groups link; NEWSREADER: create a news: type link 
+ * @return string    an ASCII string 
+ */ 
+function articleLink($msgid,$target="auto") { 
+    GLOBAL $googleLinks,$googleThreaded; 
+
+    if (($target=="auto" AND $googleLinks) OR strtoupper($target)=="GOOGLE") { 
+        if ($googleThreaded) { 
+            $articleLink = googleArticleLinkThreaded; 
+        } else { 
+            $articleLink = googleArticleLinkSingle; 
+        } 
+    } elseif (($target=="auto" AND !$googleLinks) OR strtoupper($target)=="NEWSREADER") {
+        $articleLink = newsreaderArticleLink; 
+    } 
+    return $articleLink.urlencode($msgid); 
+} 
+
+
+function groupLink($group) { 
+    GLOBAL $googleLinks; 
+
+    if ($googleLinks) { 
+        $groupLink = googleGroupLink; 
+    } else { 
+        $groupLink = newsreaderGroupLink; 
+    } 
+     
+    return $groupLink.urlencode($group); 
+} 
+
