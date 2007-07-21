@@ -141,12 +141,9 @@ $cacheTimeout = 1800;
 /**************************************************/ 
 /*                    Functions                   */                   
 /**************************************************/ 
-echo "script 20:43\n";
 
 include("feedcreator.class.php"); 
 include("Net/NNTP/Client.php"); 
-
-echo "script 20:44\n";
 
 define("googleGroupLink","http://groups.google.com/groups?group="); 
 define("googleArticleLinkThreaded","http://groups.google.com/groups?threadm="); 
@@ -213,16 +210,12 @@ function groupLink($group) {
 /**************************************************/ 
 /*                    real code                   */                   
 /**************************************************/ 
-echo "script 20:441\n"; 
-echo "script 20:4410\n";
-// @set_time_limit(20); 
+@set_time_limit(20); 
 
 $version = strtoupper($_GET["version"]); 
 if ($version=="") { 
     $version = "RSS0.91"; 
 } 
-
-echo "script 20:442\n";
 
 if ($version!="MBOX") { 
     $filename = "cache/".str_replace(".","_",$group.".".$version).".xml"; 
@@ -230,31 +223,20 @@ if ($version!="MBOX") {
     $filename = "cache/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
 
-echo "script 20:443\n";
-
 $rss = new UniversalFeedCreator(); 
 $rss->useCached($filename, $cacheTimeout); 
 
-echo "script 20:444\n";
-echo "script 20:4440\n";
 $conn = new Net_NNTP_Client();
-echo "script 20:4441\n"; 
 $conn->connect($server);
-echo "script 20:4442\n";
 $result = $conn->authenticate($serverLogin,$serverPassword); 
-echo "script 20:4443\n";
 if (PEAR::isError($result)) {
-	echo "script 20:4444\n"; 
     die($result->getMessage()); 
 } 
-echo "script 20:445\n";
 
 $result = $conn->selectGroup($group); 
 if (PEAR::isError($result)) { 
     die($result->getMessage()); 
 } 
-
-echo "script 20:45\n";
 
 // get newsgroup description 
 $result = $conn->cmdListNewsgroups($group); 
@@ -274,7 +256,6 @@ if (PEAR::isError($articles)) {
     die($articles->getMessage()); 
 }
 
-echo "script 20:46\n";
 
 // build the rss 
 $rss->title = $group; 

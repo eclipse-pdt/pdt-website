@@ -62,7 +62,7 @@
  * @author     Heino H. Gehlsen <heino@gehlsen.dk>
  * @copyright  2002-2005 Heino H. Gehlsen <heino@gehlsen.dk>. All Rights Reserved.
  * @license    http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231 W3C® SOFTWARE NOTICE AND LICENSE
- * @version    CVS: $Id: Client.php,v 1.1 2007/07/21 20:00:11 rganor Exp $
+ * @version    CVS: $Id: Client.php,v 1.2 2007/07/21 20:02:26 rganor Exp $
  * @link       http://pear.php.net/package/Net_NNTP
  * @see        
  */
@@ -163,18 +163,11 @@ class Net_NNTP_Protocol_Client extends PEAR
      */
     function Net_NNTP_Protocol_Client() {
 		
-		echo "Net_NNTP_Protocol_Client 0\n";
-
-    	//
+		    	//
 //    	parent::PEAR('Net_NNTP_Error');
     	parent::PEAR();
-
-		echo "Net_NNTP_Protocol_Client 1\n";
-		
     	//
     	$this->_socket = new Net_Socket();
-    	
-		echo "Net_NNTP_Protocol_Client 2\n";
     }
 
     // }}}
