@@ -100,19 +100,6 @@ $fetchArticles = 200;
 if ($fetchArticles)
 	$maxArticleSize = 5000;
 
-/** 
- * Determines wether to use links to Google Groups for article 
- * and group links. 
- */ 
-if (!$googleLinks) 
-    $googleLinks = false; 
-
-/** 
- * Determines wether to use threaded view in Google Groups 
- * when viewing an article. 
- */ 
-if (!$googleThreaded) 
-    $googleThreaded = false; 
 
 /** 
  * Sets the default server and login data 
@@ -145,12 +132,8 @@ $cacheTimeout = 1800;
 include("feedcreator.class.php"); 
 include("Net/NNTP/Client.php"); 
 
-define("googleGroupLink","http://groups.google.com/groups?group="); 
-define("googleArticleLinkThreaded","http://groups.google.com/groups?threadm="); 
-define("googleArticleLinkSingle","http://groups.google.com/groups?selm="); 
 define("newsreaderGroupLink","news:"); 
 define("newsreaderArticleLink","news:"); 
-
 
 /** 
  * Decodes a quoted printable string from ISO-8859-1 or ISO-8859-15 
@@ -168,44 +151,6 @@ function qp_decode($string) {
         return $string; 
     } 
 } 
-
-
-/** 
- * Create a link pointing to an article in Google Groups or in the newsreader. 
- * 
- * @param string    msgid the message ID of the article to get a link to 
- * @param boolean    target how to choose the target of the link. auto: use the settings in $googleLinks; 
- *                GOOGLE: create a Google Groups link; NEWSREADER: create a news: type link 
- * @return string    an ASCII string 
- */ 
-function articleLink($msgid,$target="auto") { 
-    GLOBAL $googleLinks,$googleThreaded; 
-
-    if (($target=="auto" AND $googleLinks) OR strtoupper($target)=="GOOGLE") { 
-        if ($googleThreaded) { 
-            $articleLink = googleArticleLinkThreaded; 
-        } else { 
-            $articleLink = googleArticleLinkSingle; 
-        } 
-    } elseif (($target=="auto" AND !$googleLinks) OR strtoupper($target)=="NEWSREADER") {
-        $articleLink = newsreaderArticleLink; 
-    } 
-    return $articleLink.urlencode($msgid); 
-} 
-
-
-function groupLink($group) { 
-    GLOBAL $googleLinks; 
-
-    if ($googleLinks) { 
-        $groupLink = googleGroupLink; 
-    } else { 
-        $groupLink = newsreaderGroupLink; 
-    } 
-     
-    return $groupLink.urlencode($group); 
-} 
-
 
 /**************************************************/ 
 /*                    real code                   */                   
@@ -261,11 +206,10 @@ if (PEAR::isError($articles)) {
     die($articles->getMessage()); 
 }
 
-
 // build the rss 
 $rss->title = $group; 
 $rss->description = $groupDescription; 
-$rss->link = groupLink($group); 
+$rss->link = "http://www.eclipse.org/newsportal/thread.php?group=$group"; 
 $rss->feedURL = "http://".$_SERVER["SERVER_NAME"].htmlspecialchars($_SERVER["REQUEST_URI"]); 
 
 foreach($articles as $key => $article) {
@@ -284,7 +228,6 @@ foreach($articles as $key => $article) {
     	$body = $conn->getBody($articleNumber, true);
 		if (PEAR::isError($body)) {
 			$item->description = "An error occured while retrieving this message from the server.";
-			$item->description.= "You might try getting the article from <a href=\"".articleLink(substr($key,1,-1),"GOOGLE")."\">Google Groups</a>.";
 		} else {
 			$item->description = nl2br(htmlspecialchars(substr($body, 0, $fetchArticles)));
 		}
