@@ -264,18 +264,19 @@ $rss->link = groupLink($group);
 $rss->feedURL = "http://".$_SERVER["SERVER_NAME"].htmlspecialchars($_SERVER["REQUEST_URI"]); 
 
 foreach($articles as $key => $article) {
-    $subject = qp_decode($article[Subject]); 
-    $from = qp_decode($article[From]); 
+    $subject = qp_decode($article['Subject']); 
+    $from = qp_decode($article['From']); 
     
     $subject = htmlspecialchars($subject); 
     $from = htmlspecialchars($from); 
     
     $item = new FeedItem(); 
-    $item->title = $subject; 
-    $item->link = "http://www.eclipse.org/newsportal/article.php?id={$article[Number]}&group=$group#{$article[Number]}"; 
+    $item->title = $subject;
+    $articleNumber = $article['Number']; 
+    $item->link = "http://www.eclipse.org/newsportal/article.php?id=$articleNumber&group=$group#$articleNumber"; 
      
     if ($fetchArticles) {
-    	$body = $conn->getBody($article[Number], true);
+    	$body = $conn->getBody($articleNumber, true);
 		if (PEAR::isError($body)) {
 			$item->description = "An error occured while retrieving this message from the server.";
 			$item->description.= "You might try getting the article from <a href=\"".articleLink(substr($key,1,-1),"GOOGLE")."\">Google Groups</a>.";
@@ -285,7 +286,7 @@ foreach($articles as $key => $article) {
     } else {
     	$item->description = $subject; 
     }
-    $item->date = $article[Date]; 
+    $item->date = $article['Date']; 
     $item->source = $group; 
     $item->author = $from; 
      
