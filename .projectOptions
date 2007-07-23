@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpProjectOptions>
 	<includepath>
-		<includepathentry kind="prj" path="/org.eclipse.phoenix" resource="org.eclipse.phoenix" createdReference="true" contentKind="source">
+		<includepathentry createdReference="true" resource="org.eclipse.phoenix" path="/org.eclipse.phoenix" contentKind="source" kind="prj">
 	</includepathentry>
 </includepath>
 </phpProjectOptions>
