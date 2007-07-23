@@ -160,6 +160,7 @@ if ($version!="MBOX") {
 } else { 
     $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
+echo "$filename\n";
 
 $rss = new UniversalFeedCreator(); 
 $rss->useCached($filename, $cacheTimeout); 
