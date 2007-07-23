@@ -154,12 +154,13 @@ $version = strtoupper($version);
 if ($version=="") { 
     $version = "RSS0.91"; 
 } 
-$filename="";
+
 if ($version!="MBOX") { 
     $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".xml"; 
 } else { 
     $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
+$filename="";
 
 $rss = new UniversalFeedCreator(); 
 // $rss->useCached($filename, $cacheTimeout); 
