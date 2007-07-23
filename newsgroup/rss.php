@@ -156,9 +156,9 @@ if ($version=="") {
 } 
 
 if ($version!="MBOX") { 
-    $filename = "cache/".str_replace(".","_",$group.".".$version).".xml"; 
+    $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".xml"; 
 } else { 
-    $filename = "cache/".str_replace(".","_",$group.".".$version).".mbox"; 
+    $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
 
 $rss = new UniversalFeedCreator(); 
