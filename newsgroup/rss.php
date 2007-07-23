@@ -160,10 +160,10 @@ if ($version!="MBOX") {
 } else { 
     $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".mbox"; 
 } 
-echo "$filename\n";
+echo "$filename 23:27\n";
 
 $rss = new UniversalFeedCreator(); 
-$rss->useCached($filename, $cacheTimeout); 
+// $rss->useCached($filename, $cacheTimeout); 
 
 $conn = new Net_NNTP_Client();
 $conn->connect($server);
