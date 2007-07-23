@@ -18,6 +18,15 @@
 _uacct = "UA-2284412-1";
 urchinTracker();
 </script>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2769171; 
+var sc_invisible=0; 
+var sc_partition=28; 
+var sc_security="e6400172"; 
+</script>
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c29.statcounter.com/2769171/0/e6400172/0/" alt="blog counter" /></a></div></noscript>
+<!-- End of StatCounter Code -->
 END;
 	$Nav->addNavSeparator("Project Home" . $ga, 	"/pdt/index.php");
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
