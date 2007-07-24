@@ -155,16 +155,6 @@ if ($version=="") {
     $version = "RSS0.91"; 
 } 
 
-if ($version!="MBOX") { 
-    $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".xml"; 
-} else { 
-    $filename = "/home/data/httpd/writable/pdt/".str_replace(".","_",$group.".".$version).".mbox"; 
-} 
-$filename="";
-
-$rss = new UniversalFeedCreator(); 
-// $rss->useCached($filename, $cacheTimeout); 
-
 $conn = new Net_NNTP_Client();
 $conn->connect($server);
 $result = $conn->authenticate($serverLogin,$serverPassword); 
@@ -195,43 +185,39 @@ if (PEAR::isError($articles)) {
     die($articles->getMessage()); 
 }
 
-// build the rss 
-$rss->title = $group; 
-$rss->description = $groupDescription; 
-$rss->link = "http://www.eclipse.org/newsportal/thread.php?group=$group"; 
-$rss->feedURL = "http://www.eclipse.org/newsportal/thread.php?group=$group"; 
+// build the rss
+$rss = new QuickRss();
+$rss->setCopyright("Copyright (c) 2006 Zend Corporation and IBM Corporation");
+$rss->setDescription($groupDescription);
+$rss->setLink("http://www.eclipse.org/newsportal/thread.php?group=$group");
+$rss->setTitle($group);
 
 foreach($articles as $key => $article) {
-    $subject = $article['Subject']; 
-    $from = $article['From']; 
-    
-    $subject = htmlspecialchars($subject); 
-    $from = htmlspecialchars($from); 
-    
-    $item = new FeedItem(); 
-    $item->title = $subject;
+    $subject = htmlspecialchars($article['Subject']); 
+    $from = htmlspecialchars($article['From']); 
     $articleNumber = $article['Number']; 
-    $item->link = "http://www.eclipse.org/newsportal/article.php?id=$articleNumber&group=$group#$articleNumber"; 
+    $link = "http://www.eclipse.org/newsportal/article.php?id=$articleNumber&group=$group#$articleNumber"; 
      
     if ($fetchArticles) {
     	$body = $conn->getBody($articleNumber, true);
 		if (PEAR::isError($body)) {
-			$item->description = "An error occured while retrieving this message from the server.";
+			$description = "An error occured while retrieving this message from the server.";
 		} else {
-			$item->description = nl2br(htmlspecialchars(substr($body, 0, $fetchArticles)));
+			$description = nl2br(htmlspecialchars(substr($body, 0, $fetchArticles)));
 		}
     } else {
-    	$item->description = $subject; 
+    	$description = $subject; 
     }
-    $item->date = $article['Date']; 
-    $item->source = $group; 
-    $item->author = $from; 
-     
-    $rss->addItem($item); 
+    // $item->date = $article['Date']; 
+    // $item->source = $group; 
+    // $item->author = $from;     
+    $item = new RssItem($subject . ' (' . $from . ')', $link, $description); 
+	$rss->addItem($item);
+ 
 } 
 
 // close the connection, it isn't needed any more 
 $conn->quit(); 
-$rss->saveFeed($version, $filename);
+print $rss->buildRss();
 
 ?> 
