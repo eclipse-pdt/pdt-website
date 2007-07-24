@@ -196,7 +196,7 @@ foreach($articles as $key => $article) {
     $subject = htmlspecialchars($article['Subject']); 
     $from = htmlspecialchars($article['From']); 
     $articleNumber = $article['Number']; 
-    $link = "http://www.eclipse.org/newsportal/article.php?id=$articleNumber&group=$group#$articleNumber"; 
+    $link = "http://www.eclipse.org/newsportal/article.php?id=$articleNumber\&group=$group#$articleNumber"; 
      
     if ($fetchArticles) {
     	$body = $conn->getBody($articleNumber, true);
