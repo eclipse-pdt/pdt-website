@@ -11,14 +11,6 @@
 	# these are optional
 
 	/* @var $Nav Nav */
-	$Nav->addNavSeparator("Project Home" . $ga, 	"/pdt/index.php");
-	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
-	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
-	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
-	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
-	$Nav->addCustomNav("FAQ", 				"/pdt/faq.php", 			"_self", 2);
-	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
-
 	$ga = <<< END
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
@@ -36,6 +28,14 @@ var sc_security="e6400172";
 <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c29.statcounter.com/2769171/0/e6400172/0/" alt="blog counter" /></a></div></noscript>
 <!-- End of StatCounter Code -->
 END;
+	$Nav->addNavSeparator("Project Home" . $ga, 	"/pdt/index.php");
+	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
+	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
+	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
+	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
+	$Nav->addCustomNav("FAQ", 				"/pdt/faq.php", 			"_self", 2);
+	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
+
 
 ?>  
   
