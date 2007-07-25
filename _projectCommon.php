@@ -12,7 +12,7 @@
 
 	/* @var $Nav Nav */
 	$ga = <<< END
-<div style="display:none">
+<span style="display:none">
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -28,7 +28,7 @@ var sc_security="e6400172";
 </script>
 <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c29.statcounter.com/2769171/0/e6400172/0/" alt="blog counter" /></a></div></noscript>
 <!-- End of StatCounter Code -->
-</div>
+</span>
 END;
 	$Nav->addNavSeparator("<nowrap>Project Home" . $ga . "</nowrap>", 	"/pdt/index.php");
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
