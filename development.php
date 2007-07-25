@@ -66,14 +66,6 @@
 			</ul>
 		</div>
 
-		<div class="homeitem3col">
-			<h3>People</h3>
-			<ul>
-				<li><a href="http://www.eclipse.org/pdt/people/contributors.php">PDT contributors</a>.
-				</li>
-			</ul>
-		</div>
-
 		<script type="text/javascript">
 				function toggle(id)
 				{
@@ -142,7 +134,7 @@
 
 	      <div class="homeitem3col">
 
-				<h3><a href="http://www.eclipse.org/pdt/newsgroup/rss.php"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
+				<h3><a href="http://www.eclipse.org/pdt/newsgroup/rss.php"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Newsgroup Messages</h3>
 	              <ul>
 	              <?
 				  $url = 'http://www.eclipse.org/pdt/newsgroup/rss.php';
@@ -150,7 +142,7 @@
 				  $rss = fetch_rss($url);
 	              $index = 0;
 
-                  while ($index < sizeof($rss->items) && $index < 4) {
+                  while ($index < sizeof($rss->items) && $index < 10) {
 
 	                    $message = $rss->items[$index];
 	                    ?>
@@ -166,6 +158,14 @@
 	              ?>
 	              </ul>
 	        </div>
+
+		<div class="homeitem3col">
+			<h3>People</h3>
+			<ul>
+				<li><a href="http://www.eclipse.org/pdt/people/contributors.php">PDT contributors</a>.
+				</li>
+			</ul>
+		</div>
 
 	</div>
 </div>
