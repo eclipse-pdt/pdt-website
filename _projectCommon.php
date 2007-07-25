@@ -30,13 +30,13 @@ var sc_security="e6400172";
 <!-- End of StatCounter Code -->
 </span>
 END;
-	$Nav->addNavSeparator("<nowrap>Project Home" . $ga . "</nowrap>", 	"/pdt/index.php");
+	$Nav->addNavSeparator("Project Home", 	"/pdt/index.php");
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PHP", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"/pdt/faq.php", 			"_self", 2);
-	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
+	$Nav->addCustomNav("Development" . $ga, 		"/pdt/development.php", 			"_self", 2);	
 
 
 ?>  
