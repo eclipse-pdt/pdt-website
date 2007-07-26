@@ -15,7 +15,7 @@ if ($_PASSWORD == "abc123") {
 	$dbh = $dbc->connect () ;
 	$fileName = "\"/tools/pdt/downloads/drops/%\"" ;
 //	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
-	$date_from = "\"2007-05-26\"" ;
+	$date_from = "\"2007-06-26\"" ;
 	$date_to = "\"2006-07-26\"" ;
 	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
