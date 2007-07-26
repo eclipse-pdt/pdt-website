@@ -18,7 +18,7 @@ if ($_PASSWORD == "abc123") {
 	$date_from = "\"2007-06-26\"" ;
 	$date_to = "\"2006-07-26\"" ;
 	echo "test";
-	echo "Download statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
+	echo "Download statistics for the following dates:" . $date_from . " - " . $date_to . "<br />";
 	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
 							IDX.file_name, 
