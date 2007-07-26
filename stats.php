@@ -8,7 +8,6 @@
 
 # :::::PLEASE NOTE:::::# There are usually in excess of 200 million records, and queries can take up to a few minutes to execute# Don't use these queries in "publicly accessible" web pages!!!# Queries that run for more than 5 minutes are killed by the SQL server.
 
-echo "Statistics for PDT." ;
 # simplisticly silly way of preventing the page from being accessed by just anybody.# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.$_PASSWORD = $_GET [ 'password' ] ;
 if ($_PASSWORD == "abc123") {
 	
@@ -63,8 +62,8 @@ if ($_PASSWORD == "abc123") {
 		# Mysql disconnects automatically, but I like my disconnects to be explicit.		$dbc->disconnect () ;
 		exit () ;
 	}
-	
-	echo "File count - all: <br />" ;
+	echo "Downloads statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
+//	echo "File count - all: <br />" ;
 	$totalCount = 0;
 	while ( $myrow = mysql_fetch_assoc ( $rs ) ) {
 		$totalCount += $myrow [ 'RecordCount' ];
@@ -72,12 +71,12 @@ if ($_PASSWORD == "abc123") {
 	}
 	echo "Total Count: " . $totalCount . "<br />";
 	
-	echo "File count - date: <br />" ;
+//	echo "File count - date: <br />" ;
 	while ( $myrow = mysql_fetch_assoc ( $rs2 ) ) {
 		echo "File: " . $myrow [ 'file_name' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}
 	
-	echo "Results by ccode: <br />" ;
+//	echo "Results by ccode: <br />" ;
 	while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}
