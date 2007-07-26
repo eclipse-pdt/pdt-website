@@ -26,7 +26,7 @@
 		# Connect to database
 		$dbc 	= new DBConnectionDownloads();
 		$dbh 	= $dbc->connect();
-		$fileName = "/tools/pdt/downloads/drops/S20070611-M1/%";
+		$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"";
 	
 		# look for eclipse-SDK, breakdown by file, for all dates, all countries
 		$sql_info = "SELECT 
@@ -62,8 +62,8 @@
 		}
 		$file_id_csv = implode(",", $aFileID);
 
-		$date_from = "2007-06-26";
-		$date_to = "2006-07-26";
+		$date_from = "\"2007-06-26\"";
+		$date_to = "\"2006-07-26\"";
 		
 		# look for eclipse-SDK, breakdown by file for a specific date range
 		$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id";
