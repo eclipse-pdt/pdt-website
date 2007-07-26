@@ -17,7 +17,7 @@
 	# Don't use these queries in "publicly accessible" web pages!!!
 	# Queries that run for more than 5 minutes are killed by the SQL server.
 	
-	echo "Statistics for PDT:";
+	echo "Statistics for PDT.";
 	# simplisticly silly way of preventing the page from being accessed by just anybody.
 	# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.
 	$_PASSWORD = $_GET['password'];
