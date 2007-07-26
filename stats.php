@@ -18,6 +18,8 @@ if ($_PASSWORD == "abc123") {
 	$date_from = "\"2007-06-26\"" ;
 	$date_to = "\"2006-07-26\"" ;
 	
+	echo "Download statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
+	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
 							IDX.file_name, 
 							COUNT(DOW.file_id) AS RecordCount
@@ -62,7 +64,6 @@ if ($_PASSWORD == "abc123") {
 		# Mysql disconnects automatically, but I like my disconnects to be explicit.		$dbc->disconnect () ;
 		exit () ;
 	}
-	echo "Download statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
 //	echo "File count - all: <br />" ;
 	$totalCount = 0;
 	while ( $myrow = mysql_fetch_assoc ( $rs ) ) {
