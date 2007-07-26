@@ -15,6 +15,8 @@ if ($_PASSWORD == "abc123") {
 	$dbh = $dbc->connect () ;
 	$fileName = "\"/tools/pdt/downloads/drops/%\"" ;
 //	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
+	$date_from = "\"2007-05-26\"" ;
+	$date_to = "\"2006-07-26\"" ;
 	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
 							IDX.file_name, 
@@ -44,9 +46,6 @@ if ($_PASSWORD == "abc123") {
 	}
 	$file_id_csv = implode ( ",", $aFileID ) ;
 	
-	$date_from = "\"2007-06-26\"" ;
-	$date_to = "\"2006-07-26\"" ;
-	
 	# look for eclipse-SDK, breakdown by file for a specific date range	$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id" ;
 	
 	# look for eclipse-SDK, breakdown by country for a specific date range	$sql_info3 = "SELECT DOW.ccode, COUNT(DOW.ccode) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON IDX.file_id = DOW.file_id WHERE IDX.file_id IN ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY DOW.ccode" ;
@@ -63,12 +62,15 @@ if ($_PASSWORD == "abc123") {
 		# Mysql disconnects automatically, but I like my disconnects to be explicit.		$dbc->disconnect () ;
 		exit () ;
 	}
-	echo "Downloads statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
+	echo "Download statistics for the following dates:" + $date_from + " - " + $date_to + "<br />";
 //	echo "File count - all: <br />" ;
 	$totalCount = 0;
 	while ( $myrow = mysql_fetch_assoc ( $rs ) ) {
-		$totalCount += $myrow [ 'RecordCount' ];
-		echo "File: " . $myrow [ 'file_name' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
+		$currentCount = $myrow [ 'RecordCount' ];
+		if ($currentCount > 150) {
+			echo "File: " . $myrow [ 'file_name' ] . " Count: " . $currentCount . "<br />" ;
+			$totalCount += $currentCount;
+		}
 	}
 	echo "Total Count: " . $totalCount . "<br />";
 	
