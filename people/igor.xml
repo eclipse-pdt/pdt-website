@@ -5,15 +5,15 @@
 	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
 	
 	<person:name>
-		<person:given-name>Evgeni</person:given-name>
-		<person:family-name>Teplitski</person:family-name>
+		<person:given-name>Igor</person:given-name>
+		<person:family-name>Leznik</person:family-name>
 	</person:name>
 	
 	<person:affiliation href="http://www.zend.com">
 		Zend Technologies
 	</person:affiliation>
 	
-	<person:e-mail>evgeni@zend.com</person:e-mail>
+	<person:e-mail>igor@zend.com</person:e-mail>
 	
 	<person:biography>
 		<p>
@@ -22,12 +22,12 @@
 		</p>
 	</person:biography>
 
-	<person:contribution role="contributor">
+	<person:contribution role="committer">
 		<p>
 		</p>
 	</person:contribution>
 
-	<person:large-photo width="200" height="273" href="photos/large/kihup-boo.png" />
-	<person:small-photo width="100" height="137" href="photos/small/kihup-boo.png" />
+	<person:large-photo width="200" height="273" href="" />
+	<person:small-photo width="100" height="137" href="" />
 	
 </person:person>

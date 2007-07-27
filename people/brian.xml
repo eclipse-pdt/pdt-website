@@ -5,15 +5,15 @@
 	xsi:schemaLocation="http://eclipse.org/webtools/person person.xsd ">
 	
 	<person:name>
-		<person:given-name>Assaf</person:given-name>
-		<person:family-name>Almaz</person:family-name>
+		<person:given-name>Brian</person:given-name>
+		<person:family-name>Burns</person:family-name>
 	</person:name>
 	
-	<person:affiliation href="http://www.zend.com">
-		Zend Technologies
+	<person:affiliation href="http://www.ibm.com">
+		IBM
 	</person:affiliation>
 	
-	<person:e-mail>assafa@zend.com</person:e-mail>
+	<person:e-mail>bburns@us.ibm.com</person:e-mail>
 	
 	<person:biography>
 		<p>
@@ -22,12 +22,12 @@
 		</p>
 	</person:biography>
 
-	<person:contribution role="component-lead">
+	<person:contribution role="contributor">
 		<p>
+		Brian was an active committer mainly in the initial steps of the PDT project. 
 		</p>
 	</person:contribution>
 
-	<person:large-photo width="200" height="273" href="photos/large/kihup-boo.png" />
-	<person:small-photo width="100" height="137" href="photos/small/kihup-boo.png" />
-	
+	<person:large-photo width="200" height="273" href="" />
+	<person:small-photo width="100" height="137" href="" />
 </person:person>
