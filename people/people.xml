@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://eclipse.org/pdt/person person.xsd ">
 
 	<!--  activity-level="active" | "extremely-active" | "inactive" -->
-	<person:contributor href="yossi.xml" activity-level="active" />
+	<person:contributor href="yossi.xml" activity-level="extremely-active" />
 	<person:contributor href="guy.xml" activity-level="extremely-active" />
 	<person:contributor href="shachar.xml" activity-level="inactive" />
 	<person:contributor href="shalom.xml" activity-level="extremely-active" />
