@@ -17,7 +17,7 @@ if ($_PASSWORD == "abc123") {
 //	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
 	$date_from = "\"2007-06-27\"" ;
 	$date_to = "\"2006-07-27\"" ;
-	echo "Download statistics for the following dates:" . $date_from . " - " . $date_to . "<br />";
+	echo "<b>Download statistics for " .$fileName . " with the following dates:" . $date_from . " - " . $date_to . "</b><br />";
 	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
 							IDX.file_name, 
