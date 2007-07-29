@@ -7,11 +7,11 @@
 	<!--  activity-level="active" | "extremely-active" | "inactive" -->
 	<person:contributor href="yossi.xml" activity-level="extremely-active" />
 	<person:contributor href="guy.xml" activity-level="extremely-active" />
-	<person:contributor href="shachar.xml" activity-level="inactive" />
+	<person:contributor href="shachar.xml" activity-level="extremely-active" />
 	<person:contributor href="shalom.xml" activity-level="extremely-active" />
 	<person:contributor href="gadi.xml" activity-level="extremely-active" />
 	<person:contributor href="michael.xml" activity-level="extremely-active" />	
-	<person:contributor href="moshe.xml" activity-level="inactive" />
+	<person:contributor href="moshe.xml" activity-level="extremely-active" />
 	<person:contributor href="alon.xml" activity-level="extremely-active" />
 	<person:contributor href="yaron.xml" activity-level="extremely-active" />
 	<person:contributor href="seva.xml" activity-level="extremely-active" />
