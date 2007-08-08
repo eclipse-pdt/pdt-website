@@ -21,7 +21,7 @@
      - also have a short name to be used in HTML lists and other horizontally
      - challenged places.
     -->
-  <short-name>PHP</short-name>
+  <short-name>PDT</short-name>
   
   <!--
      - Each Eclipse project has one or more Bugzilla products and components.
@@ -34,7 +34,7 @@
      - page of the first product. Multiple <product>s are allowed.
     -->
   <bugzilla>
-    <product name="php"/>
+    <product name="pdt"/>
   </bugzilla>
 
   <!--
@@ -63,11 +63,20 @@
     <module path="org.eclipse.php" /> 
     <module path="org.eclipse.php.core" /> 
     <module path="org.eclipse.php.debug.core" /> 
+    <module path="org.eclipse.php.debug.daemon" /> 
     <module path="org.eclipse.php.debug.ui" /> 
+    <module path="org.eclipse.php.delivery" /> 
+    <module path="org.eclipse.php.help" /> 
+    <module path="org.eclipse.php.sdk-feature" /> 
     <module path="org.eclipse.php.server.apache.core" /> 
     <module path="org.eclipse.php.server.apache.ui" /> 
+    <module path="org.eclipse.php.server.core" /> 
+    <module path="org.eclipse.php.server.ui" /> 
+    <module path="org.eclipse.php.server.test" /> 
+    <module path="org.eclipse.php.server.test-feature" /> 
     <module path="org.eclipse.php.ui" /> 
     <module path="org.eclipse.php-feature" /> 
+    <module path="org.eclipse.php-releng" /> 
   </cvs>
 
   <!--
@@ -125,7 +134,7 @@
      - other legal information as well, it can use the <legal> element
      - instead and then include the IP Log information on the Legal web page.
     -->
-<!-- TODO   <ip-log url="/projects/slides/Web%20Tools%20Platform%201.0%20Project%20IP%20Log.pdf"/>  -->
+	<ip-log url="/pdt/pdt-log.txt"/>
 <!-- TODO   <legal url="/projects/slides/Web%20Tools%20Platform%201.0%20Project%20IP%20Log.pdf"/>   -->
 
   <!--
@@ -144,7 +153,7 @@
    <mailing-lists url="/birt/index.php?page=community.html" > 
 -->
   <mailing-lists >
-    <list name="php-dev"/>
+    <list name="pdt-dev"/>
   </mailing-lists>
   
   <!--
@@ -157,7 +166,7 @@
      - newsgroups page. Multiple <newsgroups>s are allowed.
     -->
   <newsgroups>
-    <newsgroup name="eclipse.tools.php"/>
+    <newsgroup name="eclipse.tools.pdt"/>
   </newsgroups>
   
   <!--
