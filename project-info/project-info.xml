@@ -134,6 +134,7 @@
      - other legal information as well, it can use the <legal> element
      - instead and then include the IP Log information on the Legal web page.
     -->
+    <wiki url="http://wiki.eclipse.org/index.php/PHP"/>
 	<ip-log url="/pdt/pdt-log.txt"/>
 <!-- TODO   <legal url="/projects/slides/Web%20Tools%20Platform%201.0%20Project%20IP%20Log.pdf"/>   -->
 
