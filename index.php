@@ -196,7 +196,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				  	All PDT development is carried out in this repository
 				</li>
 				
-				<li><a href="http://dev.eclipse.org/mailman/listinfo/pdt-dev">Mailing List</a>. 
+				<li><a href="http://dev.eclipse.org/mailman/listinfo/php-dev">Mailing List</a>. 
 				  	Get involved in the development of the PDT project. 
 				  	If you have questions about usage of the PDT please use the PDT Newsgroup
 				</li>
@@ -207,10 +207,18 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
+
+				<li>
+					<span class="normal"><b>August&nbsp;15<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070815-M2">1.0 M2</a> 
+					(compatible with Eclipse 3.3 and Java 1.5 only ) is ready!
+				</li>
+
 				<li>
 					<span class="normal"><b>July&nbsp;16<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">RSS Latest Releases</a> alerts on new stable builds! 
+					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">PDT RSS Builds</a> Feed! 
 				</li>
+				
 				<li>
 					<span class="normal"><b>June&nbsp;11<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070611-M1">1.0 M1</a> 
@@ -242,26 +250,13 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 					<a href="http://download.eclipse.org/tools/pdt/downloads/index.php?release=S20070101-RC1">0.7 RC1</a>. 
 					is ready!
 				</li>
-				<li>
-					<span class="normal"><b>December&nbsp;18<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/index.php?release=S20061218-M4">Milestone 4</a>. 
-					is ready!
-				</li>
-				<li>
-					<span class="normal"><b>October&nbsp;26<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/index.php?release=S20061026-M3">Milestone 3</a>. 
-					is ready!
-				</li>
+
 				<li>
 					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
 					PDT presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
 					by Yossi Leon, PDT Project Leader
 				</li>
-				<li>
-					<span class="normal"><b>July&nbsp;6<sup>th</sup></b></span> -
-					<a href="http://download3.eclipse.org/tools/pdt/downloads/index.php?release=S0.7M2">Milestone 2</a>. 
-					is ready!
-				</li>
+
 
 				<li>
 					<span class="normal"><b>July&nbsp;5<sup>th</sup></b></span> -
