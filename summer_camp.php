@@ -51,7 +51,7 @@
 		</table>
 
 		
-		<p> In order to provide the best PHP development tool for PDT 1.0 in September we wish to use the 
+		<p> In order to provide the best PHP development tool framework for PDT 1.5 we wish to use the 
 		community help and conduct a summer camp where we will define few potential enhancements with
 		working groups assigned to them.</p>
 		
