@@ -13,8 +13,8 @@ if ($_PASSWORD == "abc123") {
 	
 	# Connect to database	$dbc = new DBConnectionDownloads ( ) ;
 	$dbh = $dbc->connect () ;
-//	$fileName = "\"/tools/pdt/downloads/drops/%S\"" ;
-	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
+	$fileName = "\"/tools/pdt/downloads/drops/S%\"" ;
+//	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
 	$date_from = "\"2007-08-22\"" ;
 	$date_to = "\"2006-07-22\"" ;
 	echo "<b>Download statistics for " .$fileName . " with the following dates:" . $date_from . " - " . $date_to . "</b><br />";
@@ -46,7 +46,6 @@ if ($_PASSWORD == "abc123") {
 		array_push ( $aFileID, $myrow [ 'file_id' ] ) ;
 	}
 	$file_id_csv = implode ( ",", $aFileID ) ;
-	echo "file=" . $file_id_csv;
 	# look for eclipse-SDK, breakdown by file for a specific date range	$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id" ;
 	
 	# look for eclipse-SDK, breakdown by country for a specific date range	$sql_info3 = "SELECT DOW.ccode, COUNT(DOW.ccode) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON IDX.file_id = DOW.file_id WHERE IDX.file_id IN ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY DOW.ccode" ;
