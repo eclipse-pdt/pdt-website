@@ -15,8 +15,8 @@ if ($_PASSWORD == "abc123") {
 	$dbh = $dbc->connect () ;
 	$fileName = "\"/tools/pdt/downloads/drops/S%\"" ;
 //	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
-	$date_from = "\"2007-06-22\"" ;
-	$date_to = "\"2007-07-22\"" ;
+	$date_from = "\"2007-07-22\"" ;
+	$date_to = "\"2007-08-22\"" ;
 	echo "<b>Download statistics for " .$fileName . " with the following dates:" . $date_from . " - " . $date_to . "</b><br />";
 	
 	# look for eclipse-SDK, breakdown by file, for all dates, all countries	$sql_info = "SELECT 
@@ -85,9 +85,9 @@ if ($_PASSWORD == "abc123") {
 	echo "Total Count: " . $totalCount . "<br />";
 	
 //	echo "Results by ccode: <br />" ;
-	while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
+	/*while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
-	}
+	}*/
 	
 	$dbc->disconnect () ;
 	
