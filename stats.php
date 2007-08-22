@@ -74,9 +74,15 @@ if ($_PASSWORD == "abc123") {
 	echo "Total Count: " . $totalCount . "<br />";
 	
 //	echo "File count - date: <br />" ;
+	$totalCount = 0;
 	while ( $myrow = mysql_fetch_assoc ( $rs2 ) ) {
-		echo "File: " . $myrow [ 'file_name' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
+		$currentCount = $myrow [ 'RecordCount' ];
+		if ($currentCount > 150) {
+			echo "File: " . $myrow [ 'file_name' ] . " Count: " . $currentCount . "<br />" ;
+			$totalCount += $currentCount;
+		}	
 	}
+	echo "Total Count: " . $totalCount . "<br />";
 	
 //	echo "Results by ccode: <br />" ;
 	while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
