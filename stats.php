@@ -56,7 +56,7 @@ if ($_PASSWORD == "abc123") {
 	$rs3 = mysql_query ( $sql_info3, $dbh ) ;
 	
 	if (mysql_errno ( $dbh ) > 0) {
-		echo "There was an error processing this request" ;
+		echo "There was an error processing this request - ". mysql_error ( $dbh );
 		
 		# For debugging purposes - don't display this stuff in a production page.		# echo mysql_error($dbh);		
 
