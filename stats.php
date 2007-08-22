@@ -13,8 +13,8 @@ if ($_PASSWORD == "abc123") {
 	
 	# Connect to database	$dbc = new DBConnectionDownloads ( ) ;
 	$dbh = $dbc->connect () ;
-	$fileName = "\"/tools/pdt/downloads/drops/%S\"" ;
-//	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
+//	$fileName = "\"/tools/pdt/downloads/drops/%S\"" ;
+	$fileName = "\"/tools/pdt/downloads/drops/S20070611-M1/%\"" ;
 	$date_from = "\"2007-08-22\"" ;
 	$date_to = "\"2006-07-22\"" ;
 	echo "<b>Download statistics for " .$fileName . " with the following dates:" . $date_from . " - " . $date_to . "</b><br />";
