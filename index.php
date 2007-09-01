@@ -207,11 +207,16 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>
+				<li>
+					<span class="normal"><b>August&nbsp;26<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070826-M3">1.0 M3</a> 
+					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
+				</li>
 
 				<li>
 					<span class="normal"><b>August&nbsp;15<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070815-M2">1.0 M2</a> 
-					(compatible with Eclipse 3.3 and Java 1.5 only ) is ready!
+					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
 				</li>
 
 				<li>
