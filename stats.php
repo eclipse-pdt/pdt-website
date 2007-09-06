@@ -30,17 +30,7 @@ if ($_PASSWORD == "abc123") {
 	
 	# We track date-based queries differently as MySQL 4.0.x doesn't support subselects	# and in our tests, joining the index table AND using a where for the dates	# resulted in mysql using a tablesort on the entire downloads table, which took minutes.	# Here, for dates, we fetch the resultset in two steps: one select to get the	# file_id's matching the file pattern (trivial), and another select where IN($ids_csv_list)
 	# Fetch the ID's if it's a date-based query
-	$file_id_csv = "" ;
-	$sql = "SELECT 
-					IDX.file_id
-				FROM download_file_index AS IDX 
-  				INNER JOIN downloads AS DOW ON IDX.file_id = DOW.file_id 
-				WHERE IDX.file_name LIKE $fileName
- 				GROUP BY IDX.file_id" ;
-	/*	$rs = mysql_query ( $sql, $dbh ) ;
-	while ( $myrow = mysql_fetch_assoc ( $rs ) ) {
-		array_push ( $aFileID, $myrow [ 'file_id' ] ) ;
-	}*/
+	
 	
 	# look for eclipse-SDK, breakdown by country for a specific date range	//	$sql_info3 = "SELECT DOW.ccode, COUNT(DOW.ccode) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON IDX.file_id = DOW.file_id WHERE IDX.file_id IN ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY DOW.ccode" ;
 	//	$rs = mysql_query ( $sql_info, $dbh ) ;
@@ -76,6 +66,17 @@ if ($_PASSWORD == "abc123") {
 
 function printStats ($fileName, $date_from , $date_to, $dbh) {
 	$aFileID = array ( ) ;
+	$file_id_csv = "" ;
+	$sql = "SELECT 
+					IDX.file_id
+				FROM download_file_index AS IDX 
+  				INNER JOIN downloads AS DOW ON IDX.file_id = DOW.file_id 
+				WHERE IDX.file_name LIKE $fileName
+ 				GROUP BY IDX.file_id" ;
+	$rs = mysql_query ( $sql, $dbh ) ;
+	while ( $myrow = mysql_fetch_assoc ( $rs ) ) {
+		array_push ( $aFileID, $myrow [ 'file_id' ] ) ;
+	}
 	$file_id_csv = implode ( ",", $aFileID ) ;
 	# look for eclipse-SDK, breakdown by file for a specific date range	$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id" ;
 	$rs2 = mysql_query ( $sql_info2, $dbh ) ;
