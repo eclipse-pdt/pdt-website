@@ -59,7 +59,7 @@ if ($_PASSWORD == "abc123") {
 	//	echo "Results by ccode: <br />" ;	while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}*/
-	for ($i=9; $i>0; $i--) {
+	for ($i=8; $i>0; $i--) {
 		$date_from = "\"2007-".$i. "-01\"" ;
 		$date_to = "\"2007-".($i+1). "-01\"" ;	
 		printStats($date_from, $date_to, $dbh);
