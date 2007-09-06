@@ -60,8 +60,8 @@ if ($_PASSWORD == "abc123") {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}*/
 	for ($i=8; $i>0; $i--) {
-		$date_from = "\"2007-".$i. "-01\"" ;
-		$date_to = "\"2007-".($i+1). "-01\"" ;	
+		$date_from = "\"2007-0".$i. "-01\"" ;
+		$date_to = "\"2007-0".($i+1). "-01\"" ;	
 		printStats($date_from, $date_to, $dbh);
 	}
 	
