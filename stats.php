@@ -62,19 +62,19 @@ if ($_PASSWORD == "abc123") {
 	for ($i=8; $i>0; $i--) {
 		$date_from = "\"2007-0".$i. "-01\"" ;
 		$date_to = "\"2007-0".($i+1). "-01\"" ;	
-		printStats($date_from, $date_to, $dbh);
+		printStats($fileName, $date_from, $date_to, $dbh);
 	}
 	
 	$rs = null ;
 	$rs2 = null ;
 	$rs3 = null ;
 	$dbh = null ;
-	$dbc = null ;
+	$dbc = null ; 
 } else {
 	echo "You are not authorized to access this page." ;
 }
 
-function printStats ( $date_from , $date_to, $dbh) {
+function printStats ($fileName, $date_from , $date_to, $dbh) {
 	$aFileID = array ( ) ;
 	$file_id_csv = implode ( ",", $aFileID ) ;
 	# look for eclipse-SDK, breakdown by file for a specific date range	$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id" ;
