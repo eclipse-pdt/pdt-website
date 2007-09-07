@@ -50,6 +50,7 @@ if ($_PASSWORD == "abc123") {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}*/
 	for ($i=8; $i>0; $i--) {
+		echo "Round " . $i;
 		$date_from = "\"2007-0".$i. "-01\"" ;
 		$date_to = "\"2007-0".($i+1). "-01\"" ;	
 		printStats($fileName, $date_from, $date_to, $dbh);
@@ -66,7 +67,7 @@ if ($_PASSWORD == "abc123") {
 
 function printStats ($fileName, $date_from , $date_to, $dbh) {
 	$aFileID = array ( ) ;
-	$file_id_csv = "" ;
+//	$file_id_csv = "" ;
 	$sql = "SELECT 
 					IDX.file_id
 				FROM download_file_index AS IDX 
