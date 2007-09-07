@@ -49,25 +49,7 @@ if ($_PASSWORD == "abc123") {
 	//	echo "Results by ccode: <br />" ;	while ( $myrow = mysql_fetch_assoc ( $rs3 ) ) {
 		echo "Country: " . $myrow [ 'ccode' ] . " Count: " . $myrow [ 'RecordCount' ] . "<br />" ;
 	}*/
-	for ($i=8; $i>0; $i--) {
-		echo "Round " . $i;
-		$date_from = "\"2007-0".$i. "-01\"" ;
-		$date_to = "\"2007-0".($i+1). "-01\"" ;	
-		printStats($fileName, $date_from, $date_to, $dbh);
-	}
-	
-	$rs = null ;
-	$rs2 = null ;
-	$rs3 = null ;
-	$dbh = null ;
-	$dbc = null ; 
-} else {
-	echo "You are not authorized to access this page." ;
-}
-
-function printStats ($fileName, $date_from , $date_to, $dbh) {
 	$aFileID = array ( ) ;
-//	$file_id_csv = "" ;
 	$sql = "SELECT 
 					IDX.file_id
 				FROM download_file_index AS IDX 
@@ -79,6 +61,28 @@ function printStats ($fileName, $date_from , $date_to, $dbh) {
 		array_push ( $aFileID, $myrow [ 'file_id' ] ) ;
 	}
 	$file_id_csv = implode ( ",", $aFileID ) ;
+	
+	for ($i=8; $i>0; $i--) {
+		echo "Round " . $i;
+		$date_from = "\"2007-0".$i. "-01\"" ;
+		$date_to = "\"2007-0".($i+1). "-01\"" ;	
+		printStats($file_id_csv, $fileName, $date_from, $date_to, $dbh, $dbc);
+	}
+	
+	$dbc->disconnect() ;
+	
+	$rs = null ;
+	$rs2 = null ;
+	$rs3 = null ;
+	$dbh = null ;
+	$dbc = null ; 
+} else {
+	echo "You are not authorized to access this page." ;
+}
+
+function printStats ($file_id_csv, $fileName, $date_from , $date_to, $dbh, $dbc) {
+//	$file_id_csv = "" ;
+	
 	# look for eclipse-SDK, breakdown by file for a specific date range	$sql_info2 = "SELECT IDX.file_name, COUNT(DOW.file_id) AS RecordCount FROM download_file_index AS IDX INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id WHERE IDX.file_id in ($file_id_csv) AND DOW.download_date BETWEEN $date_from AND $date_to GROUP BY IDX.file_id" ;
 	$rs2 = mysql_query ( $sql_info2, $dbh ) ;
 	if (mysql_errno ( $dbh ) > 0) {
@@ -100,6 +104,5 @@ function printStats ($fileName, $date_from , $date_to, $dbh) {
 		}
 	}
 	echo "Total Count: " . $totalCount . "<br />" ;
-	$dbc->disconnect () ;
 }
 ?>
