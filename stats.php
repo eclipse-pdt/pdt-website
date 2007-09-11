@@ -1,14 +1,7 @@
 <?php
-#
-# Sample PHP code to issue a Downloads query.# Logic, DB and Presentation lumped here for simplicity.#
-#
+require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php" ;
 
-
-# Load up the classfile# You need to tell the WebMaster from which URL you are loading this class from, # otherwise the connect() will fail.require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php" ;
-
-# :::::PLEASE NOTE:::::# There are usually in excess of 200 million records, and queries can take up to a few minutes to execute# Don't use these queries in "publicly accessible" web pages!!!# Queries that run for more than 5 minutes are killed by the SQL server.
-
-# simplisticly silly way of preventing the page from being accessed by just anybody.# Linking to page.php?password=abc123 obviously defeats the whole purpose of this.$_PASSWORD = $_GET [ 'password' ] ;
+$_PASSWORD = $_GET [ 'password' ] ;
 if ($_PASSWORD == "abc123") {
 	
 	# Connect to database	$dbc = new DBConnectionDownloads ( ) ;
@@ -64,8 +57,8 @@ if ($_PASSWORD == "abc123") {
 	
 	for ($i=8; $i>0; $i--) {
 		echo "Round " . $i;
-		$date_from = "\"2007-0".$i. "-01\"" ;
-		$date_to = "\"2007-0".($i+1). "-01\"" ;	
+		$date_from = "\"2007-0".$i. "-10\"" ;
+		$date_to = "\"2007-0".($i+1). "-10\"" ;	
 		printStats($file_id_csv, $fileName, $date_from, $date_to, $dbh, $dbc);
 	}
 	
