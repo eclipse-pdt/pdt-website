@@ -55,10 +55,13 @@ if ($_PASSWORD == "abc123") {
 	}
 	$file_id_csv = implode ( ",", $aFileID ) ;
 	
-	for ($i=8; $i>0; $i--) {
+	$date = getdate();
+	$day = $date["mday"] - 1;
+	$mon = $date["mon"] - 1;
+	for ($i=$mon; $i>0; $i--) {
 		echo "Round " . $i;
-		$date_from = "\"2007-0".$i. "-10\"" ;
-		$date_to = "\"2007-0".($i+1). "-10\"" ;	
+		$date_from = "\"2007-0".$i. "-".$day."\"" ;
+		$date_to = "\"2007-0".($i+1). "-".$day."\"" ;
 		printStats($file_id_csv, $fileName, $date_from, $date_to, $dbh, $dbc);
 	}
 	
