@@ -53,6 +53,12 @@
 		<div class="homeitem3col">
 			<h3>Documents</h3>
 			<ul>
+				<li><a href="documents/PDT_1.0_Release_Review.pdf">PDT 1.0 Release Review</a>. 
+				 	PDT 1.0 release review as presented on August 29th by Yossi Leon
+				</li>
+				<li><a href="documents/XDebugGuide.pdf">XDebug Guide</a>. 
+				 	XDebug guide for configuration and usage of XDebug. Created by Dave Kelsey
+				</li>
 				<li><a href="documents/Eclipse Summit PDT.ppt">PDT Presentation in Eclipse Summit 2006</a>. 
 				 	Presentation from the Eclipse Summit 2006 presented by Yossi Leon
 				</li>
