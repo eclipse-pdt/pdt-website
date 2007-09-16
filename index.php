@@ -1,7 +1,4 @@
-
-
 <?php  		
-
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
@@ -98,7 +95,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<ul>
 		<table>
 			<tr>
-				<td><li>September, 2007</td>
+				<td><li>18th of September, 2007</td>
 				<td> - <b>PDT 1.0 release</b></td>
 			</tr>
 			<tr>
@@ -309,13 +306,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 	</div>
 	<div id="rightcolumn">
-		<div class="sideitem">
-		   <h6>Incubation</h6>
-		   <div align="center"><a href="/projects/what-is-incubation.php"><img 
-		        align="center" src="./images/egg-incubation.png" 
-		        border="0" alt="Incubation" /></a>
-		   </div>
-		 </div>
 		<div class="sideitem">
 			<h6>Poll</h6>
 			<?php echo $pollHTML; ?>
