@@ -96,7 +96,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<table>
 			<tr>
 				<td><li>18th of September, 2007</td>
-				<td> - <b>PDT 1.0 release</b></td>
+				<td> - <b>PDT 1.0 Release</b></td>
 			</tr>
 			<tr>
 				<td><li>30th of July, 2007</td>
@@ -306,10 +306,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 	</div>
 	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Poll</h6>
-			<?php echo $pollHTML; ?>
-		</div>
+		
 	</div>
 
 </div>
