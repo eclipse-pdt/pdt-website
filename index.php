@@ -86,8 +86,9 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Extensibility </li>
 			<li> Continuous support of PHP developments </li>
 		</ul>
+		<br>
 		
-		<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917" >Download PDT 1.0!</a>
+		<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
 		
 		<br><!--
 		
