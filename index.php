@@ -74,7 +74,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<h2>About PDT</h2>
 		<p> The PDT project provides a PHP Development 
 		Tools framework for the Eclipse platform. This project encompasses all development 
-		components necessary to develop PHP and will facilitate extensibility. 
+		components necessary to develop PHP and facilitate extensibility. 
 		It leverages the existing Web Tools Project in providing developers with PHP capabilities.
 		</p>
 		
