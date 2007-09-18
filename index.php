@@ -205,6 +205,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
+					<span class="normal"><b>September&nbsp;18<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">PDT 1.0 Final Release</a> is Ready!
+				</li>
+
+				<li>
 					<span class="normal"><b>September&nbsp;12<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070910-RC1">1.0 RC-1</a> 
 					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
