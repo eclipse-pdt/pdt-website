@@ -99,7 +99,7 @@
 			<ul>
 				<li><b>All in one</b> - includes the complete set of software to start using PDT 
 				immediately. This package already has PDT combined with the complete set of 
-				prerequisites, eclipse 3.2 sdk, emf, gef, jem and WTP. You will not need anything else
+				prerequisites, eclipse 3.3 sdk, emf, gef, jem and WTP. You will not need anything else
 
 				<li><b>Runtime</b> - only includes the PDT project builds. There are the 
 				prerequisites to install PDT. The following must be downloaded and installed before 
@@ -153,7 +153,13 @@
 			The solution is to clean up the cached information. The recommended practice is to 
 			start Eclipse with the <i>eclipse -clean</i>
 		</p>
-
+		
+		<br>
+		<h2><a name="Additional Resources"></a>Additional Resources</h2>
+		<p>
+		<a href="http://wiki.eclipse.org/IRC_FAQ#How_do_I_install_a_project_with_multiple_dependencies.3F">
+			http://wiki.eclipse.org/IRC_FAQ#How_do_I_install_a_project_with_multiple_dependencies.3F</a>
+		</p>
 	</div>
 
 </div>
