@@ -84,7 +84,7 @@
 				
 				<li><b>PDT Feature</b> - This installtion method is recommended if you have a previous installation of Eclipse. For this installtion to work
 				you need to have the different dependencies required for PDT. In general, PDT is based on WTP (Web Tools Project) and once it's already
-				installed (with the correct version), there isn't much you need install besides that. For the complete list of depenedecies, refer to the download page.
+				installed (with the correct version), there isn't much you need install besides that. For the complete list of depenedecies, refer to the <a href="http://download.eclipse.org/tools/pdt/downloads/index.php">download page</a>.
 				Once you've downloaded the PDT feature, you need to extract it's plugins and features directories to the existing folders on the already installed Eclipse.
 				If you have Eclipse running already, you will have to restart it to have PDT as part of your Eclipse.
 				
