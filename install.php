@@ -78,22 +78,24 @@
 			and depending on your familiarity with Eclipse.
 			
 			<ul>
-				<li><b>All-in-One</b> - The easiest way to install PDT, specially if you don't have any previous installtion of Eclipse. 
-				Simply download the all-in-one package,	uzip it to the desired location, and run the executable eclipse file, located in it.
+				<li><b>All-in-One</b> - The easiest way to install PDT, specially if you don't have any previous installation of Eclipse. 
+				Simply download the all-in-one package,	unzip it to the desired location, and run the executable eclipse file located in it.
 				This installation includes all you need to have as part of the package, including Eclipse Platform, WTP (Web Tools Project) and more.
 				
-				<li><b>PDT Feature</b> - This installtion method is recommended if you have a previous installation of Eclipse. For this installtion to work
+				<li><b>PDT Feature</b> - This installation method is recommended if you have a previous installation of Eclipse. For this installation to work
 				you need to have the different dependencies required for PDT. In general, PDT is based on WTP (Web Tools Project) and once it's already
-				installed (with the correct version), there isn't much you need install besides that. For the complete list of depenedecies, refer to the <a href="http://download.eclipse.org/tools/pdt/downloads/index.php">download page</a>.
-				Once you've downloaded the PDT feature, you need to extract it's plugins and features directories to the existing folders on the already installed Eclipse.
+				installed (with the correct version), there isn't much you need install besides that. For the complete list of dependencies, refer to the <a href="http://download.eclipse.org/tools/pdt/downloads/index.php">download page</a>.
+				Once you've downloaded the PDT feature, you need to extract it's plugins and features directories to the existing folders of the already installed Eclipse.
 				If you have Eclipse running already, you will have to restart it to have PDT as part of your Eclipse.
 				
 				<li><b>Update Manager</b> - The update manager installation is done via the update manager of the already installed Eclipse.
 				Go to Help -> Software Updates -> Find and Install. Choose the "Search For New Feature to Install" and add a new site with the following link 
 				"http://download.eclipse.org/tools/pdt/updates/" and press Next to start the update process.
 				
+				<br>
 				For additional installation community resources, please go to <a href="#additional_resources">Additional Resources</a> section below.
 			</ul>
+
 			
 		</p>
 				
