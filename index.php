@@ -172,7 +172,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				<li><a href="downloads.php">Downloads</a>. 
 					Get available PDT builds
 				</li>
-				<li><a href="http://wiki.eclipse.org/index.php/PHP">PHP Wiki</a>. 
+				<li><a href="http://wiki.eclipse.org/index.php/PDT">PHP Wiki</a>. 
 					Find more information and discussions in the PHP Wiki page
 				</li>
 

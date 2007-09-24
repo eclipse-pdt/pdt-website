@@ -1,6 +1,6 @@
 <?php
 
-header("Location: http://wiki.eclipse.org/PHP/FAQ");
+header("Location: http://wiki.eclipse.org/PDT/FAQ");
 
 require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/eclipse.org-common/system/app.class.php") ;
 require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/eclipse.org-common/system/nav.class.php") ;
