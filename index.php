@@ -184,7 +184,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				  	Technical articles and references for PDT users and developers
 				</li>
 
-				<li><a href="news://news.eclipse.org/eclipse.tools.php">Newsgroup</a>. 
+				<li><a href="news://news.eclipse.org/eclipse.tools.pdt">Newsgroup</a>. 
 					Your way of communicating with the community of people developing and using the Eclipse 
 					PDT eclipse based tool. 
 					Ask questions about usage of the PDT, share ideas, issues, and insights
