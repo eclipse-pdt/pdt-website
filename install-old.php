@@ -139,8 +139,8 @@ are differentiated on the degree of their stability
 debugging and will welcome any open source or commercial implementation
 of the debug protocol (The debug protocol implemented can be found at
 http://www.eclipse.org/pdt/docs.php)</p>
-<p><b>PHP Executable Debugger</b>
-
+<p>
+<b>PHP Executable Debugger</b>
 
 <ul>
 	<li><a href="http://www.zend.com/pdt#debugger">Zend Executable Debugger</a>
@@ -151,7 +151,12 @@ http://www.eclipse.org/pdt/docs.php)</p>
 <b>PHP Web Server Debugger</b>
 <ul>
 	<li><a href="http://www.zend.com/pdt#ws_debugger">Zend Web Server
-	Debugger</a> -
+	Debugger</a> - Web server debugger binaries which should be installed on the web server.
+
+</ul>
+<ul>
+	<li><a href="http://www.xdebug.org">XDebug Components</a> - XDebug components including 
+	PHP executable and web server debugger. 
 
 </ul>
 </p>
@@ -179,6 +184,7 @@ practice is to start Eclipse with the <i>Eclipse -clean</i></p>
 	href="http://wiki.eclipse.org/IRC_FAQ#How_do_I_install_a_project_with_multiple_dependencies.3F">
 http://wiki.eclipse.org/IRC_FAQ#How_do_I_install_a_project_with_multiple_dependencies.3F</a>
 </p>
+
 </div>
 
 </div>
