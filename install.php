@@ -155,9 +155,8 @@ http://www.eclipse.org/pdt/docs.php)</p>
 
 </ul>
 <ul>
-	<li><a href="http://www.xdebug.org">XDebug Components</a> - XDebug components including 
-	PHP executable and web server debugger. 
-
+	<li><a href="http://www.xdebug.org">XDebug Components</a> - XDebug component for web server
+	debugging. 
 </ul>
 </p>
 <h2><a name="common_problems"></a>Common Problems</h2>
