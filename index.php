@@ -197,7 +197,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 				  	All PDT development is carried out in this repository
 				</li>
 				
-				<li><a href="http://dev.eclipse.org/mailman/listinfo/php-dev">Mailing List</a>. 
+				<li><a href="http://dev.eclipse.org/mailman/listinfo/pdt-dev">Mailing List</a>. 
 				  	Get involved in the development of the PDT project. 
 				  	If you have questions about usage of the PDT please use the PDT Newsgroup
 				</li>
