@@ -99,6 +99,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<ul>
 		<table>
 			<tr>
+				<td><li>26th of November, 2007</td>
+				<td> - PDT 1.0.1 M2</td>
+			</tr>
+			<tr>
 				<td><li>8th of November, 2007</td>
 				<td> - PDT 1.0.1 M1</td>
 			</tr>
