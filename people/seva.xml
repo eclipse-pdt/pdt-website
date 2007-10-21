@@ -17,7 +17,7 @@
 	
 	<person:biography>
 		<p>
-			<li><b>Additional email:</b><script language="JavaScript">var protocol = "mailto";
+			<li><b>Additional email:</b> <script language="JavaScript">var protocol = "mailto";
                                 function contact() { window.open(protocol + ":" + user2 + "@" + server2, "_self"); }
                             </script><a href="javascript:contact()">seva dot lapsha at gmail dot com</a>
                             <script language="JavaScript">var user2 = "seva.lapsha";var server2 = "gmail.com";</script>
