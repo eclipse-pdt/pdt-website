@@ -15,26 +15,30 @@
 
 	<person:e-mail>seva-eclipse@zend.com</person:e-mail>
 	
-	<person:e-mail>seva.lapsha@gmail.com</person:e-mail>
-
 	<person:biography>
 		<p>
-			Seva is a software engineer at
+			I'm a software engineer at
 			<a href="http://www.zend.com/" target="_top">
 				Zend Technologies
 			</a>
 			since 2001.
 		</p>
 		<p>
-			First 5 years Seva worked as a web developer, gaining
+			First 5 years I was involved in web development, gaining
 			experience with various web technologies and techniques,
 			e.g. PHP 4/5, LAMP integration, XHTML, CSS, JavaScript, SOA,
 			AJAX etc.
 		</p>
 		<p>
-			In 2006 Seva joined Development Tools group to contribute
-			his knowledge and experience in PHP and Web to develop
+			In 2006 I joined Development Tools group to contribute
+			my knowledge and experience in PHP and Web to develop
 			new generation of IDE for PHP oriented Web development.
+		</p>
+		<p>
+			<b>Additional email:</b><script language="JavaScript">var protocol = "mailto";
+                                function contact() { window.open(protocol + ":" + user2 + "@" + server2, "_self"); }
+                            </script><a href="javascript:contact()">seva-eclipse at zend dot com</a>
+                            <script language="JavaScript">var user2 = "seva.lapsha";var server2 = "gmail.com";</script>
 		</p>
 	</person:biography>
 
@@ -53,6 +57,6 @@
 
 	<!-- person:large-photo width="400" height="300"
 		href="photos/large/seva-large.jpg" />
-		<person:small-photo width="177" height="193"
-		href="photos/small/seva-small.jpg" / -->
+	<person:small-photo width="177" height="193"
+		href="photos/small/seva-small.jpg" /-->
 </person:person>
