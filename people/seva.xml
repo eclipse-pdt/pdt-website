@@ -17,6 +17,13 @@
 	
 	<person:biography>
 		<p>
+			<li><b>Additional email:</b><script language="JavaScript">var protocol = "mailto";
+                                function contact() { window.open(protocol + ":" + user2 + "@" + server2, "_self"); }
+                            </script><a href="javascript:contact()">seva dot lapsha at gmail dot com</a>
+                            <script language="JavaScript">var user2 = "seva.lapsha";var server2 = "gmail.com";</script>
+            </li>
+		</p>
+		<p>
 			I'm a software engineer at
 			<a href="http://www.zend.com/" target="_top">
 				Zend Technologies
@@ -33,12 +40,6 @@
 			In 2006 I joined Development Tools group to contribute
 			my knowledge and experience in PHP and Web to develop
 			new generation of IDE for PHP oriented Web development.
-		</p>
-		<p>
-			<b>Additional email:</b><script language="JavaScript">var protocol = "mailto";
-                                function contact() { window.open(protocol + ":" + user2 + "@" + server2, "_self"); }
-                            </script><a href="javascript:contact()">seva-eclipse at zend dot com</a>
-                            <script language="JavaScript">var user2 = "seva.lapsha";var server2 = "gmail.com";</script>
 		</p>
 	</person:biography>
 
