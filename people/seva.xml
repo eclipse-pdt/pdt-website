@@ -13,25 +13,18 @@
 		Zend Technologies
 	</person:affiliation>
 
-	<person:e-mail>seva-eclipse@zend.com</person:e-mail>
+	<person:e-mail>seva@zend.com</person:e-mail>
 	
 	<person:biography>
 		<p>
-			<li><b>Additional email:</b> <script language="JavaScript">var protocol = "mailto";
-                                function contact() { window.open(protocol + ":" + user2 + "@" + server2, "_self"); }
-                            </script><a href="javascript:contact()">seva dot lapsha at gmail dot com</a>
-                            <script language="JavaScript">var user2 = "seva.lapsha";var server2 = "gmail.com";</script>
-            </li>
-		</p>
-		<p>
-			I'm a software engineer at
+			Seva is a software engineer at
 			<a href="http://www.zend.com/" target="_top">
 				Zend Technologies
 			</a>
 			since 2001.
 		</p>
 		<p>
-			First 5 years I was involved in web development, gaining
+			First 5 years he was involved in e-Biz team (PHP backend web + intra), gaining
 			experience with various web technologies and techniques,
 			e.g. PHP 4/5, LAMP integration, XHTML, CSS, JavaScript, SOA,
 			AJAX etc.
@@ -54,10 +47,10 @@
 		</p>
 	</person:contribution>
 
-	<person:home-page href="http://www.zend.com/" />
+	<person:home-page href="http://linkedin.com/in/lapsha/" />
 
-	<!-- person:large-photo width="400" height="300"
-		href="photos/large/seva-large.jpg" />
-	<person:small-photo width="177" height="193"
-		href="photos/small/seva-small.jpg" /-->
+	<person:large-photo width="400" height="400"
+		href="http://images30.fotki.com/v484/photos/1/156965/5521784/sevabig-vi.jpg" />
+	<person:small-photo width="100" height="100"
+		href="http://images30.fotki.com/v41/photos/1/156965/5521784/sevasmall-vi.jpg" />
 </person:person>
