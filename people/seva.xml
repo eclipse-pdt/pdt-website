@@ -30,20 +30,15 @@
 			AJAX etc.
 		</p>
 		<p>
-			In 2006 I joined Development Tools group to contribute
-			my knowledge and experience in PHP and Web to develop
+			In 2006 he joined Development Tools group to contribute
+			his knowledge and experience in PHP and Web to develop
 			new generation of IDE for PHP oriented Web development.
 		</p>
 	</person:biography>
 
 	<person:contribution role="committer">
 		<p>
-			Main contributions to the PDT project are:
-			<ul>
-				<li>Major Outline Views enhancements,</li>
-				<li>Minor PHP model enhancements,</li>
-				<li>Bug fixes</li>
-			</ul>
+			Full time contributor.
 		</p>
 	</person:contribution>
 
