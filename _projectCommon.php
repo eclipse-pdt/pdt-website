@@ -28,7 +28,7 @@ END;
 	$Nav->addNavSeparator($qa . "Project Home", 	"/pdt/index.php");
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php", 		"_self", 2);
-	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_0.php", 		"_self", 2);
+	$Nav->addCustomNav("Project Plan", 		"http://wiki.eclipse.org/PDT_1.5_Plan", 		"_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PDT", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"http://wiki.eclipse.org/PDT/FAQ", 			"_self", 2);
 	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
