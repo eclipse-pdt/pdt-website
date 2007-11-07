@@ -100,11 +100,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<table>
 			<tr>
 				<td><li>6th of December, 2007</td>
-				<td> - PDT 1.0.1 M2</td>
-			</tr>
-			<tr>
-				<td><li>8th of November, 2007</td>
-				<td> - PDT 1.0.1 M1</td>
+				<td> - PDT 1.0.1 M1 (delayed due to debug path mapping issues)</td>
 			</tr>
 			<tr>
 				<td><li>18th of September, 2007</td>
