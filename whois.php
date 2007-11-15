@@ -14,7 +14,7 @@
 
 	#
 	# Begin: page-specific settings.  Change these.
-	$pageTitle 		= "Who is Using PDT?";
+	$pageTitle 		= "Who is Using/Extending PDT?";
 	$pageKeywords	= "PHP, who, using, Zend, Studio, Zero, Project, APDT";
 	$pageAuthor		= "Yossi Leon";
 
@@ -33,13 +33,13 @@
 				<tr>
 					<td align="left" width="60%"><h1><?=$pageTitle?>
 						<br>
-						<font size="1" color="#8080FF">Which products or projects are using the PDT project</font>
+						<font size="1" color="#8080FF">Which products or projects are using/extending the PDT project</font>
 						</h1>
 					</td>
 				</tr>
 			</tbody>
 		</table>
-		<h2>Zend Studio for Eclipse - <a href="http://www.zend.com/products/zend_studio/eclipse/">Product Home Page</a></h2>
+		<h2>Zend Studio for Eclipse</h2>
 		<p>Zend Studio for Eclipse is Zend Studio’s next generation product which is based 
 		on proven Zend Studio technology and the Eclipse PHP Developers Tools (PDT) project. 
 		Zend Studio for Eclipse creates a unique IDE that provides professional PHP development capabilities 
@@ -48,7 +48,7 @@
 		</p>
 		
 		<br>
-		<h2>IBM REST Development Framework</h2> - <a href="http://www.projectzero.org/wiki/bin/view/">Project Home Page</a>
+		<h2>IBM REST Development Framework</h2>
 		<p>Project Zero introduces a simple environment for creating, assembling and executing 
 		applications based on popular Web technologies. The Project Zero environment includes a 
 		scripting runtime for Groovy and PHP with application programming interfaces optimized for 
@@ -58,7 +58,7 @@
 		</p>
 		
 		<br>
-		<h2>APDT - PHP Aspect</h2> - <a href="http://code.google.com/soc/2007/google/appinfo.html?csaid=C71130166CAA177E">Project Home Page</a>
+		<h2>APDT - PHP Aspect</h2>
 		<p>phpAspect is a PHP language extension to implement Aspect-Oriented Programming (phpaspect.org).
 		The goal of this project is to write a phpAspect plugin for eclipse in order to make people 
 		able to use phpAspect easily in their projects.<a href="http://code.google.com/soc/2007/google/appinfo.html?csaid=C71130166CAA177E">Learn more</a>
