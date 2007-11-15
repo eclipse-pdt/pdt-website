@@ -14,7 +14,7 @@
 
 	#
 	# Begin: page-specific settings.  Change these.
-	$pageTitle 		= "Who is Using/Extending PDT?";
+	$pageTitle 		= "Who is Using / Extending PDT?";
 	$pageKeywords	= "PHP, who, using, Zend, Studio, Zero, Project, APDT";
 	$pageAuthor		= "Yossi Leon";
 
