@@ -48,7 +48,7 @@
 		</p>
 		
 		<br>
-		<h2>IBM REST Development Framework</h2>
+		<h2>Project Zero - IBM REST Development Framework</h2>
 		<p>Project Zero introduces a simple environment for creating, assembling and executing 
 		applications based on popular Web technologies. The Project Zero environment includes a 
 		scripting runtime for Groovy and PHP with application programming interfaces optimized for 
