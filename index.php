@@ -320,8 +320,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<br>
 		<br>
 		<br>
-		<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
-	</div>
+		<!--<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
+	--></div>
 
 </div>
 
