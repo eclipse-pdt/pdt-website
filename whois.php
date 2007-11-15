@@ -14,7 +14,7 @@
 
 	#
 	# Begin: page-specific settings.  Change these.
-	$pageTitle 		= "Who is Using PDT";
+	$pageTitle 		= "Who is Using PDT?";
 	$pageKeywords	= "PHP, who, using, Zend, Studio, Zero, Project, APDT";
 	$pageAuthor		= "Yossi Leon";
 
@@ -39,14 +39,15 @@
 				</tr>
 			</tbody>
 		</table>
-		<h2>Zend Studio for Eclipse</h2> - <a href="http://www.zend.com/products/zend_studio/eclipse/">Product Home Page</a>
+		<h2>Zend Studio for Eclipse - <a href="http://www.zend.com/products/zend_studio/eclipse/">Product Home Page</a></h2>
 		<p>Zend Studio for Eclipse is Zend Studio’s next generation product which is based 
-		on proven Zend Studio technology and the <b>Eclipse PHP Developers Tools (PDT) project</b>. 
+		on proven Zend Studio technology and the Eclipse PHP Developers Tools (PDT) project. 
 		Zend Studio for Eclipse creates a unique IDE that provides professional PHP development capabilities 
 		combined with the Eclipse multi-language support and plug-in extension technology that creates the 
 		worlds most powerful PHP IDE. <a href="http://www.zend.com/products/zend_studio/eclipse/">Learn more</a>
 		</p>
 		
+		<br>
 		<h2>IBM REST Development Framework</h2> - <a href="http://www.projectzero.org/wiki/bin/view/">Project Home Page</a>
 		<p>Project Zero introduces a simple environment for creating, assembling and executing 
 		applications based on popular Web technologies. The Project Zero environment includes a 
@@ -56,6 +57,7 @@
 		generation of dynamic Web applications. <a href="http://www.projectzero.org/wiki/bin/view/">Learn more</a>
 		</p>
 		
+		<br>
 		<h2>APDT - PHP Aspect</h2> - <a href="http://code.google.com/soc/2007/google/appinfo.html?csaid=C71130166CAA177E">Project Home Page</a>
 		<p>phpAspect is a PHP language extension to implement Aspect-Oriented Programming (phpaspect.org).
 		The goal of this project is to write a phpAspect plugin for eclipse in order to make people 
