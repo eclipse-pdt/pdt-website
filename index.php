@@ -87,9 +87,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		<br>
-		
-		<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
-		
+		<a href="http://www.eclipse.org/pdt/whois.php">Who</a> is using PDT?
+		<br>
 		<br><!--
 		
 		<a href="summer_camp.php" >Summer Camp - Help us make PDT better!</a>
@@ -319,7 +318,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 
 	</div>
 	<div id="rightcolumn">
-		
+		<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
 	</div>
 
 </div>
