@@ -59,9 +59,12 @@
 		
 		<br>
 		<h2>APDT - PHP Aspect</h2>
-		<p>phpAspect is a PHP language extension to implement Aspect-Oriented Programming (phpaspect.org).
-		The goal of this project is to write a phpAspect plugin for eclipse in order to make people 
-		able to use phpAspect easily in their projects.<a href="http://code.google.com/soc/2007/google/appinfo.html?csaid=C71130166CAA177E">Learn more</a>
+		<p>
+		The Aspect PHP Development Tools (APDT) project provides Eclipse platform based tool support for 
+		AOSD with PHPAspect. The goal is to deliver a user experience that is consistent with PDT when 
+		working with PHPAspect projects and resources. This project provides an integration layer between 
+		the PHPAspect weaver, runtime and Eclipse/PDT extension points.
+		<a href="http://code.google.com/p/apdt/">Learn more</a>
 		</p>
 	</div>
 </div>
