@@ -66,6 +66,14 @@
 		the PHPAspect weaver, runtime and Eclipse/PDT extension points.
 		<a href="http://code.google.com/p/apdt/">Learn more</a>
 		</p>
+		
+		<br>
+		<h2>Smarty for PDT (Google Code)</h2>
+		<p>
+		Smarty is a template engine for PHP. Smarty for PDT project (Google Code), enables users to develop Smarty code
+		utilizing the power of the PDT development tool.
+		<a href="http://code.google.com/p/smartypdt/">Learn more</a>
+		</p>
 	</div>
 </div>
 
