@@ -49,13 +49,17 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		
 	# Paste your HTML content here!
 	
-    echo"<!-- START: Google Analysis report -->
+    
+    echo <<<EOT
+    <!-- START: Google Analysis report -->
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 <script type="text/javascript">
 _uacct = "UA-3036363-2";
 urchinTracker();
 </script>
 <!-- END: Google Analysis report -->";
+EOT;
+    
 
 	ob_start();
 
