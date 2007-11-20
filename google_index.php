@@ -1,5 +1,4 @@
 <?php  		
-echo "starting php here";
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
@@ -7,20 +6,6 @@ $App 	= new App();
 $Nav	= new Nav();
 $Menu 	= new Menu();
 include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-echo "ending php here";
-?>
-
-<!-- START: Google Analysis report -->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-<script type="text/javascript">
-_uacct = "UA-3036363-2";
-urchinTracker();
-</script>
-<!-- END: Google Analysis report -->
-
-<?php
-echo "and back to php here";
-
 
 	#*****************************************************************************
 	#
@@ -63,7 +48,17 @@ echo "and back to php here";
 	
 		
 	# Paste your HTML content here!
+	
+    echo"<!-- START: Google Analysis report -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-3036363-2";
+urchinTracker();
+</script>
+<!-- END: Google Analysis report -->";
+
 	ob_start();
+
 
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
 	$projectInfo = new ProjectInfo("tools.php");
