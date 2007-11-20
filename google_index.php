@@ -6,6 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.
 $App 	= new App();
 $Nav	= new Nav();
 $Menu 	= new Menu();
+include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 echo "ending php here";
 ?>
 
@@ -19,7 +20,7 @@ urchinTracker();
 
 <?php
 echo "and back to php here";
-include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+
 
 	#*****************************************************************************
 	#
