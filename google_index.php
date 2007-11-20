@@ -1,5 +1,16 @@
 <?php  		
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
+?>
+
+<!-- START: Google Analysis report -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-3036363-2";
+urchinTracker();
+</script>
+<!-- END: Google Analysis report -->
+
+<?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
 $App 	= new App();	
