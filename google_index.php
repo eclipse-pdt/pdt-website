@@ -48,27 +48,19 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	
 		
 	# Paste your HTML content here!
-	function callback($buffer)
-	{
-		$googlecode = <<<EOT
-    <!-- START: Google Analysis report -->
+	ob_start();
+
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+	$projectInfo = new ProjectInfo("tools.php");
+	
+?>
+<!-- START: Google Analysis report -->
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 <script type="text/javascript">
 _uacct = "UA-3036363-2";
 urchinTracker();
 </script>
 <!-- END: Google Analysis report -->
-EOT;
-	  // replace all the apples with oranges
-	  return (str_replace("<body>", $googlecode . "<body><p>", $buffer));
-	}
-	
-	ob_start("callback");
-
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-	$projectInfo = new ProjectInfo("tools.php");
-	
-?>
 
 <div id="maincontent">
 	<div id="midcolumn">
