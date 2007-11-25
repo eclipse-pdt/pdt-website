@@ -60,7 +60,7 @@ urchinTracker();
 <!-- END: Google Analysis report -->
 EOT;
 	  // replace all the apples with oranges
-	  return (str_replace("<body>", $googelcode . "<body>", $buffer));
+	  return (str_replace("<body>", $googlecode . "<body><p>", $buffer));
 	}
 	
 	ob_start("callback");
