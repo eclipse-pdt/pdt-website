@@ -1,15 +1,14 @@
 Hello stats
 <?php
-echo getcwd();
 error_reporting(E_ALL | E_WARNING);
 require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 $_PASSWORD = $_GET['password'];
-if ($_PASSWORD == "abc123")
-{
+    echo "1";
     # Connect to database
     $dbc = new DBConnectionDownloads();
     $dbh = $dbc->connect();
     # look for eclipse-SDK, breakdown by file, for all dates, all countries
+    echo "2";
     $sql_info = "SELECT 
 							IDX.file_name, 
 							COUNT(DOW.file_id) AS RecordCount
@@ -24,6 +23,8 @@ if ($_PASSWORD == "abc123")
     $aFileID = array();
     $file_id_csv = "";
     $rs = mysql_query($sql_info, $dbh);
+    echo "3";
+    
     if (mysql_errno($dbh) > 0)
     {
         echo "There was an error processing this request";
@@ -33,6 +34,8 @@ if ($_PASSWORD == "abc123")
         $dbc->disconnect();
         exit();
     }
+    echo "4";
+    
     echo "File count - all: <br />";
     while ($myrow = mysql_fetch_assoc($rs))
     {
@@ -44,13 +47,8 @@ if ($_PASSWORD == "abc123")
     $rs3 = null;
     $dbh = null;
     $dbc = null;
-} else
-{
-    echo "You are not authorized to access this page.";
-}
 die();
 ?>
-end stats
 
 <?php
 require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php" ;
