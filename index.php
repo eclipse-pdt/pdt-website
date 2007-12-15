@@ -335,7 +335,7 @@ $html .= "<!-- START: Google Analysis report -->
 _uacct = \"UA-3036363-2\";
 urchinTracker();
 </script>
-<!-- END: Google Analysis report --><body>";
+<!-- END: Google Analysis report -->";
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
