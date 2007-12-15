@@ -327,6 +327,16 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 <?
 	$html = ob_get_contents();
 	ob_end_clean();
+
+	echo $theme . '<br>';
+	echo $Menu . '<br>';
+	echo $Nav . '<br>';
+	echo $pageAuthor . '<br>';
+	echo $pageKeywords . '<br>';
+	echo $pageTitle . '<br>';
+	echo $html . '<br>';
+	
+	die();
 	
 str_replace("<body>", "<!-- START: Google Analysis report -->
 <script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
