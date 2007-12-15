@@ -54,14 +54,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	$projectInfo = new ProjectInfo("tools.php");
 	
 ?>
-<!-- START: Google Analysis report -->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-<script type="text/javascript">
-_uacct = "UA-3036363-2";
-urchinTracker();
-</script>
-<!-- END: Google Analysis report -->
-
 <div id="maincontent">
 	<div id="midcolumn">
 
@@ -335,6 +327,14 @@ urchinTracker();
 <?
 	$html = ob_get_contents();
 	ob_end_clean();
+	
+str_replace("<body>", "<!-- START: Google Analysis report -->
+<script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
+<script type=\"text/javascript\">
+_uacct = \"UA-3036363-2\";
+urchinTracker();
+</script>
+<!-- END: Google Analysis report --><body>", $html);
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
