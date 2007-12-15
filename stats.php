@@ -1,5 +1,6 @@
 Hello stats
 <?php
+echo getcwd();
 error_reporting(E_ALL | E_WARNING);
 require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
 $_PASSWORD = $_GET['password'];
