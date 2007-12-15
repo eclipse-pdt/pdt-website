@@ -328,23 +328,13 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	$html = ob_get_contents();
 	ob_end_clean();
 
-	echo $theme . '<br>';
-	echo $Menu . '<br>';
-	echo $Nav . '<br>';
-	echo $pageAuthor . '<br>';
-	echo $pageKeywords . '<br>';
-	echo $pageTitle . '<br>';
-	echo $html . '<br>';
-	
-	die();
-	
-str_replace("<body>", "<!-- START: Google Analysis report -->
+$html .= "<!-- START: Google Analysis report -->
 <script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
 <script type=\"text/javascript\">
 _uacct = \"UA-3036363-2\";
 urchinTracker();
 </script>
-<!-- END: Google Analysis report --><body>", $html);
+<!-- END: Google Analysis report --><body>";
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
