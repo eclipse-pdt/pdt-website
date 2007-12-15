@@ -1,7 +1,10 @@
 Hello stats
 <?php
 error_reporting(E_ALL | E_WARNING);
+echo "-1";
 require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
+echo "0";
+
 $_PASSWORD = $_GET['password'];
     echo "1";
     # Connect to database
