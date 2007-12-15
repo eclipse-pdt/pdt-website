@@ -1,4 +1,55 @@
 <?php
+require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php";
+$_PASSWORD = $_GET['password'];
+if ($_PASSWORD == "abc123")
+{
+    # Connect to database
+    $dbc = new DBConnectionDownloads();
+    $dbh = $dbc->connect();
+    # look for eclipse-SDK, breakdown by file, for all dates, all countries
+    $sql_info = "SELECT 
+							IDX.file_name, 
+							COUNT(DOW.file_id) AS RecordCount
+					FROM 
+							download_file_index AS IDX
+							INNER JOIN downloads AS DOW ON DOW.file_id = IDX.file_id
+					WHERE
+							IDX.file_name LIKE \"%php%\"
+					GROUP 
+							BY IDX.file_name
+		";
+    $aFileID = array();
+    $file_id_csv = "";
+    $rs = mysql_query($sql_info, $dbh);
+    if (mysql_errno($dbh) > 0)
+    {
+        echo "There was an error processing this request";
+        # For debugging purposes - don't display this stuff in a production page.
+        # echo mysql_error($dbh);
+        # Mysql disconnects automatically, but I like my disconnects to be explicit.
+        $dbc->disconnect();
+        exit();
+    }
+    echo "File count - all: <br />";
+    while ($myrow = mysql_fetch_assoc($rs))
+    {
+        echo "File: " . $myrow['file_name'] . " Count: " . $myrow['RecordCount'] . "<br />";
+    }
+    $dbc->disconnect();
+    $rs = null;
+    $rs2 = null;
+    $rs3 = null;
+    $dbh = null;
+    $dbc = null;
+} else
+{
+    echo "You are not authorized to access this page.";
+}
+die();
+?>
+
+
+<?php
 require_once "/home/data/httpd/eclipse-php-classes/system/dbconnection_downloads_ro.class.php" ;
 
 $_PASSWORD = $_GET [ 'password' ] ;
