@@ -210,6 +210,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
+					<span class="normal"><b>December &nbsp;16<sup>th</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20071213-M1">PDT 1.0.2 Milestone 1</a> is Ready!
+				</li>
+
+				<li>
 					<span class="normal"><b>September&nbsp;18<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">PDT 1.0 Final Release</a> is Ready!
 				</li>
