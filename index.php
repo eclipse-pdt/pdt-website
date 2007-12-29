@@ -86,9 +86,10 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		<br>
-		<a href="http://www.eclipsecon.org/2008/"><img border="0" src="http://www.eclipsecon.org/2008/image/125x72.gif" height="72" width="125" alt="Come see us at EclipseCon 2008!"/></a>
-
-		<br>
+		<a href="eclipsecon.php"><img border="0"
+		 src="http://www.eclipsecon.org/2008/image/480x60.jpg"
+ 		height="60" width="480" alt="Come see us at EclipseCon 2008 !"/>
+		<p>
 		<a href="http://www.eclipse.org/pdt/whois.php">Who</a><b> is using PDT?</b>
 		<br><!--
 		
