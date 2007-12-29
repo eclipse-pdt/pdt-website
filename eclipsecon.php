@@ -131,5 +131,13 @@ PHPAspect and APDT are both Google Summer of Code project, respectively in 2006 
 $html = ob_get_contents () ;
 ob_end_clean () ;
 
+$html .= "<!-- START: Google Analysis report -->
+<script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
+<script type=\"text/javascript\">
+_uacct = \"UA-3036363-2\";
+urchinTracker();
+</script>
+<!-- END: Google Analysis report -->";
+
 # Generate the web page$App->generatePage ( $theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html ) ;
 ?>
