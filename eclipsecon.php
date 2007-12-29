@@ -60,10 +60,8 @@ $projectInfo = new ProjectInfo ( "tools.php" ) ;
 </ul>
 </blockquote>
 
-
-
 <h2><a name="introduction"></a>Introduction</h2>
-<p>EclipseCon is the premier technical and user conference focusing on the power of the Eclipse platform. From implementers to users, and everyone in between, if you are using, building, or considering Eclipse, EclipseCon is the conference you need to attend.</p>
+<p>EclipseCon is the premier technical and user conference focusing on the power of the Eclipse platform. From implementers to users, and everyone in between, if you are using, building, or considering Eclipse, EclipseCon is the conference you need to attend.This year PDT presents one tutrial, one long talk and two short talks.</p>
 
 <h2><a name="pdt_toolkit"></a>PDT - The PHP Development Toolkit</h2>
 <font size="1" color="#8080FF">By Assaf Almaz (Zend Technologies)</font> 
@@ -102,7 +100,7 @@ This tutorial introduces the basics of PDT extension points and architecture as 
 </p>
 <p>Read more <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=17">here</a></p>
 
-<h2><a name="apdt"></a>Extending the PDT Project</h2>
+<h2><a name="apdt"></a>APDT: Aspect PHP Developement Tools</h2>
 <font size="1" color="#8080FF">By William Candillon (Telecom Lille 1)</font>
 <p>The Aspect PHP Development Tools (APDT) project provides Eclipse platform based tool support for AOSD with PHPAspect. Our goal is to deliver a user experience that is consistent with the PHP Development Tools (PDT) when working with PHPAspect projects and resources. This plugin provides an integration layer between the PHPAspect weaver, runtime and Eclipse/PDT extension points.
 <br>
