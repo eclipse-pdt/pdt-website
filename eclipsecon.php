@@ -63,12 +63,7 @@ $projectInfo = new ProjectInfo ( "tools.php" ) ;
 
 
 <h2><a name="introduction"></a>Introduction</h2>
-<p>Below are complete instructions for installing the PDT. If you are
-already familiar with Eclipse plugins, you might want to follow the
-abbreviated requirements and instructions on the <a
-	href="http://download.eclipse.org/tools/pdt/downloads/index.php">download
-page</a>. Otherwise, follow along below for detailed steps for
-installing the PDT.</p>
+<p>EclipseCon is the premier technical and user conference focusing on the power of the Eclipse platform. From implementers to users, and everyone in between, if you are using, building, or considering Eclipse, EclipseCon is the conference you need to attend.</p>
 
 <h2><a name="pdt_toolkit"></a>PDT - The PHP Development Toolkit</h2>
 <font size="1" color="#8080FF">By Assaf Almaz (Zend Technologies)</font> 
