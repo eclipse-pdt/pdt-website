@@ -68,32 +68,32 @@ Milestone Releases are approximately every six weeks of integration builds.</p>
 release candidates before the actual release. Scheduled release candidates should end 
 one week before the release.
 
-<li> 1.1M1 - 6th of May 2008 </li>
-<li> 1.1M2 - 16th of June 2008 </li>
-<li> 1.1RC1 - 3rd of August 2008 </li>
-<li> 1.1RC2 - 25th of August 2008 </li>
-<li><b> 1.1 Release </b>- 15th of September 2008 </li>
-<br>
-<input type="image" src="pdt_1_1_graph.png"/>
-<br>
+<li> 1.1 M1 - 6th of May 2008 </li>
+<li> 1.1 M2 - 16th of June 2008 </li>
+<li> 1.1 RC1 - 3rd of August 2008 </li>
+<li> 1.1 RC2 - 25th of August 2008 </li>
+<li><b> 1.1 Release - 15th of September 2008 </b></li>
+
 <h2><a name="Features"> </a> Features and Work Plan</h2>
-Milestone 1:
+<b>Milestone 1:</b>
 <li>Mark Cccurrences</li>
 <li>PHP Model Infrastructure</li>
 <li>Outlines: Type Hierarchy</li>
 <li>Override Method Annotation</li>
 <br>
-Milestone 2:
+<b>Milestone 2:</b>
 <li>PHP 5.3 Namespace Implications on PHP Model</li>
 <li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
 <li>Code Templates</li>
 <li>Code Assist for Dynamic Variables</li>
 <br>
-RC 1+2:
+<b>RC 1+2:</b>
 <li>Upgrade to Eclipse 3.4</li>
 <li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
 <br>
+<img src="pdt_1_1_graph.png"/>
 * Note: PHP 5.3 is expected to be released around April-May
+<br>
 * Note: Eclipse 3.4 is expected to be released on 28-June
 
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
