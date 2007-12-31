@@ -42,8 +42,6 @@ release of the PDT project, release 1.1.</p>
 
 <p>PDT 1.1 is planned to be released on September 2008. 
 The project will continue to be based on Eclipse Platform (3.4) and WTP (2.0) releases.
-You can find all PDT open bugs 
-<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a>.</p>
 
 <h2><a name="Deliverables"></a>Release Deliverables</h2>
 <p>The release deliverables are:</p>
@@ -74,6 +72,24 @@ one week before the release.
 <li><b> 1.1 Release </b>- 15th of September 2008 </li>
 
 <h2><a name="Features"> </a> Features and Work Plan</h2>
+Milestone 1:
+<li>Mark Cccurrences</li>
+<li>PHP Model Infrastructure</li>
+<li>Outlines: Type Hierarchy</li>
+<li>Override Method Annotation</li>
+<br>
+Milestone 2:
+<li>PHP 5.3 Namespace Implications on PHP Model</li>
+<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
+<li>Code Templates</li>
+<li>Code Assist for Dynamic Variables</li>
+
+RC 1+2:
+<li>Upgrade to Eclipse 3.4</li>
+<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
+<br>
+* Note: PHP 5.3 is expected to be released around April-May
+* Note: Eclipse 3.4 is expected to be released on 28-June
 
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
