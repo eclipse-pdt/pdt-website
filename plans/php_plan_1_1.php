@@ -83,13 +83,13 @@ one week before the release.
 <br>
 <b>Milestone 2:</b>
 <li>PHP 5.3 Namespace Implications on PHP Model</li>
-<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
+<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <li>Code Templates</li>
 <li>Code Assist for Dynamic Variables</li>
 <br>
 <b>RC 1+2:</b>
 <li>Upgrade to Eclipse 3.4</li>
-<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a></li>
+<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <br>
 <img src="pdt_1_1_graph.png"/>
 * Note: PHP 5.3 is expected to be released around April-May
