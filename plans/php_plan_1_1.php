@@ -19,11 +19,14 @@ $projectInfo = new ProjectInfo("tools.php");
 ?>
 <div id="midcolumn">
 
-<table>
-	<tr>
-		<td valign="top"><b><font face="Arial,Helvetica" style="font-size: 17pt;">PDT Project Plan for 1.1 Release</font></td>
-		<td>&nbsp;</td>
-	</tr>
+<table style="width: 100%;" border="0" cellpadding="2">
+	<tbody>
+		<tr>
+			<td align="left" width="60%">
+				<h1>PDT Project Plan for 1.1 Release</h1>
+			</td>
+		</tr>
+	</tbody>
 </table>
 <p>Last revised: <tt>12/31/2007</tt>
 <p><em>&nbsp;&nbsp;&nbsp; Please send comments about this plan to
