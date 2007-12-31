@@ -87,7 +87,7 @@ one week before the release.
 <li>Code Templates</li>
 <li>Code Assist for Dynamic Variables</li>
 <br>
-<b>RC 1+2:</b>
+<b>Release Candidate 1+2:</b>
 <li>Upgrade to Eclipse 3.4</li>
 <li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <br>
