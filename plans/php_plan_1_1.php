@@ -11,6 +11,11 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 $pageTitle 		= "PDT";
 $pageKeywords	= "PDT";
 $pageAuthor		= "Yossi Leon, Zend Technologies";
+
+ob_start();
+
+require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+$projectInfo = new ProjectInfo("tools.php");
 ?>
 <div id="midcolumn">
 
