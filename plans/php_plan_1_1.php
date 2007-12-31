@@ -35,18 +35,15 @@ release of the PDT project, release 1.1.</p>
 <ul type="disc">
 <li><a href="#Deliverables">Release Deliverables</a></li>
 <li><a href="#Milestones">Release Milestones</a></li>
+<li><a href="#Features">Features and Work Plan</a></li>
 <li><a href="#TargetOperatingEnvironments">Target Operating Environments</a></li>
 
 </ul>
 
 <p>PDT 1.1 is planned to be released on September 2008. 
-The project will continue to be based on Eclipse 3.4 and WTP 2.0 planned releases.
+The project will continue to be based on Eclipse Platform (3.4) and WTP (2.0) releases.
 You can find all PDT open bugs 
 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here</a>.</p>
-
-<p>The first part of the plan deals with the important matters of release
-deliverables, release milestones and target operating environments. 
-These are all things that need to be clear for any release, even if no features were to change.&nbsp;</p>
 
 <h2><a name="Deliverables"></a>Release Deliverables</h2>
 <p>The release deliverables are:</p>
@@ -70,17 +67,20 @@ Milestone Releases are approximately every six weeks of integration builds.</p>
 release candidates before the actual release. Scheduled release candidates should end 
 one week before the release.
 
-<li> 1.1M1 - 11th of June 2007 </li>
-<li> 1.1M2 - 30th of August 2007 </li>
-<li> 1.1RC1 - 21st of August 2007 </li>
-<li> 1.1RC2 - Will be scheduled if needed </li>
+<li> 1.1M1 - 6th of May 2008 </li>
+<li> 1.1M2 - 16th of June 2008 </li>
+<li> 1.1RC1 - 3rd of August 2008 </li>
+<li> 1.1RC2 - 25th of August 2008 </li>
+<li><b> 1.1 Release </b>- 15th of September 2008 </li>
+
+<h2><a name="Features"> </a> Features and Work Plan</h2>
 
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
 
-<p>PDT 1.0 will support all operating environments supported by the Eclipse
+<p>PDT 1.1 will support all operating environments supported by the Eclipse
 Platform itself. For a list of supported environments, refer to <a
-href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_2.html#TargetOperatingEnvironments">
+href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_4.html#TargetOperatingEnvironments">
 Eclipse Project</a> for a list of reference platforms.</p>
 
 </div>
