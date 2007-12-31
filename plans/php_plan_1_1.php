@@ -73,7 +73,9 @@ one week before the release.
 <li> 1.1RC1 - 3rd of August 2008 </li>
 <li> 1.1RC2 - 25th of August 2008 </li>
 <li><b> 1.1 Release </b>- 15th of September 2008 </li>
-
+<br>
+<input type="image" src="pdt_1_1_graph.png"/>
+<br>
 <h2><a name="Features"> </a> Features and Work Plan</h2>
 Milestone 1:
 <li>Mark Cccurrences</li>
