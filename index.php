@@ -100,8 +100,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		<ul>
 		<table>
 			<tr>
-				<td><li>6th of December, 2007</td>
-				<td> - PDT 1.0.1 M1 (delayed due to debug path mapping issues)</td>
+				<td><li>12th of December, 2007</td>
+				<td> - PDT 1.0.2 M2 </td>
 			</tr>
 			<tr>
 				<td><li>18th of September, 2007</td>
@@ -118,50 +118,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<tr>
 				<td><li>6th of April, 2007</td>
 				<td> - 0.7 RC3 (and final)</td>
-			</tr>
-			<tr>
-				<td><li>2nd of February, 2007</td>
-				<td> - 0.7 RC2</td>
-			</tr>
-			<tr>
-				<td><li>1st of January, 2007</td>
-				<td> - 0.7 RC1</td>
-			</tr>
-			<tr>
-				<td><li>21th of December, 2006</td>
-				<td> - 0.7 Milestone 4</td>
-			</tr>
-			<tr>
-				<td><li>December, 2006</td>
-				<td> - Unit testing and debugger</td>
-			</tr>
-			<tr>
-				<td><li>December, 2006</td>
-				<td> - Debugger infrastructure improvements and changes</td>
-			</tr>
-			<tr>
-				<td><li>November, 2006</td>
-				<td> - Bug fixes and Include Path Explorer ui and core changes</td>
-			</tr>
-			<tr>
-				<td><li>October 12, 2006</td>
-				<td> - Eclipse Summit: Presenting PDT</td>
-			</tr>
-			<tr>
-				<td><li>July, 2006</td>
-				<td> - Upgrade to Eclipse 3.2 and WTP 1.5</td>
-			</tr>
-			<tr>
-				<td><li>April, 2006</td>
-				<td> - Finish 3rd development stage</td>
-			</tr>
-			<tr>
-				<td><li>March 20-23, 2006</td>
-				<td> - EclipseCon: Presenting PDT</td>
-			</tr>
-			<tr>
-				<td><li>March 8, 2006</td>
-				<td> - Creation review</td>
 			</tr>
 		</table>
 		</ul>
