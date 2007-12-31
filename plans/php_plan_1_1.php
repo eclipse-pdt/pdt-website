@@ -92,6 +92,7 @@ one week before the release.
 <li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <br>
 <img src="/pdt/plans/pdt_1_1_graph.PNG">
+<br>
 * Note: PHP 5.3 is expected to be released around April-May
 <br>
 * Note: Eclipse 3.4 is expected to be released on 28-June
