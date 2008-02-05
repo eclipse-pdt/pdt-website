@@ -1,11 +1,13 @@
-<?php  		
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+<?php
+set_include_path($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common" . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] . "/projects" . PATH_SEPARATOR . get_include_path());
+
+require_once("system/app.class.php");	
+require_once("system/nav.class.php"); 	
+require_once("system/menu.class.php"); 	
 $App 	= new App();	
 $Nav	= new Nav();	
 $Menu 	= new Menu();		
-include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
@@ -50,7 +52,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	# Paste your HTML content here!
 	ob_start();
 
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+	require_once("common/project-info.class.php");
 	$projectInfo = new ProjectInfo("tools.php");
 	
 ?>
@@ -86,41 +88,59 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		<br>
-		<a href="eclipsecon.php"><img border="0"
-		 src="http://www.eclipsecon.org/2008/image/480x60.jpg"
- 		height="60" width="480" alt="Come see us at EclipseCon 2008 !"/>
+		<a href="eclipsecon.php"><img border="0" src="http://www.eclipsecon.org/2008/image/480x60.jpg"	height="60" width="480" alt="Come see us at EclipseCon 2008 !"/></a>
 		<p>
-		<a href="http://www.eclipse.org/pdt/whois.php">Who</a><b> is using PDT?</b>
-		<br><!--
+			<a href="whois.php">Products and projects</a><b> that are using PDT</b><br>
+		</p>
 		
-		<a href="summer_camp.php" >Summer Camp - Help us make PDT better!</a>
-		
-		-->
 		<p>Schedule:</p>
-		<ul>
+		
+				
 		<table>
 			<tr>
-				<td><li>12th of December, 2007</td>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					3rd of January, 2008
+				</td>
+				<td> - <b>PDT 1.0.2 Release</b> </td>
+			</tr>
+			<tr>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					12th of December, 2007
+				</td>
 				<td> - PDT 1.0.2 M2 </td>
 			</tr>
 			<tr>
-				<td><li>18th of September, 2007</td>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					18th of September, 2007
+				</td>
 				<td> - <b>PDT 1.0 Release</b></td>
 			</tr>
 			<tr>
-				<td><li>30th of July, 2007</td>
-				<td> - <b>PDT 1.0 M2</b></td>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					30th of July, 2007
+				</td>
+				<td> - PDT 1.0 M2</td>
 			</tr>
 			<tr>
-				<td><li>11th of June, 2007</td>
-				<td> - <b>PDT 1.0 M1</b></td>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					11th of June, 2007
+				</td>
+				<td> - PDT 1.0 M1</td>
 			</tr>
 			<tr>
-				<td><li>6th of April, 2007</td>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					6th of April, 2007
+				</td>
 				<td> - 0.7 RC3 (and final)</td>
 			</tr>
 		</table>
-		</ul>
+		
 
 		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
 		Public License</a>
@@ -170,8 +190,8 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<h3>What's New</h3>
 			<ul>
 				<li>
-					<span class="normal"><b>December &nbsp;16<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20071213-M1">PDT 1.0.2 Milestone 1</a> is Ready!
+					<span class="normal"><b>January &nbsp;3<sup>rd</sup></b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release 1</a> is Ready!
 				</li>
 
 				<li>
