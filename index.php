@@ -191,7 +191,7 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 			<ul>
 				<li>
 					<span class="normal"><b>January &nbsp;3<sup>rd</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release 1</a> is Ready!
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
 				</li>
 
 				<li>
