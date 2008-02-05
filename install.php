@@ -1,17 +1,14 @@
 <?php
-require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/eclipse.org-common/system/app.class.php") ;
-require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/eclipse.org-common/system/nav.class.php") ;
-require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/eclipse.org-common/system/menu.class.php") ;
+set_include_path($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common" . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] . "/projects" . PATH_SEPARATOR . get_include_path());
+
+require_once ("system/app.class.php") ;
+require_once ("system/nav.class.php") ;
+require_once ("system/menu.class.php") ;
 $App = new App ( ) ;
 $Nav = new Nav ( ) ;
 $Menu = new Menu ( ) ;
-include ($App->getProjectCommon ()) ; # All on the same line to unclutter the user's desktop'
+include ("_projectCommon.php") ; # All on the same line to unclutter the user's desktop'
 
-#*****************************************************************************#
-# index.php#
-# Author: 		Yossi Leon# Date:			2006-06-26#
-# Description: downloads#
-#
 #****************************************************************************
 
 #
@@ -26,7 +23,7 @@ $pageAuthor = "PDT Committers" ;
 
 # Paste your HTML content here!ob_start () ;
 
-require_once ($_SERVER [ 'DOCUMENT_ROOT' ] . "/projects/common/project-info.class.php") ;
+require_once ("common/project-info.class.php") ;
 $projectInfo = new ProjectInfo ( "tools.php" ) ;
 
 ?>
@@ -67,7 +64,7 @@ page</a>. Otherwise, follow along below for detailed steps for
 installing the PDT.</p>
 
 <h2><a name="#installation_methods"></a>Installation Methods</h2>
-<p>PDT can be installed in various ways, depeneding on the configuration
+<div>PDT can be installed in various ways, depeneding on the configuration
 you have installed already, and depending on your familiarity with
 Eclipse.
 
@@ -97,8 +94,9 @@ Eclipse.
 	
 	
 	<li><b>Update Manager</b> - The update manager installation is done via
-	the update manager of the already installed Eclipse. Go to Help ->
-	Software Updates -> Find and Install. Choose the "Search For New
+	the update manager of the already installed Eclipse. 
+	<br>Go to <i>Help <img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+	Software Updates <img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" > Find and Install</i>. Choose the "Search For New
 	Feature to Install" and add a new site with the following link
 	"http://download.eclipse.org/tools/pdt/updates/" and press Next to
 	start the update process. <br>
@@ -106,9 +104,9 @@ Eclipse.
 		href="#additional_resources">Additional Resources</a> section below.
 
 </ul>
-</p>
+</div>
 <h2><a name="build_types"></a>Build Types</h2>
-<p>There are several types of builds used in the PDT project. The builds
+<div>There are several types of builds used in the PDT project. The builds
 are differentiated on the degree of their stability
 <ul>
 	<li><b>Released Builds</b> - the right builds for people who want to be
@@ -129,7 +127,7 @@ are differentiated on the degree of their stability
 	repository
 
 </ul>
-</p>
+</div>
 <p>Read more about Build Types <a
 	href="http://www.eclipse.org/pdt/build_types.php">here</a></p>
 
@@ -139,7 +137,7 @@ are differentiated on the degree of their stability
 debugging and will welcome any open source or commercial implementation
 of the debug protocol (The debug protocol implemented can be found at
 http://www.eclipse.org/pdt/docs.php)</p>
-<p>
+<div>
 <b>PHP Executable Debugger</b>
 
 <ul>
@@ -158,9 +156,9 @@ http://www.eclipse.org/pdt/docs.php)</p>
 	<li><a href="http://www.xdebug.org">XDebug Components</a> - XDebug component for web server
 	debugging. 
 </ul>
-</p>
+</div>
 <h2><a name="common_problems"></a>Common Problems</h2>
-<p>Some problems are due to cached information within Eclipse. Eclipse
+<div>Some problems are due to cached information within Eclipse. Eclipse
 caches information about plugins for faster startup. Adding PDT runtime
 package may result in stale cached information. Symptoms of this problem
 include:
@@ -174,7 +172,7 @@ include:
 	the PHP Editor
 
 </ul>
-</p>
+</div>
 <p>The solution is to clean up the cached information. The recommended
 practice is to start Eclipse with the <i>Eclipse -clean</i></p>
 
