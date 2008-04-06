@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.
 $App 	= new App();	
 $Nav	= new Nav();	
 $Menu 	= new Menu();		
-include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+include("../_projectCommon.php");    # All on the same line to unclutter the user's desktop'
 
 $pageTitle 		= "PDT";
 $pageKeywords	= "PDT";
