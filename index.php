@@ -88,7 +88,7 @@ $Menu 	= new Menu();
 		</ul>
 		<br>
 		<p>
-			<a href="whois.php">Products and projects</a>that are using PDT<br>
+			<a href="whois.php">Products and projects</a> that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
