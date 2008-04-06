@@ -7,13 +7,12 @@ require_once("system/menu.class.php");
 $App 	= new App();	
 $Nav	= new Nav();	
 $Menu 	= new Menu();		
-include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
 	# index.php
 	#
-	# Author: 		Yossi Leon
+	# Author: 		Assaf Almaz
 	# Date:			2006-04-27
 	#
 	# Description: main project page
@@ -29,10 +28,10 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	# $Nav->addNavSeparator("My Page Links", 	"downloads.php");
-	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
-	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
-
+	# $Nav->addNavSeparator("PDT", 	"/pdt/index.php");
+		
+	include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
+	
 	# End: page-specific settings
 	#
 	
@@ -88,9 +87,8 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		<br>
-		<a href="eclipsecon.php"><img border="0" src="http://www.eclipsecon.org/2008/image/480x60.jpg"	height="60" width="480" alt="Come see us at EclipseCon 2008 !"/></a>
 		<p>
-			<a href="whois.php">Products and projects</a><b> that are using PDT</b><br>
+			<a href="whois.php">Products and projects</a>that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
@@ -100,9 +98,30 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					15th of September, 2008
+				</td>
+				<td> - PDT 1.1 Release</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					1st of June, 2008
+				</td>
+				<td> - PDT 1.0.3 Release (Bug fixes) </td>
+			</tr>
+			<tr>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					6 of May, 2008
+				</td>
+				<td> - PDT 1.1 M1</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
 					3rd of January, 2008
 				</td>
-				<td> - <b>PDT 1.0.2 Release</b> </td>
+				<td> - <b>PDT 1.0.2 Released</b> </td>
 			</tr>
 			<tr>
 				<td>
@@ -116,7 +135,7 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
 					18th of September, 2007
 				</td>
-				<td> - <b>PDT 1.0 Release</b></td>
+				<td> - <b>PDT 1.0 Released</b></td>
 			</tr>
 			<tr>
 				<td>
@@ -188,7 +207,7 @@ include("_projectCommon.php");    # All on the same line to unclutter the user's
 		
 		<div class="homeitem">
 			<h3>What's New</h3>
-			<ul>
+			<ul>				
 				<li>
 					<span class="normal"><b>January &nbsp;3<sup>rd</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
