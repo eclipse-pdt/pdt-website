@@ -25,7 +25,9 @@ var sc_security="e6400172";
 </script><script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c29.statcounter.com/2769171/0/e6400172/0/" alt="blog counter" /></a></div></noscript>
 </span>
 END;
-	$Nav->addNavSeparator($qa . "Project Home", 	"/pdt/index.php");
+	// [almaz] the links here are relative to /pdt to make the links valid even when this page is included from a PHP file
+	// that is not at the root, such as from  plans/php_plan_1_1.php
+	$Nav->addNavSeparator("Project Home", 	"/pdt/index.php"); 
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php","_self", 2);
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_1.php","_self", 2);
