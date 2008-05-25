@@ -7,7 +7,7 @@
 	# Author: 		Roy Ganor
 	# Date:			2007-07-18
 	#
-	# Description: Development page - includes nightly reports, committers list
+	# Description: ASTView page 
 	#
 	#
 	#****************************************************************************
@@ -162,14 +162,6 @@
 				<li>
 					Initial implementation from Martin_Aeschlimann[at]ch.ibm.com.<br>
 					Also available from http://www.eclipse.org/jdt/ui/astview/index.php
-				</li>
-				<li>
-					Christian Hauser: The current AST view plugin
-					is based his AST view implementation from the Zuerich Code Camp. Thanks
-					a lot!<br>
-				</li>
-				<li>
-					Markus Keller has helped absorbing AST changes and implemented more features.<br>
 				</li>
 			</ul>
 
