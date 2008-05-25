@@ -156,7 +156,8 @@
 			</ul>
 			
 			<p>
-				Thanks and credits go to 
+				<h4>Thanks and credits go to</h4>
+			<ul>
 				<li>
 					Initial implementation from Martin_Aeschlimann[at]ch.ibm.com.<br>
 					Also available from http://www.eclipse.org/jdt/ui/astview/index.php
@@ -169,7 +170,7 @@
 				<li>
 					Markus Keller has helped absorbing AST changes and implemented more features.<br>
 				</li>
-			</p>
+			</ul>
 
 	</div>
 </div>
