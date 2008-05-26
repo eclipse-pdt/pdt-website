@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Abstract Syntax Tree</title>
+
+<link href="../article.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.71.1" name="generator">
+<meta name="description" content="The Abstract Syntax Tree is the base framework for many powerful tools of the Eclipse IDE, including refactoring, Quick Fix and Quick Assist. The Abstract Syntax Tree maps plain Java source code in a tree form. This tree is more convenient and reliable to analyse and modify programmatically than text-based source. This article shows how you can use the Abstract Syntax Tree for your own applications.">
+</head>
+<body style="color: black; background-color: white;" alink="#0000ff" link="#0000ff" vlink="#840084">
+<div class="article" lang="en">
+<div class="titlepage">
+<div>
+<h1 align="center">Abstract Syntax Tree -&nbsp;PHP
+Development Tools</h1>
+<div class="summary">
+<h2>Summary</h2>
+<p>The Abstract Syntax Tree (AST) is the base framework for many
+powerful tools of the
+Eclipse IDE, including Semantic highlighting, Refactoring, Quick Fix
+and Quick Assist. The Abstract Syntax
+Tree maps plain PHP source code in a tree form. This tree is more
+convenient and
+reliable to analyze and modify programmatically than text-based source.
+This
+part of the article shows how you can use the Abstract Syntax Tree for
+extending Eclipse PHP Development Tools (PDT) for your
+applications. This article is based on the "<a href="http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html">Abstract
+Syntax Tree</a>" (JDT) By Thomas&nbsp;Kuhn
+and&nbsp;Olivier&nbsp;Thomann.</p>
+<div class="copyright">By
+Roy Ganor, Zend Technologies LTD.<br>
+Copyright ©2008&nbsp;. Made available under the EPL v1.0 </div>
+<div class="date"><span class="date">May, 2008<br>
+</span></div>
+</div>
+</div>
+<hr></div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both;"><a name="sec-introduction"></a>Introduction</h2>
+</div>
+</div>
+</div>
+<p>The AST is comparable to the DOM
+tree model of an XML file. Just like with DOM, the AST allows you to
+modify the tree model and
+reflects these modifications in the PHP source code.</p>
+<p>This part of the article refers to an example application
+which covers most of the
+interesting AST-related topics. Let us have a look at the application
+that was built to
+illustrate this article: </p>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-example-application"></a>Example
+Application</h3>
+</div>
+</div>
+</div>
+<p>According to PHP Practices [<a href="#bib-java-practices">4</a>],
+you
+should not declare local variables before using them. The goal of our
+application
+will be to detect contradicting variable declarations and to move them
+to their
+correct place. There are three cases our application has to deal with:
+</p>
+<div class="orderedlist">
+<ol type="1">
+<li>
+<p><span class="emphasis"><em>Removal of
+unnecessary declaration.</em></span> If a
+variable is declared and initialized, only to be overridden by another
+assignment later on, the first declaration of the variable is an
+<span class="emphasis"><em>unnecessary
+declaration</em></span>.</p>
+</li>
+<li>
+<p><a name="item-move-of-declaration"></a><span class="emphasis"><em>Move of declaration.</em></span>
+If a variable is declared,
+and not immediately referenced within the following statement, this
+variable
+declaration has to be moved. The correct place for the declaration is
+the line
+before it is first referenced.</p>
+</li>
+<li>
+<p><span class="emphasis"><em>Move of
+declaration of a variable that is referred to from within
+different blocks.</em></span> This is a subcase of case <a href="#item-move-of-declaration">2</a>. Imagine that a
+variable is used
+in both a try- and a catch clause. Here the declaration cannot be moved
+right
+before the first reference in the try-clause, since then it would not
+be
+declared in the catch-clause. Our application has to deal with that and
+has to
+move the declaration to the best possible place, which would be here
+one line
+above the try-clause.</p>
+</li>
+</ol>
+</div>
+In <a href="#app-code-fragments-example" title="A.&nbsp;Code Fragments for Example Application Cases">Appendix&nbsp;A,
+<i>Code Fragments for Example Application Cases</i></a>
+code snippets
+to each of these cases are provided.
+<p>You can import the example application into your workspace [<a href="#bib-example-project">1</a>] or install the
+plug-in using the Eclipse Update
+Manager [<a href="#bib-example-update">2</a>].</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-workflow"></a>Workflow</h3>
+</div>
+</div>
+</div>
+<p> A typical workflow of an application using AST looks like
+this:
+</p>
+<div class="figure"><a name="fig-workflow"></a>
+<p class="title"><b>Figure&nbsp;1.&nbsp;AST
+Workflow</b></p>
+<div class="figure-contents">
+<div class="mediaobject"><img src="images/workflow.png" alt="AST Workflow"></div>
+</div>
+</div>
+<br class="figure-break">
+<div class="orderedlist">
+<ol type="1">
+<li><a name="workflow-legend-1"></a><span class="emphasis"><em>PHP source</em></span>:
+To start off, you provide
+some source code to parse. This source code can be supplied as a PHP
+file in your project or directly as a
+<code class="code">char[]</code> that contains
+PHP source</li>
+<li><a name="workflow-legend-2"></a><span class="emphasis"><em>Parse</em></span>:
+The source code described at
+<a href="#workflow-legend-1">1</a> is parsed.
+All
+you need for this step is provided by the class
+<code class="code">org.eclipse.jdt.core.dom.ASTParser</code>.
+See <a href="#sec-parsing-a-source-file" title="Parsing source code">the section called &#8220;Parsing
+source code&#8221;</a>.</li>
+<li><a name="workflow-legend-3"></a>The <span class="emphasis"><em>Abstract Syntax Tree</em></span>
+is the result of step
+<a href="#workflow-legend-2">2</a>. It is a tree
+model that entirely
+represents the source you provided in step <a href="#workflow-legend-1">1</a>. If requested, the
+parser also computes
+and includes additional symbol resolved information called "<a href="#sec-bindings" title="Bindings">bindings</a>".</li>
+<li>
+<p><a name="workflow-legend-4"></a><span class="emphasis"><em>Manipulating the AST</em></span>:
+If the AST of point <a href="#workflow-legend-3">3</a>
+needs to be changed, this can be done in two
+ways:
+</p>
+<div class="orderedlist">
+<ol type="a">
+<li>By directly modifying the AST.</li>
+<li>By noting the modifications in a separate protocol.
+This
+protocol is handled by an instance of
+<code class="classname">ASTRewrite</code>.</li>
+</ol>
+</div>
+See more in <a href="#sec-how-to-apply-changes" title="How to Apply Changes">the section called &#8220;How to
+Apply Changes&#8221;</a>.
+</li>
+<li><a name="workflow-legend-5"></a><span class="emphasis"><em>Writing changes back</em></span>:
+If changes have been
+made, they need to be applied to the source code that was provided by <a href="#workflow-legend-1">1</a>. This is described in
+detail in <a href="#sec-write-it-down" title="Write it down">the
+section called &#8220;Write it down&#8221;</a>.</li>
+<li><a name="workflow-legend-6"></a><span class="emphasis"><em><code class="code">IDocument</code></em></span>:
+Is a wrapper for the source code of step
+<a href="#workflow-legend-1">1</a> and is needed
+at point <a href="#workflow-legend-5">5</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both;"><a name="sec-ast"></a>The Abstract Syntax Tree (AST)</h2>
+</div>
+</div>
+</div>
+<p> As mentioned, the Abstract Syntax Tree is the way that
+Eclipse looks at your source
+code: every PHP source file is entirely represented as tree of AST
+nodes. These nodes
+are all subclasses of <code class="classname">ASTNode</code>.
+Every subclass is
+specialized for an element of the PHP Programming Language. E.g. there
+are nodes for
+method declarations ( <code class="classname">MethodDeclaration</code>),&nbsp;class
+declaration (<code class="classname">ClassDeclaration</code>),
+assignments and so on. One very frequently used node is&nbsp;<code class="classname">Identifier</code>. An&nbsp;<code class="classname">Identifier</code> is any
+string of PHP source that is not a keyword or a scalar&nbsp;<code class="classname">Scalar&nbsp;</code>For example,
+in
+<code class="code">$i = 6 + $j;</code>,
+<code class="code">$i</code> and <code class="code">$j</code> are represented by <code class="classname">I</code><code class="classname">dentifier</code>.&nbsp;
+</p>
+<p> All AST-relevant classes are located in the package
+<code class="code">org.eclipse.php.core.dom</code>
+of the
+<code class="code">org.eclipse.php.core</code>
+plug-in.</p>
+<p> To discover how code is represented as AST, the AST Viewer
+plug-in [<a href="#bib-ast-viewer">4</a>] is a big
+help: Once installed you can simply mark source
+code in the editor and let it be displayed in a tree form in the AST
+Viewer view. </p>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-parsing-a-source-file"></a>Parsing
+source code</h3>
+</div>
+</div>
+</div>
+<p>Most of the time, an AST is not created from scratch, but
+rather parsed from
+existing PHP code. This is done using the <code class="classname">ASTParser</code>.
+It
+processes whole PHP files as well as portions of PHP code. In the
+example
+application the method&nbsp;<code class="methodname">Program
+parse(ISourceModule lwUnit)</code>of the class <code class="classname">AbstractASTArticle</code> parses the
+source code
+stored in the file that&nbsp;<code class="methodname">lwUnit</code>
+points to:
+</p>
+<pre class="programlisting">protected Program parse(ICompilationUnit unit) {<br>	ASTParser parser = ASTParser.newParser(ASTParser.VERSION_PHP5, lwUnit);<br>	try {<br>	return (Program) parser.createAST(null /* IProgressMonitor */); <br>	} catch (Exception e) {<br>	return null;<br>	} <br>}</pre>
+<p>With
+<code class="code">ASTParser.newParser(ASTParser.VERSION_PHP5,
+lwUnit)</code>, we advise
+the parser to parse the code following to the PHP Language
+Specification, includes all PHP Language Specifications up to the new
+syntax
+introduced in PHP 5.&nbsp;<code class="code"></code>An
+<code class="classname">ISourceModule</code> is a
+pointer to a PHP file, and will be used to reolve binding infoirmation
+of this script. The parser
+supports five kinds of input: </p>
+<p><span class="emphasis"><em>Entire source
+file</em></span>: The parser expects the source
+either as a pointer to a PHP file (which means as an
+<code class="classname">ISourceModule</code>, see <a href="#sec-java-model" title="Java Model">the section
+called &#8220;PHP Model&#8221;</a>) or as
+<code class="code">char[]</code>.
+</p>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">PHP Model</h4>
+</div>
+</div>
+</div>
+<p>The PHP Model is a whole different story. It is out of scope
+of this
+article to dive deep into its details within. The parts looked at will
+be the ones which intersect with the AST. The motivation to discuss it
+here is, to use it as an entry point to build an Abstract Syntax Tree
+of a source file. Remember, the
+<code class="classname">ICompilationUnit</code> is
+one of the possible parameters for
+the AST parser.</p>
+<p>The PHP Model represents a PHP Project in a tree structure,
+which is
+visualized by the well known "Package Explorer" view:</p>
+<div class="figure"><a name="fig-java-model-overview"></a>
+<p class="title"><b>Figure&nbsp;2. PHP Model
+Overview</b></p>
+<div class="figure-contents">
+<div class="mediaobject"><img src="images/java-model-overview.png" alt="Java Model Overview"></div>
+</div>
+</div>
+<br class="figure-break">
+<p>The nodes of the PHP Model implement one of the following
+interfaces:
+</p>
+<div class="itemizedlist">
+<ul type="disc">
+<li><code class="code">IScriptProject</code>:
+Is the node of the PHP Model and represents a PHP Project. It contains
+<code class="code">IProjectFragment</code> as
+child nodes.</li>
+<li><code class="code">IProjectFragment</code>:
+Represents a project fragment, and maps the contents to an
+underlying resource which is either a folder, JAR, or ZIP file.</li>
+<li><code class="code">IScriptFolder</code>:&nbsp;Represents
+a folder containing script files inside<code class="code"></code>.</li>
+<li><code class="code">ISourceModule</code>:
+Represents a PHP source file.<span style="font-family: monospace;"></span></li>
+<li><span style="font-family: monospace;"></span><code class="code"></code> <code class="code">IType</code>:
+Represents a class or interface in a source file.</li>
+<li><code class="code">IField</code>:
+Represents a field or constant&nbsp;in an <code class="code">IType</code><span style="font-family: monospace;"></span></li>
+<li><span style="font-family: monospace;"></span><code class="code">IMethod</code>: Represents afunction in
+of source file or a&nbsp;method&nbsp;in a class or interface</li>
+</ul>
+</div>
+<p>In contrast to the AST, these nodes are lightweight handles.
+It costs much less
+to rebuild a portion of the PHP Model than to rebuild an AST. That is
+also one reason
+why the PHP Model is not only defined down to the level of
+<code class="classname">ISourceModule</code>. There
+are many cases where complete
+information, like that provided by the AST, is not needed. One example
+is the Outline
+view: this view does not need to know the contents of a method body. It
+is more
+important that it can be rebuilt fast, to keep in sync with its source
+code.</p>
+<p>There are different ways to get an
+<code class="classname">ISourceModule</code>. The
+example applications are
+launched as actions from the package tree view. This is quite
+convenient: only add
+an
+<code class="code">objectContribution</code>
+extension to the point
+<code class="code">org.eclipse.ui.popupMenus</code>.
+By choosing<span style="font-family: monospace;">&nbsp;</span><code class="code">org.eclipse.dltk.core.ISourceModule&nbsp;</code>as
+<code class="code">objectClass</code>, the action
+will be only displayed in the context menu
+of a compilation unit. Have a look at the example application's
+<code class="code">plugin.xml</code>. The
+compilation unit then can be retrieved from the
+<code class="interfacename">ISelection</code>, that
+is passed to the
+action's delegate (in the example, this is
+<code class="classname">ASTArticleActionDelegate</code>).</p>
+<p>Another, programmatic, approach is to get the project handle
+from the IDE and to
+look for the compilation unit. This can be done by either step down the
+PHP Model
+tree to collect the desired <code class="classname">ISourceModule</code>s.
+Or, by calling the
+<code class="methodname">findType()</code> of the
+PHP project:
+</p>
+<pre class="programlisting">IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();<br>IProject project = root.getProject("somePHPProject");<br>project.open(null /* IProgressMonitor */);<br>IScriptProject PHPProject = DLTKCore.create(project);<br>IType lwType = PHPProject.findType("MyClass");<br>ISourceModule lwSourceModule = lwType.getSourceModule();</pre>
+</div>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-how-to-find-an-ast-node"></a>How
+to find an AST Node</h3>
+</div>
+</div>
+</div>
+<p>Even a simple "Hello world" program results in a quite complex
+tree.
+How does one get the&nbsp;<code class="classname">FunctionInvocation</code>
+of that
+<code class="code">println("Hello World")</code>?
+Scanning all the levels is a
+possible, but not very convenient.</p>
+<p> There is a better solution: every
+<code class="code">ASTNode</code> allows querying
+for a child node by using a visitor (visitor
+pattern [<a href="#bib-visitor-pattern">5</a>]).
+Have a look at
+<code class="classname">AbstractVisitor</code>.
+There you'll find for every subclass of
+<code class="classname">ASTNode</code> two methods,
+one called
+<code class="methodname">visit()</code>, the other
+called
+<code class="methodname">endVisit()</code>. Further,
+the
+<code class="classname">ASTVisitor</code> declares
+these two methods:
+<code class="methodname">preVisit(ASTNode node)</code>
+and
+<code class="methodname">postVisit(ASTNode node)</code>.</p>
+<p>The subclass of <code class="classname">AbstractVisitor</code>
+is passed to any node of the
+AST. The AST will recursively step through the tree, calling the
+mentioned methods of
+the visitor for every AST node in this order (for the example of a
+<code class="code">MethodInvocation</code>):
+</p>
+<div class="itemizedlist">
+<ul type="disc">
+<li><code class="methodname">preVisit(ASTNode node)</code></li>
+<li><code class="methodname">visit(MethodInvocation
+node)</code>
+</li>
+<li>... now the children of the method invocation are
+recursively
+processed if visit returns true</li>
+<li><code class="methodname">endVisit(MethodInvocation
+node)</code>
+</li>
+<li><code class="methodname">postVisit(ASTNode
+node)</code></li>
+</ul>
+</div>
+<p>// TODO : check here a sample for visitor</p>
+<p>In our example application, the
+<code class="classname">LocalVariableDetector</code>
+is a subclass of
+<code class="classname">AbstractVisitor</code>. It
+is used, amongst other things, to collect
+all local variable declarations of a compilation unit:
+</p>
+<pre class="programlisting">public boolean visit(VariableDeclarationStatement node) {<br>	for (Iterator iter = node.fragments().iterator(); iter.hasNext();) {<br>	VariableDeclarationFragment fragment = (VariableDeclarationFragment) iter.next();<br>	// ... store these fragments somewhere<br>	}<br>	return false; // prevent that SimpleName is interpreted as reference<br>}</pre>
+<p>If
+<code class="code">false</code> is returned from <code class="methodname">visit()</code>, the
+subtree of the visited node will not be considered. This is to ignore
+parts of
+the AST.</p>
+<p>In the example, <code class="methodname">process(Program&nbsp;program)</code>
+is
+called from the outside to start visiting the program. The function is
+fairly
+simple:
+</p>
+<pre class="programlisting">public void process(Program program) {<br>	program.accept(this);<br>}</pre>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-obtaining-information-from-an-ast-node"></a>Obtaining
+Information from an AST Node</h3>
+</div>
+</div>
+</div>
+<p>Every subclass of
+<code class="code">ASTNode</code> contains specific
+information for the PHP element it
+represents. E.g. a&nbsp;<code class="code">FunctionDeclaration</code>
+will contain information about the name, return
+type, parameters, etc. The information of a node is referred as
+<span class="emphasis"><em>structural properties</em></span>.
+Let us have a closer look at the
+characteristics of the structural properties. Beneath you see the
+properties of
+this function declaration:
+</p>
+<pre class="programlisting">function println($content) {<br>	echo $content . '&lt;BR/&gt;' ;<br>}</pre>
+<div class="figure"><a name="fig-properties-of-method-declaration"></a>
+<p class="title"><b>Figure&nbsp;3.&nbsp;Structural
+properties of a method declaration</b></p>
+<div class="figure-contents">
+<div class="mediaobject"><img src="images/md-astview.png" alt="Structural properties of a method declaration"></div>
+</div>
+</div>
+<br class="figure-break">
+<p>Access to the values of a node's structural properties can be
+made using static or
+generic methods:
+</p>
+<div class="orderedlist">
+<ol type="1">
+<li>
+<p><span class="emphasis"><em>static
+methods</em></span>: every node offers methods to
+access its properties: e.g.
+<code class="code">getName()</code>, etc.</p>
+</li>
+<li>
+<p><span class="emphasis"><em>generic
+method</em></span>: ask for a property value using
+the <code class="methodname">getStructuralProperty(StructuralPropertyDescriptor
+property)</code> method. Every AST subclass defines a set of
+<code class="classname">StructuralPropertyDescriptor</code>s,
+one for every
+structural property. The
+<code class="classname">StructuralPropertyDescriptor</code>
+can be accessed
+directly on the class to which they belong: e.g.&nbsp;<code class="code">FunctionDeclaration.NAME_PROPERTY</code>.
+A list of all available
+<code class="code">StructuralPropertyDescriptor</code>s
+of a node can be retrieved by
+calling the method
+<code class="code">structuralPropertiesForType()</code>
+on any instance of
+<code class="code">ASTNode</code>.</p>
+</li>
+</ol>
+</div>
+<p>The structural properties are grouped into three different
+kinds: properties
+that hold simple values, properties which contain a single child AST
+node and
+properties which contain a list of child AST nodes.
+</p>
+<div class="figure"><a name="fig-spd-subclasses"></a>
+<p class="title"><b>Figure&nbsp;4.&nbsp;StructuralPropertyDescriptor
+and subclasses</b></p>
+<div class="figure-contents">
+<div class="mediaobject"><img src="images/StructuralPropertyDescriptor-CD-s.png" alt="StructuralPropertyDescriptor and subclasses"></div>
+<a href="images/StructuralPropertyDescriptor-CD.png" target="_new">view full size</a></div>
+</div>
+<br class="figure-break">
+<div class="itemizedlist">
+<ul type="disc">
+<li>
+<p><code class="code">SimplePropertyDescriptor</code>:
+The value will be a
+<code class="code">String</code>, a primitive
+value wrapper for either
+<code class="code">Integer</code> or
+<code class="code">Boolean</code> or a basic AST
+constant. For a list of all possible value
+classes of a simple property, see <a href="#app-simple-property-value-classes" title="C.&nbsp;Simple properties value classes">Appendix&nbsp;C,
+<i>Simple properties value classes</i></a></p>
+</li>
+<li>
+<p><code class="code">ChildPropertyDescriptor</code>:
+The value will be a node, an
+instance of an
+<code class="code">ASTNode</code> subclass</p>
+</li>
+<li>
+<p><code class="code">ChildListPropertyDescriptor</code>:
+The value will be a
+<code class="code">List</code> of AST nodes</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both;"><a name="sec-bindings"></a>Bindings</h2>
+</div>
+</div>
+</div>
+<p>The AST, as far as we know it, is just a tree-form
+representation of source code.
+Every element of the source code is mapped to a node or a subtree.
+Looking at a reference to a
+variable, let's say
+<code class="code">$i</code>, is represented by an
+instance of&nbsp;<code class="classname">Identifier</code>
+with "i" as
+<code class="code">IDENTIFIER</code> property-value.
+Bindings go one step further: they provide
+extended resolved information for several elements of the AST. About
+the&nbsp;<code class="classname">Identifier</code>
+above they tell us that it is a reference to a local
+variable of type int.</p>
+<p>Various subclasses of <code class="classname">ASTNode</code>
+have binding
+information. It is retrieved by calling
+<code class="methodname">resolveBinding()</code> on
+these classes. There are cases where
+more than one binding is available: e.g. the class
+<code class="classname">MethodInvocation</code>
+returns a binding to the method that is
+invoked (<code class="methodname">resolveMethodBinding()</code>).
+Furthermore a
+binding to the return type of the method
+(<code class="methodname">resolveTypeBinding()</code>).&nbsp;
+</p>
+<p>Since evaluating bindings is costly, the binding service has
+to be explicitly
+requested at parse time. This is done by passing the relevant &nbsp;<code class="code">ISourceModule&nbsp;</code>to the
+method
+<code class="code">ASTParser.createParser()</code>
+before the source is being parsed.
+</p>
+<pre class="programlisting">$i = 7;<br>echo 'Hello!';<br>$x = $i * 2;</pre>
+the reference of the variable
+<code class="code">i</code> is represented by
+a&nbsp;<code class="code">Identifier</code>.
+Without bindings you would not know nothing more than this:
+<div class="screenshot">
+<div class="mediaobject"><img src="images/sn-screenshot.png"></div>
+</div>
+<p> Bindings provide more information:
+</p>
+<div class="screenshot">
+<div class="mediaobject"><img src="images/sn-bindings-screenshot.png"></div>
+</div>
+<p>Bindings allow you to comfortably find out to which
+declaration a reference
+belongs, as well as to detect whether two elements are references to
+the same element: if
+they are, the bindings returned by reference-nodes and
+declaration-nodes are
+identical. For example, all&nbsp;<code class="classname">Identifiers</code>
+that represent a
+reference to a local variable
+<code class="code">i</code> return the same instance
+of
+<code class="code">IVariableBinding</code> from <code class="code">Identifier.resolveBindings()</code>. The
+declaration node,&nbsp;<code class="code">Identifier.resolveBinding()</code>,
+returns the same
+instance of
+<code class="code">IVariableBinding</code>, too. If
+there is another usage of a local
+variable
+<code class="code">i</code> (within another method
+or block), another instance of
+<code class="code">IVariableBinding</code> is
+returned. Confusions caused by equally named
+elements are avoided if bindings are used to identify an element
+(variable, method,
+type, etc.).</p>
+</div>
+<div class="section" lang="en">
+<div>
+<div>
+<h2 class="title" style="clear: both;">How to Apply
+Changes</h2>
+</div>
+</div>
+</div>
+<div class="section" lang="en">
+<p>This section will show how to modify an AST and how to store
+these modifications back
+into PHP source code.</p>
+<p>New AST nodes may have to be created. New nodes are created by
+using the class
+<code class="classname">org.eclipse.php.core.dom.AST</code>
+(here <code class="classname">AST</code> it is the
+name of an
+actual class. Do not confuse with the abbreviation "AST" used within
+this
+article). Have a look at this class: it offers methods to create every
+AST node type. An
+instance of <code class="classname">AST</code> is
+created when source code is parsed. This
+instance can be obtained from every node of the tree by calling the
+method
+<code class="methodname">getAST()</code>. The newly
+created nodes can only be added to the
+tree that class <code class="classname">AST</code>
+was retrieved from.</p>
+<p>Often it is convenient to reuse an existing subtree of an AST
+and maybe just change
+some details. AST nodes cannot be re-parented, once connected to an
+AST, they
+cannot be attached to a different place of the tree. Though it is easy
+to create a copy from
+a subtree:
+<code class="code">(Expression) ASTNode.copySubtree(ast,
+node)</code>
+. The parameter
+<code class="code">ast</code> is the target <code class="classname">AST</code>. This instance will be
+used to create the new nodes. That allows copying nodes from another
+<code class="classname">AST</code> (established by
+another parser run) into the current
+<code class="classname">AST</code> domain. </p>
+<p>There are two APIs to track modifications on an AST: either
+you can directly modify
+the tree or you can make use of a separate protocol, managed by an
+instance of
+<code class="code">ASTRewrite</code>. The latter,
+using the
+<code class="code">ASTRewrite</code>, is the more
+sophisticated and preferable way. The changes
+are noted by an instance of
+<code class="code">ASTRewrite</code>, the original
+AST is left untouched. It is possible to create
+more than one instance of
+<code class="code">ASTRewrite</code> for the same
+AST, which means that different change logs can
+be set up. "Quick Fix" makes use of this API: this is how for every
+Quick Fix
+proposal a preview is created.
+</p>
+<div class="example"><a name="ex-adding-a-statement-ast-rewrite"></a>
+<p class="title"><b>Example&nbsp;1.&nbsp;Protocolling
+changes to a AST by using <code class="classname">ASTRewrite</code>
+.</b></p>
+<div class="example-contents">
+<pre class="programlisting"><br>MethodDeclaration md = ast.newMethodDeclaration();<br>md.setName(ast.newName("foo"));<br>ASTRewrite rewriter = ASTRewrite.create(ast);<br>ClassDeclaration td = (ClassDeclaration) cu.statements().get(0);<br>ITrackedNodePosition tdLocation = rewriter.track(td);<br>ListRewrite lrw = rewriter.getListRewrite(cu, Program.METHODS_PROPERTY);<br>lrw.insertLast(md, null);<br></pre>
+</div>
+</div>
+<br class="example-break">
+The example shows, how a child is added to a child list property value.
+If a
+single-child property is set, no list rewrite is necessary. For
+example, to set the name
+of a <code class="classname">MethodInvocation</code>,
+the code would look like this:
+<pre class="programlisting">rewrite.set(methodInvocation, MethodInvocation.NAME_PROPERTY, newName, null);</pre>
+or
+<pre class="programlisting">rewrite.replace(methodInvocation.getName() /* old name node*/, newName, null)</pre>
+To set a simple property value, call <code class="methodname">set()</code>
+like shown
+above.
+<p>Let us have a look at the second way to change an AST. Instead
+of tracking the
+modifications in separate protocols, we directly modify the AST. The
+only thing that
+has to done before modifying the first node is to turn on the change
+recording by calling
+<code class="code">recordModifications()</code> on
+the root of the AST, the
+<code class="code">CompilationUnit</code>.
+Internally changes are logged to an
+<code class="classname">ASTRewrite</code> as well,
+but this happens hidden to you.
+</p>
+<div class="example"><a name="ex-adding-a-statement-direct"></a>
+<p class="title"><b>Example&nbsp;2.&nbsp;Modifying
+an AST directly.</b></p>
+<div class="example-contents">
+<pre class="programlisting"> program.recordModifications();<br> AST ast = program.getAST();<br> EchoStatement echo = ast.newEchoStatement();<br> echo.setExpression(ast.newScalar(&#8220;Hello World&#8220;);<br> program.statements().add(echo);<br></pre>
+</div>
+</div>
+<p>The next section will tell how to write the modifications back
+into PHP source
+code.</p>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="sec-write-it-down"></a>Write
+it down</h3>
+</div>
+</div>
+</div>
+<p>Once you have tracked changes, either by using <code class="classname">ASTRewrite</code>
+or by modifying the tree nodes directly, these changes can be written
+back into PHP
+source code. Therefore a <code class="classname">TextEdit</code>
+object has to be
+created. Here we leave the code related area of the AST, and enter a
+text based
+environment. The <code class="classname">TextEdit</code>
+object contains character
+based modification information. It is part of the
+<code class="code">org.eclipse.text</code> plug-in.</p>
+<p> How to obtain the
+<code class="code">TextEdit</code> object differs
+for the two mentioned ways only slightly:
+</p>
+<div class="itemizedlist">
+<ul type="disc">
+<li>
+<p>If you used
+<code class="code">ASTRewrite</code>, ask the
+<code class="code">ASTRewrite</code> instance
+for the desired
+<code class="code">TextEdit</code> object by
+calling
+<code class="code">rewriteAST(IDocument, Map)</code>.</p>
+</li>
+<li>
+<p>If you changed the tree nodes directly, the
+<code class="code">TextEdit</code> object is
+created by calling
+<code class="code">rewrite(IDocument document, Map
+options)</code> on
+<code class="classname">CompilationUnit</code>.</p>
+</li>
+</ul>
+</div>
+<p>The first parameter,
+<code class="code">document</code>, contains the
+source code that will be modified. The content of
+this container is the same code that you fed into the
+<code class="classname">ASTParser</code>. The second
+parameter is a map of options for the
+source code formatter. To use the default options, pass
+<code class="code">null</code>.</p>
+<p> Obtaining an
+<code class="code">IDocument</code> if you parsed
+source code from a
+<code class="code">String</code> is easy: create an
+object of the class
+<code class="code">org.eclipse.jface.text.Document</code>
+and pass the code string as
+constructor parameter.</p>
+<p>If you initially parsed an existing PHP source file and would
+like to store the
+changes back into this file, things get a little bit more tricky. You
+should not
+directly write into this file, since you might not be the only editor
+that is
+manipulating this source file. Within Eclipse, PHP editors do not write
+directly on
+a file resource, but on a shared working copy instead.
+</p>
+<pre class="programlisting">ITextFileBufferManager bufferManager = FileBuffers.getTextFileBufferManager(); // get the buffer manager<br>IPath path = unit.getPHPElement().getPath(); // unit: instance of CompilationUnit<br>try {<br>	bufferManager.connect(path, null); // (1)<br>	ITextFileBuffer textFileBuffer = bufferManager.getTextFileBuffer(path);<br>	// retrieve the buffer<br>	IDocument document = textFileBuffer.getDocument(); (2)<br>	// ... edit the document here ...<br>	// commit changes to underlying file<br>	textFileBuffer.commit(null /* ProgressMonitor */, false /* Overwrite */); // (3)<br>} finally {<br>	bufferManager.disconnect(path, null); // (4)<br>}</pre>
+<div class="orderedlist">
+<ol type="1">
+<li>Connect a path to the buffer manager. After that call, the
+document for
+the file described by
+<code class="code">path</code> can be obtained.</li>
+<li>Ask the buffer for the working copy by calling
+<code class="code">getTextFileBuffer</code>.
+From the
+<code class="code">ITextFileBuffer</code> we get
+the
+<code class="code">IDocument</code> instance we
+need.</li>
+<li>Store changes to the underlying file.</li>
+<li>Disconnect the path. Do not modify the document after this
+call.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both;"><a name="sec-managing-comments"></a>Managing Comments</h2>
+</div>
+</div>
+</div>
+<p>One of the most frustrating part of modifying an AST is the
+comment handling. The method
+<code class="code">CompilationUnit#getCommentList()</code>
+is used to return the list of comments
+located in the compilation unit in the ascendant order. Unfortunately,
+this list cannot be
+modified. This means that even if the AST Rewriter is used to add a
+comment inside a
+compilation unit, the new comment would not appear inside the comments'
+list.</p>
+<p>In order to add a comment the following code snippet can be
+used:
+</p>
+<pre class="programlisting">Program astRoot= ... ; // get the current program<br>ASTRewrite rewrite= ASTRewrite.create(astRoot.getAST());<br>Block block= (TypeDeclaration) astRoot.statements().get(0).getBody();<br>ListRewrite listRewrite= rewrite.getListRewrite(block, Block.STATEMENTS_PROPERTY);<br>Statement placeHolder= rewrite.createStringPlaceholder("//mycomment", ASTNode.EMPTY_STATEMENT);<br>listRewrite.insertFirst(placeHolder, null);<br>textEdits= rewrite.rewriteAST(document, null);<br>textEdits.apply(document);<br></pre>
+<p>The methods <span style="font-family: monospace;">Program</span><code class="code">#getExtendedLength(ASTNode)</code> and <code class="code">Program#getExtendedStartPosition(ASTNode)</code>
+can be used to retrieve the range of a node that would
+contains preceding and trailing comments and whitespaces.
+</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both;">&nbsp;Conclusions
+</h2>
+</div>
+</div>
+</div>
+<p>This article has shown how to use the Eclipse AST for static
+code analysis and code
+manipulation issues. It touched the PHP Model, explained Bindings and
+showed how to
+store changes made to the AST back into PHP source code.</p>
+<p>For remarks, questions, etc. enter a comment in the bugzilla
+entry of this article
+[<a href="#bib-article-bugzilla">6</a>].</p>
+</div>
+<div class="bibliography">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="bin-resources"></a>Resources</h2>
+</div>
+</div>
+</div>
+<div class="biblioentry"><a name="bib-example-project"></a>
+<p>[1] <span class="bibliosource">Download the <a href="http://earticleast.sourceforge.net/net.sourceforge.earticleast.app_1.0.0.zip" target="_new">
+Packed Example Project</a>. Use the option "Existing Projects
+into Workspace" from the "Import" Wizard to add it
+to your workspace. </span></p>
+</div>
+<div class="biblioentry"><a name="bib-example-update"></a>
+<p>[2] <span class="bibliosource">To install the
+plug-in, obtain using the Eclipse Update Manager. Update
+Site: http://earticleast.sourceforge.net/update. </span></p>
+</div>
+<div class="biblioentry"><a name="bib-jts"></a>
+<p>[3] <span class="bibliosource"><a href="http://eclipsecon.org/2005/presentations/EclipseCON2005_Tutorial29.pdf" target="_new">PHP Tool Smithing, Extending the Eclipse Java
+Development Tools </a>
+. </span></p>
+</div>
+<div class="biblioentry"><a name="bib-java-practices"></a></div>
+<div class="biblioentry"><a name="bib-ast-viewer"></a>
+<p>[4]&nbsp;<span class="bibliosource"><a href="http://www.eclipse.org/pdt/astview/astview.php" target="_new">AST Viewer Plug-in </a>
+. </span></p>
+</div>
+<div class="biblioentry"><a name="bib-visitor-pattern"></a>
+<p>[5]&nbsp;<span class="bibliosource"><a href="http://en.wikipedia.org/wiki/Visitor_pattern" target="_new">Wikipedia: Visitor Pattern </a>
+. </span></p>
+</div>
+<div class="biblioentry"><a name="bib-article-bugzilla"></a>
+<p>[6]&nbsp;<span class="bibliosource"><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=207680" target="_new">AST Article bugzilla entry</a>
+. </span></p>
+</div>
+</div>
+<div class="appendix" lang="en">
+<h2 class="title" style="clear: both;"><a name="app-code-fragments-example"></a>A.&nbsp;Code
+Fragments for Example Application Cases</h2>
+<p>In the introduction, three typical cases for our example
+application have been
+presented (see <a href="#sec-example-application" title="Example Application">the section called &#8220;Example
+Application&#8221;</a>). Clarifying code before / after code snippets
+follow to further clarify these cases.</p>
+<div class="orderedlist">
+<ol type="1">
+<li>
+<p> <span class="emphasis"><em>Removal of
+unnecessary declaration.</em></span> </p>
+<p>Before:
+</p>
+<pre class="programlisting">int x = 0;<br>...<br>x = 2 * 3;</pre>
+<p>After:
+</p>
+<pre class="programlisting">...<br>int x = 2 * 3;</pre>
+</li>
+<li>
+<p> <span class="emphasis"><em>Move of
+declaration.</em></span> </p>
+<p>Before:
+</p>
+<pre class="programlisting">int x = 0;<br>...<br>System.out.println(x);<br>...<br>x = 2 * 3;</pre>
+<p>After:
+</p>
+<pre class="programlisting">...<br>int x = 0;<br>System.out.println(x);<br>...<br>x = 2 * 3;</pre>
+</li>
+<li>
+<p> <span class="emphasis"><em>Move of a
+declaration of a variable, that is used within different
+blocks.</em></span> </p>
+<p>Before:
+</p>
+<pre class="programlisting">int x = 0;<br>...<br>try {<br>x = 2 * 3;<br>} catch (...) {<br>System.out.println(x);<br>}<br></pre>
+<p>After:
+</p>
+<pre class="programlisting">...<br>int x = 0;<br>try {<br>x = 2 * 3;<br>} catch (...) {<br>System.out.println(x);<br>}<br></pre>
+</li>
+</ol>
+</div>
+</div>
+<div class="appendix" lang="en">
+<h2 class="title" style="clear: both;"><a name="app-bindings"></a>B.&nbsp;Complete list of
+bindings</h2>
+<p></p>
+<div class="itemizedlist">
+<ul type="disc">
+<li><code class="interfacename">IAnnotationBinding</code></li>
+<li><code class="interfacename">IMemberValuePairBinding</code>
+</li>
+<li><code class="interfacename">IMethodBinding</code></li>
+<li><code class="interfacename">IPackageBinding</code></li>
+<li><code class="interfacename">ITypeBinding</code></li>
+<li><code class="interfacename">IVariableBinding</code></li>
+</ul>
+</div>
+</div>
+<div class="appendix" lang="en">
+<h2 class="title" style="clear: both;"><a name="app-simple-property-value-classes"></a>C.&nbsp;Simple
+properties value classes</h2>
+<p> Below the list of all classes of which simple property values
+can be instance of (in
+Eclipse version 3.2).
+</p>
+<div class="itemizedlist">
+<ul type="disc">
+<li><code class="code">boolean</code></li>
+<li><code class="code">int</code></li>
+<li><code class="code">String</code></li>
+<li><code class="code">Modifier.ModifierKeyword</code></li>
+<li><code class="code">Assignment.Operator</code></li>
+<li><code class="code">InfixExpression.Operator</code></li>
+<li><code class="code">PostfixExpression.Operator</code></li>
+<li><code class="code">PrefixExpression.Operator</code></li>
+<li><code class="code">PrimitiveType.Code</code></li>
+</ul>
+</div>
+</div>
+<div class="notices"><br>
+</div>
+</div>
+</body></html>
