@@ -14,8 +14,8 @@
 
 	#
 	# Begin: page-specific settings.  Change these.
-	$pageTitle 		= "PDT Development";
-	$pageKeywords	= "PHP, nightly, reports, committers, list";
+	$pageTitle 		= "PDT ASTView";
+	$pageKeywords	= "PHP, ASTView";
 	$pageAuthor		= "PDT Development";
 
 	# Add page-specific Nav bars here
