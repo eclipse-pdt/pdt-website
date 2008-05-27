@@ -61,8 +61,8 @@
 			<p>
 				<ul>
 					<li>
-						for Eclipse 3.4 
-						<a href="org.eclipse.php.astview.jar">org.eclipse.php.astview.jar</a>
+						for Eclipse 3.4  
+						<a href="org.eclipse.php.astview_1.0.0.jar">org.eclipse.php.astview plugin (includes source code)</a>
 
 						(copy to 'dropins' directory)
 					</li>				
