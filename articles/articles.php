@@ -50,11 +50,6 @@
 				<li><a href="/pdt/articles/astview/astview.php">AST View</a>.
 				</li>
 			</ul>
-			<ul>
-				<li><a href="/pdt/articles/editor/php_editor.html">PHP Editor</a>.
-				</li>
-			</ul>
-
 		</div>
 		
 
