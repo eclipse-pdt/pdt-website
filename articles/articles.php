@@ -43,7 +43,7 @@
 		<div class="homeitem3col">
 			<h3>Articles</h3>
 			<ul>
-				<li><a href="/pdt/articles/ast/PHP_AST.php">Abstract Syntax Tree</a>.
+				<li><a href="/pdt/articles/ast/PHP_AST.html">Abstract Syntax Tree</a>.
 				</li>
 			</ul>
 			<ul>
@@ -51,7 +51,7 @@
 				</li>
 			</ul>
 			<ul>
-				<li><a href="/pdt/articles/editor/php_ast.php">PHP Editor</a>.
+				<li><a href="/pdt/articles/editor/php_editor.html">PHP Editor</a>.
 				</li>
 			</ul>
 
