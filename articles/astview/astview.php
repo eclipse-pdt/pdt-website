@@ -151,7 +151,7 @@
 				<li>
 					Source is included in the plugin archive <br>
 				</li>
-				<li> Comments to nir.c[at]zend.com </li>
+				<li> Comments to nirc[at]zend.com </li>
 			</ul>
 			
 			<p>
