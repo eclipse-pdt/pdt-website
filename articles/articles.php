@@ -1,0 +1,73 @@
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+
+	#*****************************************************************************
+	#
+	# committers.php
+	#
+	# Author: 		Roy Ganor
+	# Date:			2007-07-18
+	#
+	# Description: ASTView page 
+	#
+	#
+	#****************************************************************************
+
+	#
+	# Begin: page-specific settings.  Change these.
+	$pageTitle 		= "PDT Articles";
+	$pageKeywords	= "PHP, articles";
+	$pageAuthor		= "PDT Development";
+
+	# Add page-specific Nav bars here
+	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
+	$Nav->addCustomNav("Find Bugs", "http://download.eclipse.org/tools/pdt/downloads/drops/results/FINDBUGS-php.html", "_self", 3);
+	$Nav->addCustomNav("Best Practices", "http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html", "_self", 3);
+	$Nav->addCustomNav("Unit Tests", "http://download.eclipse.org/tools/pdt/downloads/drops/N". date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))) . "/results/TEST-php.html", "_self", 3);
+	$Nav->addCustomNav("Contributors", "http://www.eclipse.org/pdt/people/contributors.php", "_self", 3);
+	$Nav->addCustomNav("AST View", "http://www.eclipse.org/pdt/articles/astview/astview.php", "_self", 3);
+
+	# End: page-specific settings
+	#
+
+	# Paste your HTML content here!
+	ob_start();
+
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+	$projectInfo = new ProjectInfo("tools.php");
+
+?>
+
+<div id="maincontent">
+	<div id="midcolumn">
+
+		<h1>org.eclipse.php.astview - AST View</h1>
+
+		<div class="homeitem3col">
+			<h3>People</h3>
+			<ul>
+				<li><a href="/pdt/articles/ast/PHP_AST.php">Abstract Syntax Tree</a>.
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/pdt/articles/astview/astview.php">AST View</a>.
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/pdt/articles/editor/php_ast.php">Editor</a>.
+				</li>
+			</ul>
+
+		</div>
+		
+
+	</div>
+</div>
+
+
+<?
+	$html = ob_get_contents();
+	ob_end_clean();
+
+	# Generate the web page
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+?>
