@@ -110,7 +110,7 @@
       
 			<h4>AST View Elements</h4>
 			<p>The AST view shows the following nodes:<br>
-				<img alt="AST View" src="view.gif"></p>
+				<img alt="AST View" src="view.png"></p>
 			<ul>
 				<li>AST nodes are shown in gray color and with source range
 				information. Children of AST nodes are the node properties.<br>
