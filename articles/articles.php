@@ -24,7 +24,7 @@
 	$Nav->addCustomNav("Best Practices", "http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html", "_self", 3);
 	$Nav->addCustomNav("Unit Tests", "http://download.eclipse.org/tools/pdt/downloads/drops/N". date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y"))) . "/results/TEST-php.html", "_self", 3);
 	$Nav->addCustomNav("Contributors", "http://www.eclipse.org/pdt/people/contributors.php", "_self", 3);
-	$Nav->addCustomNav("AST View", "http://www.eclipse.org/pdt/articles/astview/astview.php", "_self", 3);
+	$Nav->addCustomNav("Articles", "http://www.eclipse.org/pdt/articles/articles.php", "_self", 3);
 
 	# End: page-specific settings
 	#
@@ -40,10 +40,8 @@
 <div id="maincontent">
 	<div id="midcolumn">
 
-		<h1>org.eclipse.php.astview - AST View</h1>
-
 		<div class="homeitem3col">
-			<h3>People</h3>
+			<h3>Articles</h3>
 			<ul>
 				<li><a href="/pdt/articles/ast/PHP_AST.php">Abstract Syntax Tree</a>.
 				</li>
@@ -53,7 +51,7 @@
 				</li>
 			</ul>
 			<ul>
-				<li><a href="/pdt/articles/editor/php_ast.php">Editor</a>.
+				<li><a href="/pdt/articles/editor/php_ast.php">PHP Editor</a>.
 				</li>
 			</ul>
 
