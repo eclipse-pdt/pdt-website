@@ -88,7 +88,7 @@ $Menu 	= new Menu();
 		</ul>
 		<br>
 		<p>
-			<a href="whois.php">Products and projects</a> that are using PDT<br>
+			<a href="whois.php">Products and projects</a>that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
@@ -207,25 +207,29 @@ $Menu 	= new Menu();
 		
 		<div class="homeitem">
 			<h3>What's New</h3>
-			<ul>				
+			<ul>	
 				<li>
-					<span class="normal"><b>January &nbsp;3<sup>rd</sup></b></span> -
+					<span class="normal"><b>May &nbsp;30 2008</b></span> -
+					<a href="http://wiki.eclipse.org/BugDay/May_2008#Projects">PDT 1.1 Bug day</a> join us for a bug squash day!
+				</li>
+				<li>
+					<span class="normal"><b>January &nbsp;3<sup>rd</sup> 2008</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
 				</li>
 
 				<li>
-					<span class="normal"><b>September&nbsp;18<sup>th</sup></b></span> -
+					<span class="normal"><b>September&nbsp;18<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">PDT 1.0 Final Release</a> is Ready!
 				</li>
 
 				<li>
-					<span class="normal"><b>September&nbsp;12<sup>th</sup></b></span> -
+					<span class="normal"><b>September&nbsp;12<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070910-RC1">1.0 RC-1</a> 
 					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
 				</li>
 
 				<li>
-					<span class="normal"><b>August&nbsp;26<sup>th</sup></b></span> -
+					<span class="normal"><b>August&nbsp;26<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070826-M3">1.0 M3</a> 
 					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
 				</li>
