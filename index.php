@@ -12,7 +12,7 @@ $Menu 	= new Menu();
 	#
 	# index.php
 	#
-	# Author: 		Assaf Almaz
+	# Author: 		Yossi Leon, Assaf Almaz
 	# Date:			2006-04-27
 	#
 	# Description: main project page
@@ -88,7 +88,7 @@ $Menu 	= new Menu();
 		</ul>
 		<br>
 		<p>
-			<a href="whois.php">Products and projects</a>that are using PDT<br>
+			<a href="whois.php">Products and projects</a> that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
@@ -208,10 +208,6 @@ $Menu 	= new Menu();
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>	
-				<li>
-					<span class="normal"><b>May &nbsp;30 2008</b></span> -
-					<a href="http://wiki.eclipse.org/BugDay/May_2008#Projects">PDT 1.1 Bug day</a> join us for a bug squash day!
-				</li>
 				<li>
 					<span class="normal"><b>January &nbsp;3<sup>rd</sup> 2008</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
