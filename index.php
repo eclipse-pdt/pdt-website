@@ -12,7 +12,7 @@ $Menu 	= new Menu();
 	#
 	# index.php
 	#
-	# Author: 		Yossi Leon, Assaf Almaz
+	# Author: 		Assaf Almaz
 	# Date:			2006-04-27
 	#
 	# Description: main project page
@@ -88,7 +88,7 @@ $Menu 	= new Menu();
 		</ul>
 		<br>
 		<p>
-			<a href="whois.php">Products and projects</a> that are using PDT<br>
+			<a href="whois.php">Products and projects</a>that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
@@ -105,9 +105,9 @@ $Menu 	= new Menu();
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					1st of June, 2008
+					10th of June, 2008
 				</td>
-				<td> - PDT 1.0.3 Release (Bug fixes) </td>
+				<td> - <b>PDT 1.0.3 Released</b> </td>
 			</tr>
 			<tr>
 				<td>
@@ -208,6 +208,14 @@ $Menu 	= new Menu();
 		<div class="homeitem">
 			<h3>What's New</h3>
 			<ul>	
+				<li>
+					<span class="normal"><b>June &nbsp;10 2008</b></span> -
+					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080603">PDT 1.0.3 Final release</a> is ready!
+				</li>
+				<li>
+					<span class="normal"><b>May &nbsp;30 2008</b></span> -
+					<a href="http://wiki.eclipse.org/BugDay/May_2008#Projects">PDT 1.1 Bug day</a> join us for a bug squash day!
+				</li>
 				<li>
 					<span class="normal"><b>January &nbsp;3<sup>rd</sup> 2008</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
