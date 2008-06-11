@@ -12,7 +12,7 @@ $Menu 	= new Menu();
 	#
 	# index.php
 	#
-	# Author: 		Assaf Almaz
+	# Author: 		Yossi Leon, Assaf Almaz
 	# Date:			2006-04-27
 	#
 	# Description: main project page
@@ -88,7 +88,7 @@ $Menu 	= new Menu();
 		</ul>
 		<br>
 		<p>
-			<a href="whois.php">Products and projects</a>that are using PDT<br>
+			<a href="whois.php">Products and projects</a> that are using PDT<br>
 		</p>
 		
 		<p>Schedule:</p>
@@ -239,21 +239,10 @@ $Menu 	= new Menu();
 				</li>
 
 				<li>
-					<span class="normal"><b>August&nbsp;15<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070815-M2">1.0 M2</a> 
-					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
-				</li>
-
-				<li>
 					<span class="normal"><b>July&nbsp;16<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">PDT RSS Builds</a> Feed! 
 				</li>
 				
-				<li>
-					<span class="normal"><b>June&nbsp;11<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070611-M1">1.0 M1</a> 
-					(compatible with Eclipse 3.3 only) is ready!
-				</li>
 				<li>
 					<span class="normal"><b>April&nbsp;6<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070401-RC3">0.7 RC3</a> 
