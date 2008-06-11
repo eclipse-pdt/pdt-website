@@ -32,6 +32,7 @@
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_1.php","_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PDT", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"http://wiki.eclipse.org/PDT/FAQ", 			"_self", 2);
+	$Nav->addCustomNav("Tutorials", 				"http://wiki.eclipse.org/PDT/TUTORIALS", 			"_self", 2);
 	$Nav->addCustomNav("Development", 		"/pdt/development.php", 			"_self", 2);	
 
 
