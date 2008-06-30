@@ -44,7 +44,6 @@ $Menu 	= new Menu();
 	$Poll->addOption(4, "Functions view");
 	$Poll->noGraph();  # uncomment to disable bar graph
 	$pollHTML = $Poll->getHTML();
-	echo $pollHTML;
 		
 	# Paste your HTML content here!
 	ob_start();
