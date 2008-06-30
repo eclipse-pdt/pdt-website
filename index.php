@@ -36,14 +36,14 @@ $Menu 	= new Menu();
 	#
 	
 	# Enable polls on this page: Polls are good for 3 months!
-	$App->usePolls();
-	$Poll = new Poll(2, "Which view is the most ?");
-	$Poll->addOption(1, "PHP Explorer (workspace view)");
-	$Poll->addOption(2, "Outline");
-	$Poll->addOption(3, "Project Explorer (current project view)");
-	$Poll->addOption(4, "Functions view");
-	$Poll->noGraph();  # uncomment to disable bar graph
-	$pollHTML = $Poll->getHTML();
+	# $App->usePolls();
+	# $Poll = new Poll(2, "Which view is the most ?");
+	# $Poll->addOption(1, "PHP Explorer (workspace view)");
+	# $Poll->addOption(2, "Outline");
+	# $Poll->addOption(3, "Project Explorer (current project view)");
+	# $Poll->addOption(4, "Functions view");
+	# $Poll->noGraph();  # uncomment to disable bar graph
+	# $pollHTML = $Poll->getHTML();
 		
 	# Paste your HTML content here!
 	ob_start();
