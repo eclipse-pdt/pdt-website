@@ -36,17 +36,15 @@ $Menu 	= new Menu();
 	#
 	
 	# Enable polls on this page: Polls are good for 3 months!
-	// remove pool as database connection is off
-	// $App->usePolls();
-	// $Poll = new Poll(2, "Which enhancement would you like to see implemented in PDT Summer Camp?");
-	// $Poll->addOption(1, "Smarty templates support");
-	// $Poll->addOption(2, "Mylyn integration");
-	// $Poll->addOption(3, "Smart code assist - recently used elements");
-	// $Poll->addOption(4, "Outline view additional filters");
-	// $Poll->addOption(5, "Auto generation of getters and setters");
-	// $Poll->noGraph();  # uncomment to disable bar graph
-	// $pollHTML = $Poll->getHTML();
-	
+	$App->usePolls();
+	$Poll = new Poll(2, "Which view is the most ?");
+	$Poll->addOption(1, "PHP Explorer (workspace view)");
+	$Poll->addOption(2, "Outline");
+	$Poll->addOption(3, "Project Explorer (current project view)");
+	$Poll->addOption(4, "Functions view");
+	$Poll->noGraph();  # uncomment to disable bar graph
+	$pollHTML = $Poll->getHTML();
+	echo $pollHTML;
 		
 	# Paste your HTML content here!
 	ob_start();
