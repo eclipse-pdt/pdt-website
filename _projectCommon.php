@@ -25,11 +25,11 @@
 	$Nav->addCustomNav("Articles", "/articles/", "_self", 1);
 	
 	// [almaz] the links here are relative to /pdt to make the links valid even when this page is included from a PHP file
-	// that is not at the root, such as from  plans/php_plan_1_1.php
+	// that is not at the root, such as from  plans/php_plan_2_0.php
 	$Nav->addNavSeparator("Project Home", 	"/pdt/index.php"); 
 	$Nav->addCustomNav("Downloads", 		"http://download.eclipse.org/tools/pdt/downloads/", 	"_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php","_self", 2);
-	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_1_1.php","_self", 2);
+	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_2_0.php","_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PDT", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"http://wiki.eclipse.org/PDT/FAQ", 			"_self", 2);
 	$Nav->addCustomNav("Tutorials", 				"http://wiki.eclipse.org/PDT/TUTORIALS", 			"_self", 2);

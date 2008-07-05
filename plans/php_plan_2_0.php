@@ -10,7 +10,7 @@ include("../_projectCommon.php");    # All on the same line to unclutter the use
 
 $pageTitle 		= "PDT";
 $pageKeywords	= "PDT";
-$pageAuthor		= "Yossi Leon, Zend Technologies";
+$pageAuthor		= "Guy Gurfinkel, Zend Technologies";
 
 ob_start();
 
@@ -23,7 +23,7 @@ $projectInfo = new ProjectInfo("tools.php");
 	<tbody>
 		<tr>
 			<td align="left" width="60%">
-				<h1>PDT Project Plan for 1.1 Release</h1>
+				<h1>PDT Project Plan for 2.0 Release</h1>
 			</td>
 		</tr>
 	</tbody>
@@ -33,7 +33,7 @@ $projectInfo = new ProjectInfo("tools.php");
 the</em> <a href="news://news.eclipse.org/eclipse.tools.pdt">eclipse.tools.pdt</a> <em>newsgroup.</em></p>
 
 <p>This document lays out the feature and API set for the next 
-release of the PDT project, release 1.1.</p>
+release of the PDT project, release 2.0.</p>
 
 <ul type="disc">
 <li><a href="#Deliverables">Release Deliverables</a></li>
@@ -43,7 +43,7 @@ release of the PDT project, release 1.1.</p>
 
 </ul>
 
-<p>PDT 1.1 is planned to be released on September 2008. 
+<p>PDT 2.0 is planned to be released on September 2008. 
 The project will continue to be based on <a href="http://www.eclipse.org/projects/ganymede.php">Eclipse Ganymede</a> releases .
 
 <h2><a name="Deliverables"></a>Release Deliverables</h2>
@@ -68,11 +68,10 @@ Milestone Releases are approximately every six weeks of integration builds.</p>
 release candidates before the actual release. Scheduled release candidates should end 
 one week before the release.
 
-<li> 1.1 M1 - 6th of July 2008 </li>
-<li> 1.1 M2 - 27rd of July 2008 </li>
-<li> 1.1 RC1 - 10th of August 2008 </li>
-<li> 1.1 RC2 - 17th of August 2008 </li>
-<li><b> 1.1 Release - 15th of September 2008</b></li>
+<li> 2.0 M1 - 27rd of July 2008 </li>
+<li> 2.0 RC1 - 10th of August 2008 </li>
+<li> 2.0 RC2 - 17th of August 2008 </li>
+<li><b> 2.0 Release - 15th of September 2008</b></li>
 
 <h2><a name="Features"> </a> Features and Work Plan</h2>
 <b>Milestone 1:</b>
@@ -99,7 +98,7 @@ one week before the release.
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
 
-<p>PDT 1.1 will support all operating environments supported by the Eclipse
+<p>PDT 2.0 will support all operating environments supported by the Eclipse
 Platform itself. For a list of supported environments, refer to <a
 href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_4.html#TargetOperatingEnvironments">
 Eclipse Project</a> for a list of reference platforms.</p>
