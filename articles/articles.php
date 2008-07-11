@@ -50,6 +50,10 @@
 				<li><a href="/pdt/articles/astview/astview.php">AST View</a>.
 				</li>
 			</ul>
+			<ul>
+				<li><a href="/pdt/documents/contributing.html">Contributing to the eclipse pdt project</a>.
+				</li>
+			</ul>
 		</div>
 		
 
