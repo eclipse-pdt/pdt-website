@@ -43,7 +43,7 @@ release of the PDT project, release 2.0.</p>
 
 </ul>
 
-<p>PDT 2.0 is planned to be released on September 2008. 
+<p>PDT 2.0 is planned to be released on December 2008. 
 The project will continue to be based on <a href="http://www.eclipse.org/projects/ganymede.php">Eclipse Ganymede</a> releases .
 
 <h2><a name="Deliverables"></a>Release Deliverables</h2>
@@ -68,10 +68,10 @@ Milestone Releases are approximately every six weeks of integration builds.</p>
 release candidates before the actual release. Scheduled release candidates should end 
 one week before the release.
 
-<li> 2.0 M1 - 27rd of July 2008 </li>
-<li> 2.0 RC1 - 10th of August 2008 </li>
-<li> 2.0 RC2 - 17th of August 2008 </li>
-<li><b> 2.0 Release - 15th of September 2008</b></li>
+<li> 2.0 M1 - November 03 </li>
+<li> 2.0 RC1 - November 17 </li>
+<li> 2.0 RC2 - December 01 </li>
+<li><b> 2.0 Release - December 29 </b></li>
 
 <h2><a name="Features"> </a> Features and Work Plan</h2>
 <b>Milestone 1:</b>
@@ -81,19 +81,15 @@ one week before the release.
 <li>Override Method Annotation</li>
 <li>New PHP Explorer capabilities</li>
 <li>Extended Open Type</li>
-
-<br>
-<b>Milestone 2:</b>
-<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <li>Code Templates</li>
 <li>Code Assist for Dynamic Variables</li>
+
 <br>
 <b>Release Candidate 1+2:</b>
 <li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
 <br>
 * Note: PHP 5.3 is expected to be released around October-November
 <br>
-* Note: Eclipse 3.4 is expected to be released on 23-June
 
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
