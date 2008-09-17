@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>PDT Builds</title>
+  <link href="http://download.eclipse.org/tools/pdt/feeds/builds-pdt.xml" rel="self" type="application/atom+xml"/>
+  <updated>2008-06-24T13:49:43Z</updated>
+  <author>
+    <name>PDT Build Team</name>
+  </author>
+  <id>http://download.eclipse.org/tools/pdt/feeds/builds-pdt.xml</id>
+</feed>
