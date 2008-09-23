@@ -8,7 +8,53 @@
 
 	$PR = "pdt";
 	$projectName = "PDT";
-	$bugurl= "http://bugs.eclipse.org";
+	$isBuildServer = (preg_match("/^(emft|build)\.eclipse\.org$/", $_SERVER["SERVER_NAME"]));
+	$isBuildDotEclipseServer = $_SERVER["SERVER_NAME"] == "build.eclipse.org";
+	$isWWWserver = (preg_match("/^(?:www.|)eclipse.org$/", $_SERVER["SERVER_NAME"]));
+	$isEclipseCluster = (preg_match("/^(?:www.||download.|download1.|build.)eclipse.org$/", $_SERVER["SERVER_NAME"]));
+	$debug = (isset ($_GET["debug"]) && preg_match("/^\d+$/", $_GET["debug"]) ? $_GET["debug"] : -1);
+	$writableRoot = ($isBuildServer ? $_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/" : "/home/data/httpd/writable/www.eclipse.org/");
+	$writableBuildRoot = $isBuildDotEclipseServer ? "/opt/public/cbi" : "/home/www-data";
+	
+	$rooturl = "http://" . $_SERVER["HTTP_HOST"] . "/$PR";
+	$downurl = ($isBuildServer ? "" : "http://www.eclipse.org");
+	$bugurl = "https://bugs.eclipse.org";
+			
+	/* projects/components in cvs */
+	/* "proj" => "cvsname" */
+	$cvsprojs = array ("pdt" => "org.eclipse.pdt");
+
+	/* sub-projects/components in cvs for projects/components above (if any) */
+	/* "cvsname" => array("shortname" => "cvsname") */
+	$cvscoms = array();
+	
+	$projects = array(
+		"PDT" => "pdt",
+	);
+	$tmp = array_flip($projects);
+	$bugcoms = preg_replace("/ /", "%20", $tmp);
+	
+	$extraprojects = array(); //components with only downloads, no info yet, "prettyname" => "directory"
+	$nodownloads = array(); //components with only information, no downloads, or no builds available yet, "projectkey"
+	$nonewsgroup = array(); //components without newsgroup
+	$nomailinglist = array(); //components without mailinglist
+	$incubating = array(); // components which are incubating - EMF will never have incubating components -- see EMFT
+	$nomenclature = "Project"; //are we dealing with "components" or "projects"?
+	
+	include_once $_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/scripts.php";
+	
+	$regs = null;
+	$proj = "/pdt"; // (isset($_GET["project"]) && preg_match("/^(" . join("|", $projects) . ")$/", $_GET["project"], $regs) ? $regs[1] : getProjectFromPath($PR));
+	$projct= preg_replace("#^/#", "", $proj);
+	
+	$buildtypes = array(
+		"R" => "Release",
+		"S" => "Stable",
+		"I" => "Integration",
+		"M" => "Maintenance",
+		"N" => "Nightly"
+	);
+
 		
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
