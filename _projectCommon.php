@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
@@ -8,7 +8,7 @@
 
 	$PR = "pdt";
 	$projectName = "PDT";
-	$isBuildServer = (preg_match("/^(emft|build)\.eclipse\.org$/", $_SERVER["SERVER_NAME"]));
+/*	$isBuildServer = (preg_match("/^(emft|build)\.eclipse\.org$/", $_SERVER["SERVER_NAME"]));
 	$isBuildDotEclipseServer = $_SERVER["SERVER_NAME"] == "build.eclipse.org";
 	$isWWWserver = (preg_match("/^(?:www.|)eclipse.org$/", $_SERVER["SERVER_NAME"]));
 	$isEclipseCluster = (preg_match("/^(?:www.||download.|download1.|build.)eclipse.org$/", $_SERVER["SERVER_NAME"]));
@@ -19,14 +19,14 @@
 	$rooturl = "http://" . $_SERVER["HTTP_HOST"] . "/$PR";
 	$downurl = ($isBuildServer ? "" : "http://www.eclipse.org");
 	$bugurl = "https://bugs.eclipse.org";
-			
+*/
 	/* projects/components in cvs */
 	/* "proj" => "cvsname" */
-	$cvsprojs = array ("pdt" => "org.eclipse.pdt");
-
+/*	$cvsprojs = array ("pdt" => "org.eclipse.pdt");
+*/
 	/* sub-projects/components in cvs for projects/components above (if any) */
 	/* "cvsname" => array("shortname" => "cvsname") */
-	$cvscoms = array();
+/*	$cvscoms = array();
 	
 	$projects = array(
 		"PDT" => "pdt",
@@ -54,8 +54,7 @@
 		"M" => "Maintenance",
 		"N" => "Nightly"
 	);
-
-		
+*/		
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
