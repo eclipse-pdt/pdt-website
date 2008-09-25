@@ -48,8 +48,9 @@ $Menu 	= new Menu();
 	# Paste your HTML content here!
 	ob_start();
 
-	require_once("common/project-info.class.php");
-	$projectInfo = new ProjectInfo("tools.php");
+	// apeled - Seems to be obsolete code
+	// require_once("common/project-info.class.php");
+	// $projectInfo = new ProjectInfo("tools.php");
 	
 ?>
 
