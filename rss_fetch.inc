@@ -117,7 +117,7 @@ function fetch_rss ($url) {
         $cache = new RSSCache( MAGPIE_CACHE_DIR, MAGPIE_CACHE_AGE );
         
         if (MAGPIE_DEBUG and $cache->ERROR) {
-            debug($cache->ERROR, E_USER_WARNING);
+            debugRSS($cache->ERROR, E_USER_WARNING);
         }
         
         
@@ -142,7 +142,7 @@ function fetch_rss ($url) {
                 // should be cache age
                 $rss->from_cache = 1;
                 if ( MAGPIE_DEBUG > 1) {
-                    debug("MagpieRSS: Cache HIT", E_USER_NOTICE);
+                    debugRSS("MagpieRSS: Cache HIT", E_USER_NOTICE);
                 }
                 return $rss;
             }
@@ -165,7 +165,7 @@ function fetch_rss ($url) {
           if ($resp->status == '304' ) {
                 // we have the most current copy
                 if ( MAGPIE_DEBUG > 1) {
-                    debug("Got 304 for $url");
+                    debugRSS("Got 304 for $url");
                 }
                 // reset cache on 304 (at minutillo insistent prodding)
                 $cache->set($cache_key, $rss);
@@ -175,7 +175,7 @@ function fetch_rss ($url) {
                 $rss = _response_to_rss( $resp );
                 if ( $rss ) {
                     if (MAGPIE_DEBUG > 1) {
-                        debug("Fetch successful");
+                        debugRSS("Fetch successful");
                     }
                     // add object to cache
                     $cache->set( $cache_key, $rss );
@@ -207,7 +207,7 @@ function fetch_rss ($url) {
         // attempt to return cached object
         if ($rss) {
             if ( MAGPIE_DEBUG ) {
-                debug("Returning STALE object for $url");
+                debugRSS("Returning STALE object for $url");
             }
             return $rss;
         }
@@ -239,7 +239,7 @@ function error ($errormsg, $lvl=E_USER_WARNING) {
         }
 }
 
-function debug ($debugmsg, $lvl=E_USER_NOTICE) {
+function debugRSS ($debugmsg, $lvl=E_USER_NOTICE) {
     trigger_error("MagpieRSS [debug] $debugmsg", $lvl);
 }
             
