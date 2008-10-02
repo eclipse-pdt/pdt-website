@@ -8,7 +8,7 @@ function showNotes()
 {
 
 	global $PWD;
-	$oldNightlies = getPWD($PWD, "N.*", "d");
+	$oldNightlies = loadDirSimple($PWD, "N.*", "d");
  ?>
 
 	<div class="homeitem3col">
