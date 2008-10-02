@@ -6,8 +6,23 @@ $oldrels = array(
 
 function showNotes()
 {
-?>
+
+	global $PWD;
+	$oldNightlies = getPWD($PWD, "N.*", "d");
+ ?>
+
 	<div class="homeitem3col">
+		<h3>Nightly Builds</h3>
+		<ul>
+		<?php foreach ($oldNightlies as $on)
+		{
+			print "<li><a href=\"http://download.eclipse.org/tools/pdt/downloads/drops/$on/\">$on</a></li>\n";
+		} ?>
+		</ul>
+	</div>
+
+       
+       <div class="homeitem3col">
 		<h3>Questions?</h3>
 		<p>If you have problems downloading the drops or with this site, contact the <a href="mailto:webmaster@eclipse.org">webmaster</a>.</p>
 		<p>Looking for the <a href="http://download.eclipse.org/tools/pdt/downloads/index-old.php">old PDT download page</a>? You can find it <a href="http://download.eclipse.org/tools/pdt/downloads/index-old.php">here</a>.</p>
