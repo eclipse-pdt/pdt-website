@@ -223,6 +223,7 @@ $Menu 	= new Menu();
 			<ul><li><a href="http://www.eclipse.org/pdt/downloads/?sortBy=date">Recent Builds</a> <a href="http://www.eclipse.org/pdt/feeds/builds-pdt.xml"><img src="./images/rss.jpg" title="Build RSS Feed" align="right" alt="[RSS] Builds" /></a></li>
 				<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.pdt">Newsgroup Posts</a> <a href="http://dev.eclipse.org/mhonarc/newsLists/news.eclipse.tools.pdt/maillist.rss"><img src="./images/rss.jpg" title="Newsgroup RSS Feed" align="right" alt="[RSS] Newsgroup" /></a></li>
 			</ul>
+			<p>&#160;</p>
 			<hr noshade="noshade" size="1"/>
 			<ul>	
 				<li>
