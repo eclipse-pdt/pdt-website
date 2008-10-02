@@ -168,7 +168,7 @@ $Menu 	= new Menu();
 		<div class="homeitem3col">
 			<h3>Quick Navigation</h3>
 			<ul>
-				<li><a href="downloads.php">Downloads</a>. 
+				<li><a href="downloads">Downloads</a>. 
 					Get available PDT builds
 				</li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDT">PDT Wiki</a>. 
