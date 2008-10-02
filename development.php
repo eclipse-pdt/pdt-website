@@ -62,7 +62,7 @@
 				 	read more on <a href="http://findbugs.sourceforge.net/">http://findbugs.sourceforge.net</a>
 				</li>
 				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html">Static Analysis Report (J2SE best practices)</a>.
-				 	read more on <a href="http://www.eclipse.org/tptp/platform/index.php">http://www.eclipse.org/tptp/platform/index.php</a>
+				 	read more on <a href="http://www.eclipse.org/tptp/platform/">http://www.eclipse.org/tptp/platform/index.php</a>
 				</li>
 				<!-- there are no working JUnit tests, so why throw 404s? -->
 				<!--
