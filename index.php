@@ -171,8 +171,8 @@ $Menu 	= new Menu();
 				<li><a href="downloads.php">Downloads</a>. 
 					Get available PDT builds
 				</li>
-				<li><a href="http://wiki.eclipse.org/index.php/PDT">PHP Wiki</a>. 
-					Find more information and discussions in the PHP Wiki page
+				<li><a href="http://wiki.eclipse.org/index.php/PDT">PDT Wiki</a>. 
+					Find more information and discussions in the PDT Wiki page
 				</li>
 
 				<li><a href="http://bugs.eclipse.org/bugs">Bugzilla</a>. 
