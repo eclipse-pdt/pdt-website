@@ -77,7 +77,8 @@
 	// that is not at the root, such as from  plans/php_plan_2_0.php
 	$Nav->addNavSeparator("Project Home", 	"/pdt/index.php"); 
 	$Nav->addCustomNav("Downloads", "$downurl/$PR/downloads/", "_self", 2);
-	$Nav->addCustomNav("Update Manager", "$rooturl/updates/", "_self", 2);
+	// apeled - disabled the link to the update manager for now
+	//$Nav->addCustomNav("Update Manager", "$rooturl/updates/", "_self", 2);
 	$Nav->addCustomNav("Installation", 		"/pdt/install.php","_self", 2);
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_2_0.php","_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PDT", 		"_self", 2);
