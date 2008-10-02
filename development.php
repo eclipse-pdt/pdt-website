@@ -5,7 +5,8 @@
 	# committers.php
 	#
 	# Author: 		Roy Ganor
-	# Date:			2007-07-18
+	# Contributors: Nick Boldt
+	# Date:			2007-07-18, 2008-09-29
 	#
 	# Description: Development page - includes nightly reports, committers list
 	#
@@ -32,9 +33,11 @@
 	# Paste your HTML content here!
 	ob_start();
 
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-	$projectInfo = new ProjectInfo("tools.php");
-
+	if (is_readable($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php"))
+	{
+		require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+		$projectInfo = new ProjectInfo("tools.php");
+	}
 ?>
 
 <div id="maincontent">
@@ -61,9 +64,12 @@
 				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/results/ANALYSIS-php.html">Static Analysis Report (J2SE best practices)</a>.
 				 	read more on <a href="http://www.eclipse.org/tptp/platform/index.php">http://www.eclipse.org/tptp/platform/index.php</a>
 				</li>
+				<!-- there are no working JUnit tests, so why throw 404s? -->
+				<!--
 				<li><a href="http://download.eclipse.org/tools/pdt/downloads/drops/N<?=date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y")))?>/results/TEST-php.html">Unit Test Results (<?=date("Ymd", mktime(0, 0, 0, date("m")  , date("d")-1, date("Y")))?>)</a>.
 				 	read more on <a href="http://www.junit.org">http://www.junit.org</a>
 				</li>
+				-->
 			</ul>
 		</div>
 
@@ -78,92 +84,18 @@
 
 	      <div class="homeitem3col">
 
-				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
-	              <ul>
-	              <?
-		          define('MAGPIE_CACHE_ON', false);
-				  require_once 'rss_fetch.inc';
-				  $url = 'http://download.eclipse.org/tools/pdt/downloads/rss/center.xml';
-
-				  $rss = fetch_rss($url);
-	              $index = 0;
-
-                  while ($index < sizeof($rss->items) && $index < 4) {
-
-	                    $message = $rss->items[$index];
-	                    ?>
-						<li>
-							<a href="javascript:toggle('bugs_<?=$index ?>')"> <img id="img_bugs_<?=$index ?>"  src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
-							<ul id="bugs_<?=$index ?>" style="display: none">
-								<li><?=html_entity_decode($message["description"])?></li>
-							</ul>
-							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
-						</li>
-	                    <? $index += 1;
-	              }
-	              ?>
-	              </ul>
+				<h3>News</h3>
+				
+				<ul><li><a href="http://www.eclipse.org/pdt/downloads/?sortBy=date">Recent Builds</a> <a href="http://www.eclipse.org/pdt/feeds/builds-pdt.xml"><img src="./images/rss.jpg" title="Build RSS Feed" align="right" alt="[RSS] Builds" /></a></li>
+					<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.pdt">Newsgroup Posts</a> <a href="http://dev.eclipse.org/mhonarc/newsLists/news.eclipse.tools.pdt/maillist.rss"><img src="./images/rss.jpg" title="Newsgroup RSS Feed" align="right" alt="[RSS] Newsgroup" /></a></li>
+				</ul>
 	        </div>
 
-	      <div class="homeitem3col">
-
-				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss.php"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Last Releases</h3>
-	              <ul>
-	              <?
-				  $url = 'http://download.eclipse.org/tools/pdt/downloads/rss.php';
-
-				  $rss = fetch_rss($url);
-	              $index = 0;
-
-                  while ($index < sizeof($rss->items) && $index < 4) {
-
-	                    $message = $rss->items[$index];
-	                    ?>
-						<li>
-							<a href="javascript:toggle('rel_<?=$index ?>')"> <img id="img_rel_<?=$index ?>"  src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
-							<ul id="rel_<?=$index ?>" style="display: none">
-								<li><?=html_entity_decode($message["description"])?></li>
-							</ul>
-							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
-						</li>
-	                    <? $index += 1;
-	              }
-	              ?>
-	              </ul>
-	        </div>
-
-
-	      <div class="homeitem3col">
-
-				<h3><a href="http://www.eclipse.org/pdt/newsgroup/rss.php"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Newsgroup Messages</h3>
-	              <ul>
-	              <?
-				  $url = 'http://www.eclipse.org/pdt/newsgroup/rss.php';
-
-				  $rss = fetch_rss($url);
-	              $index = 0;
-
-                  while ($index < sizeof($rss->items) && $index < 10) {
-
-	                    $message = $rss->items[$index];
-	                    ?>
-						<li>
-							<a href="javascript:toggle('news_<?=$index ?>')"> <img id="img_news_<?=$index ?>"  src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
-							<ul id="news_<?=$index ?>" style="display: none">
-								<li><?=html_entity_decode($message["description"])?></li>
-							</ul>
-							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
-						</li>
-	                    <? $index += 1;
-	              }
-	              ?>
-	              </ul>
-	        </div>
 
 		<div class="homeitem3col">
 			<h3>People</h3>
 			<ul>
-				<li><a href="http://www.eclipse.org/pdt/people/contributors.php">PDT contributors</a>.
+				<li><a href="http://www.eclipse.org/pdt/people/contributors.php">PDT contributors</a>
 				</li>
 			</ul>
 		</div>

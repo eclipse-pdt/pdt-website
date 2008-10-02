@@ -13,7 +13,8 @@ $Menu 	= new Menu();
 	# index.php
 	#
 	# Author: 		Yossi Leon, Assaf Almaz
-	# Date:			2006-04-27
+	# Contributors: Nick Boldt
+	# Date:			2006-04-27, 2008-09-29
 	#
 	# Description: main project page
 	#
@@ -89,7 +90,7 @@ $Menu 	= new Menu();
 			<a href="whois.php">Products and projects</a> that are using PDT<br>
 		</p>
 		
-		<p>Schedule:</p>
+		<p>Schedule (see also <a href="/pdt/plans/php_plan_2_0.php">Project Plan</a>):</p>
 		
 				
 		<table>
@@ -164,7 +165,7 @@ $Menu 	= new Menu();
 		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
 		platform. </p>
 
-		<div class="homeitem">
+		<div class="homeitem3col">
 			<h3>Quick Navigation</h3>
 			<ul>
 				<li><a href="downloads.php">Downloads</a>. 
@@ -186,7 +187,7 @@ $Menu 	= new Menu();
 					Your way of communicating with the community of people developing and using the Eclipse 
 					PDT eclipse based tool. 
 					Ask questions about usage of the PDT, share ideas, issues, and insights
-					(simple <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.pdt"> 
+					(simple <a href="http://dev.eclipse.org/newslists/news.eclipse.tools.pdt/"> 
 					web interface </a> also available)
 				</li>
 
@@ -202,45 +203,62 @@ $Menu 	= new Menu();
 
 			</ul>
 		</div>
+
+		<script type="text/javascript">
+				function toggle(id)
+				{
+				        e = document.getElementById(id);
+				        e.style.display = (e.style.display == "" ? "none" : "");
+				        document.getElementById("img_".concat(id)).src = e.style.display == "" ? "./images/minus.gif" : "./images/plus.gif";
+				}
+		</script>
+
+		<p>&#160;</p>
 		
-		<div class="homeitem">
-			<h3>What's New</h3>
+	</div>
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>News</h6>
+	
+			<ul><li><a href="http://www.eclipse.org/pdt/downloads/?sortBy=date">Recent Builds</a> <a href="http://www.eclipse.org/pdt/feeds/builds-pdt.xml"><img src="./images/rss.jpg" title="Build RSS Feed" align="right" alt="[RSS] Builds" /></a></li>
+				<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.pdt">Newsgroup Posts</a> <a href="http://dev.eclipse.org/mhonarc/newsLists/news.eclipse.tools.pdt/maillist.rss"><img src="./images/rss.jpg" title="Newsgroup RSS Feed" align="right" alt="[RSS] Newsgroup" /></a></li>
+			</ul>
+			<hr noshade="noshade" size="1"/>
 			<ul>	
 				<li>
-					<span class="normal"><b>June &nbsp;10 2008</b></span> -
+					<span class="normal"><b>September&nbsp;29 2008</b></span> -
+					<a href="http://www.eclipse.org/pdt/feeds/builds-pdt.xml">PDT RSS Builds</a> Feed (<a href="http://wiki.eclipse.org/Eclipse_Build_Available_RSS_Feeds">new format</a>)! 
+				</li>
+				<li>
+					<span class="normal"><b>June&nbsp;10 2008</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080603">PDT 1.0.3 Final release</a> is ready!
 				</li>
 				<li>
-					<span class="normal"><b>May &nbsp;30 2008</b></span> -
+					<span class="normal"><b>May&nbsp;30 2008</b></span> -
 					<a href="http://wiki.eclipse.org/BugDay/May_2008#Projects">PDT 1.1 Bug day</a> join us for a bug squash day!
 				</li>
 				<li>
-					<span class="normal"><b>January &nbsp;3<sup>rd</sup> 2008</b></span> -
+					<span class="normal"><b>January&nbsp;3<sup>rd</sup> 2008</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20080103">PDT 1.0.2 Release</a> is Ready!
 				</li>
-
+	
 				<li>
 					<span class="normal"><b>September&nbsp;18<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">PDT 1.0 Final Release</a> is Ready!
 				</li>
-
+	
 				<li>
 					<span class="normal"><b>September&nbsp;12<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070910-RC1">1.0 RC-1</a> 
 					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
 				</li>
-
+	
 				<li>
 					<span class="normal"><b>August&nbsp;26<sup>th</sup> 2007</b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070826-M3">1.0 M3</a> 
 					(compatible with Eclipse 3.3 and Java 1.5 only) is ready!
 				</li>
-
-				<li>
-					<span class="normal"><b>July&nbsp;16<sup>th</sup></b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/rss.php">PDT RSS Builds</a> Feed! 
-				</li>
-				
+	
 				<li>
 					<span class="normal"><b>April&nbsp;6<sup>th</sup></b></span> -
 					<a href="http://download.eclipse.org/tools/pdt/downloads/?release=S20070401-RC3">0.7 RC3</a> 
@@ -252,77 +270,23 @@ $Menu 	= new Menu();
 					<img src="./images/PoweredBy_PDT.gif" alt="Powered by PDT" />. 
 					Use it in your site! 
 				</li>
-				<li>
-					<span class="normal"><b>RSS News</b></span> -
-					<a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml">RSS News</a>. 
-					including unit testing results and bugs status are now available.
-				</li>
-
+	
 				<li>
 					<span class="normal"><b>October&nbsp;12<sup>th</sup></b></span> -
 					PDT presentation in the <a href="http://www.eclipsecon.org/summiteurope2006/index.php?page=detail/&id=43">Eclipse Summit</a>
 					by Yossi Leon, PDT Project Leader
 				</li>
-
+	
 				<li>
 					<span class="normal"><b>July&nbsp;5<sup>th</sup></b></span> -
 					Debuggers are available from the 
 					<a href="http://www.eclipse.org/pdt/install.php">Installation</a> page.
 				</li>
-
+	
 			</ul>
 		</div>
-
-		<script type="text/javascript">
-				function toggle(id)
-				{
-				        e = document.getElementById(id);
-				        e.style.display = (e.style.display == "" ? "none" : "");
-				        document.getElementById("img_".concat(id)).src = e.style.display == "" ? "./images/minus.gif" : "./images/plus.gif";
-				}
-		</script>
-		
-	      <div class="homeitem3col">
-	
-				<h3><a href="http://download.eclipse.org/tools/pdt/downloads/rss/center.xml"><img src="./images/rss.jpg" align="right" title="RSS Feed" alt="[RSS]" /></a>Updates</h3>
-	              <ul>
-	              <?
-		          define('MAGPIE_CACHE_ON', false);
-				  require_once 'rss_fetch.inc';
-				  $url = 'http://download.eclipse.org/tools/pdt/downloads/rss/center.xml';
-				  
-				  $rss = fetch_rss($url);
-	              $index = 0;
-
-                  while ($index < sizeof($rss->items) && $index < 4) {
-                  		
-	                    $message = $rss->items[$index];
-	                    ?>
-						<li>
-							<a href="javascript:toggle('bugs_<?=$index ?>')"> <img id="img_bugs_<?=$index ?>"  src="./images/plus.gif" alt="expand" /> <span class="normal"><b><?=$message["title"] ?></b></span> </a>
-							<ul id="bugs_<?=$index ?>" style="display: none">
-								<li><?=html_entity_decode($message["description"])?></li>
-							</ul>
-							| <a href="<?=html_entity_decode($message["link"]) ?>">Report </a>
-						</li>
-	                    <? $index += 1;
-	              }
-	              ?>
-	              </ul>
-	        </div>
-	        
-	        <p> </p>
-
 	</div>
-	<div id="rightcolumn">
-		<br>
-		<br>
-		<br>
-		<!--<a href="http://download.eclipse.org/tools/pdt/downloads/?release=R20070917">Download PDT 1.0!</a>
-	--></div>
-
 </div>
-
 
 <?
 	$html = ob_get_contents();
