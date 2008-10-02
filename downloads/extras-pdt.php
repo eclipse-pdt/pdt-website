@@ -18,7 +18,7 @@ function showNotes()
 		<ul>
 		<?php foreach ($oldNightlies as $on)
 		{
-			print "<li><a href=\"http://download.eclipse.org/tools/pdt/downloads/drops/release.php?release=$on/\">$on</a></li>\n";
+			print "<li><a href=\"http://download.eclipse.org/tools/pdt/downloads/release.php?release=$on\">$on</a></li>\n";
 		} ?>
 		</ul>
 	</div>
