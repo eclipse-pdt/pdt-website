@@ -26,6 +26,9 @@ function showNotes()
 {
 	global $PWD;
 	$oldNightlies = loadDirSimple($PWD, "N.*", "d");
+	rsort($oldNightlies); 
+	reset($oldNightlies);
+
 ?>
 
 	<div class="homeitem3col">
