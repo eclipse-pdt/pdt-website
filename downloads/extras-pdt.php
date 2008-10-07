@@ -14,9 +14,9 @@ function doRequirements()
 		<li style="border:0"><div style="float:right">123M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-win32.zip.md5">md5</a>)</div>
 			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-win32.zip">PDT 1.0.3 <b style="color:green">All-In-One</b> (Windows 32-bit)</a></li>
 		<li style="border:0"><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-linux-gtk.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-linux-gtk.zip">PDT 1.0.3 <b style="color:green">All-In-One</b> (Linux GTK)</a></li>
+			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-linux-gtk.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Linux GTK)</a></li>
 		<li><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-macosx-carbon.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-macosx-carbon.zip">PDT 1.0.3 <b style="color:green">All-In-One</b> (Mac OS X Carbon)</a></li>
+			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-macosx-carbon.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Mac OS X Carbon)</a></li>
 	</ul>
 </div>
 <?php
