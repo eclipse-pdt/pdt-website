@@ -9,8 +9,8 @@
 		<person:family-name>Lapsha</person:family-name>
 	</person:name>
 
-	<person:affiliation href="http://www.zend.com/">
-		Zend Technologies
+	<person:affiliation>
+		Independent Contribution
 	</person:affiliation>
 
 	<person:e-mail>seva.lapsha@gmail.com</person:e-mail>
@@ -30,18 +30,21 @@
 			his knowledge and experience in PHP and Web to develop
 			new generation of IDE for PHP oriented Web development.
 		</p>
+		<p>
+			Since the beginning of 2008 Seva is an independent part-time contributor to the PDT
+		</p>
 	</person:biography>
 
 	<person:contribution role="committer">
 		<p>
-			Full time contributor.
+			Part time contributor.
 		</p>
 	</person:contribution>
 
 	<person:home-page href="http://www.linkedin.com/in/lapsha/" />
 
 	<person:large-photo width="400" height="400"
-		href="http://images30.fotki.com/v484/photos/1/156965/5521784/sevabig-vi.jpg" />
+		href="http://images45.fotki.com/v1360/photos/1/156965/6806647/DSC07351-vi.jpg" />
 	<person:small-photo width="100" height="100"
-		href="http://images30.fotki.com/v41/photos/1/156965/5521784/sevasmall-vi.jpg" />
+		href="http://images45.fotki.com/v1360/photos/1/156965/6806647/DSC07351-th.jpg" />
 </person:person>
