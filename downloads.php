@@ -71,6 +71,14 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	$html = ob_get_contents();
 	ob_end_clean();
 
+$html .= "<!-- START: Google Analysis report -->
+<script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
+<script type=\"text/javascript\">
+_uacct = \"UA-3036363-2\";
+urchinTracker();
+</script>
+<!-- END: Google Analysis report -->";
+
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
