@@ -41,9 +41,9 @@ $dls = array(
 			"Automated Tests" => "Automated-Tests",
 		),
 		"PDT <b style=\"color:green\">All-In-One</b> (includes Eclipse + dependencies)" => array(
-		 	"Windows" => "all-in-one-win32",
-			"Linux (x86/GTK 2)" => "all-in-one-linux-gtk",
-			"Mac OSX" => "all-in-one-macosx-carbon",
+		 	"Windows 32-bit" => "all-in-one-win32",
+			"Linux x86/GTK 2" => "all-in-one-linux-gtk",
+			"Mac OS X Carbon" => "all-in-one-macosx-carbon",
 		),
 	),
 );
