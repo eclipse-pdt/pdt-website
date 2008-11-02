@@ -11,12 +11,12 @@ function doRequirements()
 	<h3>PDT 1.0.3 All In Ones</h3>
 	<p>These downloads include PDT 1.0.3, Eclipse 3.3, and all other required plugins.</p>
 	<ul>
-		<li style="border:0"><div style="float:right">123M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-win32.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-win32.zip">PDT 1.0.3 <b style="color:green">All-In-One</b> (Windows 32-bit)</a></li>
-		<li style="border:0"><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-linux-gtk.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-linux-gtk.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Linux x86/GTK 2)</a></li>
-		<li><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-1.0.3-macosx-carbon.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-1.0.3-macosx-carbon.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Mac OS X Carbon)</a></li>
+		<li style="border:0"><div style="float:right">123M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-win32-1.0.3.zip.md5">md5</a>)</div>
+			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-win32-1.0.3.zip">PDT 1.0.3 <b style="color:green">All-In-One</b> (Windows 32-bit)</a></li>
+		<li style="border:0"><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-linux-gtk-1.0.3.tar.gz.md5">md5</a>)</div>
+			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-linux-gtk-1.0.3.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Linux x86/GTK 2)</a></li>
+		<li><div style="float:right">122M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/checksum/pdt-all-in-one-macosx-carbon-1.0.3.tar.gz.md5">md5</a>)</div>
+			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/1.0.3/R200806030000/pdt-all-in-one-macosx-carbon-1.0.3.tar.gz">PDT 1.0.3 <b style="color:green">All-In-One</b> (Mac OS X Carbon)</a></li>
 	</ul>
 </div>
 <?php
