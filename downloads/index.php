@@ -40,11 +40,11 @@ $dls = array(
 			"Examples" => "examples",
 			"Automated Tests" => "Automated-Tests",
 		),
-		"All-in-one" => array(
+		/*"All-in-one" => array(
 		 	"Windows" => "all-in-one-win32",
 			"Linux (x86/GTK 2)" => "all-in-one-linux-gtk",
 			"Mac OSX" => "all-in-one-macosx-carbon",
-		),
+		),*/
 	),
 );
 
