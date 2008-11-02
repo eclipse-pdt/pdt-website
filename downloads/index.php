@@ -41,9 +41,9 @@ $dls = array(
 			"Automated Tests" => "Automated-Tests",
 		),
 		"All-in-one" => array(
-		 	"Windows" => "win32",
-			"Linux" => "linux",
-			"Mac" => "macosx",
+		 	"Windows" => "all-in-one-win32",
+			"Linux (x86/GTK 2)" => "all-in-one-linux-gtk",
+			"Mac OSX" => "all-in-one-macosx-carbon",
 		),
 	),
 );
