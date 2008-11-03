@@ -69,8 +69,10 @@ release candidates before the actual release. Scheduled release candidates shoul
 one week before the release.
 
 <li> 2.0 M1 - November 03 </li>
-<li> 2.0 RC1 - November 17 </li>
-<li> 2.0 RC2 - December 01 </li>
+<li> 2.0 M2 - November 24 </li>
+<li> 2.0 RC1 - December 08 </li>
+<li> 2.0 RC2 - December 14 </li>
+<li> 2.0 RC3 - December 23</li>
 <li><b> 2.0 Release - December 29 </b></li>
 
 <h2><a name="Features"> </a> Features and Work Plan</h2>
