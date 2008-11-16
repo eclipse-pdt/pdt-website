@@ -5,11 +5,8 @@ $pageTitle = "PHP Development Tools (PDT) - Release Notes";
 
 $streams = array(
 	"pdt" => array(
-		"3.4.x" => "HEAD",
-		"3.3.x" => "R33_maintenance",
-		"3.2.x" => "R32_maintenance",
-		"3.1.x" => "R31_maintenance",
-		"3.0.x" => "R30_maintenance"
+		"2.0.x" => "HEAD",
+		"1.0.x" => "R1_0_5_20080723"
 	),
 );
 
