@@ -4,11 +4,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>PDT Builds</title>
   <link href="http://download.eclipse.org/tools/pdt/feeds/builds-pdt.xml" rel="self" type="application/atom+xml"/>
-  <updated>2008-11-17T02:46:03Z</updated>
+  <updated>2008-11-17T03:44:39Z</updated>
   <author>
     <name>PDT Build Team</name>
   </author>
   <id>http://download.eclipse.org/tools/pdt/feeds/builds-pdt.xml</id>
+  <entry>
+    <title>[announce] pdt 2.0.0M1 (S200811020000) is available</title>
+    <link href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=S200811020000#S200811020000"/>
+    <id>http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=S200811020000#S200811020000</id>
+    <updated>2008-11-17T03:44:39Z</updated>
+    <summary>
+      <build xmlns="http://www.eclipse.org/2006/BuildFeed" branch="HEAD" datetime="200811020000" href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=S200811020000#S200811020000" type="S" vanityname="2.0.0M1" version="2.0.0">
+        <detail config="build.cfg" href="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/tools/pdt/downloads/drops/2.0.0/S200811020000/" log="buildlog.txt" map="directory.txt"/>
+        <update>http://download.eclipse.org/tools/pdt/updates/</update>
+        <downloads>http://www.eclipse.org/pdt/downloads/?project=pdt</downloads>
+        <releasenotes>http://www.eclipse.org/pdt/news/relnotes.php?project=pdt&amp;version=S200811020000
+          </releasenotes>
+        <releases>
+          <release arch="ALL" os="ALL" type="SDK" ws="ALL">pdt-SDK-S20081102.zip</release>
+        </releases>
+        <tests>
+          <test href="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/tools/pdt/downloads/drops/2.0.0/S200811020000/testResults.php" type="junit">
+            <result arch="ALL" os="ALL" ws="ALL">PASS</result>
+          </test>
+        </tests>
+        <coordinated status=""/>
+      </build>
+    </summary>
+  </entry>
   <entry>
     <title>[announce] pdt M200811162133 (1.0.5.M200811162133) is available</title>
     <link href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=M200811162133#M200811162133"/>
