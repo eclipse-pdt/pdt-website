@@ -11,6 +11,7 @@ function sidebar()
 		<h6>Actions</h6>
 		<ul>
 			<li><a href="/<?php print $PR; ?>/build/">Build</a>,
+				<a href="/<?php print $PR; ?>/build/clean.php">Clean</a>,
 				<a href="/<?php print $PR; ?>/build/promo.php">Promote</a></li>
 			<li><a href="/<?php print $PR; ?>/downloads/?project=<?php print $projct ? $projct : "pdt"; ?>&amp;showAll=0&amp;showMax=5&amp;sortBy=date">See Recent Builds</a></li>
 		</ul>
