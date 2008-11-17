@@ -1,6 +1,6 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common" . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] . "/projects" . PATH_SEPARATOR . get_include_path());
-
+ 
 require_once ("system/app.class.php") ;
 require_once ("system/nav.class.php") ;
 require_once ("system/menu.class.php") ;
@@ -12,14 +12,9 @@ include ("_projectCommon.php") ; # All on the same line to unclutter the user's 
 #****************************************************************************
 
 #
-# Begin: page-specific settings.  Change these. $pageTitle = "Installation" ;
-$pageKeywords = "PHP, Installation Instruction" ;
+# Begin: page-specific settings.  Change these. $pageTitle = "PHP Development Tools (PDT) - Old Installation Instructions" ;
+$pageKeywords = "PHP, Installation, Instructions, HOWTO, obsolete" ;
 $pageAuthor = "PDT Committers" ;
-
-# Add page-specific Nav bars here# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)# $Nav->addNavSeparator("My Page Links", 	"downloads.php");# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
-
-# End: page-specific settings#
-
 
 # Paste your HTML content here!ob_start () ;
 
