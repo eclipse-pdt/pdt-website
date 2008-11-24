@@ -71,14 +71,9 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	$html = ob_get_contents();
 	ob_end_clean();
 
-$html .= "<!-- START: Google Analysis report -->
-<script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"></script>
-<script type=\"text/javascript\">
-_uacct = \"UA-3036363-2\";
-urchinTracker();
-</script>
-<!-- END: Google Analysis report -->";
+	$html .= "<!-- START: Google Analysis report --><script type=\"text/javascript\"> var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\"); document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\")); </script> <script type=\"text/javascript\"> try { var pageTracker = _gat._getTracker(\"UA-3036363-2\"); pageTracker._trackPageview(); } catch(err) {} </script><!-- END: Google Analysis report -->";
 
+	
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
