@@ -63,6 +63,8 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/downloads-common.ph
 $html = ob_get_contents();
 ob_end_clean();
 
+$html .= "<!-- START: Google Analysis report --><script type=\"text/javascript\"> var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\"); document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\")); </script> <script type=\"text/javascript\"> try { var pageTracker = _gat._getTracker(\"UA-3036363-2\"); pageTracker._trackPageview(); } catch(err) {} </script><!-- END: Google Analysis report -->";
+
 $trans = array_flip($projects);
 $pageTitle = "PHP Development Tools (PDT) - Downloads";
 $pageKeywords = ""; // TODO: add something here
