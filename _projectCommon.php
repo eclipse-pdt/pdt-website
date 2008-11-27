@@ -79,7 +79,7 @@
 	$Nav->addCustomNav("Downloads", "$downurl/$PR/downloads/", "_self", 2);
 	// apeled - disabled the link to the update manager for now
 	//$Nav->addCustomNav("Update Manager", "$rooturl/updates/", "_self", 2);
-	$Nav->addCustomNav("Installation", 		"/pdt/install.php","_self", 2);
+	$Nav->addCustomNav("Installation", 		"http://wiki.eclipse.org/PDT/Installation","_self", 2);
 	$Nav->addCustomNav("Project Plan", 		"/pdt/plans/php_plan_2_0.php","_self", 2);
 	$Nav->addCustomNav("Wiki", 				"http://wiki.eclipse.org/index.php/PDT", 		"_self", 2);
 	$Nav->addCustomNav("FAQ", 				"http://wiki.eclipse.org/PDT/FAQ", 			"_self", 2);
