@@ -12,7 +12,7 @@ ob_start(); ?>
 		</tr>
 	</tbody>
 </table>
-<p>Last revised: <tt>$Date: 2008/11/27 22:55:54 $</tt>
+<p>Last revised: <tt>$Date: 2008/11/27 23:00:06 $</tt>
 <p><em>&nbsp;&nbsp;&nbsp; Please send comments about this plan to
 the</em> <a href="news://news.eclipse.org/eclipse.tools.pdt">eclipse.tools.pdt</a> <em>newsgroup.</em></p>
 
@@ -28,19 +28,19 @@ release of the PDT project, release 2.0.</p>
 </ul>
 
 <p>PDT 2.0 is planned to be released on December 2008. 
-The project will continue to be based on <a href="http://www.eclipse.org/projects/ganymede.php">Eclipse Ganymede</a> releases .
+The project will be based on the <a href="http://wiki.eclipse.org/Ganymede">Eclipse Ganymede</a> release.
 
 <h2><a name="Deliverables"></a>Release Deliverables</h2>
 <p>The release deliverables are:</p>
 <ul type="disc">
 <li>Source code release for PDT is available in the eclipse.org <a
 href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pdt/?cvsroot=Tools_Project">CVS
-repositories</a> and the download <a href="http://www.eclipse.org/pdt/downloads/">page</a>.</li>
+repositories</a> and the <a href="http://www.eclipse.org/pdt/downloads/">download page</a>.</li>
 
-<li>PDT runtime binaries and SDK distributions are available in the download 
-<a href="http://www.eclipse.org/pdt/downloads/">page</a>.</li>
-<li>PDT runtime binaries and SDK features are available via eclipse.org update site
-(Click <a href="http://wiki.eclipse.org/PDT/Installation">here</a> for additional information).</li>
+<li>PDT runtime binaries and SDK distributions are available in the <a href="http://www.eclipse.org/pdt/downloads/">download 
+page</a>.</li>
+<li>PDT runtime binaries and SDK features are available via <a href="http://www.eclipse.org/pdt/updates/">update site</a>. 
+See <a href="http://wiki.eclipse.org/PDT/Installation">PDT Installation</a>.</li>
 </ul>
 
 <h2><a name="Milestones"> </a> Release Milestones</h2>
@@ -80,7 +80,7 @@ one week before the release.
 <h2><a name="TargetOperatingEnvironments"> </a> Target Operating
 Environments</h2>
 
-<p>PDT 2.0 will support all operating environments supported by the Eclipse
+<p>PDT 2.0 will support all operating environments supported by the Eclipse 3.4
 Platform itself. For a list of supported environments, refer to <a
 href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_4.html#TargetOperatingEnvironments">
 Eclipse Project</a> for a list of reference platforms.</p>
