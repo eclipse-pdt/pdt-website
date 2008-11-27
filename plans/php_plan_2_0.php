@@ -1,22 +1,6 @@
 <?php  																														
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
-
-$App 	= new App();	
-$Nav	= new Nav();	
-$Menu 	= new Menu();		
-include("../_projectCommon.php");    # All on the same line to unclutter the user's desktop'
-
-$pageTitle 		= "PDT";
-$pageKeywords	= "PDT";
-$pageAuthor		= "Guy Gurfinkel, Zend Technologies";
-
-ob_start();
-
-require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-$projectInfo = new ProjectInfo("tools.php");
-?>
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php"); require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");  require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $App = new App(); $Nav = new Nav(); $Menu = new Menu(); include($App->getProjectCommon());
+ob_start(); ?>
 <div id="midcolumn">
 
 <table style="width: 100%;" border="0" cellpadding="2">
@@ -28,7 +12,7 @@ $projectInfo = new ProjectInfo("tools.php");
 		</tr>
 	</tbody>
 </table>
-<p>Last revised: <tt>12/31/2007</tt>
+<p>Last revised: <tt>$Date: 2008/11/27 22:55:54 $</tt>
 <p><em>&nbsp;&nbsp;&nbsp; Please send comments about this plan to
 the</em> <a href="news://news.eclipse.org/eclipse.tools.pdt">eclipse.tools.pdt</a> <em>newsgroup.</em></p>
 
@@ -50,13 +34,13 @@ The project will continue to be based on <a href="http://www.eclipse.org/project
 <p>The release deliverables are:</p>
 <ul type="disc">
 <li>Source code release for PDT is available in the eclipse.org <a
-href="http://dev.eclipse.org/viewcvs/index.cgi/?cvsroot=Tools_Project">CVS
-repositories</a> and the download <a href="http://download.eclipse.org/tools/pdt/downloads/index.php">page</a>.</li>
+href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pdt/?cvsroot=Tools_Project">CVS
+repositories</a> and the download <a href="http://www.eclipse.org/pdt/downloads/">page</a>.</li>
 
 <li>PDT runtime binaries and SDK distributions are available in the download 
-<a href="http://download.eclipse.org/tools/pdt/downloads/index.php">page</a>.</li>
+<a href="http://www.eclipse.org/pdt/downloads/">page</a>.</li>
 <li>PDT runtime binaries and SDK features are available via eclipse.org update site
-(Click <a href="http://www.eclipse.org/pdt/install.php#installation_methods">here</a> for additional information).</li>
+(Click <a href="http://wiki.eclipse.org/PDT/Installation">here</a> for additional information).</li>
 </ul>
 
 <h2><a name="Milestones"> </a> Release Milestones</h2>
@@ -88,7 +72,7 @@ one week before the release.
 
 <br>
 <b>Release Candidate 1+2:</b>
-<li>Bug Squash (List of bugs can be found <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=pdt&content=">here)</a></li>
+<li>Bug Squash: see list of <a href="https://bugs.eclipse.org/bugs/colchange.cgi?rememberedquery=product%3DPDT%26bug_status%3DNEW%26bug_status%3DASSIGNED%26bug_status%3DREOPENED%26order%3Dbugs.bug_status%2Cbugs.target_milestone%2Cbugs.bug_id%26query_format%3Dadvanced&column_changeddate=on&column_bug_severity=on&column_priority=on&column_rep_platform=on&column_bug_status=on&column_product=on&column_component=on&column_version=on&column_target_milestone=on&column_short_short_desc=on&splitheader=0">open bugs</a></li>
 <br>
 * Note: PHP 5.3 is expected to be released around October-November
 <br>
@@ -102,11 +86,13 @@ href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_4.html#T
 Eclipse Project</a> for a list of reference platforms.</p>
 
 </div>
-
-<?
+<?php
 $html = ob_get_contents();
 ob_end_clean();
 
-# Generate the web page
+$pageTitle 		= "PDT Project Plan";
+$pageKeywords	= "PDT, project, plan";
+$pageAuthor		= "Guy Gurfinkel, Zend Technologies & Nick Boldt, JBoss, a division of Red Hat";
+
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
