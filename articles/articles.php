@@ -54,6 +54,10 @@
 				<li><a href="/pdt/documents/contributing.html">Contributing to the eclipse pdt project</a>.
 				</li>
 			</ul>
+			<ul>
+				<li><a href="/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Debugging PHP using Eclipse and PDT</a>.
+				</li>
+			</ul>
 		</div>
 		
 
