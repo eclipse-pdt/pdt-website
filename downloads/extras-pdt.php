@@ -7,6 +7,16 @@ $oldrels = array(
 function doRequirements()
 {
 ?>
+
+<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
+<ul id="rDebug" style="display: none"><br>
+In order to be able to perform debugging using PDT, you should download one of the following extra packages:
+	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Zend PDT Community Site" /> <a href="http://www.zend.com/community/pdt?ecl=EclipseZend"> PDT and Zend Debugger </a></li>
+	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> PDT and XDebug </a> </li>
+	<br> Note: Due to Eclipse licensing requirements, PDT with debugger packages are distributed from external locations. <br>
+	<a href="http://wiki.eclipse.org/PDT/TUTORIALS">Click here</a> to learn how to set up your environment in order to be able to perform debugging with PDT.
+</ul></li></ul>
+
 <div class="homeitem3col">
 	<h3>PDT 1.0.3 All In Ones</h3>
 	<p>These downloads include PDT 1.0.3, Eclipse 3.3, and all other required plugins.</p>
