@@ -77,7 +77,7 @@ $Menu 	= new Menu();
 		It leverages the existing Web Tools Project in providing developers with PHP capabilities.
 		</p>
 		
-		<p>Project Principles:</p>
+		<h2>Project Principles:</h2>
 		<ul>
 			<li> Intuitive and easy to learn </li>
 			<li> Seamless integration with the Web Tools project </li>
@@ -85,12 +85,8 @@ $Menu 	= new Menu();
 			<li> Extensibility </li>
 			<li> Continuous support of PHP developments </li>
 		</ul>
-		<br>
-		<p>
-			<a href="whois.php">Products and projects</a> that are using PDT<br>
-		</p>
 		
-		<p>Schedule (see also <a href="/pdt/plans/php_plan_2_0.php">Project Plan</a>):</p>
+		<h2>Schedule (see also <a href="/pdt/plans/php_plan_2_0.php">Project Plan</a>):</h2>
 		
 		<table>
 			<tr>
@@ -158,10 +154,7 @@ $Menu 	= new Menu();
 			</tr>
 		</table>
 
-		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
-		Public License</a>
-		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
-		platform. </p>
+		<br> <p> <a href="whois.php">Products and projects</a> that are using PDT<br> </p>
 
 		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
 		<ul id="rDebug" style="display: none"><br>
