@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site pack200="true" digestURL="http://download.eclipse.org/tools/pdt/updates/2.0/interim/" mirrorsURL="http://www.eclipse.org/modeling/download.php?file=/tools/pdt/updates/2.0/interim/site.xml&amp;format=xml">
+<site pack200="true" digestURL="http://download.eclipse.org/tools/pdt/updates/interim/" mirrorsURL="http://www.eclipse.org/modeling/download.php?file=/tools/pdt/updates/interim/site.xml&amp;format=xml">
 	<!-- to track downloads, use absolute paths instead: http://www.eclipse.org/downloads/download.php?r=1&amp;file=/tools/pdt/updates/ ... -->
 
-	<description url="http://download.eclipse.org/tools/pdt/updates/2.0/interim/site.xml">
+	<description url="http://download.eclipse.org/tools/pdt/updates/interim/site.xml">
 	To install these plugins, point Eclipse at this site. 
 	</description>
 
+
+	<!-- PDT 2.0.0 I200812040931 -->
+	<category-def label="PDT SDK 2.0.0 I200812040931" name="PDT SDK 2.0.0 I200812040931">
+		<description>
+PDT SDK 2.0.0 I200812040931: contains runtime, source, and documentation.
+		</description>
+	</category-def>
+	<feature id="org.eclipse.php.sdk_feature" version="2.0.0.v20081204-0930" url="features/org.eclipse.php.sdk_feature_2.0.0.v20081204-0930.jar" patch="false">
+		<category name="PDT SDK 2.0.0 I200812040931"/>
+	</feature>
+	<feature id="org.eclipse.php_feature" version="2.0.0.v20081126-1847" url="features/org.eclipse.php_feature_2.0.0.v20081126-1847.jar" patch="false">
+		<category name="PDT SDK 2.0.0 I200812040931"/>
+	</feature>
 
 	<!-- PDT 2.0.0 I200811270931 -->
 	<category-def label="PDT SDK 2.0.0 I200811270931" name="PDT SDK 2.0.0 I200811270931">
