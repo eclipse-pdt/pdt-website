@@ -92,7 +92,6 @@ $Menu 	= new Menu();
 		
 		<p>Schedule (see also <a href="/pdt/plans/php_plan_2_0.php">Project Plan</a>):</p>
 		
-				
 		<table>
 			<tr>
 				<td>
@@ -158,7 +157,16 @@ $Menu 	= new Menu();
 				<td> - 0.7 RC3 (and final)</td>
 			</tr>
 		</table>
-		
+
+		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
+		<ul id="rDebug" style="display: none"><br>
+		In order to be able to perform debugging using PDT, you should download one of the following extra packages:
+			<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Zend PDT Community Site" /> <a href="http://www.zend.com/community/pdt?ecl=EclipseZend"> PDT and Zend Debugger </a></li>
+			<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> PDT and XDebug </a> </li>
+			<br> Note: Due to Eclipse licensing requirements, PDT with debugger packages are distributed from external locations. <br>
+			<a href="http://www.eclipse.org/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Click here</a> to learn how to set up your environment in order to be able to perform debugging with PDT.
+		</ul></li></ul>
+		<br/>
 
 		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
 		Public License</a>
