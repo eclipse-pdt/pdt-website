@@ -158,6 +158,11 @@ $Menu 	= new Menu();
 			</tr>
 		</table>
 
+		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
+		Public License</a>
+		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
+		platform. </p>
+
 		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
 		<ul id="rDebug" style="display: none"><br>
 		In order to be able to perform debugging using PDT, you should download one of the following extra packages:
@@ -167,11 +172,6 @@ $Menu 	= new Menu();
 			<a href="http://www.eclipse.org/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Click here</a> to learn how to set up your environment in order to be able to perform debugging with PDT.
 		</ul></li></ul>
 		<br/>
-
-		<p> The PDT is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse
-		Public License</a>
-		and is implemented in java as a set of plugins to the <a href="http://www.eclipse.org">Eclipse</a> 
-		platform. </p>
 
 		<div class="homeitem3col">
 			<h3>Quick Navigation</h3>
