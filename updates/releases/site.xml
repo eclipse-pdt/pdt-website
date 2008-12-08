@@ -6,12 +6,30 @@
 	To install these plugins, point Eclipse at this site. 
 	</description>
 
-
 	<!-- PDT 1.0.3 -->
 	<category-def label="PDT SDK 1.0.3" name="PDT SDK 1.0.3">
 		<description>
 PDT SDK 1.0.3: contains runtime, source, and documentation.
 		</description>
 	</category-def>
+	<feature id="org.eclipse.php.sdk_feature" version="1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI" url="features/org.eclipse.php.sdk_feature_1.0.3.v20080603-2-584D2_aHFTeIRZJFjz-8RZHIOI.jar" patch="false">
+		<category name="PDT SDK 1.0.3"/>
+	</feature>
+	<feature id="org.eclipse.php_feature" version="1.0.3.v20080603-79-7PE7QYGHNH6Gh" url="features/org.eclipse.php_feature_1.0.3.v20080603-79-7PE7QYGHNH6Gh.jar" patch="false">
+		<category name="PDT SDK 1.0.3"/>
+	</feature>
+
+	<!-- PDT 1.0.5 -->
+	<category-def label="PDT SDK 1.0.5" name="PDT SDK 1.0.5">
+		<description>
+PDT SDK 1.0.5: contains runtime, source, and documentation.
+		</description>
+	</category-def>
+	<feature id="org.eclipse.php.sdk_feature" version="1.0.5.v20081126-1856" url="features/org.eclipse.php.sdk_feature_1.0.5.v20081126-1856.jar" patch="false">
+		<category name="PDT SDK 1.0.5"/>
+	</feature>
+	<feature id="org.eclipse.php_feature" version="1.0.5.v20081126-1856" url="features/org.eclipse.php_feature_1.0.5.v20081126-1856.jar" patch="false">
+		<category name="PDT SDK 1.0.5"/>
+	</feature>
 
 </site>
