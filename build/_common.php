@@ -37,8 +37,11 @@ $options = array (
 	/* define a regular expression to be used to collect the most recent 
 	 * matching dependencies for running a build. See also releng-common/tools/scripts/start_cron.sh
 	 * and /home/www-data/build/requests/dependencies.urls.txt 
-	 * */ 	
-	"regex" => "M200.*/eclipse-SDK-|R-.*200.*/eclipse-SDK-|[MSR]200.*/emf-sdo-xsd-SDK-2.4|[MSR]200.*/GEF-.+-3.4|R3.0/.+/wtp-.+-|R1.0/.+/dltk-|dtp-",
+	 *  	
+	 * loose dependencies list - "regex" => "M200.*/eclipse-SDK-|R-.*200.*/eclipse-SDK-|[MSR]200.*/emf-sdo-xsd-SDK-2.4|[MSR]200.*/GEF-.+-3.4|R3.0/.+/wtp-.+-|R1.0/.+/dltk-|dtp-",
+	*/
+	"regex" => "R-.*200.*/eclipse-platform-|R-.*200.*/eclipse-CVS-Client-|[MSR]200.*/emf-runtime-2.4|[MSR]200.*/xsd-runtime-2.4|[MSR]200.*/GEF-.+-3.4|R3.0/.+/wtp-wst.+-|R1.0/.+/dltk-|R1.0/.+/dltk-rse",
+	
 	
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
