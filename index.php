@@ -92,6 +92,13 @@ $Menu 	= new Menu();
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
+					26th of June, 2009 
+				</td>
+				<td> - PDT 2.1 Release</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
 					29th of December, 2008
 				</td>
 				<td> - PDT 2.0 Release</td>
