@@ -113,13 +113,6 @@ $Menu 	= new Menu();
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					6 of May, 2008
-				</td>
-				<td> - PDT 1.1 M1</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
 					3rd of January, 2008
 				</td>
 				<td> - <b>PDT 1.0.2 Released</b> </td>
@@ -127,30 +120,9 @@ $Menu 	= new Menu();
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					12th of December, 2007
-				</td>
-				<td> - PDT 1.0.2 M2 </td>
-			</tr>
-			<tr>
-				<td>
-					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
 					18th of September, 2007
 				</td>
 				<td> - <b>PDT 1.0 Released</b></td>
-			</tr>
-			<tr>
-				<td>
-					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					30th of July, 2007
-				</td>
-				<td> - PDT 1.0 M2</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					11th of June, 2007
-				</td>
-				<td> - PDT 1.0 M1</td>
 			</tr>
 			<tr>
 				<td>
