@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<associateSites>
+<associateSite label="Ganymede Update Site" url="http://download.eclipse.org/releases/ganymede/"/>
+<associateSite label="DLTK 1.0 Update Site" url="http://download.eclipse.org/technology/dltk/updates-dev/1.0/"/>
+</associateSites>
