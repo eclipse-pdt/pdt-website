@@ -39,15 +39,15 @@ $options = array (
 	 * and /home/www-data/build/requests/dependencies.urls.txt 
 	 * */ 	
 	"regex" => 
-		"M200.*/eclipse-SDK-|R-.*200.*/eclipse-SDK-|" .
+		"R-.*200.*/eclipse-SDK-|" .
 		"[MSR]200.*/emf-runtime-2.4|" .
 		"[MSR]200.*/xsd-runtime-2.4|" .
 		"[MSR]200.*/GEF-.+-3.4|" .
 		"R3.0/.+/wtp-wst-|" .
-		"dtp-|dtp_|" .
+		//"dtp-|dtp_|" .
 		"R1.0/.+/dltk-core-|" .
 		"R1.0/.+/dltk-rse-|" .
-		"RSE-",
+		//"RSE-",
 	
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
