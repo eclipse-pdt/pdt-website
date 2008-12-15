@@ -47,7 +47,7 @@ $options = array (
 		"dtp-|dtp_|" .
 		"R1.0/.+/dltk-rse-|" . 
 		"R1.0/.+/dltk-core-|" .
-		"RSE-|",
+		"RSE-",
 	
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
