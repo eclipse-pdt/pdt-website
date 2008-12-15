@@ -45,9 +45,9 @@ $options = array (
 		"[MSR]200.*/GEF-.+-3.4|" .
 		"R3.0/.+/wtp-wst-|" .
 		//"dtp-|dtp_|" .
-		"R1.0/.+/dltk-core-|" .
-		"R1.0/.+/dltk-rse-|" .
-		//"RSE-",
+		//"RSE-|",
+		"R1.0/.+/dltk-rse-|" . 
+		"R1.0/.+/dltk-core-",
 	
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
