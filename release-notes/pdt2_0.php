@@ -50,7 +50,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			</td>
 			<td>
 				<P align="right">
-				<a href="downloads"> <img src="images/download_pdt.png" /></a>
+				<a href="downloads"> <img src="../images/download_pdt.png" /></a>
 				</P>
 			</td>
 		</tr>
