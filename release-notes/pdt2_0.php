@@ -32,8 +32,15 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 		
 	# Paste your HTML content here!
 	ob_start();
+
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
+	$projectInfo = new ProjectInfo("tools.php");
+
 ?>
+
 <div id="maincontent">
+	<div id="midcolumn">
+
 Eclipse <a href="www.eclipse.org/pdt">PHP Development Tools (PDT)</a> 2.0 is now available from the <a href="http://www.eclipse.org/pdt">Eclipse.org download site</a> or from the <a href="http://www.zend.com/community/pdt">Zend/PDT Community site</a> (includes Eclipse PDT and Zend Debugger which enables users to perform local and remote debugging).
 <p></p>
 
@@ -92,7 +99,7 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 </ul>
 <p></p>
 
-
+</div>
 </div>
 
 
