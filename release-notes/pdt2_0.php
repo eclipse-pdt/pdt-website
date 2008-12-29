@@ -113,8 +113,21 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 <ul>
 <li>PDT Project on Zend.com:  http://www.zend.com/en/community/pdt</li>
 <li>PDT Project on Elcipse.org: http://www.eclipse.org/pdt/ </li>
+<li>PDT DEV2QA: http://wiki.eclipse.org/PDT/2.0_Plan </li>
+<li>Known Issues: 
+	<ul>
+		<li>240553 - PDT Debugger - Breakpoint on Linked resource doesn't work</li>
+		<li>240591 - Outline - [regression] php project outline is missing the groups</li>
+		<li>240804 - PHP Expl - [regression] Cannot move projects</li>
+		<li>253712 - Editor - Switching a project from PHP5 to PHP4 - build errors</li>
+		<li>259449 - Code Assist - abstract should not be presented in code assist</li>
+	</ul>
 </ul>
+
 <p></p>
+
+
+
 
 </div>
 </div>
