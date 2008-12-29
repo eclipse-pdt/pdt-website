@@ -66,13 +66,17 @@ $Menu 	= new Menu();
 						<font size="1" color="#8080FF">PHP Development Tools</font>
 						</h1>
 					</td>
+				
+					<td>
+						<P align="right">
+						<img src="images/download_pdt.png" />
+						<br/> <a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a>
+						</P>
+					</td>
 				</tr>
 			</tbody>
 		</table>
-		<P align="right">
-		<img src="images/download_pdt.png" />
-		<br/> <a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a>
-		</P>
+		
 
 		<h2>About PDT</h2>
 		<p> The PDT project provides a PHP Development 
