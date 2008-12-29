@@ -111,16 +111,16 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 
 <h2>More information on PDT </h2>
 <ul>
-<li>PDT Project on Zend.com:  http://www.zend.com/en/community/pdt</li>
-<li>PDT Project on Elcipse.org: http://www.eclipse.org/pdt/ </li>
-<li>PDT DEV2QA: http://wiki.eclipse.org/PDT/2.0_Plan </li>
+<li>PDT Project on Zend.com:  <a href="http://www.zend.com/en/community/pdt">http://www.zend.com/en/community/pdt</a></li>
+<li>PDT Project on Elcipse.org: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a>  </li>
+<li>PDT DEV2QA: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a></li>
 <li>Known Issues: 
 	<ul>
-		<li>240553 - PDT Debugger - Breakpoint on Linked resource doesn't work</li>
-		<li>240591 - Outline - [regression] php project outline is missing the groups</li>
-		<li>240804 - PHP Expl - [regression] Cannot move projects</li>
-		<li>253712 - Editor - Switching a project from PHP5 to PHP4 - build errors</li>
-		<li>259449 - Code Assist - abstract should not be presented in code assist</li>
+		<li><a href="https://bugs.eclipse.org/240553">240553</a> PDT Debugger - Breakpoint on Linked resource doesn't work</li>
+		<li><a href="https://bugs.eclipse.org/240591">240591</a> Outline - [regression] php project outline is missing the groups</li>
+		<li><a href="https://bugs.eclipse.org/240804">240804</a> PHP Explorer - [regression] Cannot move projects</li>
+		<li><a href="https://bugs.eclipse.org/253712">253712</a> Editor - Switching a project from PHP5 to PHP4 - build errors</li>
+		<li><a href="https://bugs.eclipse.org/259449">259449</a> Code Assist - abstract should not be presented in code assist</li>
 	</ul>
 </ul>
 
