@@ -51,7 +51,6 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 			<td>
 				<P align="right">
 				<a href="downloads"> <img src="images/download_pdt.png" /></a>
-				<br/> <a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a>
 				</P>
 			</td>
 		</tr>
