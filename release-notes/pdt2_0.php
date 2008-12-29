@@ -1,3 +1,39 @@
+<?php  																														
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+$App 	= new App();	
+$Nav	= new Nav();	
+$Menu 	= new Menu();		
+include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+
+	#*****************************************************************************
+	#
+	# index.php
+	#
+	# Author: 		Roy Ganor
+	# Date:			2008-12-28
+	#****************************************************************************
+	
+	#
+	# Begin: page-specific settings.  Change these. 
+	$pageTitle 		= "PDT 2.0 Release Notes";
+	$pageKeywords	= "PHP";
+	$pageAuthor		= "PDT Committers";
+
+	# Add page-specific Nav bars here
+	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
+	# $Nav->addNavSeparator("My Page Links", 	"downloads.php");
+	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
+	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
+
+	# End: page-specific settings
+	#
+		
+	# Paste your HTML content here!
+	ob_start();
+?>
+<div id="maincontent">
 Eclipse <a href="www.eclipse.org/pdt">PHP Development Tools (PDT)</a> 2.0 is now available from the <a href="http://www.eclipse.org/pdt">Eclipse.org download site</a> or from the <a href="http://www.zend.com/community/pdt">Zend/PDT Community site</a> (includes Eclipse PDT and Zend Debugger which enables users to perform local and remote debugging).
 <p></p>
 
@@ -55,4 +91,20 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 <li>PDT Project on Elcipse.org: http://www.eclipse.org/pdt/ </li>
 </ul>
 <p></p>
+
+
+</div>
+
+
+<?
+	$html = ob_get_contents();
+	ob_end_clean();
+
+	$html .= "<!-- START: Google Analysis report --><script type=\"text/javascript\"> var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\"); document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\")); </script> <script type=\"text/javascript\"> try { var pageTracker = _gat._getTracker(\"UA-3036363-2\"); pageTracker._trackPageview(); } catch(err) {} </script><!-- END: Google Analysis report -->";
+
+	
+	# Generate the web page
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+?>
+
 
