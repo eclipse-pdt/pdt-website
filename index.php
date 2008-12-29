@@ -69,7 +69,7 @@ $Menu 	= new Menu();
 				
 					<td>
 						<P align="right">
-						<img src="images/download_pdt.png" />
+						<a href="downloads"> <img src="images/download_pdt.png" /></a>
 						<br/> <a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a>
 						</P>
 					</td>
