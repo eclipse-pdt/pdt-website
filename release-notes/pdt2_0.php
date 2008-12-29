@@ -58,7 +58,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 </table>
 
 
-Eclipse <a href="www.eclipse.org/pdt">PHP Development Tools (PDT)</a> 2.0 is now available from the <a href="http://www.eclipse.org/pdt">Eclipse.org download site</a> or from the <a href="http://www.zend.com/community/pdt">Zend/PDT Community site</a> (includes Eclipse PDT and Zend Debugger which enables users to perform local and remote debugging).
+Eclipse <a href="www.eclipse.org/pdt">PHP Development Tools (PDT)</a> 2.0 is now available from the <a href="http://www.eclipse.org/pdt">Eclipse.org download site</a> and from the <a href="http://www.zend.com/community/pdt">Zend/PDT Community site</a> (includes Eclipse PDT and Zend Debugger which enables users to perform local and remote debugging).
 <p></p>
 
 The Eclipse PDT team would like to thank everyone who made this release possible.  As always, our Eclipse PDT community has provided countless new features, bug fixes, documentation, etc. We'd also like to thank the Eclipse Dynamic Languages Toolkit team for cooperating and helping us with the new infrastructure.<p></p>
