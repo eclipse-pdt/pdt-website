@@ -27,10 +27,12 @@ $options = array (
 
 	"BranchAndJDK" => array (
 		"emft.eclipse.org=------------,------------",
-		"2.0.0=HEAD,/opt/sun-java2-5.0",
+		"2.1.0=HEAD,/opt/sun-java2-5.0",
+		"2.0.1=R2_0_0_20081231,/opt/sun-java2-5.0",		
 		"1.0.5=R1_0_5_20080723,/opt/sun-java2-5.0",
 		"modeling.eclipse.org=------------,------------",
-		"2.0.0=HEAD,/opt/sun-java2-5.0",
+		"2.1.0=HEAD,/opt/sun-java2-5.0",
+		"2.0.1=R2_0_0_20081231,/opt/sun-java2-5.0",		
 		"1.0.5=R1_0_5_20080723,/opt/sun-java2-5.0",
 	),
 
@@ -39,16 +41,13 @@ $options = array (
 	 * and /home/www-data/build/requests/dependencies.urls.txt 
 	 * */ 	
 	"regex" => 
-		"R-.*200.*/eclipse-SDK-|" .
-		"[MSR]200.*/emf-runtime-2.4|" .
-		"[MSR]200.*/xsd-runtime-2.4|" .
-		"[MSR]200.*/GEF-.+-3.4|" .
-		"R3.0/.+/wtp-wst-|" .
-		//"dtp-|dtp_|" .
-		//"R1.0/.+/dltk-rse-|" . 
-		//"RSE-|",
+		"[MSR]200.*/eclipse-SDK-|" .
+		"[MSR]200.*/emf-runtime-2.5|" .
+		"[MSR]200.*/xsd-runtime-2.5|" .
+		"[MSR]200.*/GEF-.+-3.5|" .
+		"[MSR]3.1/.+/wtp-wst-|" .		
 		"R1.0/.+/dltk-core-",
-	
+
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
 	"EmailDefault" => "alon@zend.com", // prefil email contact box with comma-sep'd list, eg., pdt-dev@eclipse.org or bugzilla inbox(es)
