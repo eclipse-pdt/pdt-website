@@ -82,13 +82,13 @@ $Menu 	= new Menu();
 		<p> The PDT project provides a PHP Development 
 		Tools framework for the Eclipse platform. This project encompasses all development 
 		components necessary to develop PHP and facilitate extensibility. 
-		It leverages the existing Web Tools Project in providing developers with PHP capabilities.
+		It leverages the existing Web Tools Platform (WTP) and Dynamic Languages Toolkit (DLTK) in providing developers with PHP capabilities.
 		</p>
 		
 		<h2>Project Principles:</h2>
 		<ul>
 			<li> Intuitive and easy to learn </li>
-			<li> Seamless integration with the Web Tools project </li>
+			<li> Seamless integration with other Eclipse projects </li>
 			<li> Adherence to Eclipse standards </li>
 			<li> Extensibility </li>
 			<li> Continuous support of PHP developments </li>
