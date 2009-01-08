@@ -86,10 +86,8 @@
 	<p:compatibility_with_previous_releases />
 	<p:themes_and_priorities>
 		<p:preamble>
-			<p>
-Themes and their priorities communicate the main objectives of the project and their importance. The following themes are derived from those defined by the Eclipse Requirement council for the Eclipse Galileo release and from the PDT 3.0 release themes. These will be prioritized based on the community feedback. New themes could be synthesized from the requirements submitted by the community.
-     </p>
-			<p>The sections to follow defines the plan items in the Java EE Tools project. The plan items are grouped under the respective themes where applicable. Each plan item corresponds to a new feature, API or some apsects of the project that needs to be improved. A plan item has an entry in the Eclipse Bugzilla system that has a detailed description of the plan item.
+			<p>Themes and their priorities communicate the main objectives of the project and their importance. The following themes are derived from those defined by the Eclipse Requirement council for the Eclipse Galileo release and from the PDT 2.0 release themes. These will be prioritized based on the community feedback. New themes could be synthesized from the requirements submitted by the community.</p>
+			<p>The sections to follow defines the plan items in the PDT project. The plan items are grouped under the respective themes where applicable. Each plan item corresponds to a new feature, API or some apsects of the project that needs to be improved. A plan item has an entry in the Eclipse Bugzilla system that has a detailed description of the plan item.
 			Not all plan items represent the same amount of work; some may be quite large, others, quite small. Although some plan items are for work that is more pressing than others, the plan items appear in no particular order. See the corresponding bugzilla items for up-to-date status information on ongoing work and planned delivery milestones.</p>
 		</p:preamble>
 		<p:theme name="Ease of Use">
