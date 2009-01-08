@@ -6,7 +6,7 @@
 <p:plan  plan-format="1.0" xmlns:p="http://www.eclipse.org/project/plan" xmlns="http://www.w3.org/1999/xhtml" name="PHP Development Tools (PDT)">
 	<p:release projectid="tools.pdt" version="2.1" />
 	<p:introduction>
-		<p>The PDT project provides a PHP Development Tools framework for the Eclipse platform. This project encompasses all development components necessary to develop PHP and facilitate extensibility. It leverages the existing Web Tools Platform (WTP) and Dynamic Languages Toolkit (DLTK) in providing developers with PHP capabilities.</p>
+		<p>The PDT project provides a PHP Development Tools framework for the Eclipse platform. This project encompasses all development components necessary to develop PHP and facilitate extensibility. It leverages the existing Web Tools Platform (PDT) and Dynamic Languages Toolkit (DLTK) in providing developers with PHP capabilities.</p>
 	</p:introduction>
 	<p:release_deliverables>
 		<p>
@@ -20,7 +20,7 @@
 	</p:release_deliverables>
 	<p:release_milestones>
 	<p:preamble>
-	<p>WTP Milestones follow the Eclipse release milestones by an offset of 2 as set by the <a href="http://wiki.eclipse.org/Galileo#Milestones_and_Release_Candidates">Galileo release schedule</a>.</p>
+	<p>PDT Milestones follow the Eclipse release milestones by an offset of 3 as set by the<a href="http://wiki.eclipse.org/Galileo#Milestones_and_Release_Candidates">Galileo release schedule</a>.</p>
 	</p:preamble>
 		<p:milestone date="8/31/2008" milestone="M1">
 			<p>M1 milestone</p>
@@ -31,31 +31,31 @@
 		<p:milestone date="11/12/2008" milestone="M3">
 			<p>M3 milestone</p>
 		</p:milestone>
-		<p:milestone date="12/29/2008" milestone="M4">
+		<p:milestone date="01/05/2009" milestone="M4">
 			<p>M4 milestone</p>
 		</p:milestone>
-		<p:milestone date="2/06/2009" milestone="M5">
+		<p:milestone date="2/10/2009" milestone="M5">
 			<p>M5 milestone</p>
 		</p:milestone>
-		<p:milestone date="3/12/2009" milestone="M6">
+		<p:milestone date="3/19/2009" milestone="M6">
 			<p>M6 milestone.Feature complete, API and UI Freeze</p>
 		</p:milestone>
-		<p:milestone date="5/05/2009" milestone="M7">
+		<p:milestone date="5/06/2009" milestone="M7">
 			<p>M7 milestone. PMC review starts </p>
 		</p:milestone>
-		<p:milestone date="5/19/2009" milestone="RC1">
+		<p:milestone date="5/20/2009" milestone="RC1">
 			<p>RC1 milestone.PMC approval required, 1 vote required</p>
 		</p:milestone>
-		<p:milestone date="5/26/2009" milestone="RC2">
+		<p:milestone date="5/27/2009" milestone="RC2">
 			<p>RC2 milestone.PMC approval required, 2 votes required</p>
 		</p:milestone>
-		<p:milestone date="6/02/2009" milestone="RC3">
+		<p:milestone date="6/03/2009" milestone="RC3">
 			<p>RC3 milestone.Document Freeze. PMC approval required, 3 votes required</p>
 		</p:milestone>
-		<p:milestone date="6/09/2009" milestone="RC4">
+		<p:milestone date="6/10/2009" milestone="RC4">
 			<p>RC4 milestone.Only stop-ship defects, PMC approval required, 3 vote required</p>
 		</p:milestone>
-		<p:milestone date="6/16/2009" milestone="RC5">
+		<p:milestone date="6/17/2009" milestone="RC5">
 			<p>RC5 milestone.Only stop-ship defects, PMC approval required, 3 vote required</p>
 		</p:milestone>
 		<p:milestone date="6/26/2009" milestone="GA">
@@ -64,7 +64,7 @@
 		<p:postamble />
 	</p:release_milestones>
 	<p:target_environments>
-		<p>WTP will support the platforms certified by the Eclipse Platform project. For a list of platforms supported in WTP 3.1, see <a
+		<p>PDT will support the platforms certified by the Eclipse Platform project. For a list of platforms supported in PDT 2.1, see<a
 			href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_4.html#TargetOperatingEnvironments%20Eclipse%20Target%20Operating%20Environments">Eclipse Target Operating Environments</a>
   </p>
 		<p>.</p>
@@ -87,35 +87,31 @@
 	<p:themes_and_priorities>
 		<p:preamble>
 			<p>
-Themes and their priorities communicate the main objectives of the project and their importance. The following themes are derived from those defined by the Eclipse Requirement council for the Eclipse Galileo release and from the WTP 3.0 release themes. These will be prioritized based on the community feedback. New themes could be synthesized from the requirements submitted by the community.
+Themes and their priorities communicate the main objectives of the project and their importance. The following themes are derived from those defined by the Eclipse Requirement council for the Eclipse Galileo release and from the PDT 3.0 release themes. These will be prioritized based on the community feedback. New themes could be synthesized from the requirements submitted by the community.
      </p>
 			<p>The sections to follow defines the plan items in the Java EE Tools project. The plan items are grouped under the respective themes where applicable. Each plan item corresponds to a new feature, API or some apsects of the project that needs to be improved. A plan item has an entry in the Eclipse Bugzilla system that has a detailed description of the plan item.
 			Not all plan items represent the same amount of work; some may be quite large, others, quite small. Although some plan items are for work that is more pressing than others, the plan items appear in no particular order. See the corresponding bugzilla items for up-to-date status information on ongoing work and planned delivery milestones.</p>
 		</p:preamble>
 		<p:theme name="Ease of Use">
 		<p:description>
-		<p>
-Features provided by WTP should be simple to use for users with widely-varying backgrounds and skill sets.
-<ul>
-<li>WTP User Interface should be consistent and should follow the Eclipse User Experience Guidelines.</li>
+		<p>Features provided by PDT should be simple to use for users with widely-varying backgrounds and skill sets.<ul>
+<li>PDT User Interface should be consistent and should follow the Eclipse User Experience Guidelines.</li>
 <li>Usability and Accessibility reviews should be done for the most common task flows. Cheat Sheets should be provided to assist users in performing tasks</li>
-<li>WTP should provide enhanced user documentation, tutorials, white papers, demonstrations. </li>
+<li>PDT should provide enhanced user documentation, tutorials, white papers, demonstrations.</li>
 </ul>
 </p>
 		</p:description>
-		<p:committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
-		<p:proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
-		<p:deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
+		<p:committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
+		<p:proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
+		<p:deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=EaseOfUse&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
 		</p:theme>
-		<p:theme name="Java EE 6">
+		<p:theme name="PHP 5.3">
 		<p:description>
-		<p>
-WTP should be up-to-date with supporting the latest Java EE specification level. JSR-316 defines the latest Java EE 6 specification.  
-</p>
+		<p>PDT should be up-to-date with supporting the latest PHP 5.3 specification level. </p>
 		</p:description>
-		<p:committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
-		<p:proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
-		<p:deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
+		<p:committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
+		<p:proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
+		<p:deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=PDT+Java+EE+Tools&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
 		</p:theme>
 		<p:theme name="Other">
 			<p:description>
@@ -124,17 +120,17 @@ Following are plan items that are not yet categorized into a theme.
         </p>
 			</p:description>
 			<p:committed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1+M1&amp;target_milestone=3.1+M2&amp;target_milestone=3.1+M3&amp;target_milestone=3.1+M4&amp;target_milestone=3.1+M5&amp;target_milestone=3.1+M6&amp;target_milestone=3.1+M7&amp;target_milestone=3.1+RC1&amp;target_milestone=3.1+RC2&amp;target_milestone=3.1+RC3&amp;target_milestone=3.1+RC4&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:committed>
 			<p:proposed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=3.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:proposed>
 			<p:deferred
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=WebTools&amp;product=WTP+Java+EE+Tools&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Tools&amp;product=PDT&amp;target_milestone=Future&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=notregexp&amp;status_whiteboard=EaseOfUse|JavaEE6&amp;keywords_type=allwords&amp;keywords=plan&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></p:deferred>
 		</p:theme>
 
 	</p:themes_and_priorities>
 	<p:appendix name="References">
 		<ol>
-			<li>The general WTP plan can be found <a href="http://www.eclipse.org/projects/project-plan.php?projectid=webtools">here</a>.</li>
+			<li>The general tools plan can be found<a href="http://www.eclipse.org/projects/project-plan.php?projectid=tools">here</a>.</li>
 		</ol>
 	</p:appendix>
 </p:plan>
