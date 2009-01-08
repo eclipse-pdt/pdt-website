@@ -22,15 +22,6 @@
 	<p:preamble>
 	<p>PDT Milestones follow the Eclipse release milestones by an offset of 3 as set by the<a href="http://wiki.eclipse.org/Galileo#Milestones_and_Release_Candidates">Galileo release schedule</a>.</p>
 	</p:preamble>
-		<p:milestone date="8/31/2008" milestone="M1">
-			<p>M1 milestone</p>
-		</p:milestone>
-		<p:milestone date="10/01/2008" milestone="M2">
-			<p>M2 milestone.</p>
-		</p:milestone>
-		<p:milestone date="11/12/2008" milestone="M3">
-			<p>M3 milestone</p>
-		</p:milestone>
 		<p:milestone date="01/05/2009" milestone="M4">
 			<p>M4 milestone</p>
 		</p:milestone>
