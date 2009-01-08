@@ -7,17 +7,17 @@
 	</description>
 
 
-	<!-- PDT 2.0.0 N200901011440 -->
-	<category-def label="PDT SDK 2.0.0 N200901011440" name="PDT SDK 2.0.0 N200901011440">
+	<!-- PDT 2.0.1 M200901080831 -->
+	<category-def label="PDT SDK 2.0.1 M200901080831" name="PDT SDK 2.0.1 M200901080831">
 		<description>
-PDT SDK 2.0.0 N200901011440: contains runtime, source, and documentation.
+PDT SDK 2.0.1 M200901080831: contains runtime, source, and documentation.
 		</description>
 	</category-def>
 	<feature id="org.eclipse.php_feature" version="2.0.0.v20081229-1135" url="features/org.eclipse.php_feature_2.0.0.v20081229-1135.jar" patch="false">
-		<category name="PDT SDK 2.0.0 N200901011440"/>
+		<category name="PDT SDK 2.0.1 M200901080831"/>
 	</feature>
 	<feature id="org.eclipse.php.sdk_feature" version="2.0.0.v20081229-1135" url="features/org.eclipse.php.sdk_feature_2.0.0.v20081229-1135.jar" patch="false">
-		<category name="PDT SDK 2.0.0 N200901011440"/>
+		<category name="PDT SDK 2.0.1 M200901080831"/>
 	</feature>
 
 	<!-- PDT 2.0.0 I200812040931 -->
@@ -33,6 +33,19 @@ PDT SDK 2.0.0 I200812040931: contains runtime, source, and documentation.
 		<category name="PDT SDK 2.0.0 I200812040931"/>
 	</feature>
 
+	<!-- PDT 2.0.0 N200901011440 -->
+	<category-def label="PDT SDK 2.0.0 N200901011440" name="PDT SDK 2.0.0 N200901011440">
+		<description>
+PDT SDK 2.0.0 N200901011440: contains runtime, source, and documentation.
+		</description>
+	</category-def>
+	<feature id="org.eclipse.php_feature" version="2.0.0.v20081229-1135" url="features/org.eclipse.php_feature_2.0.0.v20081229-1135.jar" patch="false">
+		<category name="PDT SDK 2.0.0 N200901011440"/>
+	</feature>
+	<feature id="org.eclipse.php.sdk_feature" version="2.0.0.v20081229-1135" url="features/org.eclipse.php.sdk_feature_2.0.0.v20081229-1135.jar" patch="false">
+		<category name="PDT SDK 2.0.0 N200901011440"/>
+	</feature>
+
 	<!-- PDT 2.0.0 N200812251440 -->
 	<category-def label="PDT SDK 2.0.0 N200812251440" name="PDT SDK 2.0.0 N200812251440">
 		<description>
@@ -44,19 +57,6 @@ PDT SDK 2.0.0 N200812251440: contains runtime, source, and documentation.
 	</feature>
 	<feature id="org.eclipse.php.sdk_feature" version="2.0.0.v20081218-1419" url="features/org.eclipse.php.sdk_feature_2.0.0.v20081218-1419.jar" patch="false">
 		<category name="PDT SDK 2.0.0 N200812251440"/>
-	</feature>
-
-	<!-- PDT 2.0.0 N200812181440 -->
-	<category-def label="PDT SDK 2.0.0 N200812181440" name="PDT SDK 2.0.0 N200812181440">
-		<description>
-PDT SDK 2.0.0 N200812181440: contains runtime, source, and documentation.
-		</description>
-	</category-def>
-	<feature id="org.eclipse.php_feature" version="2.0.0.v20081218-1419" url="features/org.eclipse.php_feature_2.0.0.v20081218-1419.jar" patch="false">
-		<category name="PDT SDK 2.0.0 N200812181440"/>
-	</feature>
-	<feature id="org.eclipse.php.sdk_feature" version="2.0.0.v20081218-1419" url="features/org.eclipse.php.sdk_feature_2.0.0.v20081218-1419.jar" patch="false">
-		<category name="PDT SDK 2.0.0 N200812181440"/>
 	</feature>
 
 </site>
