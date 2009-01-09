@@ -23,7 +23,7 @@ else
 $options = array (
 	"ProjRelengRoot" => ":pserver:anonymous@dev.eclipse.org:/cvsroot/tools",
 
-	"BaseBuilderBranch" => "RC2_34",
+	"BaseBuilderBranch" => "R35_M4",
 
 	"BranchAndJDK" => array (
 		"emft.eclipse.org=------------,------------",
