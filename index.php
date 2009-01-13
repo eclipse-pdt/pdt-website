@@ -94,7 +94,7 @@ $Menu 	= new Menu();
 			<li> Continuous support of PHP developments </li>
 		</ul>
 		
-		<h2>Schedule (see also <a href="/pdt/plans/php_plan_2_0.php">Project Plan</a>):</h2>
+		<h2>Schedule (see also <a href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.pdt">Project Plan</a>):</h2>
 		
 		<table>
 			<tr>
