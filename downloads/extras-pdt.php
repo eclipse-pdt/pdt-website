@@ -18,7 +18,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
-	<h3>PDT 2.0 All In Ones (RC4 till completing the Release Review)</h3>
+	<h3>PDT 2.0 All In Ones</h3>
 	<p>These downloads include PDT 2.0, Eclipse 3.4.1, and <a href="http://www.eclipse.org/pdt/downloads/?hlbuild=R200812290607#R200812290607">all other required plugins</a>.</p>
 	<ul>
 		<li style="border:0"><div style="float:right">105.6M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-win32-2.0.0GA.zip.md5">md5</a>)</div>
