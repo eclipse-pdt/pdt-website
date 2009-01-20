@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.eclipse.www.pdt</name>
+	<name>org.eclipse.pdt.website</name>
 	<comment></comment>
 	<projects>
 		<project>phoenix</project>
 		<project>org.eclipse.phoenix</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.dltk.core.scriptbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.wst.validation.validationbuilder</name>
 			<arguments>
