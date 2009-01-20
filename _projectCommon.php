@@ -4,7 +4,6 @@
 	# See the Committer Tools "How Do I" for list of themes
 	# https://dev.eclipse.org/committers/
 	# Optional: defaults to system theme 
-	$theme = "";
 
 	$PR = "pdt";
 	$projectName = "PDT";
@@ -19,6 +18,15 @@
 	$rooturl = "http://" . $_SERVER["HTTP_HOST"] . "/$PR";
 	$downurl = ($isBuildServer ? "" : "http://www.eclipse.org");
 	$bugurl = "https://bugs.eclipse.org";
+
+	if (isset ($_GET["skin"]) && preg_match("/^(Blue|EclipseStandard|Industrial|Lazarus|Miasma|Modern|OldStyle|Phoenix|PhoenixTest|PlainText|Nova)$/", $_GET["skin"], $regs))
+	{
+		$theme = $regs[1];
+	}
+	else
+	{
+		$theme = "Phoenix";
+	}
 
 	/* projects/components in cvs */
 	/* "proj" => "cvsname" */
