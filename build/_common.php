@@ -41,16 +41,16 @@ $options = array (
 	 * and /home/www-data/build/requests/dependencies.urls.txt 
 	 * */ 	
 	"regex" => 
-		"[MSR]200.*/eclipse-SDK-|" .
-		"[MSR]200.*/emf-runtime-2.5|" .
-		"[MSR]200.*/xsd-runtime-2.5|" .
-		"[MSR]200.*/GEF-.+-3.5|" .
-		"[MSR]3.1/.+/wtp-wst-|" .		
+		"[ISR]200.*/eclipse-SDK-|" .
+		"[ISR]200.*/emf-runtime-2.5|" .
+		"[ISR]200.*/xsd-runtime-2.5|" .
+		"[ISR]200.*/GEF-.+-3.5|" .
+		"[ISR]3.1/.+/wtp-wst-|" .		
 		"R1.0/.+/dltk-core-",
 
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
-	"EmailDefault" => "alon@zend.com", // prefil email contact box with comma-sep'd list, eg., pdt-dev@eclipse.org or bugzilla inbox(es)
+	"EmailDefault" => "alon@zend.com, roy@zend.com", // prefil email contact box with comma-sep'd list, eg., pdt-dev@eclipse.org or bugzilla inbox(es)
 
 	"Users" => array("apeled","apeled",NULL) /* build user, eclipse cvs user, IES cvs user */
 );
