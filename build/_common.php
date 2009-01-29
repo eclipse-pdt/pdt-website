@@ -41,7 +41,7 @@ $options = array (
 	 * and /home/www-data/build/requests/dependencies.urls.txt 
 	 * */ 	
 	"regex" => 
-		"[ISR]200.*/eclipse-SDK-|" .
+		"I200.*/eclipse-SDK-|[SR]-.*200.*/eclipse-SDK-" . 
 		"[ISR]200.*/emf-runtime-2.5|" .
 		"[ISR]200.*/xsd-runtime-2.5|" .
 		"[ISR]200.*/GEF-.+-3.5|" .
