@@ -25,7 +25,7 @@
 	}
 	else
 	{
-		$theme = "Phoenix";
+		$theme = "Nova";
 	}
 
 	/* projects/components in cvs */
