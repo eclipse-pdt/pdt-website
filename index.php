@@ -64,7 +64,7 @@ $Menu 	= new Menu();
 					<td align="left" width="60%">
 						<h1><?=$pageTitle?></h1>
 					</td>
-					<td>
+					<td align="right">
 						<a href="downloads"> <img src="images/download_pdt.png" /></a><br/> 
 						<P ALIGN="right"><a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a></P>
 					</td>
@@ -73,7 +73,7 @@ $Menu 	= new Menu();
 		</table>
 		
 
-		<h2>About PDT</h2>
+		<h2>About </h2>
 		<p> The PDT project provides a PHP Development 
 		Tools framework for the Eclipse platform. This project encompasses all development 
 		components necessary to develop PHP and facilitate extensibility. 
