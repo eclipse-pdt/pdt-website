@@ -46,6 +46,7 @@ $options = array (
 		"[ISR]200.*/xsd-runtime-2.5|" .
 		"[ISR]200.*/GEF-.+-3.5|" .
 		"[ISR]3.1/.+/wtp-wst-|" .		
+		"R1.0/.+/dltk-rse-",
 		"R1.0/.+/dltk-core-",
 
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
