@@ -79,7 +79,7 @@ $Menu 	= new Menu();
 		components necessary to develop PHP and facilitate extensibility. 
 		It leverages the existing Web Tools Platform (WTP) and Dynamic Languages Toolkit (DLTK) in providing developers with PHP capabilities.
 		</p>
-		
+		<br/>
 		<h2>Project Principles:</h2>
 		<ul>
 			<li> Intuitive and easy to learn </li>
@@ -136,8 +136,6 @@ $Menu 	= new Menu();
 			</tr>
 		</table>
 
-		<br> <p> <a href="whois.php">Products and projects</a> that are using PDT<br> </p>
-
 		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
 		<ul id="rDebug" style="display: none"><br>
 		In order to be able to perform debugging using PDT, you should download one of the following extra packages:
@@ -151,6 +149,9 @@ $Menu 	= new Menu();
 		<div class="homeitem3col">
 			<h3>Quick Navigation</h3>
 			<ul>
+				<li>
+					<a href="whois.php">Products and projects</a> that are using PDT<br>
+				</li>
 				<li><a href="downloads">Downloads</a>. 
 					Get available PDT builds
 				</li>
