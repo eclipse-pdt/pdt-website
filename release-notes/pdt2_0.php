@@ -1,7 +1,9 @@
 <?php  																														
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+set_include_path($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common" . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] . "/projects" . PATH_SEPARATOR . get_include_path());
+
+require_once("system/app.class.php");	
+require_once("system/nav.class.php"); 	
+require_once("system/menu.class.php"); 	
 $App 	= new App();	
 $Nav	= new Nav();	
 $Menu 	= new Menu();		
@@ -27,15 +29,12 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self", 3);
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
 
+	include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
 	# End: page-specific settings
 	#
 		
 	# Paste your HTML content here!
 	ob_start();
-
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-	$projectInfo = new ProjectInfo("tools.php");
-
 ?>
 
 <div id="maincontent">

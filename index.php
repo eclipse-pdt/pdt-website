@@ -30,9 +30,8 @@ $Menu 	= new Menu();
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# $Nav->addNavSeparator("PDT", 	"/pdt/index.php");
-		
+
 	include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
-	
 	# End: page-specific settings
 	#
 	
@@ -48,11 +47,6 @@ $Menu 	= new Menu();
 		
 	# Paste your HTML content here!
 	ob_start();
-
-	// apeled - Seems to be obsolete code
-	// require_once("common/project-info.class.php");
-	// $projectInfo = new ProjectInfo("tools.php");
-	
 ?>
 
 <div id="maincontent">
