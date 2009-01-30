@@ -23,7 +23,7 @@ $Menu 	= new Menu();
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PDT Project";
+	$pageTitle 		= "PHP Development Tools Project";
 	$pageKeywords	= "PHP, tool, web";
 	$pageAuthor		= "PDT Committers";
 
@@ -61,17 +61,12 @@ $Menu 	= new Menu();
 		<table style="width: 100%;" border="0" cellpadding="2">
 			<tbody>
 				<tr>
-					<td align="left" width="60%"><h1><?=$pageTitle?>
-						<br>
-						<font size="1" color="#8080FF">PHP Development Tools</font>
-						</h1>
+					<td align="left" width="60%">
+						<h1><?=$pageTitle?></h1>
 					</td>
-				
 					<td>
-						<P align="right">
-						<a href="downloads"> <img src="images/download_pdt.png" /></a>
-						<br/> <a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a>
-						</P>
+						<a href="downloads"> <img src="images/download_pdt.png" /></a><br/> 
+						<P ALIGN="right"><a href="release-notes/pdt2_0.php">PDT 2.0 is now available!</a></P>
 					</td>
 				</tr>
 			</tbody>
