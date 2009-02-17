@@ -4,11 +4,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>pdt Builds</title>
   <link href="http://download.eclipse.org/tools/pdt/feeds/builds-pdt-N.xml" rel="self" type="application/atom+xml"/>
-  <updated>2009-02-16T20:03:16Z</updated>
+  <updated>2009-02-17T20:08:46Z</updated>
   <author>
     <name>pdt Build Team</name>
   </author>
   <id>http://download.eclipse.org/tools/pdt/feeds/builds-pdt-N.xml</id>
+  <entry>
+    <title>[announce] pdt N200902121440 (2.1.0.N200902121440) is available</title>
+    <link href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=N200902121440#N200902121440"/>
+    <id>http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=N200902121440#N200902121440</id>
+    <updated>2009-02-17T20:08:46Z</updated>
+    <summary>
+      <build xmlns="http://www.eclipse.org/2006/BuildFeed" branch="HEAD" datetime="200902121440" href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=N200902121440#N200902121440" type="N" vanityname="N200902121440" version="2.1.0">
+        <detail config="build.cfg" href="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/tools/pdt/downloads/drops/2.1.0/N200902121440/" log="buildlog.txt" map="directory.txt"/>
+        <update>http://download.eclipse.org/tools/pdt/updates/</update>
+        <downloads>http://www.eclipse.org/pdt/downloads/?project=pdt</downloads>
+        <releasenotes>http://www.eclipse.org/pdt/news/relnotes.php?project=pdt&amp;version=N200902121440
+          </releasenotes>
+        <releases>
+          <release arch="ALL" os="ALL" type="SDK" ws="ALL">pdt-SDK-N200902121440.zip</release>
+        </releases>
+        <tests>
+          <test href="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/tools/pdt/downloads/drops/2.1.0/N200902121440/testResults.php" type="junit">
+            <result arch="ALL" os="ALL" ws="ALL">PASS</result>
+          </test>
+        </tests>
+        <dependencies>
+          <dependency>http://download.eclipse.org/eclipse/downloads/drops/S-3.5M5-200902021535/eclipse-SDK-3.5M5-linux-gtk.tar.gz</dependency>
+          <dependency>http://download.eclipse.org/modeling/emf/emf/downloads/drops/2.5.0/S200902031500/emf-runtime-2.5.0M5.zip</dependency>
+          <dependency>http://download.eclipse.org/modeling/emf/emf/downloads/drops/2.5.0/S200902031500/xsd-runtime-2.5.0M5.zip</dependency>
+          <dependency>http://download.eclipse.org/technology/dltk/downloads/drops/R1.0/S-1.0M5-200902060933/dltk-core-sdk-S-1.0M5-200902060933-incubation.zip</dependency>
+          <dependency>http://download.eclipse.org/technology/dltk/downloads/drops/R1.0/S-1.0M5-200902060933/dltk-rse-sdk-S-1.0M5-200902060933-incubation.zip</dependency>
+          <dependency>http://download.eclipse.org/tools/gef/downloads/drops/3.5.0/S200812171720/GEF-SDK-3.5.0M4.zip</dependency>
+          <dependency>http://download.eclipse.org/datatools/downloads/drops/N_DTP_1.7/dtp-sdk-1.7.0M4-200812170500.zip</dependency>
+          <dependency>http://download.eclipse.org/dsdp/tm/downloads/drops/S-3.1M4-200812191115/RSE-runtime-core-3.1M4.zip</dependency>
+          <dependency>http://download.eclipse.org/tools/gef/downloads/drops/3.5.0/S200902060942/GEF-SDK-3.5.0M5a.zip</dependency>
+          <dependency>http://download.eclipse.org/webtools/downloads/drops/R3.1/S-3.1M5-20090206233640/wtp-wst-sdk-S-3.1M5-20090206233640.zip</dependency>
+        </dependencies>
+        <coordinated status=""/>
+      </build>
+    </summary>
+  </entry>
   <entry>
     <title>[announce] pdt N200902121440 (2.1.0.N200902121440) is available</title>
     <link href="http://www.eclipse.org/pdt/downloads/?project=pdt&amp;showAll=1&amp;hlbuild=N200902121440#N200902121440"/>
