@@ -111,7 +111,7 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 <h2>More information on PDT </h2>
 <ul>
 <li>PDT Project on Zend.com:  <a href="http://www.zend.com/en/community/pdt">http://www.zend.com/en/community/pdt</a></li>
-<li>PDT Project on Elcipse.org: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a>  </li>
+<li>PDT Project on Eclipse.org: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a>  </li>
 <li>PDT DEV2QA: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a></li>
 <li>Known Issues: 
 	<ul>
