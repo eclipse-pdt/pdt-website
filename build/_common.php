@@ -52,9 +52,9 @@ $options = array (
 
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
 
-	"EmailDefault" => "alon@zend.com, roy@zend.com", // prefil email contact box with comma-sep'd list, eg., pdt-dev@eclipse.org or bugzilla inbox(es)
+	"EmailDefault" => "michael@zend.com, roy@zend.com", // prefil email contact box with comma-sep'd list, eg., pdt-dev@eclipse.org or bugzilla inbox(es)
 
-	"Users" => array("apeled","apeled",NULL) /* build user, eclipse cvs user, IES cvs user */
+	"Users" => array("mspector","mspector",NULL) /* build user, eclipse cvs user, IES cvs user */
 );
 
 ?>
