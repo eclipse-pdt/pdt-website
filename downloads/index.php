@@ -41,7 +41,7 @@ $dls = array(
 		 	"SDK (Runtime, Source)" => "SDK",
 			"Runtime" => "runtime",
 			"Examples" => "examples",
-			"Automated Tests" => "Automated-Tests",
+			"Automated Tests" => "automated-tests",
 		),
 	),
 );
