@@ -46,7 +46,6 @@ $options = array (
 		"[ISR]200.*/xsd-runtime-2.5|" .
 		"[ISR]200.*/GEF-.+-3.5|" .
 		"[ISR]3.1/.+/wtp-wst-|" .		
-		"R1.0/.+/dltk-rse-|" .
 		"R1.0/.+/dltk-core-|" . 
 		"dtp-sdk-1.7",
 
