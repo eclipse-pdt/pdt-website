@@ -255,15 +255,20 @@ function getTestResults($file)
 function loadDir($dir, $ext)
 {
         $stuff = array ();
+      	if ($debug > 10) {
+      		print "Reading: $dir<br />\n";
+      	}
         if (is_dir($dir) && is_readable($dir))
         {
                 $handle = opendir($dir);
                 while (($file = readdir($handle)) !== false)
                 {
+                		if ($debug > 10) {
+                			print "Processing file: $file<br/>\n";
+                		}
                         if (preg_match("/$ext$/", $file) && !preg_match("/^\.{1,2}$/", $file) && is_file("$dir/$file"))
                         {
                                 $stuff[] = $file;
-
                         }
                 }
                 closedir($handle);
@@ -276,11 +281,17 @@ function loadDirChildren($dir, $ext)
 {
         $stuff = array ();
 
+		if ($debug > 10) {
+      		print "Reading: $dir<br />\n";
+      	}
         if (is_dir($dir) && is_readable($dir))
         {
                 $handle = opendir($dir);
                 while (($file = readdir($handle)) !== false)
                 {
+                		if ($debug > 10) {
+                			print "Processing file: $file<br/>\n";
+                		}
                         if (preg_match("/$ext$/", $file) && !preg_match("/^\.{1,2}$/", $file) && is_file("$dir/$file"))
                         {
                                 $stuff[] = $file;
