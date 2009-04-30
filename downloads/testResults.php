@@ -254,6 +254,8 @@ function getTestResults($file)
 
 function loadDir($dir, $ext)
 {
+		global $debug;
+		
         $stuff = array ();
       	if ($debug > 10) {
       		print "Reading: $dir<br />\n";
@@ -279,6 +281,7 @@ function loadDir($dir, $ext)
 
 function loadDirChildren($dir, $ext)
 {
+		global $debug;
         $stuff = array ();
 
 		if ($debug > 10) {
