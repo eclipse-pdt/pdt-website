@@ -25,7 +25,7 @@ else
 $projct = preg_replace("#^/#", "", $proj);
 $projectName = explode("/",$PR); $projectName = sizeof($projectName)>1 ? strtoupper($projectName[1]) : strtoupper($projectName[0]);
 #$PWD = getPWD(($PR == $projct ? $projct : "$PR/$projct") . "/downloads/drops"); // see scripts.php
-$PWD = "/home/data/httpd/download.eclipse.org/tools/pdt/downloads/drops";
+$PWD = "/home/data2/httpd/download.eclipse.org/tools/pdt/downloads/drops";
 
 $isTools = isset($_GET["tools"]);
 $isTech = isset($_GET["tech"]);
