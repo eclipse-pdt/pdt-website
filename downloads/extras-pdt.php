@@ -18,15 +18,15 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
-	<h3>PDT 2.0 All In Ones</h3>
-	<p>These downloads include PDT 2.0, Eclipse 3.4.1, and <a href="http://www.eclipse.org/pdt/downloads/?hlbuild=R200812290607#R200812290607">all other required plugins</a>.</p>
+	<h3>PDT 2.0.1 All In Ones</h3>
+	<p>These downloads include PDT 2.0.1, Eclipse 3.4.1, and <a href="http://www.eclipse.org/pdt/downloads/?hlbuild=R200812290607#R200812290607">all other required plugins</a>.</p>
 	<ul>
-		<li style="border:0"><div style="float:right">105.6M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-win32-2.0.0GA.zip.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-win32-2.0.0GA.zip"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> PDT 2.0 (Windows 32-bit)</a></li>
-		<li style="border:0"><div style="float:right">104.6M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-linux-gtk-2.0.0GA.tar.gz.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-linux-gtk-2.0.0GA.tar.gz"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> PDT 2.0 (Linux x86/GTK 2)</a></li>
-		<li><div style="float:right">104.3M (<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-macosx-carbon-2.0.0GA.tar.gz.md5">md5</a>)</div>
-			<a href="/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.0/R200812290607/pdt-all-in-one-macosx-carbon-2.0.0GA.tar.gz"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> PDT 2.0 (Mac OS X Carbon)</a></li>
+		<li> 
+		<div>127.8M (<a href="http://download.eclipse.org/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-win32-2.0.1.zip.md5">md5</a>)</div><a href="http://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-win32-2.0.1.zip"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> Windows 32-bit</a></li> 
+		<li> 
+		<div>126.7M (<a href="http://download.eclipse.org/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-linux-gtk-2.0.1.tar.gz.md5">md5</a>)</div><a href="http://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-linux-gtk-2.0.1.tar.gz"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> Linux x86/GTK 2</a></li> 
+		<li> 
+		<div>126.4M (<a href="http://download.eclipse.org/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-macosx-carbon-2.0.1.tar.gz.md5">md5</a>)</div><a href="http://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-macosx-carbon-2.0.1.tar.gz"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> Mac OS X Carbon</a></li> 
 	</ul>
 </div>
 <?php
