@@ -53,10 +53,10 @@
 			<tr>
 				<td><img src="images/studio_logo.gif"></td>
 				<td>
-					<h2>Zend Studio for Eclipse</h2>
-					<p>Zend Studio for Eclipse is Zend Studio's next generation product which is based 
+					<h2>Zend Studio</h2>
+					<p>Zend Studio is Zend Studio's next generation product which is based 
 					on proven Zend Studio technology and the Eclipse PHP Developers Tools (PDT) project. 
-					Zend Studio for Eclipse creates a unique IDE that provides professional PHP development capabilities 
+					Zend Studio creates a unique IDE that provides professional PHP development capabilities 
 					combined with the Eclipse multi-language support and plug-in extension technology that creates the 
 					worlds most powerful PHP IDE. <a href="http://www.zend.com/products/studio/">Learn more</a>
 					</p>				
