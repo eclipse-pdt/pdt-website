@@ -278,8 +278,6 @@ PDT SDK 2.0.1 M200901150831: contains runtime, source, and documentation.
 		<category name="PDT SDK 2.0.1 M200901150831"/>
 	</feature>
 
-</site>
-
 	<!-- PDT 2.1.0 N200903261440 -->
 	<category-def label="PDT SDK 2.1.0 N200903261440" name="PDT SDK 2.1.0 N200903261440">
 		<description>
