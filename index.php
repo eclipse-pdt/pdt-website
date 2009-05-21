@@ -125,7 +125,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 			</tr>
 		</table>
 
-		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger plug-in [required for debugging]</a>
+		<ul><li><a href="javascript:toggle('rDebug')">PHP Debugger [required for debugging]</a>
 		<ul id="rDebug" style="display: none"><br>
 		In order to be able to perform debugging using PDT, you should download one of the following extra packages:
 			<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Zend PDT Community Site" /> <a href="http://www.zend.com/community/pdt?ecl=EclipseZend"> PDT and Zend Debugger </a></li>
