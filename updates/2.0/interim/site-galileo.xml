@@ -23,20 +23,20 @@ PDT SDK 2.1.0 N200905211440: contains runtime, source, and documentation.
 		<category name="PDT SDK 2.1.0 N200905211440"/>
 	</feature>
 
-	<!-- PDT 2.1.0 I200905171208 -->
-	<category-def label="PDT SDK 2.1.0 I200905171208" name="PDT SDK 2.1.0 I200905171208">
+	<!-- PDT 2.1.0 I200905280931 -->
+	<category-def label="PDT SDK 2.1.0 I200905280931" name="PDT SDK 2.1.0 I200905280931">
 		<description>
-PDT SDK 2.1.0 I200905171208: contains runtime, source, and documentation.
+PDT SDK 2.1.0 I200905280931: contains runtime, source, and documentation.
 		</description>
 	</category-def>
-	<feature id="org.eclipse.php.source" version="2.1.0.v20090517-1334-7J78-F7RZHIXHz-RF8Qz0xv" url="features/org.eclipse.php.source_2.1.0.v20090517-1334-7J78-F7RZHIXHz-RF8Qz0xv.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200905171208"/>
+	<feature id="org.eclipse.php" version="2.1.0.v20090528-1315-7J78-F7RZHIXHz-YA8P0dn" url="features/org.eclipse.php_2.1.0.v20090528-1315-7J78-F7RZHIXHz-YA8P0dn.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200905280931"/>
 	</feature>
-	<feature id="org.eclipse.php" version="2.1.0.v20090517-1334-7J78-F7RZHIXHz-RF8Qz0xv" url="features/org.eclipse.php_2.1.0.v20090517-1334-7J78-F7RZHIXHz-RF8Qz0xv.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200905171208"/>
+	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090409-0930-51-84OABBIFWjJMcM51hWI_2vxS_" url="features/org.eclipse.php.sdk_2.1.0.v20090409-0930-51-84OABBIFWjJMcM51hWI_2vxS_.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200905280931"/>
 	</feature>
-	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090409-0930-51-84OABBIFViJMcO41aaIb-J6N_" url="features/org.eclipse.php.sdk_2.1.0.v20090409-0930-51-84OABBIFViJMcO41aaIb-J6N_.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200905171208"/>
+	<feature id="org.eclipse.php.source" version="2.1.0.v20090528-1315-7J78-F7RZHIXHz-YA8P0dn" url="features/org.eclipse.php.source_2.1.0.v20090528-1315-7J78-F7RZHIXHz-YA8P0dn.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200905280931"/>
 	</feature>
 
 </site>
