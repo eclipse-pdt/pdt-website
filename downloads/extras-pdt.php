@@ -18,8 +18,28 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
+	<h3>PDT 2.1 All In Ones</h3>
+	<p>These downloads include PDT 2.1, Eclipse 3.5, Mylyn and <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-php-developers/galileorc1">all other required plugins</a>.</p>
+	<ul>
+		<?php
+		$version = array("Windows 32-bit" => "win32.zip", "Linux x86/GTK 2 32-bit" => "linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa" => "macosx-cocoa.tar.gz");
+		$release_tag = "RC1";
+		foreach ($version as $label => $suffix)
+		{
+			print <<<EOL
+			<li>
+				<div>(<a href="http://download.eclipse.org/technology/epp/downloads/release/galileo/$release_tag/eclipse-php-galileo-$release_tag-$suffix.md5">md5</a>)</div>
+				<a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/$release_tag/eclipse-php-galileo-$release_tag-$suffix">
+				<img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> $label</a>
+			</li>
+EOL;
+		?>
+	</ul>
+</div>
+
+<div class="homeitem3col">
 	<h3>PDT 2.0.1 All In Ones</h3>
-	<p>These downloads include PDT 2.0.1, Eclipse 3.4.1, and <a href="http://www.eclipse.org/pdt/downloads/?hlbuild=R200812290607#R200812290607">all other required plugins</a>.</p>
+	<p>These downloads include PDT 2.0.1, Eclipse 3.4.1, and <a href="http://www.eclipse.org/pdt/downloads/?hlbuild=R200904281148#R200904281148">all other required plugins</a>.</p>
 	<ul>
 		<li> 
 		<div>127.8M (<a href="http://download.eclipse.org/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-win32-2.0.1.zip.md5">md5</a>)</div><a href="http://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/drops/2.0.1/R200904281148/pdt-all-in-one-win32-2.0.1.zip"><img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> Windows 32-bit</a></li> 
