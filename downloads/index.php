@@ -35,10 +35,11 @@ $extraZips = array("pdt-SDK", "pdt-examples", "pdt-all-in-one-win32", "pdt-all-i
 $dls = array(
 	"/" => array( # use "/" because PDT has no parent or child projects/components
 		"PDT" => array(
-		 	"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Windows 32-bit" => "all-in-one-win32",
+			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Windows 32-bit" => "all-in-one-win32",
 			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Linux x86/GTK 2" => "all-in-one-linux-gtk",
 			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Mac OS X Carbon" => "all-in-one-macosx-carbon",
-		 	"SDK (Runtime, Source)" => "SDK",
+		 	"<acronym title=\"Archived Update Site\"><img alt=\"Click to download archived All-In-One p2 Repo Update Site\" src=\"/modeling/images/dl-icon-update-zip.gif\"/> <b style=\"color:green\">All-In-One Update Site</b></acronym>" => "Update",
+			"SDK (Runtime, Source)" => "SDK",
 			"Runtime" => "runtime",
 			"Examples" => "examples",
 			"Automated Tests" => "Automated-Tests",
