@@ -33,6 +33,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 				<img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> $label</a>
 			</li>
 EOL;
+		}
 		?>
 	</ul>
 </div>
