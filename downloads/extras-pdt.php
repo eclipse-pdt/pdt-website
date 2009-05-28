@@ -19,16 +19,19 @@ In order to be able to perform debugging using PDT, you should download one of t
 
 <div class="homeitem3col">
 	<h3>PDT 2.1 All In Ones</h3>
-	<p>These downloads include PDT 2.1, Eclipse 3.5, Mylyn and <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-php-developers/galileorc1">all other required plugins</a>.</p>
-	<ul>
+	<p>These downloads include PDT 2.1, Eclipse 3.5, Mylyn and 
 		<?php
 		$version = array("Windows 32-bit" => "win32.zip", "Linux x86/GTK 2 32-bit" => "linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa" => "macosx-cocoa.tar.gz");
+		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa" => "139M");
 		$releasetag = "RC1";
+	
+		print '<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-php-developers/galileo' . strtolower($releasetag) . '">all other required plugins</a>.</p>
+	<ul>';
 		foreach ($version as $label => $suffix)
 		{
 			print <<<EOL
 			<li>
-				<div>(<a href="http://download.eclipse.org/technology/epp/downloads/release/galileo/$releasetag/eclipse-php-galileo-$releasetag-$suffix.md5">md5</a>)</div>
+				<div> $sizes[$label] (<a href="http://download.eclipse.org/technology/epp/downloads/release/galileo/$releasetag/eclipse-php-galileo-$releasetag-$suffix.md5">md5</a>)</div>
 				<a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/$releasetag/eclipse-php-galileo-$releasetag-$suffix">
 				<img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> $label</a>
 			</li>
