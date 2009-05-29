@@ -38,7 +38,7 @@ $dls = array(
 			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Windows 32-bit" => "all-in-one-win32",
 			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Linux x86/GTK 2" => "all-in-one-linux-gtk",
 			"<img alt=\"All-In-One Bundle including Eclipse and required dependencies\" src=\"/modeling/images/dl-icon-aio-bundle.gif\"/> <b style=\"color:green\">All-In-One</b> Mac OS X Carbon" => "all-in-one-macosx-carbon",
-		 	"<acronym title=\"Archived Update Site\"><img alt=\"Click to download archived All-In-One p2 Repo Update Site\" src=\"/modeling/images/dl-icon-update-zip.gif\"/> <b style=\"color:green\">All-In-One Update Site</b></acronym>" => "Update",
+		 	"<acronym title=\"Click to download archived All-In-One p2 Repo Update Site\"><img alt=\"Click to download archived All-In-One p2 Repo Update Site\" src=\"/modeling/images/dl-icon-update-zip.gif\"/> <b style=\"color:green\">All-In-One Update Site</b></acronym>" => "Update",
 			"SDK (Runtime, Source)" => "SDK",
 			"Runtime" => "runtime",
 			"Examples" => "examples",
