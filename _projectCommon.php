@@ -36,12 +36,8 @@
 	/* "cvsname" => array("shortname" => "cvsname") */
 	$cvscoms = array();
 	
-	$projects = array(
-		"PDT" => "pdt",
-	);
-	$tmp = array_flip($projects);
-	$bugcoms = preg_replace("/ /", "%20", $tmp);
-	
+	$defaultProj = "pdt";
+		
 	$extraprojects = array(); //components with only downloads, no info yet, "prettyname" => "directory"
 	$nodownloads = array(); //components with only information, no downloads, or no builds available yet, "projectkey"
 	$nonewsgroup = array(); //components without newsgroup
