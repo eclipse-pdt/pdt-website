@@ -23,20 +23,20 @@ PDT SDK 2.1.0 N200905281440: contains runtime, source, and documentation.
 		<category name="PDT SDK 2.1.0 N200905281440"/>
 	</feature>
 
-	<!-- PDT 2.1.0 I200906040932 -->
-	<category-def label="PDT SDK 2.1.0 I200906040932" name="PDT SDK 2.1.0 I200906040932">
+	<!-- PDT 2.1.0 I200906110932 -->
+	<category-def label="PDT SDK 2.1.0 I200906110932" name="PDT SDK 2.1.0 I200906110932">
 		<description>
-PDT SDK 2.1.0 I200906040932: contains runtime, source, and documentation.
+PDT SDK 2.1.0 I200906110932: contains runtime, source, and documentation.
 		</description>
 	</category-def>
-	<feature id="org.eclipse.php" version="2.1.0.v20090531-1956-7J78-F7RZHIXI1Wb8N8mp" url="features/org.eclipse.php_2.1.0.v20090531-1956-7J78-F7RZHIXI1Wb8N8mp.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200906040932"/>
+	<feature id="org.eclipse.php" version="2.1.0.v20090610-1903-7J78-F7RZHIXI5RR8POTi" url="features/org.eclipse.php_2.1.0.v20090610-1903-7J78-F7RZHIXI5RR8POTi.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200906110932"/>
 	</feature>
-	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090531-1447-51-84OABBIFXcJMiQAYlUXJp58S_" url="features/org.eclipse.php.sdk_2.1.0.v20090531-1447-51-84OABBIFXcJMiQAYlUXJp58S_.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200906040932"/>
+	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090611-0930-51-84OABBIGVbJMiLBTaUZZVz08S" url="features/org.eclipse.php.sdk_2.1.0.v20090611-0930-51-84OABBIGVbJMiLBTaUZZVz08S.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200906110932"/>
 	</feature>
-	<feature id="org.eclipse.php.source" version="2.1.0.v20090531-1956-7J78-F7RZHIXI1Wb8N8mp" url="features/org.eclipse.php.source_2.1.0.v20090531-1956-7J78-F7RZHIXI1Wb8N8mp.jar" patch="false">
-		<category name="PDT SDK 2.1.0 I200906040932"/>
+	<feature id="org.eclipse.php.source" version="2.1.0.v20090610-1903-7J78-F7RZHIXI5RR8POTi" url="features/org.eclipse.php.source_2.1.0.v20090610-1903-7J78-F7RZHIXI5RR8POTi.jar" patch="false">
+		<category name="PDT SDK 2.1.0 I200906110932"/>
 	</feature>
 
 </site>
