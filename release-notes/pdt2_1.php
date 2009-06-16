@@ -1987,33 +1987,32 @@ Eclipse PDT 2.1 is the first toolkit to support the new language features provid
 
 The Eclipse and PHP communitites grow together. When one makes a change, the other takes a consequent action.<br/> 
 When PHP announced it was going to deliver a new major version, Eclipse PHP Development Tools (PDT) reacted with an early that supports the new PHP 5.3 language features. 
-<br/>
 
+<hr />  
 <h4>Project Management</h4>
 The New PHP Project Wizard (available from the File | New menu) now has the additional option of projects supporting PHP 5.3: <br/> 
 
 <img src="http://farm3.static.flickr.com/2463/3631461109_7558f3ebd1.jpg?v=0" />
-
+<hr />  
 <h4>Source Editing</h4>
 Syntax coloring and validation is provided for PHP 5.3 code<br/> <img src="http://farm4.static.flickr.com/3331/3631461137_fa190b34b8_o.png" /><br/><br/>
 Code Assist options are available for namespaces: <br/> <img alt="Code Assist with PHP 5.3" src="http://farm4.static.flickr.com/3323/3632275984_9e70cfbca8.jpg?v=0"><br/><br/>
 Code assist options are available for include statements: <img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0"><br/><br/>
-
+<hr />  
 <h4>Code Navigation</h4>
 Namespace grouping is avaiable in the PHP Explorer view:<br/> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /><br/>
 
-<p></p>
+<hr />  
 <h3>Bug Fixes and New Features</h3>
 
-Providing code assist for include statements:<br/>
-
-<p></p>
+<hr />  
 
 <h3>Eclipse 3.5 Features and Bug Fixes</h3>
 Eclipse 3.5 has been released as well and provides a variety of bug fixes and useful features. 
 For a full list of new Eclipse 3.5 features, <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M7-200904302300/eclipse-news-M7.html">click here</a>
 
-<p></p>
+
+<hr />  
 
 <h2>What's New in PDT 2.0?</h2>
 PDT 2.0 was designed based on principles different to those of Eclipse PDT 1.0. For example, different techniques were used to model workspace projects. PDT 2.0 now uses an indexing and caching mechanism for improved performance and experience with code assist and navigation. Moreover, since PHP provides enhanced Object-Oriented features like inheritance and polymorphism, PDT 2.0 provides enhanced features such as type hierarchy, override indicators and type navigation for programmers who utilize these language properties. 
