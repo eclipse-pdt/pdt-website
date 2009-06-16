@@ -2000,8 +2000,8 @@ Namespace grouping in the PHP Explorer:<br/> <img src="http://farm4.static.flick
 
 <p></p>
 <h3>Bug Fixes and New Features</h3>
-Although veteran Eclipse users are familiar with this term, it is new to most PHP developers. The Build Path mechanism provides users with the ability to separate application resources (PHP files) from other resources (such as images, CSS, JavaScript files), thereby speeding up the Eclipse build process as well as making the project more modular.
 
+Providing code assist for include statements:<br/>
 <img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0">
 
 <p></p>
@@ -2012,32 +2012,11 @@ For a full list of new Eclipse 3.5 features, <a href="http://download.eclipse.or
 
 <p></p>
 
-<h2>More information on PDT </h2>
-
-<ul>
-<li>PDT Project on Zend.com:  <a href="http://www.zend.com/en/community/pdt">http://www.zend.com/en/community/pdt</a></li>
-<li>PDT Project on Eclipse.org: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a>  </li>
-<li>PDT DEV2QA: <a href="http://www.eclipse.org/pdt/">http://www.eclipse.org/pdt/</a></li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
+<h2>What's New in PDT 2.0?</h2>
+PDT 2.0 was designed based on principles different to those of Eclipse PDT 1.0. For example, different techniques were used to model workspace projects. PDT 2.0 now uses an indexing and caching mechanism for improved performance and experience with code assist and navigation. Moreover, since PHP provides enhanced Object-Oriented features like inheritance and polymorphism, PDT 2.0 provides enhanced features such as type hierarchy, override indicators and type navigation for programmers who utilize these language properties. 
 <p></p>
-<h2>What's New in PDT 2.1?</h2>
-PDT 2.1 was designed based on principles different to those of Eclipse PDT 1.0. For example, different techniques were used to model workspace projects. PDT 2.1 now uses an indexing and caching mechanism for improved performance and experience with code assist and navigation. Moreover, since PHP provides enhanced Object-Oriented features like inheritance and polymorphism, PDT 2.1 provides enhanced features such as type hierarchy, override indicators and type navigation for programmers who utilize these language properties. 
-<p></p>
-<h3>Fund your resolved bug</h3>
-<a href="http://bit.ly/wnfum">Locate your bug</a>
-As previously mentioned, PDT 2.1 is based on the robust Eclipse framework for caching and indexing language elements, utilizing the proven mechanism used by the Eclipse Dynamic Languages Toolkit project. In addition, PDT 2.1 has a  reduced list of dependencies which includes only those features that are a "must have" for PHP developers (so no more unnecessary Java or J2EE components in the tool). Of course, Eclipse provides an easy way to add extra plug-ins as required.
+<h3>Lighter and Faster</h3>
+As previously mentioned, PDT 2.0 is based on the robust Eclipse framework for caching and indexing language elements, utilizing the proven mechanism used by the Eclipse Dynamic Languages Toolkit project. In addition, PDT 2.0 has a  reduced list of dependencies which includes only those features that are a "must have" for PHP developers (so no more unnecessary Java or J2EE components in the tool). Of course, Eclipse provides an easy way to add extra plug-ins as required.
 <p></p>
 <h3>Buildpath Configuration</h3>
 Although veteran Eclipse users are familiar with this term, it is new to most PHP developers. The Build Path mechanism provides users with the ability to separate application resources (PHP files) from other resources (such as images, CSS, JavaScript files), thereby speeding up the Eclipse build process as well as making the project more modular.
@@ -2065,7 +2044,7 @@ Any method or type in the workspace can be opened using the Open Type wizard or 
 <img src="http://farm4.static.flickr.com/3200/3127137391_8979da32a0.jpg?v=0" />
 <p></p>
 <h3>Improved Code Assist</h3>
-PDT 2.1 introduces a new code assist mechanism. This new mechanism is smarter as it crawls through code to determine variable types, providing more appropriate suggestions than those provided in PDT 1.0. PDT 2.1, code assist also supports camel case matches when entering code, which displays code assist options based on an element's initials. In addition, code assist supports options for 'magic members'. These are properties and methods which were declared using the @property or @method tags within PHP DocBlock comments rather than in the PHP script itself.
+PDT 2.0 introduces a new code assist mechanism. This new mechanism is smarter as it crawls through code to determine variable types, providing more appropriate suggestions than those provided in PDT 1.0. PDT 2.0, code assist also supports camel case matches when entering code, which displays code assist options based on an element's initials. In addition, code assist supports options for 'magic members'. These are properties and methods which were declared using the @property or @method tags within PHP DocBlock comments rather than in the PHP script itself.
 <p> </p>
 <img src="http://farm4.static.flickr.com/3208/3138497480_8b6500d9e4_o.png" />
 
@@ -2091,14 +2070,8 @@ For a full list of new Eclipse 3.4.1 features, <a href="http://update.eclipse.or
 	</ul>
 </ul>
 
-<p></p>
-
-
-
-
 </div>
 </div>
-
 
 <?
 	$html = ob_get_contents();
