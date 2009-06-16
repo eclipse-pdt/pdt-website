@@ -2010,11 +2010,14 @@ When PHP announced it was going to deliver a new major version, Eclipse PHP Deve
        <p> <img alt="Code Assist with PHP 5.3" src="http://farm4.static.flickr.com/3323/3632275984_9e70cfbca8.jpg?v=0"></p> 
     </td>
 </table> 
-
 <br/>
 <hr />  
-<h4>Code Navigation</h4>
-Namespace grouping is avaiable in the PHP Explorer view:<br/> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /><br/>
+<table>
+<td width="30%" valign="top" align="left"><b>Code Navigation</b></td> 
+    <td width="70%" valign="top">Namespace grouping is avaiable in the PHP Explorer view
+       <p> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /></p> 
+    </td>
+</table> 
 <br/>
 <hr />  
 <h3>Bug Fixes and New Features</h3>
