@@ -1989,9 +1989,15 @@ The Eclipse and PHP communitites grow together. When one makes a change, the oth
 When PHP announced it was going to deliver a new major version, Eclipse PHP Development Tools (PDT) reacted with an early that supports the new PHP 5.3 language features. 
 
 <hr />  
-<h4>Project Management</h4>
-The New PHP Project Wizard (available from the File | New menu) now has the additional option of projects supporting PHP 5.3: <br/> 
-<img src="http://farm3.static.flickr.com/2463/3631461109_7558f3ebd1.jpg?v=0" />
+
+
+<table>
+<td width="30%" valign="top" align="left"><b>Project Management</b></td> 
+    <td width="70%" valign="top">The New PHP Project Wizard (available from the File | New menu) now has the additional option of projects supporting PHP 5.3
+       <p> <img src="http://farm3.static.flickr.com/2463/3631461109_7558f3ebd1.jpg?v=0" /></p> 
+    </td>
+</table> 
+
 <br/>
 <hr />  
 <h4>Source Editing</h4>
