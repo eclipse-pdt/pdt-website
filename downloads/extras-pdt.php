@@ -18,12 +18,12 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
-	<h3>PDT 2.1 All In Ones / EPP PHP Package (Release Candidate)</h3>
+	<h3>PDT 2.1 All In Ones / Eclipse PHP Package (RC)</h3>
 	<p>These downloads include PDT 2.1, Eclipse 3.5, Mylyn and 
 		<?php
 		$version = array("Windows 32-bit" => "win32.zip", "Linux x86/GTK 2 32-bit" => "linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa" => "macosx-cocoa.tar.gz");
 		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa" => "139M");
-		$releasetag = "RC3";
+		$releasetag = "RC4";
 	
 		print '<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-php-developers/galileo' . strtolower($releasetag) . '">all other required plugins</a>.</p>
 	<ul>';
