@@ -1994,9 +1994,10 @@ The New PHP Project Wizard (available from the File | New menu) now has the addi
 
 <img src="http://farm3.static.flickr.com/2463/3631461109_7558f3ebd1.jpg?v=0" />
 
-<h4>Source editing</h4>
-Syntax coloring and validation is provided:<br/> <img src="http://farm4.static.flickr.com/3331/3631461137_fa190b34b8_o.png" /><br/>
-Code assist :<br/> <img alt="Code Assist with PHP 5.3" src="http://farm4.static.flickr.com/3323/3632275984_9e70cfbca8.jpg?v=0"><br/>
+<h4>Source Editing</h4>
+Syntax coloring and validation is provided for PHP 5.3 code<br/> <img src="http://farm4.static.flickr.com/3331/3631461137_fa190b34b8_o.png" /><br/><br/>
+Code Assist options are available for namespaces: <br/> <img alt="Code Assist with PHP 5.3" src="http://farm4.static.flickr.com/3323/3632275984_9e70cfbca8.jpg?v=0"><br/><br/>
+Code assist options are available for include statements: <img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0"><br/><br/>
 
 <h4>Code Navigation</h4>
 Namespace grouping in the PHP Explorer:<br/> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /><br/>
@@ -2005,7 +2006,6 @@ Namespace grouping in the PHP Explorer:<br/> <img src="http://farm4.static.flick
 <h3>Bug Fixes and New Features</h3>
 
 Providing code assist for include statements:<br/>
-<img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0">
 
 <p></p>
 
