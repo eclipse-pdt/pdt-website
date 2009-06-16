@@ -2000,7 +2000,7 @@ Code Assist options are available for namespaces: <br/> <img alt="Code Assist wi
 Code assist options are available for include statements: <img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0"><br/><br/>
 
 <h4>Code Navigation</h4>
-Namespace grouping in the PHP Explorer:<br/> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /><br/>
+Namespace grouping is avaiable in the PHP Explorer view:<br/> <img src="http://farm4.static.flickr.com/3335/3631461199_07d6291153.jpg?v=0" /><br/>
 
 <p></p>
 <h3>Bug Fixes and New Features</h3>
