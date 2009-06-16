@@ -78,7 +78,7 @@ function displayList() {
 <p></p>
 <h2>What's New in PDT 2.1?</h2>
 Eclipse PDT 2.1 is the first toolkit to support the new language features provided by PHP 5.3 such as <a href="http://il.php.net/namespaces">namespaces</a> and <a href="http://wiki.php.net/rfc/closures">closures</a>, PDT 2.1 introduces a range of features such as code assist and smart navigation to make writing PHP 5.3 easy and intuitive. 
-<br/>The team has also continued fixing issues according to the feedback provided by users of  PDT 2.0, which was released at the end of last year. Find your bug <a href="javascript:displayList();">here</a>. <br/>
+<br/>The team has also continued fixing issues according to the feedback provided by users of  PDT 2.0, which was released at the end of last year. Find your fixed bug <a href="javascript:displayList();">here</a>. <br/>
 
 <div id="bugslist" style="display:none">
 <table border=1 cellpadding=0 cellspacing=0 width=1319 >
@@ -1997,7 +1997,6 @@ The New PHP Project Wizard (available from the File | New menu) now has the addi
 <h4>Source Editing</h4>
 Syntax coloring and validation is provided for PHP 5.3 code<br/> <img src="http://farm4.static.flickr.com/3331/3631461137_fa190b34b8_o.png" /><br/><br/>
 Code Assist options are available for namespaces: <br/> <img alt="Code Assist with PHP 5.3" src="http://farm4.static.flickr.com/3323/3632275984_9e70cfbca8.jpg?v=0"><br/><br/>
-Code assist options are available for include statements: <img alt="include path code assist" src="http://farm4.static.flickr.com/3649/3632276006_aede8be424.jpg?v=0"><br/><br/>
 <br/>
 <hr />  
 <h4>Code Navigation</h4>
@@ -2005,9 +2004,8 @@ Namespace grouping is avaiable in the PHP Explorer view:<br/> <img src="http://f
 <br/>
 <hr />  
 <h3>Bug Fixes and New Features</h3>
-
-
-
+There are many issues solved in this release, such as usability issues concerning the PHP Explorer, code assist improvements and mark occurrences fine tuning.
+Full list of resolved items can be reviewed <a href="javascript:displayList();">here</a>. <br/> 
 <br/>
 <hr />  
 <h3>Eclipse 3.5 Features and Bug Fixes</h3>
