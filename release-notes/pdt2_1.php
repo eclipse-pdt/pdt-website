@@ -1984,11 +1984,13 @@ Eclipse PDT 2.1 is the first toolkit to support the new language features provid
 </div>
 <p></p>
 <h3>PHP 5.3</h3>
-The Eclipse and PHP communitites grow together. When one makes a move, the other takes an action as well.<br/> 
-When PHP has made the intent to deliver its new major version, Eclipse PHP Development Tools (PDT) has been adapted by supporting the new PHP 5.3 language features with an early release.  
+
+The Eclipse and PHP communitites grow together. When one makes a change, the other takes a consequent action.<br/> 
+When PHP announced it was going to deliver a new major version, Eclipse PHP Development Tools (PDT) reacted with an early that supports the new PHP 5.3 language features. 
 <br/>
+
 <h4>Project Management</h4>
-Creating a new project (File -> New) has now additional entry for project version for PHP 5.3 projects:
+The New PHP Project Wizard (available from the File | New menu) now has the additional option of projects supporting PHP 5.3: <br/> 
 
 <img src="http://farm3.static.flickr.com/2463/3631461109_7558f3ebd1.jpg?v=0" />
 
