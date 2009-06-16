@@ -77,8 +77,9 @@ function displayList() {
 
 <p></p>
 <h2>What's New in PDT 2.1?</h2>
-Eclipse PDT 2.1 is the first toolkit to support the new language features provided by PHP 5.3 such as <a href="http://il.php.net/namespaces">namespaces</a> and <a href="http://wiki.php.net/rfc/closures">closures</a>, with features such as code assist and smart navigation, writing PHP 5.3 should be very easy and intuitive. 
-<br/>The team has also continued fixing issues according to the feedback provided by users using PDT 2.0 that has been released at the end of last year. Find your bug <a href="javascript:displayList();">here</a>. <br/>
+Eclipse PDT 2.1 is the first toolkit to support the new language features provided by PHP 5.3 such as <a href="http://il.php.net/namespaces">namespaces</a> and <a href="http://wiki.php.net/rfc/closures">closures</a>, PDT 2.1 introduces a range of features such as code assist and smart navigation to make writing PHP 5.3 easy and intuitive. 
+<br/>The team has also continued fixing issues according to the feedback provided by users of  PDT 2.0, which was released at the end of last year. Find your bug <a href="javascript:displayList();">here</a>. <br/>
+
 <div id="bugslist" style="display:none">
 <table border=1 cellpadding=0 cellspacing=0 width=1319 >
  <tr height=17 style='height:12.75pt'>
