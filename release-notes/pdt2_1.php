@@ -2024,14 +2024,10 @@ When PHP announced it was going to deliver a new major version, Eclipse PHP Deve
 There are many issues solved in this release, such as usability issues concerning the PHP Explorer, code assist improvements and mark occurrences fine tuning.
 Full list of resolved items can be reviewed <a href="javascript:displayList();">here</a>. <br/> 
 <br/>
-<hr />  
 <h3>Eclipse 3.5 Features and Bug Fixes</h3>
 Eclipse 3.5 has been released as well and provides a variety of bug fixes and useful features. 
 For a full list of new Eclipse 3.5 features, <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M7-200904302300/eclipse-news-M7.html">click here</a>
-
-
 <hr />  
-
 <h2>What's New in PDT 2.0?</h2>
 PDT 2.0 was designed based on principles different to those of Eclipse PDT 1.0. For example, different techniques were used to model workspace projects. PDT 2.0 now uses an indexing and caching mechanism for improved performance and experience with code assist and navigation. Moreover, since PHP provides enhanced Object-Oriented features like inheritance and polymorphism, PDT 2.0 provides enhanced features such as type hierarchy, override indicators and type navigation for programmers who utilize these language properties. 
 <p></p>
