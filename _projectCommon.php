@@ -96,5 +96,4 @@
 	$App->AddExtraHtmlHeader("<link rel=\"stylesheet\" type=\"text/css\" href=\"/modeling/includes/common.css\"/>\n");
 	addGoogleAnalyticsTrackingCodeToHeader("UA-3036363-2");
 	$App->Promotion = TRUE;
-?>  
-  
+?>
