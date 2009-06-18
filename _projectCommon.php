@@ -7,6 +7,7 @@
 
 	$PR = "pdt";
 	$projectName = "PDT";
+	$projects = array("PDT" => "pdt");
 	$isBuildServer = (preg_match("/^(emft|modeling|build)\.eclipse\.org$/", $_SERVER["SERVER_NAME"]));
 	$isBuildDotEclipseServer = $_SERVER["SERVER_NAME"] == "build.eclipse.org";
 	$isWWWserver = (preg_match("/^(?:www.|)eclipse.org$/", $_SERVER["SERVER_NAME"]));
@@ -97,4 +98,3 @@
 	addGoogleAnalyticsTrackingCodeToHeader("UA-3036363-2");
 	$App->Promotion = TRUE;
 ?>
-
