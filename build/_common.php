@@ -27,11 +27,13 @@ $options = array (
 
 	"BranchAndJDK" => array (
 		"emft.eclipse.org=------------,------------",
-		"2.1.0=HEAD,/opt/sun-java2-5.0",
+		"2.2.0=HEAD,/opt/sun-java2-5.0",
+		"2.1.0=R2_1_Galileo,/opt/sun-java2-5.0",
 		"2.0.1=R2_0_0_20081231,/opt/sun-java2-5.0",		
 		"1.0.5=R1_0_5_20080723,/opt/sun-java2-5.0",
 		"modeling.eclipse.org=------------,------------",
-		"2.1.0=HEAD,/opt/sun-java2-5.0",
+		"2.2.0=HEAD,/opt/sun-java2-5.0",
+		"2.1.0=R2_1_Galileo,/opt/sun-java2-5.0",
 		"2.0.1=R2_0_0_20081231,/opt/sun-java2-5.0",		
 		"1.0.5=R1_0_5_20080723,/opt/sun-java2-5.0",
 	),
@@ -48,6 +50,7 @@ $options = array (
 		"[ISR]3.1/.+/wtp-wst-|" .		
 		"R1.0/.+/dltk-core-sdk-|" . 
 		"R1.0/.+/dltk-core-Automated_Tests-|" .
+		"R1.0/.+/dltk-mylyn-|" .
 		"dtp-sdk-1.7",
 
 	"Mapfile_Rule_Default" => 0, // 0: "Use Map, No Tagging=use-false" or 1:"Generate Map, No Tagging=gen-false"
