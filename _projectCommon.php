@@ -7,7 +7,6 @@
 
 	$PR = "pdt";
 	$projectName = "PDT";
-	$projects = array("PDT" => "pdt");
 	$isBuildServer = (preg_match("/^(emft|modeling|build)\.eclipse\.org$/", $_SERVER["SERVER_NAME"]));
 	$isBuildDotEclipseServer = $_SERVER["SERVER_NAME"] == "build.eclipse.org";
 	$isWWWserver = (preg_match("/^(?:www.|)eclipse.org$/", $_SERVER["SERVER_NAME"]));
@@ -37,8 +36,17 @@
 	/* "cvsname" => array("shortname" => "cvsname") */
 	$cvscoms = array();
 	
-	$defaultProj = "pdt";
-		
+	if ($isBuildServer)
+	{
+		$projects = array("PDT" => "pdt");
+		$tmp = array_flip($projects);
+		$bugcoms = preg_replace("/ /", "%20", $tmp);
+	}
+	else
+	{
+		$defaultProj = "pdt";
+	}
+			
 	$extraprojects = array(); //components with only downloads, no info yet, "prettyname" => "directory"
 	$nodownloads = array(); //components with only information, no downloads, or no builds available yet, "projectkey"
 	$nonewsgroup = array(); //components without newsgroup
