@@ -59,13 +59,13 @@ EOL;
 function showNotes()
 {
 	global $PWD;
-	$oldNightlies = loadDirSimple($PWD, "N.*", "d");
-	rsort($oldNightlies); 
-	reset($oldNightlies);
+	#$oldNightlies = loadDirSimple($PWD, "N.*", "d");
+	#rsort($oldNightlies); 
+	#reset($oldNightlies);
 
 ?>
 
-	<div class="homeitem3col">
+	<!-- <div class="homeitem3col">
 		<h3>Nightly Builds</h3>
 		<ul>
 		<?php foreach ($oldNightlies as $on)
@@ -73,7 +73,7 @@ function showNotes()
 			print "<li><a href=\"http://download.eclipse.org/tools/pdt/downloads/release.php?release=$on\">$on</a></li>\n";
 		} ?>
 		</ul>
-	</div>
+	</div> -->
 
 	<div class="homeitem3col">
 		<h3>Questions?</h3>
