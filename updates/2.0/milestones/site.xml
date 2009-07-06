@@ -7,20 +7,20 @@
 	</description>
 
 
-	<!-- PDT 2.1.0RC5 S200906191437 -->
-	<category-def label="PDT SDK 2.1.0RC5 S200906191437" name="PDT SDK 2.1.0RC5 S200906191437">
+	<!-- PDT 2.1.1RC1 S200907060444 -->
+	<category-def label="PDT SDK 2.1.1RC1 S200907060444" name="PDT SDK 2.1.1RC1 S200907060444">
 		<description>
-PDT SDK 2.1.0RC5 S200906191437: contains runtime, source, and documentation.
+PDT SDK 2.1.1RC1 S200907060444: contains runtime, source, and documentation.
 		</description>
 	</category-def>
-	<feature id="org.eclipse.php.source" version="2.1.0.v20090613-1236-7L79-F8NcJKhKDUz-9Y3_1" url="features/org.eclipse.php.source_2.1.0.v20090613-1236-7L79-F8NcJKhKDUz-9Y3_1.jar" patch="false">
-		<category name="PDT SDK 2.1.0RC5 S200906191437"/>
+	<feature id="org.eclipse.php.source" version="2.1.0.v20090613-1236-7L79-F8NcJKhKMM19UkOE" url="features/org.eclipse.php.source_2.1.0.v20090613-1236-7L79-F8NcJKhKMM19UkOE.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC1 S200907060444"/>
 	</feature>
-	<feature id="org.eclipse.php" version="2.1.0.v20090613-1236-7L79-F8NcJKhKDUz-9Y3_1" url="features/org.eclipse.php_2.1.0.v20090613-1236-7L79-F8NcJKhKDUz-9Y3_1.jar" patch="false">
-		<category name="PDT SDK 2.1.0RC5 S200906191437"/>
+	<feature id="org.eclipse.php" version="2.1.0.v20090613-1236-7L79-F8NcJKhKMM19UkOE" url="features/org.eclipse.php_2.1.0.v20090613-1236-7L79-F8NcJKhKMM19UkOE.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC1 S200907060444"/>
 	</feature>
-	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090611-0930-51-84QACBIHRiLOmQMX7NJj5rCOd" url="features/org.eclipse.php.sdk_2.1.0.v20090611-0930-51-84QACBIHRiLOmQMX7NJj5rCOd.jar" patch="false">
-		<category name="PDT SDK 2.1.0RC5 S200906191437"/>
+	<feature id="org.eclipse.php.sdk" version="2.1.0.v20090611-0930-51-84QACBIHRiLOmQVOBXdwQW9Od" url="features/org.eclipse.php.sdk_2.1.0.v20090611-0930-51-84QACBIHRiLOmQVOBXdwQW9Od.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC1 S200907060444"/>
 	</feature>
 
 	<!-- PDT 2.0.0RC2 S200812180737 -->
