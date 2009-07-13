@@ -12,7 +12,7 @@ function doRequirements()
 <ul id="rDebug"><br>
 In order to be able to perform debugging using PDT, you should download one of the following extra packages:
 	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Zend PDT Community Site" /> <a href="http://www.zend.com/community/pdt?ecl=EclipseZend"> PDT and Zend Server Community Edition</a></li>
-	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> PDT and XDebug </a> </li>
+	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> XDebug </a> </li>
 	<br> Note: Due to Eclipse licensing requirements, PDT with debugger packages are distributed from external locations. <br>
 	<a href="http://www.eclipse.org/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Click here</a> to learn how to set up your environment in order to be able to perform debugging with PDT.
 </ul></li></ul>
