@@ -7,20 +7,20 @@
 	</description>
 
 
-	<!-- PDT 2.1.1RC2 S200907080523 -->
-	<category-def label="PDT SDK 2.1.1RC2 S200907080523" name="PDT SDK 2.1.1RC2 S200907080523">
+	<!-- PDT 2.1.1RC3 S200907140646 -->
+	<category-def label="PDT SDK 2.1.1RC3 S200907140646" name="PDT SDK 2.1.1RC3 S200907140646">
 		<description>
-PDT SDK 2.1.1RC2 S200907080523: contains runtime, source, and documentation.
+PDT SDK 2.1.1RC3 S200907140646: contains runtime, source, and documentation.
 		</description>
 	</category-def>
-	<feature id="org.eclipse.php.source" version="2.1.1.v20090708-1127-7L7979F8NcJKhKOKP9TTMX" url="features/org.eclipse.php.source_2.1.1.v20090708-1127-7L7979F8NcJKhKOKP9TTMX.jar" patch="false">
-		<category name="PDT SDK 2.1.1RC2 S200907080523"/>
+	<feature id="org.eclipse.php" version="2.1.1.v20090708-1127-7L7979F8NcJKhKOOA9TaXX" url="features/org.eclipse.php_2.1.1.v20090708-1127-7L7979F8NcJKhKOOA9TaXX.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC3 S200907140646"/>
 	</feature>
-	<feature id="org.eclipse.php.sdk" version="2.1.1.v20090707-1108-51184QACJCPBYeNOmUQUmJecYo9O" url="features/org.eclipse.php.sdk_2.1.1.v20090707-1108-51184QACJCPBYeNOmUQUmJecYo9O.jar" patch="false">
-		<category name="PDT SDK 2.1.1RC2 S200907080523"/>
+	<feature id="org.eclipse.php.sdk" version="2.1.1.v20090707-1108-51184QACJCPBYeNOmUQYYJekio9O" url="features/org.eclipse.php.sdk_2.1.1.v20090707-1108-51184QACJCPBYeNOmUQYYJekio9O.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC3 S200907140646"/>
 	</feature>
-	<feature id="org.eclipse.php" version="2.1.1.v20090708-1127-7L7979F8NcJKhKOKP9TTMX" url="features/org.eclipse.php_2.1.1.v20090708-1127-7L7979F8NcJKhKOKP9TTMX.jar" patch="false">
-		<category name="PDT SDK 2.1.1RC2 S200907080523"/>
+	<feature id="org.eclipse.php.source" version="2.1.1.v20090708-1127-7L7979F8NcJKhKOOA9TaXX" url="features/org.eclipse.php.source_2.1.1.v20090708-1127-7L7979F8NcJKhKOOA9TaXX.jar" patch="false">
+		<category name="PDT SDK 2.1.1RC3 S200907140646"/>
 	</feature>
 
 </site>
