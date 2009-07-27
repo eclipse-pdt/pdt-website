@@ -25,7 +25,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa" => "139M", "Mac OSX Carbon" => "138M" );
 		$releasetag = "R";
 	
-		print '<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-php-developers/galileo' . strtolower($releasetag) . '">all other required plugins</a>.</p>
+		print '<a href="http://www.eclipse.org/pdt/downloads/?showAll=1&hlbuild=R200906250959&project=pdt#R200906250959">all other required plugins</a>.</p>
 	<ul>';
 		foreach ($version as $label => $suffix)
 		{
