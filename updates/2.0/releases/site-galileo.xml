@@ -23,20 +23,4 @@ PDT SDK 2.1.1: contains runtime, source, and documentation.
 		<category name="PDT SDK 2.1.1"/>
 	</feature>
 
-	<!-- PDT 2.0.1 -->
-	<category-def label="PDT SDK 2.0.1" name="PDT SDK 2.0.1">
-		<description>
-PDT SDK 2.0.1: contains runtime, source, and documentation.
-		</description>
-	</category-def>
-	<feature id="org.eclipse.php.sdk" version="2.0.0.v20090315-1850" url="features/org.eclipse.php.sdk_2.0.0.v20090315-1850.jar" patch="false">
-		<category name="PDT SDK 2.0.1"/>
-	</feature>
-	<feature id="org.eclipse.php" version="2.0.0.v20090315-1850" url="features/org.eclipse.php_2.0.0.v20090315-1850.jar" patch="false">
-		<category name="PDT SDK 2.0.1"/>
-	</feature>
-	<feature id="org.eclipse.php.source" version="2.0.0.v20090315-1850" url="features/org.eclipse.php.source_2.0.0.v20090315-1850.jar" patch="false">
-		<category name="PDT SDK 2.0.1"/>
-	</feature>
-
 </site>
