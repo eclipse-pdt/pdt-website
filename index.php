@@ -84,7 +84,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 			<tr>
 				<td>
 					<img src="/eclipse.org-common/themes/Phoenix/images/arrow.gif" >
-					21st of June, 2010 
+					23rd of June, 2010 
 				</td>
 				<td> - <b>PDT 2.2 Release</b></td>
 			</tr>
