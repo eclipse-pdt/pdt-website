@@ -22,7 +22,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 	<p>These downloads include PDT 2.1.2, Eclipse 3.5.2, Mylyn and 
 		<?php
 		$version = array("Windows 32-bit" => "SR1-win32.zip", "Linux x86/GTK 2 32-bit" => "SR1-linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "SR1-linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa 32-bit" => "SR1-macosx-cocoa.tar.gz", "Mac OSX Cocoa 64-bit" => "SR1-macosx-cocoa-x86_64.tar.gz", "Mac OSX Carbon" => "SR1-macosx-carbon.tar.gz");
-		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa 32-bit" => "139M", "Mac OSX Cocoa 64-bit" => "139M", , "Mac OSX Carbon" => "138M" );
+		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa 32-bit" => "139M", "Mac OSX Cocoa 64-bit" => "139M", "Mac OSX Carbon" => "138M" );
 		$releasetag = "SR1";	
 		print '<a href="http://www.eclipse.org/pdt/downloads/?showAll=1&hlbuild=R200906250959&project=pdt#R200906250959">all other required plugins</a>.</p>
 	<ul>';
