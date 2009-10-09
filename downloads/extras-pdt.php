@@ -18,7 +18,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
-	<h3>PDT 2.1 All In Ones / Eclipse PHP Package</h3>
+	<h3>PDT 2.1 SR-1 All In Ones / Eclipse PHP Package</h3>
 	<p>These downloads include PDT 2.1-SR1, Eclipse 3.5-SR1, Mylyn and 
 		<?php
 		$version = array("Windows 32-bit" => "SR1-win32.zip", "Linux x86/GTK 2 32-bit" => "SR1-linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "SR1-linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa 32-bit" => "SR1-macosx-cocoa.tar.gz", "Mac OSX Cocoa 64-bit" => "SR1-macosx-cocoa-x86_64.tar.gz", "Mac OSX Carbon" => "SR1-macosx-carbon.tar.gz");
