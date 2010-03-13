@@ -55,7 +55,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 					</td>
 					<td align="right">
 						<a href="downloads"> <img src="images/download_pdt.png" /></a><br/> 
-						<P ALIGN="right"><a href="release-notes/">PDT 2.1-SR1 is now available!</a></P>
+						<P ALIGN="right"><a href="release-notes/">PDT 2.1-SR2 is now available!</a></P>
 					</td>
 				</tr>
 			</tbody>
