@@ -22,18 +22,6 @@
 	<p:preamble>
 	<p>PDT Milestones follow the Eclipse release milestones by an offset of 3 as set by the<a href="http://wiki.eclipse.org/Galileo#Milestones_and_Release_Candidates">Galileo release schedule</a>.</p>
 	</p:preamble>
-		<p:milestone date="11/12/2010" milestone="M3">
-			<p>M3 milestone</p>
-		</p:milestone>
-		<p:milestone date="12/18/2010" milestone="M4">
-			<p>M4 milestone</p>
-		</p:milestone>
-		<p:milestone date="02/05/2010" milestone="M5">
-			<p>M5 milestone</p>
-		</p:milestone>
-		<p:milestone date="03/19/2010" milestone="M6">
-			<p>M6 milestone.Feature complete, API and UI Freeze</p>
-		</p:milestone>
 		<p:milestone date="5/07/2010" milestone="M7">
 			<p>M7 milestone. PMC review starts </p>
 		</p:milestone>
