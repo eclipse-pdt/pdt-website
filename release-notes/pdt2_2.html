@@ -1,0 +1,289 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="default_style.css" />
+<title>Eclipse Helios News</title>
+</head>
+<body>
+<h1>Eclipse PHP Helios M7 - New and Noteworthy</h1>
+<p>Here are some of the more noteworthy things available in
+milestone build M7 (May 05, 2010) which is now available for <a
+	href="http://www.eclipse.org/pdt/downloads/" target="_top">download</a>.
+See the <a
+	href="https://bugs.eclipse.org/bugs/buglist.cgi?chfieldto=Now;query_format=advanced;chfieldfrom=2009-09-01;bug_status=CLOSED;classification=Tools;product=PDT">build
+notes</a> for details about bugs fixed and other changes.</p>
+<ul>
+	<li><a href="#PDT">PHP Development Tools</a></li>
+	<li><a href="#Platform">Platform</a></li>
+	<li><a
+		href="http://www.eclipse.org/webtools/development/news/3.2M6/sourceediting.php">Platform</a></li>
+</ul>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+
+	<tr>
+		<td colspan="2">
+		<hr />
+		<h2 id="PDT">PHP Development Tools</h2>
+		<hr />
+		</td>
+	</tr>
+	<tr id="content-assist-templated">
+		<td width="30%" valign="top" align="left"><b>New templated
+		'Content Assist'</b></td>
+		<td width="70%" valign="top">Applying conent assist proposals to
+		editor creates a templated expression that provides arguments
+		completion according to the declaration of the method. Optional
+		arguments are let out of the template. This feature helps developers
+		to quickly edit their method parameters.
+		<p><img src="../images/2.2m7/templ-ca.PNG"
+			alt="PHP Templated Content Assist Proposal" /></p>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+
+	<tr id="syntax-coloring">
+		<td width="30%" valign="top" align="left"><b>New Editor
+		Syntax Coloring Scheme</b></td>
+		<td width="70%" valign="top">Reset the editor syntax coloring
+		scheme for PHP content. People are used to the plain style provided
+		usually by Eclipse projects, in this release PDT is aligned with all
+		other Eclipse standards.
+		<p><img src="../images/2.2m7/syntax-coloring.png"
+			alt="Editor Syntax coloring scheme" /></p>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+
+	<tr id="advanced-syntax-coloring">
+		<td width="30%" valign="top" align="left"><b>New advanced
+		syntax coloring rules</b></td>
+		<td width="70%" valign="top">Several rules are configurable through
+		the <b>Preferences &gt; PHP &gt; Editor &gt; Syntax Coloring</b>: Full
+		list of rules is available <a
+			href="http://wiki.eclipse.org/PDT/Dev2Dev/Semantic">here</a>
+		<p><img src="../images/2.2m7/coloring.png" alt="Rules" />&nbsp;&nbsp;
+		<img src="../images/2.2m7/more-syntax-coloring.png"
+			alt="Example for internal, deprecated, static coloring" /></p>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+
+	<tr id="phpdoc-content-assist">
+		<td width="30%" valign="top" align="left"><b>New content
+		assist in PHPDoc block</b></td>
+		<td width="70%" valign="top">Conent assist provides proposals for
+		the <pre>@return, @see, @throw</pre> phpdoc tags
+		<p><img src="../images/2.2m7/phpdod-ca.png"
+			alt="Content assist in phpdoc" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		<h2 id="Platform">Platform</h2>
+		<hr />
+		</td>
+	</tr>
+	<tr id="webkitgtk">
+		<td width="30%" valign="top" align="left"><b>Browser can use
+		WebKitGTK+</b></td>
+		<td width="70%" valign="top">
+		<p>Linux users can now use WebKitGTK+ instead of Mozilla as the
+		Browser control's native renderer. See <a
+			href="http://www.eclipse.org/swt/faq.php#browserwebkitgtk">Can
+		the Browser use the WebKit renderer on GTK?</a>.</p>
+		<p><img
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/webkitgtk.png"
+			alt="WebKitGTK+ Image" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="quick-access-keybindings">
+		<td width="30%" valign="top" align="left"><b>Quick Access now
+		shows keybindings for commands</b></td>
+		<td width="70%" valign="top">Quick Access (Ctrl+3) now shows
+		keybindings for commands so you can save yourself from all that typing
+		and just use the keyboard shortcut the next time you need to run a
+		command.
+		<p><img
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/quickaccess-bindings.png"
+			alt="Quick Access dialog displaying two commands and their associated keybindings at the end of the command's description." /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="open-resource-paths">
+		<td width="30%" valign="top" align="left"><b>New features in
+		Open Resource dialog</b></td>
+		<td width="70%" valign="top">The <b>Open Resource</b> dialog
+		supports three new features:
+		<ul>
+			<li><b>Path patterns:</b> If the pattern contains a /, the part
+			before the last / is used to match a path in the workspace:
+			<p><img
+				src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/open-resource-path.png"
+				alt="Open Resource dialog with pattern '*/jface/w*/pa.html'" /></p>
+			</li>
+
+			<li><b>Relative paths:</b> For example, "./T" matches all files
+			starting with T in the folder of the active editor or selection:
+			<p><img
+				src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/open-resource-path-relative.png"
+				alt="Open Resource dialog with pattern './T'" /></p>
+			</li>
+
+			<li><b>Closer items on top:</b> If the pattern matches many
+			files with the same name, the files that are closer to the currently
+			edited or selected resource are shown on top of the matching items
+			list.
+			<p><img
+				src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/open-resource-boosting.png"
+				alt="Open Resource dialog with pattern 'mak', matching many makefiles" /></p>
+			</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="apply-patch-in-sync-view-preference">
+		<td width="30%" valign="top" align="left"><b>Apply patch in
+		Synchronize view preference</b></td>
+		<td width="70%" valign="top">Thanks to the new preference <b>Apply
+		patch in Synchronize view</b>, you can leverage the new way of working
+		with patches each time you apply one. When set, applying a patch via
+		the <b>Team</b> context menu or by pasting in <b>Package Explorer</b>
+		uses the <b>Synchronize</b> view.
+		<p><img alt="Apply patch in Synchronize view preference"
+			title="Apply patch in Synchronize view preference"
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/apply-patch-in-sync-view-preference.png" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="ignore-leading-segments-option">
+		<td width="30%" valign="top" align="left"><b>Ignore Leading
+		Path Segments option</b></td>
+		<td width="70%" valign="top">A new option helps apply patches
+		with non-matching paths in the <b>Synchronize</b> view. This is the
+		last option needed to bring patching in the <b>Synchronize</b> view up
+		to par with the <b>Apply Patch</b> dialog.
+		<p><img alt="Ignore Leading Path Segments option"
+			title="Ignore Leading Path Segments option"
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/ignore-leading-segments-option.png" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="matching-might-not-be-optimal">
+		<td width="30%" valign="top" align="left"><b>Warning about
+		possible inaccuracy in comparison result</b></td>
+		<td width="70%" valign="top">The compare framework caps the
+		result accuracy for large files. This used to happen silently, which
+		confused users. Now when the faster algorithm is used a warning label
+		appears.
+		<p><img alt="Mathing might not be optimal label"
+			title="Mathing might not be optimal label"
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/matching-might-not-be-optimal.png" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="open-in-compare-editor.png">
+		<td width="30%" valign="top" align="left"><b>Enhanced Open in
+		Compare editor menu</b></td>
+		<td width="70%" valign="top">The context menu of the <b>Compare</b>
+		editor contains <b>Open</b> and <b>Open With</b> actions, which open
+		the file in full-fledged editors. Now, these actions set the selection
+		and the caret position in the newly opened editor based on the
+		selection in <b>Compare Editor</b>.
+		<p><img
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/open-in-compare-editor.png"
+			alt="Open in Compare Editor" /></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+	<tr id="filesystem_import">
+		<td width="30%" valign="top" align="left"><b>File system
+		import wizard</b></td>
+		<td width="70%" valign="top">The file system import wizard now
+		supports creating virtual folders and linked files and folders.
+		<p><img
+			src="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/images/file-system-import.png"
+			alt="File System Import Wizard" /></p>
+		<p>Linked files and folders can also be created relative to a path
+		variable.</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr />
+		</td>
+	</tr>
+</table>
+<p>The above features are just the ones that are new since the
+previous milestone build. Summaries for earlier 3.6 milestone builds:</p>
+<ul>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M6-201003121448/eclipse-news-M6.html">New
+	for Eclipse 3.6 milestone build M6 (March 12, 2010)</a></li>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M5-201001291300/eclipse-news-M5.html">New
+	for Eclipse 3.6 milestone build M5 (January 29, 2010)</a></li>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M4-200912101301/eclipse-news-M4.html">New
+	for Eclipse 3.6 milestone build M4 (December 11, 2009)</a></li>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M3-200910301201/eclipse-news-M3.html">New
+	for Eclipse 3.6 milestone build M3 (October 30, 2009)</a></li>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M2-200909170100/eclipse-news-M2.html">New
+	for Eclipse 3.6 milestone build M2 (September 18, 2009)</a></li>
+	<li><a
+		href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M1-200908061400/eclipse-news-M1.html">New
+	for Eclipse 3.6 milestone build M1 (August 7, 2009)</a></li>
+</ul>
+</body>
+</html>
+
