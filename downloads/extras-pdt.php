@@ -32,7 +32,7 @@ In order to be able to perform debugging using PDT, you should download one of t
 			print <<<EOL
 			<li>
 				<div> $sizes[$label] (<a href="http://download.eclipse.org/technology/epp/downloads/release/galileo/$releasetag/eclipse-php-galileo-$suffix.md5">md5</a>)</div>
-				<a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/helios/$releasetag/eclipse-php-helios-$releasetag-$version">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/helios/$releasetag/eclipse-php-helios-$releasetag-$suffix">
 				<img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> $label</a>
 			</li>
 EOL;
