@@ -18,36 +18,12 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
-	<h3>PDT 2.2 M7 All In Ones / Eclipse PHP Package</h3>
-	<p>These downloads include PDT 2.2-M7, Eclipse 3.6-M7, Mylyn and 
-		<?php
-		$releasetag = "M7";
-		$version = array("Windows 32-bit" => "win32.zip", "Linux x86/GTK 2 32-bit" => "linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa 32-bit" => "macosx-cocoa.tar.gz", "Mac OSX Cocoa 64-bit" => "macosx-cocoa-x86_64.tar.gz", "Mac OSX Carbon" => "macosx-carbon.tar.gz");
-		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa 32-bit" => "139M", "Mac OSX Cocoa 64-bit" => "139M", "Mac OSX Carbon" => "138M" );
-
-		print '<a href="http://www.eclipse.org/pdt/downloads/?showAll=1&hlbuild=R200906250959&project=pdt#R200906250959">all other required plugins</a>.</p>
-	<ul>';
-		foreach ($version as $label => $suffix)
-		{
-			print <<<EOL
-			<li>
-				<div> $sizes[$label] (<a href="http://download.eclipse.org/technology/epp/downloads/release/galileo/$releasetag/eclipse-php-galileo-$suffix.md5">md5</a>)</div>
-				<a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/helios/$releasetag/eclipse-php-helios-$releasetag-$suffix">
-				<img alt="All-In-One Bundle including Eclipse and required dependencies" src="/modeling/images/dl-icon-aio-bundle.gif"/> <b style="color:green">All-In-One</b> $label</a>
-			</li>
-EOL;
-		}
-		?>
-	</ul>
-</div>
-
-<div class="homeitem3col">
 	<h3>PDT 2.1 SR-2 All In Ones / Eclipse PHP Package</h3>
-	<p>These downloads include PDT 2.1-SR2, Eclipse 3.5-SR2, Mylyn and 
+	<p>These downloads include PDT 2.1-SR2, Eclipse 3.5-SR2, Mylyn and
 		<?php
 		$version = array("Windows 32-bit" => "SR2-win32.zip", "Linux x86/GTK 2 32-bit" => "SR2-linux-gtk.tar.gz", "Linux x86/GTK 2 64-bit" => "SR2-linux-gtk-x86_64.tar.gz", "Mac OSX Cocoa 32-bit" => "SR2-macosx-cocoa.tar.gz", "Mac OSX Cocoa 64-bit" => "SR2-macosx-cocoa-x86_64.tar.gz", "Mac OSX Carbon" => "SR2-macosx-carbon.tar.gz");
 		$sizes   = array("Windows 32-bit" => "141M", "Linux x86/GTK 2 32-bit" => "139M", "Linux x86/GTK 2 64-bit" => "140M", "Mac OSX Cocoa 32-bit" => "139M", "Mac OSX Cocoa 64-bit" => "139M", "Mac OSX Carbon" => "138M" );
-		$releasetag = "SR2";	
+		$releasetag = "SR2";
 		print '<a href="http://www.eclipse.org/pdt/downloads/?showAll=1&hlbuild=R200906250959&project=pdt#R200906250959">all other required plugins</a>.</p>
 	<ul>';
 		foreach ($version as $label => $suffix)
@@ -70,7 +46,7 @@ function showNotes()
 {
 	global $PWD;
 	#$oldNightlies = loadDirSimple($PWD, "N.*", "d");
-	#rsort($oldNightlies); 
+	#rsort($oldNightlies);
 	#reset($oldNightlies);
 
 ?>
@@ -89,7 +65,7 @@ function showNotes()
 		<h3>Questions?</h3>
 		<p>If you have problems downloading the drops or with this site, contact the <a href="mailto:webmaster@eclipse.org">webmaster</a>.</p>
 		<p>Looking for the <a href="http://download.eclipse.org/tools/pdt/downloads/index-old.php">old PDT download page</a>? You can find it <a href="http://download.eclipse.org/tools/pdt/downloads/index-old.php">here</a>.</p>
-		
+
 		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 	</div>
 <?php
