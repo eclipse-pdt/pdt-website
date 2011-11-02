@@ -18,6 +18,11 @@ In order to be able to perform debugging using PDT, you should download one of t
 </ul></li></ul>
 
 <div class="homeitem3col">
+	<h3>Eclipse PDT 3.0.x All In Ones</h3>
+	<p><a href='http://code.google.com/p/zend-sdk/downloads/list'>These downloads include Eclipse 3.7.1 and PDT 3.0.2</a></p>
+</div>
+
+<div class="homeitem3col">
 	<h3>Eclipse PDT 2.2.0 All In Ones / Eclipse PHP Package</h3>
 	<p>These downloads include PDT 2.2.0, Eclipse 3.6, Mylyn and 
 		<?php
