@@ -50,15 +50,60 @@ p.WebHelpNavBar { text-align:right; }
 <script type="text/javascript" language="javascript" src="whmsg.js"></script>
 <script type="text/javascript" language="javascript" src="whver.js"></script>
 <script type="text/javascript" language="javascript" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Getting Started");
+addAvenueInfo("Untitled","what_s_new_in_pdt_2.0.htm","concepts.htm");
+
+	}
+
+	document.write("<p style=\"text-align:left\"> ");
+AddMasterBreadcrumbs("ide_help.htm", "", "&gt;", "Home", "pdt_table_of_contents.htm");
+document.write("Getting Started<\/p>");
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("ide_help.htm");
+
+		autoSync(0);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+//]]></script>
 </head>
 
-<body leftmargin="5" topmargin="5" rightmargin="5" bottommargin="5">
+<body leftmargin="5" topmargin="5" rightmargin="5" bottommargin="5"><script type="text/javascript" language="javascript">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
 <div style="width: 100%; position: relative;" id="header">
 	
 	
  <p align="right"><a 
 	 title="Documentation Survey" href="http://spreadsheets.google.com/viewform?formkey=dC1scEswTjFia2tDQ3Y5TVJBbkNQcWc6MQ">Documentation 
-	 Survey XXZ</a> 
+	 Survey KKK</a> 
 	 | <a href="javascript:crlf=&quot;&quot;;h=location.href;t=document.title;e = &quot;&quot; + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text); if (e!=null) location=&quot;mailto:documentation@zend.com&quot; + &quot;?Subject= Feedback on PDT for page &quot; + escape(t) + &quot;&amp;Body=&quot; + escape(e).replace(/ /g, &quot;+&quot;) + crlf + &quot; &quot;; void 0"><span 
 	 style="background-color: #ffffff;">Submit Documentation</span><span 
 	 style="background-color: #ffffff;"> Feedback</span></a><span 
@@ -129,5 +174,13 @@ p.WebHelpNavBar { text-align:right; }
 	
 	
 </div>
+<script type="text/javascript" language="javascript">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
 </body>
 </html>
