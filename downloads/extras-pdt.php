@@ -19,7 +19,8 @@ In order to be able to perform debugging using PDT, you should download one of t
 
 <div class="homeitem3col">
 	<h3>Eclipse PDT 3.0.x All In Ones</h3>
-	<p><a href='http://code.google.com/p/zend-sdk/downloads/list'>These downloads include Eclipse 3.7.1 and PDT 3.0.2</a></p>
+	<p>Note: PDT 3.0 can be easily added to an existing Eclipse installation via the Indigo repository, read <a href="http://download.eclipse.org/releases/indigo/">more</a></p>
+	<p><a target="_blank" href="http://code.google.com/p/zend-sdk/downloads/list">These downloads include Eclipse 3.7.1 and PDT 3.0.2</a> (this the link will take you to an external site and an alternative distribution)</p>
 </div>
 
 <div class="homeitem3col">
