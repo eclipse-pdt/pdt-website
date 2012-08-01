@@ -10,7 +10,7 @@ function doRequirements()
 
 <div class="homeitem3col">
 	<h3>Eclipse PDT 3.0.x All In Ones</h3>
-	<p>Note: PDT 3.0 can be easily added to an existing Eclipse installation via the Indigo repository, read <a href="http://download.eclipse.org/releases/indigo/">more</a></p>
+	<p>Note: PDT 3.0 can be easily added to an existing Eclipse installation via the Juno repository.</p>
 	<p><a target="_blank" href="http://www.zend.com/en/community/pdt/downloads">Download All-In-One package including Eclipse 3.7.2 and PDT 3.0.2 from Zend</a> (this link will take you to an external site and an alternative distribution)</p>
 </div>
 
@@ -27,8 +27,8 @@ function doRequirements()
 
 <div class="homeitem3col">
 <h3>PDT Developer Builds</h3>
-<p>Most frequent builds with most up-to-date PDT. Only builds that passed all our unit tests are published here, but still they might be unstable sometimes, so be aware.</p>
-<p>To install, open "Help -> Install New Software" in Eclipse and enter following URL: <b>http://download.eclipse.org/tools/pdt/updates/3.1.1/nightly</b></p>
+<p>To install PDT developer builds, open "Help -> Install New Software" in Eclipse and enter following URL:<br/><b>http://download.eclipse.org/tools/pdt/updates/3.1.1/nightly</b></p>
+<p>Those are most frequent builds with most up-to-date PDT. Only builds that passed all our unit tests are published here, but still they might be unstable sometimes, so be aware.</p>
 </div>
 <?php
 }
