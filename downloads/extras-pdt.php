@@ -33,7 +33,10 @@ function doRequirements()
 
 <div class="homeitem3col">
 <h3>PDT Developer Builds</h3>
-<p>To install PDT developer builds, open "Help -> Install New Software" in Eclipse and enter following URL:<br/><b>http://download.eclipse.org/tools/pdt/updates/nightly</b></p>
+<p>To install PDT developer builds, open "Help -> Install New Software" in Eclipse and enter following URL:<br/>
+<b>http://download.eclipse.org/tools/pdt/updates/nightly</b>(if you use Eclipse Juno) or
+<br/><b>http://download.eclipse.org/tools/pdt/updates/3.2-nightly</b>(if you use Eclipse Kepler dev. builds)</p>
+
 <p>Those are most frequent builds with most up-to-date PDT. Only builds that passed all our unit tests are published here, but still they might be unstable sometimes, so be aware.</p>
 </div>
 <?php
