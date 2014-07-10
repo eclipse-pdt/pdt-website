@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
-<title>Opening JavaScript Types</title>
+<title>Applying Quick Fixes</title>
 <link rel="stylesheet" href="default_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
 <!--
 if (navigator.appName !="Netscape")
@@ -30,8 +30,8 @@ img_whs11 { border:none; width:28px; height:33px; float:none; border-style:none;
 td.whs12 { width:92.907%; padding-right:10px; padding-left:10px; border-right-style:none; border-bottom-style:none; }
 ol.whs13 { list-style:decimal; }
 p.whs14 { font-weight:normal; }
-img_whs15 { border:none; width:23px; height:22px; float:none; border-style:none; }
-img_whs16 { border:none; width:427px; height:345px; float:none; border-style:none; }
+img_whs15 { border:none; width:16px; height:16px; float:none; border-style:none; }
+img_whs16 { border:none; width:268px; height:127px; border-style:none; float:none; }
 td.whs17 { width:100%; padding-right:10px; padding-left:10px; border-bottom-style:none; border-right-style:none; border-left-style:none; }
 table.whs18 { x-cell-content-align:top; width:100%; x-condition:Online; border-spacing:0px; }
 tr.whs19 { x-cell-content-align:top; height:16px; x-condition:Online; }
@@ -78,8 +78,7 @@ if (window.gbWhTopic)
 {
 	if (window.setRelStartPage)
 	{
-	addTocInfo("PDT Help\nTasks\nDeveloping with JavaScript\nOpening JavaScript Types");
-
+	
 	}
 
 
@@ -110,10 +109,10 @@ if (window.writeIntopicBar)
 	writeIntopicBar(4);
 //-->
 </script>
-<h1 class="whs1">Opening JavaScript Types</h1>
-<p>The JavaScript Open Type functionality allows you to search for any 
- JavaScript type in your workspace and opens an editor with the type's 
- declaration.</p>
+<h1 class="whs1">Applying Quick Fixes</h1>
+<p>Quick Fixes are suggestions for corrections to badly written code provided 
+ by the Semantic Analysis mechanism 
+ which can be easily applied to code to fix code errors.</p>
 <table x-use-null-cells cellspacing="0" width="100%" class="whs2">
 <col class="whs3">
 <col class="whs4">
@@ -127,30 +126,30 @@ if (window.writeIntopicBar)
 <td width="7.093%" class="whs10">
 <p class="whs7"><img src="ref_icon.png" x-maintain-ratio="TRUE" alt="Instructions on how to complete a procedure" width="28px" height="33px" border="0" class="img_whs11"></td>
 <td width="92.907%" class="whs12">
-<p class="whs9">To open a JavaScript Type:</p>
+<p class="whs9">To apply a quick fix suggestion:</p>
 <ol type="1" class="whs13">
-	<li style="margin-left: -20px;  font-weight: normal; " class=p><p class="whs14">Click 
- the Open JavaScript Type <img src="javascript_open_type_icon.png" x-maintain-ratio="TRUE" width="23px" height="22px" border="0" class="img_whs15"> icon on the toolbar. <br>
-	The Open JavaScript Type dialog will open.</p></li>
-	<li style="margin-left: -20px;  font-weight: normal; " class=p><p class="whs14">Enter 
- the first few letters of the class which you would like to open. (You 
- can also use wildcards such as &nbsp;* or ?, or camel 
- case.)<br>
-	The list of available types will be filtered to match the expression 
- you are entering.</p></li>
+	<li style="margin-left: -20px;  font-weight: normal; " class=p><p class="whs14">Open 
+ the file containing the problematic code.<br>
+	The line(s) containing code to which a quick fix can be applied will 
+ be indicated by a lightbulb icon <img src="quickfix_warning_obj.gif" x-maintain-ratio="TRUE" width="16px" height="16px" border="0" class="img_whs15"> in the vertical marker bar to the left of the editor window.<br>
+	See <a HREF="Real_Time_Error_Detection.htm">Real Time Error Detection</a> 
+ for more information on how errors are indicated.</p></li>
+	<li style="margin-left: -20px;  font-weight: normal; " class=p><p class="whs14">Place 
+ the cursor on the problematic code section and press Ctrl + 1 -or- click 
+ the lightbulb icon in the marker bar.<br>
+	The Quick Fix list suggests options for fixing the code.</p></li>
 </ol>
-<p class=Note style="margin-left: 18px;">Note:</p>
-<p class=NoteText style="margin-left: 18px;">If you have previously opened 
- a Type which matches your expression, this will be displayed first above 
- a separator line.</p>
-<p class=picture><img src="javascrtipt_open_type_dialog.png" x-maintain-ratio="TRUE" width="427px" height="345px" border="0" class="img_whs16"></p>
+<p class=picture><img src="quick_fix_example.png" x-maintain-ratio="TRUE" width="268px" height="127px" border="0" class="img_whs16"></p>
 <ol start="3" type="1" class="whs13">
-	<li style="margin-left: -20px;  font-weight: normal; " class=p><p class="whs14">Select 
- the required class and click OK.</p></li>
+	<li style="margin-left: -20px;" class=p><p>Select the required fix 
+ from the list by clicking on it or by using the arrow keys and pressing 
+ Enter.</p></li>
+	<li style="margin-left: -20px;" class=p><p>The selected fix is applied 
+ and the code is changed accordingly.</p></li>
 </ol></td></tr>
 <tr valign="top" class="whs5">
 <td rowspan="1" colspan="2" width="100%" class="whs17">
-<p>An editor will open with the required class's declaration.</td>
+<p>&nbsp;</td>
 </tr>
 </table>
 <table x-use-null-cells cellspacing="0" width="100%" class="whs18">
@@ -165,17 +164,9 @@ if (window.writeIntopicBar)
 <p class="whs7"><img src="link_icon.png" x-maintain-ratio="TRUE" alt="Related Links" width="28px" height="18px" border="0" class="img_whs24"></td>
 <td width="92.907%" class="whs25">
 <p class="whs9">Related Links:</p>
-<p><a href="JavaScript.htm">JavaScript Support</a></p>
-<p><a href="Using_JavaScript.htm">Developing with JavaScript</a><a href="Enabling_JavaScript_Support_in_PHP_Projects.htm"><br>
-Enabling JavaScript Support in PHP Projects</a></p>
-<p><a href="Setting_the_JavaScript_Build_Path.htm">Setting the JavaScript 
- Build Path</a></p>
-<p><a href="Viewing_JavaScript_Elements_in_the_Outline_View.htm">Viewing 
- JavaScript Elements in the Outline View</a></p>
-<p><a href="Using_JavaScript_Content_Assist.htm">Using JavaScript Content 
- Assist</a></p>
-<p><a href="Using_JavaScript_Mark_Occurences.htm">Using JavaScript Mark 
- Occurrences</a></td></tr>
+<p class="whs14">Code 
+ Analyzer and Semantic Analysis</p>
+<p><a HREF="Semantic_Analysis_Preferences.htm">Semantic Analysis Preferences</a></td></tr>
 <tr valign="top" class="whs26"><td colspan="1" rowspan="1" width="7.093%" class="whs23">
 <p class="whs7">&nbsp;</td>
 <td colspan="1" rowspan="1" width="92.907%" class="whs25">
@@ -184,14 +175,15 @@ Enabling JavaScript Support in PHP Projects</a></p>
 <div placeholder id="footer" class="whs27">
  <p align="right" class="whs28"><span 
  style="background-color: #ffffff; x-condition: Online, Product;">V</span>iew 
- the Zend Product <a href="http://files.zend.com/help/" style="color: #000000; x-condition: Product, Online;">Online 
- Documentation</a> for the most up-to-date information.</p>
+ the Zend Product <a href="http://www.zend.com/en/resources/zend-documentation/zend-studio/zend-studio.htm" 
+ style="color: #000000; x-condition: Product, Online;">Online Documentation</a> 
+ for the most up-to-date information.</p>
  <p align="right" class="whs29"><span style="background-color: #ffffff;"><a 
  href="javascript:crlf=&quot;
 &quot;;h=location.href;t=document.title;e = &quot;&quot; + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text); if (e!=null) location=&quot;mailto:documentation@zend.com&quot; + &quot;?Subject= Feedback on &quot; + escape(t) + &quot;&amp;Body=&quot; + escape(e).replace(/ /g, &quot;+&quot;) + crlf + &quot; &quot;; void 0" 
  style="x-condition: Online;">Submit Documentation Feedback</a></span></p>
  <p align="center" class="whs30">PHP Development 
- Tool</p>
+ Tools</p>
  </div>
 <script type="text/javascript" language="javascript1.2">
 <!--
