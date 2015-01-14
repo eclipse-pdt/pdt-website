@@ -5263,3 +5263,6 @@ th.hide-for-touch {
 
 .red {
   color: red; }
+  
+.drag {
+  float: right; }
