@@ -10,12 +10,12 @@
   </head>
   <body>
 
-    <nav class="top-bar" data-topbar>
+<nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name"></li>
   </ul>
 
-  <section class="top-bar-section">
+  <div class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class="left">
       <li><a href="#about">About</a></li>
@@ -25,7 +25,7 @@
       <li><a href="#extensions">Extensions</a></li>
       <li><a href="#contributing">Contributing</a></li>
     </ul>
-  </section>
+  </div>
 </nav>
 <div style="background-color: #776ba8; max-width: 100%">
     <div class="row">
@@ -49,10 +49,10 @@
       <div class="large-2 columns">&nbsp;</div>
       <div class="large-8 columns">
         <ul data-orbit>
-          <li><img src="img/shot1.png"></li>
-          <li><img src="img/shot2.png"></li>
-          <li><img src="img/shot3.png"></li>
-          <li><img src="img/shot4.png"></li>
+          <li><img src="img/shot1.png" alt="PHP Editor"></li>
+          <li><img src="img/shot2.png" alt="CSS Editor"></li>
+          <li><img src="img/shot3.png" alt="Advanced Editing Features"></li>
+          <li><img src="img/shot4.png" alt="Advanced Content Assist"></li>
         </ul>
       </div>
       <div class="large-2 columns">&nbsp;</div>
@@ -69,7 +69,7 @@
     	    		<p><a href="https://projects.eclipse.org/projects/tools.pdt/">Project details</a><br />Who's involved, project plan, all project resources and more.</p>
     	    	</div>
             <div class="large-3 medium-3 columns">
-              <p><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=85">PDT Forums</a> and <a href='http://wiki.eclipse.org/PDT'>Wiki</a><br />Users discussions board, ask and answer questions.</p>
+              <p><a href="http://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=85">PDT Forums</a> and <a href='http://wiki.eclipse.org/PDT'>Wiki</a><br />Users discussions board, ask and answer questions.</p>
             </div>
           	<div class="large-3 medium-3 columns">
           		<p><a href="http://github.com/eclipse/pdt">PDT on Github</a><br />Latest code, issue reports, feature requests and more.</p>
@@ -88,31 +88,31 @@
       <h3 id="features">Features</h3>
       <div class="row">
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Syntax Highlighting <img src="img/features/syntax-coloring.png"></p>
+          <p>Syntax Highlighting <img src="img/features/syntax-coloring.png" alt="Syntax Coloring"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Content Assist <img src="img/features/content-assist.png"></p>
+          <p>Content Assist <img src="img/features/content-assist.png" alt="Content Assist"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Code Formatter <img src="img/features/formatter.png"></p>
+          <p>Code Formatter <img src="img/features/formatter.png" alt="Code Formatter"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Refactoring <img src="img/features/refactoring.png"></p>
+          <p>Refactoring <img src="img/features/refactoring.png" alt="Refactoring"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Code Templates  <img src="img/features/templates.png"></p>
+          <p>Code Templates  <img src="img/features/templates.png" alt="Code Templates"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Code Navigation <img src="img/features/code-nav.png"></p>
+          <p>Code Navigation <img src="img/features/code-nav.png" alt="Code Navigation"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>PHP Debugging <img src="img/features/debug.png"></p>
+          <p>PHP Debugging <img src="img/features/debug.png" alt="PHP Debugging"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Syntax Validation <img src="img/features/syntax-errors.png"></p>
+          <p>Syntax Validation <img src="img/features/syntax-errors.png" alt="Syntax Validation"></p>
         </div>
         <div class="large-4 medium-4 columns panel" style="height: 300px">
-          <p>Power of Eclipse Ecosystem <img src="img/features/ecosystem.png"></p>
+          <p>Power of Eclipse Ecosystem <img src="img/features/ecosystem.png" alt="Power of Eclipse Ecosystem"></p>
         </div>
       </div>
     </div>
@@ -211,9 +211,9 @@
     <div>
       <h3 id="extensions">Extensions</h3>
       <p>The experience of developing PHP application with PDT can be extended with a large variety of plugins created by the Eclipse ecosystem. Below are open source projects and commercial products that are built on top of PDT or are integrated with PDT.</p>
-      <table width="100%" class="panel">
-        <tr valign="top">
-          <td width="160"><a href="http://p2-dev.pdt-extensions.org/"><img src="img/extensions/pdt-eg.png"></td>
+      <table class="panel" style="width: 100%">
+        <tr style="vertical-align: top">
+          <td style="width: 160px"><a href="http://p2-dev.pdt-extensions.org/"><img src="img/extensions/pdt-eg.png" alt="PDT Extensions group"></a></td>
           <td>
             <h5>PDT Extensions group</h5>
             <i>Open source plugins that extend or integrate with PDT</i>
@@ -259,8 +259,8 @@
             <a class="button radius tiny" href="http://p2-dev.pdt-extensions.org/">Visit website</a>
           </td>
         </tr>
-        <tr valign="top">
-          <td><a href="http://www.zend.com/products/studio/"><img src="img/extensions/zend-studio.png"></a></td>
+        <tr style="vertical-align: top">
+          <td><a href="http://www.zend.com/products/studio/"><img src="img/extensions/zend-studio.png" alt="Zend Studio"></a></td>
           <td>
             <h5>Zend Studio</h5>
             <i>The PHP IDE for Smarter Development</i>
@@ -297,8 +297,8 @@
             <a class="button radius tiny" href="http://www.zend.com/products/studio/">Visit website</a>
           </td>
         </tr>
-        <tr valign="top">
-          <td><a href="http://www.zend.com/products/guard/"><img src="img/extensions/zend-guard.png"></a></td>
+        <tr style="vertical-align: top">
+          <td><a href="http://www.zend.com/products/guard/"><img src="img/extensions/zend-guard.png" alt="Zend Guard"></a></td>
           <td>
             <h5>Zend Guard</h5>
             <i>Protect your applications with PHP encoding</i>
@@ -331,13 +331,13 @@
 <div class="row">
   <div class="small-12 large-centered columns">
     <dl class="sub-nav">
-      <dd><a href="https://eclipse.org">Home</a></dd>
-      <dd><a href="https://eclipse.org/legal/privacy.php">Privacy Policy</a></dd>
-      <dd><a href="https://eclipse.org/legal/termsofuse.php">Terms of Use</a></dd>
-      <dd><a href="https://eclipse.org/legal/copyright.php">Copyright Agent</a></dd>
-      <dd><a href="https://eclipse.org/legal/">Legal</a></dd>
-      <dd><a href="https://eclipse.org/org/foundation/contact.php">Contact Us</a></dd>
-      <dd>Copyright © 2015 The Eclipse Foundation. All Rights Reserved.</dd>
+      <dt></dt><dd><a href="https://eclipse.org">Home</a></dd>
+      <dt></dt><dd><a href="https://eclipse.org/legal/privacy.php">Privacy Policy</a></dd>
+      <dt></dt><dd><a href="https://eclipse.org/legal/termsofuse.php">Terms of Use</a></dd>
+      <dt></dt><dd><a href="https://eclipse.org/legal/copyright.php">Copyright Agent</a></dd>
+      <dt></dt><dd><a href="https://eclipse.org/legal/">Legal</a></dd>
+      <dt></dt><dd><a href="https://eclipse.org/org/foundation/contact.php">Contact Us</a></dd>
+      <dt></dt><dd>Copyright © 2015 The Eclipse Foundation. All Rights Reserved.</dd>
     </dl>
   </div>
 </div>
