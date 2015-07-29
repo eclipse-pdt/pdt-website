@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
     <script src="js/vendor/modernizr.js"></script>
     <link rel="shortcut icon" href="/eclipse.org-common/themes/solstice/public/images/favicon.ico"/>
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
 
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
@@ -20,13 +20,13 @@
 
   <div class="top-bar-section">
     <!-- Left Nav Section -->
-    <ul class="left">
+    <ul class="left" itemprop="breadcrumb">
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#download">Download</a></li>
       <li><a href="#docs">Docs</a></li>
       <li><a href="#extensions">Extensions</a></li>
-      <li><a href="#contributing">Contributing</a></li>
+      <li><a href="#contributing">Contributhudsoning</a></li>
     </ul>
   </div>
 </nav>
@@ -52,7 +52,7 @@
       <div class="large-2 columns">&nbsp;</div>
       <div class="large-8 columns">
         <ul data-orbit>
-          <li><img src="img/shot1.png" alt="PHP Editor"></li>
+          <li><img src="img/shot1.png" alt="PHP Editor" itemprop="primaryImageOfPage"></li>
           <li><img src="img/shot2.png" alt="CSS Editor"></li>
           <li><img src="img/shot3.png" alt="Advanced Editing Features"></li>
           <li><img src="img/shot4.png" alt="Advanced Content Assist"></li>
@@ -64,21 +64,23 @@
     <div class="row">
       <div class="large-12 columns">
       	<div>
-	        <h2 id="about">What is PDT?</h2>
-	        <p>The PHP IDE project delivers a PHP Integrated Development Environment framework for the Eclipse platform. This project encompasses the development components necessary to develop PHP-based Web Applications and facilitates extensibility. It leverages the existing Web Tools Project in providing developers with PHP capabilities.</p>
-	        <p>To find out more about us, you should check out:</p>
+            <div itemprop="mainContentOfPage">
+	           <h2 id="about">What is PDT?</h2>
+	           <p>The PHP IDE project delivers a PHP Integrated Development Environment framework for the Eclipse platform. This project encompasses the development components necessary to develop PHP-based Web Applications and facilitates extensibility. It leverages the existing Web Tools Project in providing developers with PHP capabilities.</p>
+	        </div>
+            <p>To find out more about us, you should check out:</p>
 	        <div class="row">
 	        	<div class="large-3 medium-3 columns">
-    	    		<p><a href="https://projects.eclipse.org/projects/tools.pdt/">Project details</a><br />Who's involved, project plan, all project resources and more.</p>
+    	    		<p><a href="https://projects.eclipse.org/projects/tools.pdt/" itemprop="relatedLink">Project details</a><br />Who's involved, project plan, all project resources and more.</p>
     	    	</div>
             <div class="large-3 medium-3 columns">
-              <p><a href="https://www.eclipse.org/forums/index.php/f/85/">PDT Forums</a> and <a href='http://wiki.eclipse.org/PDT'>Wiki</a><br />Users discussions board, ask and answer questions.</p>
+              <p><a href="https://www.eclipse.org/forums/index.php/f/85/" itemprop="relatedLink">PDT Forums</a> and <a href='http://wiki.eclipse.org/PDT' itemprop="relatedLink">Wiki</a><br />Users discussions board, ask and answer questions.</p>
             </div>
           	<div class="large-3 medium-3 columns">
-          		<p><a href="http://github.com/eclipse/pdt">PDT on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+          		<p><a href="http://github.com/eclipse/pdt" itemprop="relatedLink">PDT on Github</a><br />Latest code, issue reports, feature requests and more.</p>
           	</div>
             <div class="large-3 medium-3 columns">
-              <p><a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">Developers mailing list</a><br />Get in touch with our team.</p>
+              <p><a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev" itemprop="relatedLink">Developers mailing list</a><br />Get in touch with our team.</p>
             </div>
 					</div>
       	</div>
@@ -193,7 +195,7 @@
     <div>
       <h2 id="docs">Docs</h2>
       <ul>
-        <li><a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.php.help%2Fhtml%2Findex.html">PDT User Manual</a>.
+        <li><a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.php.help%2Fhtml%2Findex.html" itemprop="relatedLink">PDT User Manual</a>.
           All PDT features at a glance.
         </li>
         <li><a href="http://wiki.eclipse.org/index.php/PDT">PDT Wiki</a>.
