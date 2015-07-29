@@ -5266,3 +5266,24 @@ th.hide-for-touch {
   
 .drag {
   float: right; }
+
+  
+.main-title {
+    color: white; font-weight: 200; font-size: 44px; letter-spacing: 2px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: always; text-rendering: optimizeLegibility;
+}
+
+.feature-box {
+    height: 300px
+}
+.full-panel {
+    width: 100%;
+}
+.full-panel tr {
+    vertical-align: top;
+}
+.full-panel th {
+    width: 160px;
+}
+.slider-box {
+    background-color: #776ba8; max-width: 100%;
+}
