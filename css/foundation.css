@@ -3018,13 +3018,13 @@ blockquote p {
   h1 {
     font-size: 2.75rem; }
 
-  h2 {
-    font-size: 2.3125rem; }
+  /*h2 {
+    font-size: 2.3125rem; } */
 
-  h3 {
+  h2 {
     font-size: 1.6875rem; }
 
-  h4 {
+  h3 {
     font-size: 1.4375rem; } }
 /*
  * Print styles.
