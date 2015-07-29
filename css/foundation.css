@@ -5287,3 +5287,6 @@ th.hide-for-touch {
 .slider-box {
     background-color: #776ba8; max-width: 100%;
 }
+.orbit-slides-container .hide {
+    display: block;
+}
