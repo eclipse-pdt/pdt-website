@@ -11,6 +11,19 @@
 			<link>https://www.eclipse.org/pdt</link>
 		</image>
 		<item>
+			<title><![CDATA[PDT 3.6.0 released with Eclipse Mars.1]]></title>
+			<link>https://www.eclipse.org/forums/index.php/t/1070822/</link>
+			<description>PDT Team glad to announce new PDT version : 3.6! This release is
+				focused on stability and consistency but also include features like initial
+				PHP7 support, unused use statements validator and organize use statements
+				command and more.</description>
+			<pubDate>Oct 02, 2015 20:00:00 am EST</pubDate>
+			<category>news</category>
+			<pdt:release>true</pdt:release>
+			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.6/]]></pdt:p2>
+			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn36]]></pdt:nn>
+		</item>
+		<item>
 			<title><![CDATA[PDT 3.5.0 released with Eclipse Mars]]></title>
 			<link>https://www.eclipse.org/forums/index.php/t/1067777/</link>
 			<description>PDT Team glad to announce new PDT version : 3.5! This release is
@@ -36,7 +49,8 @@
 		<item>
 			<title><![CDATA[PDT 3.3.2 released!]]></title>
 			<link>https://projects.eclipse.org/projects/tools.pdt/releases/3.3.2/</link>
-			<description>PDT Team glad to announce new PDT version : 3.3.2. This is maintenance release.</description>
+			<description>PDT Team glad to announce new PDT version : 3.3.2. This is
+				maintenance release.</description>
 			<pubDate>Oct 31, 2014 9:00:00 am EST</pubDate>
 			<category>news</category>
 			<pdt:release>true</pdt:release>
@@ -45,7 +59,8 @@
 		<item>
 			<title><![CDATA[PDT 3.3.1 released with Eclipse Luna SR1]]></title>
 			<link>https://projects.eclipse.org/projects/tools.pdt/releases/3.3.1/</link>
-			<description>PDT Team glad to announce new PDT version : 3.3.1. This is maintenance release.</description>
+			<description>PDT Team glad to announce new PDT version : 3.3.1. This is
+				maintenance release.</description>
 			<pubDate>Sep 26, 2014 9:00:00 am EST</pubDate>
 			<category>news</category>
 			<pdt:release>true</pdt:release>
