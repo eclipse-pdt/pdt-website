@@ -11,6 +11,17 @@
 			<link>https://www.eclipse.org/pdt</link>
 		</image>
 		<item>
+			<title><![CDATA[PDT 3.7.0 released with Eclipse Mars.2]]></title>
+			<link>https://www.eclipse.org/forums/index.php/m/1724862/</link>
+			<description>PDT Team glad to announce new PDT version : 3.7! This release is
+				focused on stability and consistency but also include features like final PHP 7 support, improved PHPDoc and external files support and more.</description>
+			<pubDate>Feb 26, 2016 10:00:00 am EST</pubDate>
+			<category>news</category>
+			<pdt:release>true</pdt:release>
+			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.7/]]></pdt:p2>
+			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn37]]></pdt:nn>
+		</item>
+		<item>
 			<title><![CDATA[PDT 3.6.0 released with Eclipse Mars.1]]></title>
 			<link>https://www.eclipse.org/forums/index.php/t/1070822/</link>
 			<description>PDT Team glad to announce new PDT version : 3.6! This release is
