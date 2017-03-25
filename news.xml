@@ -11,6 +11,16 @@
 			<link>https://www.eclipse.org/pdt</link>
 		</image>
 		<item>
+            <title><![CDATA[PDT 4.3.0 released with Eclipse Neon.3]]></title>
+            <link>https://projects.eclipse.org/projects/tools.pdt/releases/4.3.0/</link>
+            <description>PDT Team glad to announce new PDT version : 4.3!</description>
+            <pubDate>Mar 23, 2017 10:00:00 am EST</pubDate>
+            <category>news</category>
+            <pdt:release>true</pdt:release>
+            <pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/4.3/]]></pdt:p2>
+            <pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn43]]></pdt:nn>
+        </item>		
+		<item>
             <title><![CDATA[PDT 4.1.0 released with Eclipse Neon.1]]></title>
             <link>https://projects.eclipse.org/projects/tools.pdt/releases/4.1.0/</link>
             <description>PDT Team glad to announce new PDT version : 4.1! This release introduce initial PHP 7.1 support, incubated composer support and a lot more!.</description>
