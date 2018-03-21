@@ -11,7 +11,17 @@
 			<link>https://www.eclipse.org/pdt</link>
 		</image>
 		<item>
-			<title><![CDATA[PDT 5.2.0 released with Eclipse Oxygen.0]]></title>
+			<title><![CDATA[PDT 5.3.0 released with Eclipse Oxygen.3]]></title>
+			<link>https://projects.eclipse.org/projects/tools.pdt/releases/5.3.0/</link>
+			<description>PDT Team glad to announce new PDT version : 5.3!</description>
+			<pubDate>Mar 21, 2018 10:00:00 am EST</pubDate>
+			<category>news</category>
+			<pdt:release>true</pdt:release>
+			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/5.3/]]></pdt:p2>
+			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn53]]></pdt:nn>
+		</item>
+		<item>
+			<title><![CDATA[PDT 5.2.0 released with Eclipse Oxygen.2]]></title>
 			<link>https://projects.eclipse.org/projects/tools.pdt/releases/5.2.0/</link>
 			<description>PDT Team glad to announce new PDT version : 5.2!</description>
 			<pubDate>Dec 20, 2017 10:00:00 am EST</pubDate>
@@ -70,83 +80,6 @@
 			<pdt:release>true</pdt:release>
 			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/4.0/]]></pdt:p2>
 			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn40]]></pdt:nn>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.7.0 released with Eclipse Mars.2]]></title>
-			<link>https://www.eclipse.org/forums/index.php/t/1075143/</link>
-			<description>PDT Team glad to announce new PDT version : 3.7! This release is
-				focused on stability and consistency but also include features like final PHP 7 support, improved PHPDoc and external files support and more.</description>
-			<pubDate>Feb 26, 2016 10:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.7/]]></pdt:p2>
-			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn37]]></pdt:nn>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.6.0 released with Eclipse Mars.1]]></title>
-			<link>https://www.eclipse.org/forums/index.php/t/1070822/</link>
-			<description>PDT Team glad to announce new PDT version : 3.6! This release is
-				focused on stability and consistency but also include features like initial
-				PHP7 support, unused use statements validator and organize use statements
-				command and more.</description>
-			<pubDate>Oct 02, 2015 20:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.6/]]></pdt:p2>
-			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn36]]></pdt:nn>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.5.0 released with Eclipse Mars]]></title>
-			<link>https://www.eclipse.org/forums/index.php/t/1067777/</link>
-			<description>PDT Team glad to announce new PDT version : 3.5! This release is
-				focused on stability and consistency while working with PHP projects.
-				Several new features are also included like redesigned debugger
-				configuration or smart object operator.</description>
-			<pubDate>Jun 24, 2015 9:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.5/]]></pdt:p2>
-			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn35]]></pdt:nn>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.4.0 released with Eclipse Luna SR2]]></title>
-			<link>https://www.eclipse.org/forums/index.php/t/1067777/</link>
-			<description>PDT Team glad to announce new PDT version : 3.4!</description>
-			<pubDate>Feb 27, 2015 9:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.4/]]></pdt:p2>
-			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn34]]></pdt:nn>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.3.2 released!]]></title>
-			<link>https://projects.eclipse.org/projects/tools.pdt/releases/3.3.2/</link>
-			<description>PDT Team glad to announce new PDT version : 3.3.2. This is
-				maintenance release.</description>
-			<pubDate>Oct 31, 2014 9:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.3.2/]]></pdt:p2>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.3.1 released with Eclipse Luna SR1]]></title>
-			<link>https://projects.eclipse.org/projects/tools.pdt/releases/3.3.1/</link>
-			<description>PDT Team glad to announce new PDT version : 3.3.1. This is
-				maintenance release.</description>
-			<pubDate>Sep 26, 2014 9:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.3.1/]]></pdt:p2>
-		</item>
-		<item>
-			<title><![CDATA[PDT 3.3.0 released with Eclipse Luna]]></title>
-			<link>https://wiki.eclipse.org/PDT/NewIn33/</link>
-			<description>PDT Team glad to announce new PDT version : 3.3</description>
-			<pubDate>Jun 25, 2014 9:00:00 am EST</pubDate>
-			<category>news</category>
-			<pdt:release>true</pdt:release>
-			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/3.3/]]></pdt:p2>
-			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn33]]></pdt:nn>
 		</item>
 	</channel>
 </rss>
