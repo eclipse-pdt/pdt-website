@@ -17,16 +17,6 @@
 
 	# End: page-specific settings
 	#
-	
-	# Enable polls on this page: Polls are good for 3 months!
-	# $App->usePolls();
-	# $Poll = new Poll(2, "Which view is the most ?");
-	# $Poll->addOption(1, "PHP Explorer (workspace view)");
-	# $Poll->addOption(2, "Outline");
-	# $Poll->addOption(3, "Project Explorer (current project view)");
-	# $Poll->addOption(4, "Functions view");
-	# $Poll->noGraph();  # uncomment to disable bar graph
-	# $pollHTML = $Poll->getHTML();
 		
 	# Paste your HTML content here!
 	ob_start();
@@ -104,7 +94,7 @@
 		<h3>Eclipse Package for PHP Developers</h3>
 
 		<p>The essential starting point for PHP developers, including a PHP language support, a Git client, XML Editor and Mylyn, Terminal.<br /></p>
-		<p>Click on the buttons below to start downloading package for specific OS. You have to install Java in your system.</p>
+		<p>Click on the links below to start downloading package for specific OS. You have to install Java in your system.</p>
 
 		<div class="large-4 columns">
 			<h3>OS X</h3>
@@ -127,6 +117,23 @@
 			</ul>
 		</div>
 
+		<h3>Update existing Eclipse</h3>
+		<p>
+			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/5.3">http://download.eclipse.org/tools/pdt/updates/5.3</a>
+		</p>
+		<div>
+			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">	
+				<img src="img/install.png" class="img-responsive center-block" alt="Drag to your running Eclipse workspace to install PHP Development Tools" />
+			</a>
+		</div> 
+		<div>
+			<img src="img/update_dialog.png" class="img-responsive" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
+		</div>
+		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.0">http://download.eclipse.org/tools/pdt/updates/6.0</a> </p>
+		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
+		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
+		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
+
 		<h3>Download PDT ZIP package</h3>
 		<p>This packages contain PDT p2 repository, which can be used to install PDT in Eclipse without access to Eclipse.org</p>
 		<ul>
@@ -138,27 +145,6 @@
 			<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-4.1.0.201609140517.zip" rel="nofollow">PDT Update 4.1.0 (2016-09-28)</a></li>
 			<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-4.0.1.201606232253.zip" rel="nofollow">PDT Update 4.0.1 (2016-07-11)</a></li>
 			<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-4.0.0.201606081033.zip" rel="nofollow">PDT Update 4.0.0 (2016-06-22)</a></li>
-		</ul>
-
-		<h3>Update existing Eclipse</h3>
-		<p>
-			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/5.3">http://download.eclipse.org/tools/pdt/updates/5.3</a>
-		</p>
-		<div class="pagination-centered">
-			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools"><img src="img/install.png" alt="Drag to your running Eclipse workspace to install PHP Development Tools" /></a> <img src="img/update_dialog.png" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
-		</div>
-		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.0">http://download.eclipse.org/tools/pdt/updates/6.0</a> </p>
-		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
-		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
-		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
-
-		<h2 id="docs">Docs</h2>
-		<ul>
-			<li><a href="http://help.eclipse.org/neon/topic/org.eclipse.php.help/html/table_of_contents.html" itemprop="relatedLink">PDT User Manual</a>. All PDT features at a glance.</li>
-			<li><a href="http://wiki.eclipse.org/index.php/PDT">PDT Wiki</a>. Find more information and discussions in the PDT Wiki page</li>
-			<li><a href="https://www.genuitec.com/debugging-php-with-eclipse-pdt/">Debugging PHP with Eclipse PDT: A WordPress Example</a>. Created by Octavio Gonzalez</li>
-			<li><a href="documents/XDebugGuideForPDT2.0.pdf">PDT 2.0 XDebug Guide</a>. XDebug guide for configuration and usage of XDebug under PDT 2.0. Created by Dave Kelsey [Old]</li>
-			<li><a href="/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Debugging PHP using Eclipse and PDT</a> [Old]</li>
 		</ul>
 
 		<h2 id="extensions">Extensions</h2>

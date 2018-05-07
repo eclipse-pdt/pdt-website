@@ -33,7 +33,6 @@
 	// and now I add them explicitly, bug good Denis did not provide a way to Link object to the Nav
 	// so I cannot reuse his LinkList objects even if i want to :(
 	$Nav->addCustomNav("Download", "#download", "", 1);
-	$Nav->addCustomNav("Docs", "#docs", "", 1);
 	$Nav->addCustomNav("Extensions", "#extensions", "_self", 1);
 	$Nav->addCustomNav("Contributing", "#contributing", "", 1);
 	
@@ -42,11 +41,16 @@
 	$Nav->addNavSeparator("Project", 	""); 
 	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn53", "_self", 2);
 	$Nav->addCustomNav("Project Details", "https://projects.eclipse.org/projects/tools.pdt/", "_self", 2);
+	$Nav->addCustomNav("Manual", "https://help.eclipse.org/topic/org.eclipse.php.help/html/table_of_contents.html", "_self", 2);
+	$Nav->addCustomNav("Wiki", "https://wiki.eclipse.org/PDT", "_self", 2);
 	$Nav->addCustomNav("PDT Forum", "https://www.eclipse.org/forums/index.php/f/85/", "_self", 2);
-	$Nav->addCustomNav("Wiki", "http://wiki.eclipse.org/PDT", "_self", 2);
-	$Nav->addCustomNav("Github", "http://github.com/eclipse/pdt", "_self", 2);
+	
+	
 	$Nav->addCustomNav("Mailing List", "https://dev.eclipse.org/mailman/listinfo/pdt-dev", "_self", 2);
-	$Nav->addCustomNav("Open Bugs", "$bugurl/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=" . $collist, "_self", 2);
-	$Nav->addCustomNav("Submit A Bug", "$bugurl/bugs/enter_bug.cgi?product=" . $projectName, "_self", 2);
+	$Nav->addCustomNav("Open Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=" . $collist, "_self", 2);
+	$Nav->addCustomNav("Submit A Bug", "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDT", "_self", 2);
+	
+	$Nav->addCustomNav("Marketplace", "https://marketplace.eclipse.org/content/php-development-tools", "_self", 2);
+	$Nav->addCustomNav("Github", "https://github.com/eclipse/pdt", "_self", 2);
 
 ?>
