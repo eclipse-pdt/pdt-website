@@ -15,7 +15,7 @@
 	}
 	else {
 		# Get theme from browser, or none default
-		$theme = $App->getUserPreferedTheme();
+		$theme = 'quicksilver';
 	}
 		
 	# Define your project-wide Nav bars here.
@@ -47,7 +47,7 @@
 	
 	
 	$Nav->addCustomNav("Mailing List", "https://dev.eclipse.org/mailman/listinfo/pdt-dev", "_self", 2);
-	$Nav->addCustomNav("Open Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=" . $collist, "_self", 2);
+	$Nav->addCustomNav("Open Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=", "_self", 2);
 	$Nav->addCustomNav("Submit A Bug", "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDT", "_self", 2);
 	
 	$Nav->addCustomNav("Marketplace", "https://marketplace.eclipse.org/content/php-development-tools", "_self", 2);

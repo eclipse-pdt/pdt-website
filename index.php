@@ -105,44 +105,45 @@
 
 		<p>The essential starting point for PHP developers, including a PHP language support, a Git client, XML Editor and Mylyn, Terminal.<br /></p>
 		<p>Click on the links below to start downloading package for specific OS. You have to install Java in your system.</p>
+        <div class="row">
+    		<div class="col-md-8">
+    			<h3>OS X</h3>
 
-		<div class="large-4 columns">
-			<h3>OS X</h3>
-			<ul>
-			<li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-macosx-cocoa-x86_64.dmg" rel="nofollow">64 bit</a></li>
-			</ul>
-		</div>
-		<div class="large-4 columns">
-			<h3>Windows</h3>
-			<ul>
-			<li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-win32.zip" rel="nofollow">32 bit</a></li>
-			<li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-win32-x86_64.zip" rel="nofollow">64 bit</a></li>
-			</ul>
-		</div>
-		<div class="large-4 columns">
-			<h3>Linux</h3>
-			<ul>
-			<li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-linux-gtk.tar.gz" rel="nofollow">32 bit</a></li>
-			<li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-linux-gtk-x86_64.tar.gz" rel="nofollow">64 bit</a></li>
-			</ul>
-		</div>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
+
+    		</div>
+    		<div class="col-md-8">
+    			<h3>Windows</h3>
+    	
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-win32.zip" class="btn btn-primary" rel="nofollow">32 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
+    
+    		</div>
+    		<div class="col-md-8">
+    			<h3>Linux</h3>
+
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-linux-gtk.tar.gz" class="btn btn-primary" rel="nofollow">32 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-php-oxygen-3-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
+
+    		</div>
+        </div>
 
 		<h3>Update existing Eclipse</h3>
 		<p>
-			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/5.3">http://download.eclipse.org/tools/pdt/updates/5.3</a>
+			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/5.3" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/5.3</a>
 		</p>
 		<div>
-			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">	
+			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" rel="nofollow" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">	
 				<img src="img/install.png" class="img-responsive center-block" alt="Drag to your running Eclipse workspace to install PHP Development Tools" />
 			</a>
 		</div> 
 		<div>
 			<img src="img/update_dialog.png" class="img-responsive" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
 		</div>
-		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.0">http://download.eclipse.org/tools/pdt/updates/6.0</a> </p>
-		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
-		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
-		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
+		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.0" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.0</a> </p>
+		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html" rel="nofollow">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
+		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
+		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
 
 		<h3>Download PDT ZIP package</h3>
 		<p>This packages contain PDT p2 repository, which can be used to install PDT in Eclipse without access to Eclipse.org</p>
@@ -166,42 +167,37 @@
             <h4>PDT Extensions group</h4>
             <i>Open source plugins that extend or integrate with PDT</i>
             <br><br>
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core">Code&nbsp;Formatting</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core">Class&nbsp;Creation</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core">Getters/Setters&nbsp;Generation</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core">Semantic&nbsp;Analysis</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core">CS-Fixer</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#phpmaven">PHP&nbsp;Maven</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti">CodeSniffer</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti">PHPDepend</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#makegood">MakeGood</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#symfony">Symfony</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#phing">Phing</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#yii">Yii</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#drupal">Drupal</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#magento">Magento</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/frameworks.html#aspectphp">Aspect&nbsp;PHP</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#yedit">YAML</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#twig">Twig</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#smarty">Smarty</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#coffee">CoffeeScript</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#markdown">Markdown</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#rest">reStructuredText</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#gherkin">Gherkin</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#shelled">Shell&nbsp;Scripts</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#vrapper">Vrapper</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#emmet">Emmet</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#jquery">JQuery</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#jshint">JSHint</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#closure">Closure</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#extjs">ExtJS</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#less">Less</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/editors.html#themes">Eclipse&nbsp;Color&nbsp;Themes</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/misc.html#logviewer">Log&nbsp;Viewer</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/misc.html#ansi">ANSI&nbsp;Console</a>&nbsp;:: 
-            <a href="http://p2.pdt-extensions.org/misc.html#copyright">Copyright&nbsp;Wizard</a>
+            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core" rel="nofollow">CS-Fixer</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/phpfeatures.html#phpmaven" rel="nofollow">PHP&nbsp;Maven</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">CodeSniffer</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">PHPDepend</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#symfony" rel="nofollow">Symfony</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#phing" rel="nofollow">Phing</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#yii" rel="nofollow">Yii</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#drupal" rel="nofollow">Drupal</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#magento" rel="nofollow">Magento</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/frameworks.html#aspectphp" rel="nofollow">Aspect&nbsp;PHP</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#yedit" rel="nofollow">YAML</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#twig" rel="nofollow">Twig</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#smarty" rel="nofollow">Smarty</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#coffee" rel="nofollow">CoffeeScript</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#markdown" rel="nofollow">Markdown</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#rest" rel="nofollow">reStructuredText</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#gherkin" rel="nofollow">Gherkin</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#shelled" rel="nofollow">Shell&nbsp;Scripts</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#vrapper" rel="nofollow">Vrapper</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#emmet" rel="nofollow">Emmet</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#jquery" rel="nofollow">JQuery</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#jshint" rel="nofollow">JSHint</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#closure" rel="nofollow">Closure</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#extjs" rel="nofollow">ExtJS</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#less" rel="nofollow">Less</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/editors.html#themes" rel="nofollow">Eclipse&nbsp;Color&nbsp;Themes</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/misc.html#logviewer" rel="nofollow">Log&nbsp;Viewer</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/misc.html#ansi" rel="nofollow">ANSI&nbsp;Console</a>&nbsp;:: 
+            <a href="http://p2.pdt-extensions.org/misc.html#copyright" rel="nofollow">Copyright&nbsp;Wizard</a>
             <br><br>
-            <a href="http://p2.pdt-extensions.org/">Visit website</a>
+            <a href="http://p2.pdt-extensions.org/" rel="nofollow">Visit website</a>
           </td>
 				</tr>
 		</table>
