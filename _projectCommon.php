@@ -54,3 +54,10 @@
 	$Nav->addCustomNav("Github", "https://github.com/eclipse/pdt", "_self", 2);
 
 ?>
+
+<style type="text/css">
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next { color: #f7941e; }
+	.carousel-control.right, .carousel-control.left { background: none !important; }
+	.carousel-indicators li { border-color: #f7941e; }
+	.carousel-indicators .active { background-color: #f7941e; } 
+</style>

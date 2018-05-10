@@ -50,27 +50,27 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img/shot1-min.png" alt="PHP Editor" itemprop="primaryImageOfPage" width="890" height="565">
+						<img src="img/shot1-min.png" alt="PHP Editor" itemprop="primaryImageOfPage" width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>
 					<div class="item">
-						<img src="img/shot5-min.png" alt="PHP Editor Dark Theme" itemprop="primaryImageOfPage" width="890" height="565">
+						<img src="img/shot5-min.png" alt="PHP Editor Dark Theme" itemprop="primaryImageOfPage" width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>
 					<div class="item">
-						<img src="img/shot4-min.png" alt="Advanced Content Assist" width="890" height="565">
+						<img src="img/shot4-min.png" alt="Advanced Content Assist" width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>
 					<div class="item">
-						<img src="img/shot6-min.png" alt="Advanced Content Assist Dark Theme" width="890" height="565">
+						<img src="img/shot6-min.png" alt="Advanced Content Assist Dark Theme" width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>					
 					<div class="item">
-						<img src="img/shot2-min.png" alt="CSS Editor " width="890" height="565">
+						<img src="img/shot2-min.png" alt="CSS Editor " width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>
 					<div class="item">
-						<img src="img/shot3-min.png" alt="Advanced Editing Features" width="890" height="565">
+						<img src="img/shot3-min.png" alt="Advanced Editing Features" width="890" height="584">
 						<div class="carousel-caption"></div>
 					</div>
 				</div>
