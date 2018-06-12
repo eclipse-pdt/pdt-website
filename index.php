@@ -89,7 +89,7 @@
 				<li>Syntax Validation</li>
 				<li>Content Assist</li>
 				<li>Code Navigation</li>
-				<li>PHP Debugging (Zend Debugger / XDebug)</li>
+				<li>PHP Debugging (Zend Debugger / Xdebug)</li>
 				<li>PHP Profiling (Zend Debugger)</li>
 				<li>PHPUnit</li>
 				<li>Code Formatter</li>

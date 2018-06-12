@@ -19,7 +19,7 @@ function doRequirements()
 <p>In order to be able to perform debugging using PDT, your HTTP server needs to be configured appropriately. You can download one of the following extra packages:</p>
 <ul id="rDebug">
 	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Zend Debugger Site" /> Zend Debugger<br/> (<a href="http://static.zend.com/topics/Zend-Debugger-Installation-Guide-050211.pdf">See installation guide</a>, or get a ready to use <a href="http://www.zend.com/products/server-ce/downloads">Zend Sever CE</a>)</li>
-	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> XDebug </a> </li>
+	<li><img src="http://www.eclipse.org/modeling/images/dl-more.gif" alt="Xdebug Site" /> <a href="http://xdebug.org/"> Xdebug </a> </li>
 	<br> Note: Due to Eclipse licensing requirements, PDT with debugger packages are distributed from external locations. <br>
 	<a href="http://www.eclipse.org/pdt/articles/debugger/os-php-eclipse-pdt-debug-pdf.pdf">Click here</a> to learn how to set up your environment in order to be able to perform debugging with PDT.
 </ul>
