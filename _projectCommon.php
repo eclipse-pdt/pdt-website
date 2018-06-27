@@ -39,7 +39,7 @@
 	// [almaz] the links here are relative to /pdt to make the links valid even when this page is included from a PHP file
 	// that is not at the root, such as from  plans/php_plan_2_0.php
 	$Nav->addNavSeparator("Project", 	""); 
-	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn53", "_self", 2);
+	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn60", "_self", 2);
 	$Nav->addCustomNav("Project Details", "https://projects.eclipse.org/projects/tools.pdt/", "_self", 2);
 	$Nav->addCustomNav("Manual", "https://help.eclipse.org/topic/org.eclipse.php.help/html/table_of_contents.html", "_self", 2);
 	$Nav->addCustomNav("Wiki", "https://wiki.eclipse.org/PDT", "_self", 2);
