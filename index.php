@@ -109,28 +109,28 @@
     		<div class="col-md-8">
     			<h3>OS X</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
     		<div class="col-md-8">
     			<h3>Windows</h3>
     	
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-win32.zip" class="btn btn-primary" rel="nofollow">32 bit</a>
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-win32.zip" class="btn btn-primary" rel="nofollow">32 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
     
     		</div>
     		<div class="col-md-8">
     			<h3>Linux</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-linux-gtk.tar.gz" class="btn btn-primary" rel="nofollow">32 bit</a>
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-linux-gtk.tar.gz" class="btn btn-primary" rel="nofollow">32 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
         </div>
 
 		<h3>Update existing Eclipse</h3>
 		<p>
-			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.0" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.0</a>
+			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.1" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.1</a>
 		</p>
 		<div>
 			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" rel="nofollow" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">	
@@ -140,7 +140,7 @@
 		<div>
 			<img src="img/update_dialog.png" class="img-responsive" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
 		</div>
-		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.1" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.1</a> </p>
+		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.2" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.2</a> </p>
 		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html" rel="nofollow">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
 		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
 		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
@@ -148,6 +148,7 @@
 		<h3>Download PDT ZIP package</h3>
 		<p>This packages contain PDT p2 repository, which can be used to install PDT in Eclipse without access to Eclipse.org</p>
 		<ul>
+    		<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-6.1.0.201808281524.zip" rel="nofollow">PDT Update 6.1.0 (2018-09-19)</a></li>
     		<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-6.0.0.201806122250.zip" rel="nofollow">PDT Update 6.0.0 (2018-06-27)</a></li>
 			<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-5.3.0.201803070838.zip" rel="nofollow">PDT Update 5.3.0 (2018-03-21)</a></li>
 			<li><a href="https://www.eclipse.org/downloads/download.php?file=/tools/pdt/downloads/pdt-Update-5.2.0.201712021751.zip" rel="nofollow">PDT Update 5.2.0 (2017-12-20)</a></li>

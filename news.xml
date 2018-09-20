@@ -11,6 +11,16 @@
 			<link>https://www.eclipse.org/pdt</link>
 		</image>
 		<item>
+			<title><![CDATA[PDT 6.1.0 released with Eclipse Photon]]></title>
+			<link>https://projects.eclipse.org/projects/tools.pdt/releases/6.1/</link>
+			<description>PDT Team glad to announce new PDT version : 6.1!</description>
+			<pubDate>Sep 19, 2018 10:00:00 am EST</pubDate>
+			<category>news</category>
+			<pdt:release>true</pdt:release>
+			<pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/610/]]></pdt:p2>
+			<pdt:nn><![CDATA[https://wiki.eclipse.org/PDT/NewIn61]]></pdt:nn>
+		</item>
+		<item>
 			<title><![CDATA[PDT 6.0.0 released with Eclipse Photon]]></title>
 			<link>https://projects.eclipse.org/projects/tools.pdt/releases/6.0/</link>
 			<description>PDT Team glad to announce new PDT version : 6.0!</description>
