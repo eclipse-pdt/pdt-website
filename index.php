@@ -130,20 +130,20 @@
 
 		<h3>Update existing Eclipse</h3>
 		<p>
-			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="http://download.eclipse.org/tools/pdt/updates/6.3" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/6.3</a>
+			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="https://download.eclipse.org/tools/pdt/updates/6.3" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/6.3</a>
 		</p>
 		<div>
-			<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" rel="nofollow" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">
+			<a href="https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" rel="nofollow" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">
 				<img src="img/install.png" class="img-responsive center-block" alt="Drag to your running Eclipse workspace to install PHP Development Tools" />
 			</a>
 		</div>
 		<div>
 			<img src="img/update_dialog.png" class="img-responsive" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
 		</div>
-		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="http://download.eclipse.org/tools/pdt/updates/7.0" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/7.0</a> </p>
-		<p>All downloads are provided under the terms and conditions of the <a href="http://www.eclipse.org/legal/epl/notice.html" rel="nofollow">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
-		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="http://download.eclipse.org/tools/pdt/updates/latest/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest/</a><br />
-		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="http://download.eclipse.org/tools/pdt/updates/latest-nightly/" rel="nofollow">http://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
+		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="https://download.eclipse.org/tools/pdt/updates/7.0" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/7.0</a> </p>
+		<p>All downloads are provided under the terms and conditions of the <a href="https://www.eclipse.org/legal/epl/notice.html" rel="nofollow">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
+		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="https://download.eclipse.org/tools/pdt/updates/latest/" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/latest/</a><br />
+		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="https://download.eclipse.org/tools/pdt/updates/latest-nightly/" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
 
 <?php /*
 		<h3>Download PDT ZIP package</h3>
@@ -210,11 +210,11 @@
 		PDT is an Open Source project and we welcome everyone who's interested to contribute his or her source code or help project in some other way. Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it.
 		</p>
 		<p>
-		Don't hesitate to nurture PDT developers team with your questions and hit our <a href="http://dev.eclipse.org/mailman/listinfo/pdt-dev">mailing list</a>.
+		Don't hesitate to nurture PDT developers team with your questions and hit our <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">mailing list</a>.
 		</p>
 		<h3>Thanks to <img src="https://www.yourkit.com/images/yklogo.png" alt="YourKit" /></h3>
 		<p>YourKit is kindly supporting open source projects with its full-featured <a href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>.
-		<a href="http://www.yourkit.com">YourKit, LLC</a> is the creator of innovative and intelligent tools for profiling Java and .NET applications.
+		<a href="https://www.yourkit.com">YourKit, LLC</a> is the creator of innovative and intelligent tools for profiling Java and .NET applications.
 		</p>
 	</div>
 </div>
