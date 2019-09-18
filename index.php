@@ -11,7 +11,7 @@
 	$pageKeywords	= "PHP, tool, web, editor, composer, debuger, profiler, phpunit, xdebug";
 	$pageAuthor		= "PDT Team";
 
-	$eclipseVersion = '<?=$eclipseVersion; ?>';
+	$eclipseVersion = '<?php echo $eclipseVersion; ?>';
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -27,7 +27,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 
-		<h1><?=$pageTitle?></h1>
+		<h1><?php echo $pageTitle?></h1>
 
 		<h2 id="about">About</h2>
 		<p>
@@ -111,19 +111,19 @@
     		<div class="col-md-8">
     			<h3>OS X</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?=$eclipseVersion; ?>/R/eclipse-php-<?=$eclipseVersion; ?>-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
     		<div class="col-md-8">
     			<h3>Windows</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?=$eclipseVersion; ?>/R/eclipse-php-<?=$eclipseVersion; ?>-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
     		<div class="col-md-8">
     			<h3>Linux</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?=$eclipseVersion; ?>/R/eclipse-php-<?=$eclipseVersion; ?>-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
         </div>
