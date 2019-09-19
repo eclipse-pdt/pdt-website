@@ -12,6 +12,8 @@
 	$pageAuthor		= "PDT Team";
 
 	$eclipseVersion = '2019-09';
+	$latest = '6.3';
+	$latestDev = '7.0';
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -111,26 +113,26 @@
     		<div class="col-md-8">
     			<h3>OS X</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
     		<div class="col-md-8">
     			<h3>Windows</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-win32-x86_64.zip" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
     		<div class="col-md-8">
     			<h3>Linux</h3>
 
-    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
+    			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
 
     		</div>
         </div>
 
 		<h3>Update existing Eclipse</h3>
 		<p>
-			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="https://download.eclipse.org/tools/pdt/updates/6.3" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/6.3</a>
+			In Eclipse, click <i>Help -> Install New Software</i> and work with <a href="#compositeLatest" class="red">*</a>: <a href="https://download.eclipse.org/tools/pdt/updates/<?php echo $latest ?>" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/<?php echo $latest ?></a>
 		</p>
 		<div>
 			<a href="https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1944539" rel="nofollow" class="drag" title="Drag to your running Eclipse workspace to install PHP Development Tools">
@@ -140,7 +142,7 @@
 		<div>
 			<img src="img/update_dialog.png" class="img-responsive" alt="Eclipse Install&amp;Update Dialog" width="843" height="743">
 		</div>
-		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="https://download.eclipse.org/tools/pdt/updates/7.0" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/7.0</a> </p>
+		<p>If you're looking for developer builds, try out <a href="#compositeLatestNightly" class="red">**</a>: <a href="https://download.eclipse.org/tools/pdt/updates/<?php echo $latestDev ?>" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/<?php echo $latestDev ?></a> </p>
 		<p>All downloads are provided under the terms and conditions of the <a href="https://www.eclipse.org/legal/epl/notice.html" rel="nofollow">Eclipse.org Software User Agreement</a> unless otherwise specified.</p>
 		<p><span class="red">&nbsp;*</span> - Latest stable: <a id="compositeLatest" href="https://download.eclipse.org/tools/pdt/updates/latest/" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/latest/</a><br />
 		<span class="red">**</span> - Latest nightly: <a id="compositeLatestNightly" href="https://download.eclipse.org/tools/pdt/updates/latest-nightly/" rel="nofollow">https://download.eclipse.org/tools/pdt/updates/latest-nightly/</a></p>
