@@ -12,7 +12,7 @@
 	$pageAuthor		= "PDT Team";
 
 	$eclipseVersion = '2019-09';
-	$latest = '6.3';
+	$latest = '6.3.1';
 	$latestDev = '7.0';
 
 	# Add page-specific Nav bars here
