@@ -721,7 +721,7 @@ but this happens hidden to you.
 <p class="title"><b>Example&nbsp;2.&nbsp;Modifying
 an AST directly.</b></p>
 <div class="example-contents">
-<pre class="programlisting"> program.recordModifications();<br> AST ast = program.getAST();<br> EchoStatement echo = ast.newEchoStatement();<br> echo.setExpression(ast.newScalar(&#8220;Hello World&#8220;);<br> program.statements().add(echo);<br></pre>
+<pre class="programlisting"> program.recordModifications();<br> AST ast = program.getAST();<br> EchoStatement echo = ast.newEchoStatement();<br> echo.setExpression(ast.newScalar(&#8220;Hello World&#8220;));<br> program.statements().add(echo);<br></pre>
 </div>
 </div>
 <p>The next section will tell how to write the modifications back
