@@ -11,6 +11,16 @@
             <link>https://www.eclipse.org/pdt</link>
         </image>
         <item>
+            <title><![CDATA[PDT 7.1.0 released with Eclipse 2020-03]]></title>
+            <link>https://projects.eclipse.org/projects/tools.pdt/releases/7.1/</link>
+            <description>PDT Team glad to announce new PDT version : 7.1!</description>
+            <pubDate>Mar 18, 2019 10:00:00 am EST</pubDate>
+            <category>news</category>
+            <pdt:release>true</pdt:release>
+            <pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/7.1/]]></pdt:p2>
+            <pdt:nn><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/7.1/bugs]]></pdt:nn>
+        </item>
+        <item>
             <title><![CDATA[PDT 7.0.0 released with Eclipse 2019-12]]></title>
             <link>https://projects.eclipse.org/projects/tools.pdt/releases/7.0/</link>
             <description>PDT Team glad to announce new PDT version : 7.0!</description>

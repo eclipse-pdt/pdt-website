@@ -11,9 +11,9 @@
 	$pageKeywords	= "PHP, tool, web, editor, composer, debuger, profiler, phpunit, xdebug";
 	$pageAuthor		= "PDT Team";
 
-	$eclipseVersion = '2019-12';
-	$latest = '7.0';
-	$latestDev = '7.1';
+	$eclipseVersion = '2020-03';
+	$latest = '7.1';
+	$latestDev = '7.2';
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
