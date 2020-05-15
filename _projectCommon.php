@@ -3,7 +3,7 @@
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
 	# https://dev.eclipse.org/committers/
-	# Optional: defaults to system theme 
+	# Optional: defaults to system theme
 	$_theme = "";
 	$theme = "";
 	if(isset($_POST['theme'])) {
@@ -17,7 +17,7 @@
 		# Get theme from browser, or none default
 		$theme = 'quicksilver';
 	}
-		
+
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
@@ -27,7 +27,7 @@
 	$Nav->setLinkList( array() );
 	$Nav->addCustomNav("About", "#about", "", 1 );
 	$Nav->addCustomNav("Features", "#features", "", 1 );
-	
+
 	// add the predefined links for left navigator (Committers, Newsgroup, Bugs, Articles)
 	// this is a BAD practice since they are maintainted by Denis Roy in the nav.class.php file
 	// and now I add them explicitly, bug good Denis did not provide a way to Link object to the Nav
@@ -35,23 +35,25 @@
 	$Nav->addCustomNav("Download", "#download", "", 1);
 	$Nav->addCustomNav("Extensions", "#extensions", "_self", 1);
 	$Nav->addCustomNav("Contributing", "#contributing", "", 1);
-	
+
 	// [almaz] the links here are relative to /pdt to make the links valid even when this page is included from a PHP file
 	// that is not at the root, such as from  plans/php_plan_2_0.php
-	$Nav->addNavSeparator("Project", 	""); 
-	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn60", "_self", 2);
-	$Nav->addCustomNav("Project Details", "https://projects.eclipse.org/projects/tools.pdt/", "_self", 2);
-	$Nav->addCustomNav("Manual", "https://help.eclipse.org/topic/org.eclipse.php.help/html/table_of_contents.html", "_self", 2);
-	$Nav->addCustomNav("Wiki", "https://wiki.eclipse.org/PDT", "_self", 2);
-	$Nav->addCustomNav("PDT Forum", "https://www.eclipse.org/forums/index.php/f/85/", "_self", 2);
-	
-	
-	$Nav->addCustomNav("Mailing List", "https://dev.eclipse.org/mailman/listinfo/pdt-dev", "_self", 2);
-	$Nav->addCustomNav("Open Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=", "_self", 2);
-	$Nav->addCustomNav("Submit A Bug", "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDT", "_self", 2);
-	
+	$Nav->addNavSeparator("Project", 	"");
+	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn71", "_self", 2);
 	$Nav->addCustomNav("Marketplace", "https://marketplace.eclipse.org/content/php-development-tools", "_self", 2);
-	$Nav->addCustomNav("Github", "https://github.com/eclipse/pdt", "_self", 2);
+	$Nav->addCustomNav("Project Repository", "https://github.com/eclipse/pdt", "_self", 2);
+	$Nav->addCustomNav("Project Details", "https://projects.eclipse.org/projects/tools.pdt/", "_self", 2);
+
+	$Nav->addNavSeparator("Support", 	"");
+	$Nav->addCustomNav("Manual", "https://help.eclipse.org/topic/org.eclipse.php.help/html/table_of_contents.html", "_self", 2);
+	$Nav->addCustomNav("PDT Forum", "https://www.eclipse.org/forums/index.php/f/85/", "_self", 2);
+	$Nav->addCustomNav("Wiki", "https://wiki.eclipse.org/PDT", "_self", 2);
+	$Nav->addCustomNav("Mailing List", "https://dev.eclipse.org/mailman/listinfo/pdt-dev", "_self", 2);
+
+	$Nav->addCustomNav("Open Issues", "https://github.com/eclipse/pdt/issues", "_self", 2);
+	$Nav->addCustomNav("Pull Requests", "https://github.com/eclipse/pdt/pulls", "_self", 2);
+	$Nav->addCustomNav("Submit A Bug", "https://github.com/eclipse/pdt/issues/new?assignees=&labels=bug&template=bug_report.md&title=", "_self", 2);
+
 
 ?>
 
@@ -59,5 +61,11 @@
 	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next { color: #f7941e; }
 	.carousel-control.right, .carousel-control.left { background: none !important; }
 	.carousel-indicators li { border-color: #f7941e; }
-	.carousel-indicators .active { background-color: #f7941e; } 
+	.carousel-indicators .active { background-color: #f7941e; }
+    .fork-me {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+    }
 </style>

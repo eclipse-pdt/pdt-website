@@ -25,11 +25,9 @@
 	# Paste your HTML content here!
 	ob_start();
 ?>
-
 <div id="maincontent">
 	<div id="midcolumn">
-
-		<h1><?php echo $pageTitle?></h1>
+        <h1><?php echo $pageTitle?></h1>
 
 		<h2 id="about">About</h2>
 		<p>
@@ -167,42 +165,42 @@
 		<p>The experience of developing PHP application with PDT can be extended with a large variety of plugins created by the Eclipse ecosystem. Below are open source projects and commercial products that are built on top of PDT or are integrated with PDT.</p>
 		<table>
         <tr>
-          <!-- <th><a href="http://p2.pdt-extensions.org/"><img src="img/extensions/pdt-eg.png" alt="PDT Extensions group" width="128" height="128"></a></th> -->
+          <!-- <th><a href="https://p2.pdt-extensions.org/"><img src="img/extensions/pdt-eg.png" alt="PDT Extensions group" width="128" height="128"></a></th> -->
           <td>
             <h4>PDT Extensions group</h4>
             <i>Open source plugins that extend or integrate with PDT</i>
             <br><br>
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pex-core" rel="nofollow">CS-Fixer</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#phpmaven" rel="nofollow">PHP&nbsp;Maven</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">CodeSniffer</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">PHPDepend</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#symfony" rel="nofollow">Symfony</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#phing" rel="nofollow">Phing</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#yii" rel="nofollow">Yii</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#drupal" rel="nofollow">Drupal</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#magento" rel="nofollow">Magento</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/frameworks.html#aspectphp" rel="nofollow">Aspect&nbsp;PHP</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#yedit" rel="nofollow">YAML</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#twig" rel="nofollow">Twig</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#smarty" rel="nofollow">Smarty</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#coffee" rel="nofollow">CoffeeScript</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#markdown" rel="nofollow">Markdown</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#rest" rel="nofollow">reStructuredText</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#gherkin" rel="nofollow">Gherkin</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#shelled" rel="nofollow">Shell&nbsp;Scripts</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#vrapper" rel="nofollow">Vrapper</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#emmet" rel="nofollow">Emmet</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#jquery" rel="nofollow">JQuery</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#jshint" rel="nofollow">JSHint</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#closure" rel="nofollow">Closure</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#extjs" rel="nofollow">ExtJS</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#less" rel="nofollow">Less</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/editors.html#themes" rel="nofollow">Eclipse&nbsp;Color&nbsp;Themes</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/misc.html#logviewer" rel="nofollow">Log&nbsp;Viewer</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/misc.html#ansi" rel="nofollow">ANSI&nbsp;Console</a>&nbsp;::
-            <a href="http://p2.pdt-extensions.org/misc.html#copyright" rel="nofollow">Copyright&nbsp;Wizard</a>
+            <a href="https://p2.pdt-extensions.org/phpfeatures.html#pex-core" rel="nofollow">CS-Fixer</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/phpfeatures.html#phpmaven" rel="nofollow">PHP&nbsp;Maven</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">CodeSniffer</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/phpfeatures.html#pti" rel="nofollow">PHPDepend</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#symfony" rel="nofollow">Symfony</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#phing" rel="nofollow">Phing</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#yii" rel="nofollow">Yii</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#drupal" rel="nofollow">Drupal</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#magento" rel="nofollow">Magento</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/frameworks.html#aspectphp" rel="nofollow">Aspect&nbsp;PHP</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#yedit" rel="nofollow">YAML</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#twig" rel="nofollow">Twig</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#smarty" rel="nofollow">Smarty</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#coffee" rel="nofollow">CoffeeScript</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#markdown" rel="nofollow">Markdown</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#rest" rel="nofollow">reStructuredText</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#gherkin" rel="nofollow">Gherkin</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#shelled" rel="nofollow">Shell&nbsp;Scripts</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#vrapper" rel="nofollow">Vrapper</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#emmet" rel="nofollow">Emmet</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#jquery" rel="nofollow">JQuery</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#jshint" rel="nofollow">JSHint</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#closure" rel="nofollow">Closure</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#extjs" rel="nofollow">ExtJS</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#less" rel="nofollow">Less</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/editors.html#themes" rel="nofollow">Eclipse&nbsp;Color&nbsp;Themes</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/misc.html#logviewer" rel="nofollow">Log&nbsp;Viewer</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/misc.html#ansi" rel="nofollow">ANSI&nbsp;Console</a>&nbsp;::
+            <a href="https://p2.pdt-extensions.org/misc.html#copyright" rel="nofollow">Copyright&nbsp;Wizard</a>
             <br><br>
-            <a href="http://p2.pdt-extensions.org/" rel="nofollow">Visit website</a>
+            <a href="https://p2.pdt-extensions.org/" rel="nofollow">Visit website</a>
           </td>
 				</tr>
 		</table>
@@ -225,6 +223,9 @@
 	$html = ob_get_contents();
 	ob_end_clean();
 
-	# Generate the web page
+	// fork me
+	$App->setThemeVariables(array('leftnav_html' => '<a href="https://github.com/ecilpse/pdt" class="fork-me"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>'));
+
+	// Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
