@@ -1,4 +1,7 @@
 <?php
+    $eclipseVersion = '2020-03';
+    $latest = '7.1';
+    $latestDev = '7.2';
 
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
@@ -22,7 +25,7 @@
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
 
-	/* @var $Nav Nav */
+	/** @var $Nav Nav */
 	// override the default left navigator links (because there is no oter way to add the "About this project" link before them :(
 	$Nav->setLinkList( array() );
 	$Nav->addCustomNav("About", "#about", "", 1 );
@@ -39,7 +42,7 @@
 	// [almaz] the links here are relative to /pdt to make the links valid even when this page is included from a PHP file
 	// that is not at the root, such as from  plans/php_plan_2_0.php
 	$Nav->addNavSeparator("Project", 	"");
-	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn71", "_self", 2);
+	$Nav->addCustomNav("News & Noteworthy", "https://wiki.eclipse.org/PDT/NewIn" . str_replace('.', '', $latest), "_self", 2);
 	$Nav->addCustomNav("Marketplace", "https://marketplace.eclipse.org/content/php-development-tools", "_self", 2);
 	$Nav->addCustomNav("Project Repository", "https://github.com/eclipse/pdt", "_self", 2);
 	$Nav->addCustomNav("Project Details", "https://projects.eclipse.org/projects/tools.pdt/", "_self", 2);
@@ -49,12 +52,11 @@
 	$Nav->addCustomNav("PDT Forum", "https://www.eclipse.org/forums/index.php/f/85/", "_self", 2);
 	$Nav->addCustomNav("Wiki", "https://wiki.eclipse.org/PDT", "_self", 2);
 	$Nav->addCustomNav("Mailing List", "https://dev.eclipse.org/mailman/listinfo/pdt-dev", "_self", 2);
-
-	$Nav->addCustomNav("Open Issues", "https://github.com/eclipse/pdt/issues", "_self", 2);
-	$Nav->addCustomNav("Pull Requests", "https://github.com/eclipse/pdt/pulls", "_self", 2);
 	$Nav->addCustomNav("Submit A Bug", "https://github.com/eclipse/pdt/issues/new?assignees=&labels=bug&template=bug_report.md&title=", "_self", 2);
 
-
+	// fork me
+	/** @var $App App */
+	$App->setThemeVariables(array('leftnav_html' => '<a href="https://github.com/ecilpse/pdt" class="fork-me"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>'));
 ?>
 
 <style type="text/css">

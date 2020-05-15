@@ -11,10 +11,6 @@
 	$pageKeywords	= "PHP, tool, web, editor, composer, debuger, profiler, phpunit, xdebug";
 	$pageAuthor		= "PDT Team";
 
-	$eclipseVersion = '2020-03';
-	$latest = '7.1';
-	$latestDev = '7.2';
-
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# $Nav->addNavSeparator("PDT", 	"/pdt/index.php");
@@ -207,7 +203,9 @@
 
 		<h2 id="contributing">Contributing</h2>
 		<p>
-		PDT is an Open Source project and we welcome everyone who's interested to contribute his or her source code or help project in some other way. Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it.
+		PDT is an Open Source project and we welcome everyone who's interested to contribute his or her source code or help project in some other way.
+
+        Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it, or go directly to <a href="https://eclipse.org/eclipse/pdt">GitHub project</a>.
 		</p>
 		<p>
 		Don't hesitate to nurture PDT developers team with your questions and hit our <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">mailing list</a>.
@@ -222,9 +220,6 @@
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
-
-	// fork me
-	$App->setThemeVariables(array('leftnav_html' => '<a href="https://github.com/ecilpse/pdt" class="fork-me"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>'));
 
 	// Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
