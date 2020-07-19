@@ -193,7 +193,7 @@
 		<p>
 		PDT is an Open Source project and we welcome everyone who's interested to contribute his or her source code or help project in some other way.
 
-        Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it, or go directly to <a href="https://eclipse.org/eclipse/pdt">GitHub project</a>.
+        Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it, or go directly to <a href="https://github.com/eclipse/pdt">GitHub project</a>.
 		</p>
 		<p>
 		Don't hesitate to nurture PDT developers team with your questions and hit our <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">mailing list</a>.
