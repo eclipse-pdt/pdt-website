@@ -193,13 +193,13 @@
 		<p>
 		PDT is an Open Source project and we welcome everyone who's interested to contribute his or her source code or help project in some other way.
 
-        Visit our <a href="https://wiki.eclipse.org/PDT/Contributing">wiki page</a> to learn how to get source code and build it, or go directly to <a href="https://github.com/eclipse/pdt">GitHub project</a>.
+        Visit our <a href="https://github.com/eclipse-pdt/pdt/wiki/Contributing">wiki page</a> to learn how to get source code and build it, or go directly to <a href="https://github.com/eclipse-pdt/pdt">GitHub project</a>.
 		</p>
 		<p>
 		Don't hesitate to nurture PDT developers team with your questions and hit our <a href="https://dev.eclipse.org/mailman/listinfo/pdt-dev">mailing list</a>.
 		</p>
 		<h3>Thanks to <img src="https://www.yourkit.com/images/yklogo.png" alt="YourKit" /></h3>
-		<p>YourKit is kindly supporting open source projects with its full-featured <a href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>.
+		<p>YourKit is kindly supporting open source projects with its full-featured <a href="https://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>.
 		<a href="https://www.yourkit.com">YourKit, LLC</a> is the creator of innovative and intelligent tools for profiling Java and .NET applications.
 		</p>
 	</div>
