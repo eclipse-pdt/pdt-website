@@ -108,6 +108,7 @@
     			<h3>OS X</h3>
 
     			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-macosx-cocoa-x86_64.dmg" class="btn btn-primary" rel="nofollow">64 bit</a>
+				<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-macosx-cocoa-aarch64.dmg" class="btn btn-primary" rel="nofollow">ARM 64 bit</a>
 
     		</div>
     		<div class="col-md-8">
@@ -120,6 +121,7 @@
     			<h3>Linux</h3>
 
     			<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-linux-gtk-x86_64.tar.gz" class="btn btn-primary" rel="nofollow">64 bit</a>
+				<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/<?php echo $eclipseVersion; ?>/R/eclipse-php-<?php echo $eclipseVersion; ?>-R-linux-gtk-aarch64.tar.gz" class="btn btn-primary" rel="nofollow">ARM 64 bit</a>
 
     		</div>
         </div>

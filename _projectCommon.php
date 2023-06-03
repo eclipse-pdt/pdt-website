@@ -1,5 +1,5 @@
 <?php
-    $eclipseVersion = '2020-06';
+    $eclipseVersion = '2023-03';
     $latest = '7.2';
     $latestDev = '8.0';
 
