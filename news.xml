@@ -8,8 +8,18 @@
         <image>
             <url>https://projects.eclipse.org/sites/default/files/phplogo.png</url>
             <title>PHP Development Tools</title>
-            <link>https://www.eclipse.org/pdt</link>
+            <link>https://eclipse.dev/pdt</link>
         </image>
+        <item>
+            <title><![CDATA[PDT 8.0.0 released with Eclipse 2023-06]]></title>
+            <link>https://projects.eclipse.org/projects/tools.pdt/releases/8.0.0/</link>
+            <description>PDT Team glad to announce new PDT version : 8.0!</description>
+            <pubDate>Jun 14, 2023 10:00:00 am EST</pubDate>
+            <category>news</category>
+            <pdt:release>true</pdt:release>
+            <pdt:p2><![CDATA[https://projects.eclipse.org/projects/tools.pdt/releases/8.0.0/]]></pdt:p2>
+            <pdt:nn><![CDATA[https://github.com/eclipse-pdt/pdt/wiki/NewIn80]]></pdt:nn>
+        </item>
         <item>
             <title><![CDATA[PDT 7.2.0 released with Eclipse 2020-06]]></title>
             <link>https://projects.eclipse.org/projects/tools.pdt/releases/7.2/</link>

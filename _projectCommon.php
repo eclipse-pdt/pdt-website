@@ -1,6 +1,6 @@
 <?php
-    $eclipseVersion = '2023-03';
-    $latest = '7.2';
+    $eclipseVersion = '2023-06';
+    $latest = '8.0';
     $latestDev = '8.1';
 
 	# Set the theme for your project's web pages.
