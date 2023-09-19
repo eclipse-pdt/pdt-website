@@ -1,7 +1,7 @@
 <?php
-    $eclipseVersion = '2023-06';
-    $latest = '8.0';
-    $latestDev = '8.1';
+    $eclipseVersion = '2023-09';
+    $latest = '8.1';
+    $latestDev = '8.2';
 
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
