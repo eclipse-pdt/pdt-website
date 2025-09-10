@@ -1,0 +1,60 @@
+name: Build and Archive
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build_website:
+    name: Build and Archive
+    runs-on: ubuntu-latest
+    container: 
+      image: eclipsefdn/hugo-node:h0.144.2-n22.14.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Extract Project Short Name
+        id: project
+        run: |
+          org_name="${{ github.repository_owner }}"
+          project="${org_name#eclipse-}"
+          echo "project_name=$project" >> $GITHUB_OUTPUT
+      - name: Build Website
+        shell: bash
+        run: |
+          hugo --minify -b 'https://eclipse.dev/${{ steps.project.outputs.project_name }}/'
+      - name: Archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: ./public
+
+  publish:
+    if: github.ref == 'refs/heads/master'
+    name: Archive and Published Builds on master
+    runs-on: ubuntu-latest
+    needs: [ build_website ]
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: deploy
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: website
+
+      - name: Push changes
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+
