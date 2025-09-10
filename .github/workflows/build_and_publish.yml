@@ -1,4 +1,4 @@
-name: Build and Archive
+name: Build and Archive Website
 on:
   push:
     branches:
