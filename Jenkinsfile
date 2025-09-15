@@ -44,7 +44,6 @@ spec:
 
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
-    checkoutToSubdirectory('hugo')
     timeout(time: 60, unit: 'MINUTES')
   }
 
@@ -52,19 +51,14 @@ spec:
     stage('Checkout www repo') {
       steps {
         dir('www') {
-            sshagent(['github-bot-ssh']) {
-                sh '''
-                    git clone git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git .
-                    git checkout deploy
-                '''
-            }
+            git branch: 'deploy', changelog: false, poll: false, credentialsId: 'github-bot-ssh', url: "git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git"
+        }
+        dir('hugo') {
+            git branch: 'master', credentialsId: 'github-bot-ssh', url: "git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git"
         }
       }
     }
     stage('Build website (master) with Hugo') {
-      when {
-        branch 'master'
-      }
       steps {
         container('hugo') {
             dir('hugo') {
@@ -74,11 +68,6 @@ spec:
       }
     }
     stage('Push to deploy branch') {
-      when {
-        anyOf {
-          branch "master"
-        }
-      }
       steps {
         sh 'rm -rf www/* && cp -Rvf hugo/public/* www/'
         dir('www') {
