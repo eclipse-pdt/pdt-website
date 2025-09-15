@@ -52,9 +52,10 @@ spec:
       steps {
         dir('www') {
             git branch: 'deploy', changelog: false, poll: false, credentialsId: 'github-bot-ssh', url: "git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git"
+           
         }
         dir('hugo') {
-            git branch: 'master', credentialsId: 'github-bot-ssh', url: "git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git"
+            checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [submodule(parentCredentials: true, recursiveSubmodules: true, reference: '')], userRemoteConfigs: [[credentialsId: 'github-bot-ssh', url: "git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git"]])
         }
       }
     }
