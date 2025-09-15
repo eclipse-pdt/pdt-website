@@ -32,7 +32,6 @@ spec:
   }
 
   environment {
-    BRANCH_NAME = "deploy"
     PROJECT_NAME = "pdt" // must be all lowercase.
     PROJECT_BOT_NAME = "PDT Bot" // Capitalize the name
     PROJECT_GH_ORG = "eclipse-pdt" // e.g. eclipse-hono
@@ -56,11 +55,7 @@ spec:
             sshagent(['github-bot-ssh']) {
                 sh '''
                     git clone git@github.com:${PROJECT_GH_ORG}/${PROJECT_WEBSITE_REPO}.git .
-                    if [ "${BRANCH_NAME}" = "main" ]; then
-                      git checkout master
-                    else
-                      git checkout ${BRANCH_NAME}
-                    fi
+                    git checkout deploy
                 '''
             }
         }
@@ -78,7 +73,7 @@ spec:
         }
       }
     }
-    stage('Push to $env.BRANCH_NAME branch') {
+    stage('Push to deploy branch') {
       when {
         anyOf {
           branch "master"
@@ -96,11 +91,7 @@ spec:
                   git config user.name "${PROJECT_BOT_NAME}"
                   git commit -m "Website build ${JOB_NAME}-${BUILD_NUMBER}"
                   git log --graph --abbrev-commit --date=relative -n 5
-                  if [ "${BRANCH_NAME}" = "main" ]; then
-                    git push origin HEAD:master
-                  else
-                    git push origin HEAD:${BRANCH_NAME}
-                  fi
+                  git push origin HEAD:deploy
                 else
                   echo "No changes have been detected since last build, nothing to publish"
                 fi
