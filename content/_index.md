@@ -76,7 +76,7 @@ If you're looking for developer builds, try out <span class="red">**</span>: htt
 
 All downloads are provided under the terms and conditions of the [Eclipse.org Software User Agreement](https://www.eclipse.org/legal/epl/notice.html) unless otherwise specified.
 
-<span class="red"> *</span> - Latest stable: https://download.eclipse.org/tools/pdt/updates/{{% param "latest" %}}  
+<span class="red">*</span> - Latest stable: https://download.eclipse.org/tools/pdt/updates/{{% param "latest" %}}  
 <span class="red">**</span> - Latest nightly: https://download.eclipse.org/tools/pdt/updates/{{% param "latest_dev" %}}
 
 ## Extensions
